@@ -171,7 +171,7 @@
           "exit_overrides": {
             "nopat_T_b": 24.96,
             "years_to_T": 5,
-            "g_lt": 0.05,
+            "g_lt": 0.06,
             "roic": 0.45,
             "r": 0.098,
             "interim_fcf_pv_b": 53.144
@@ -182,10 +182,10 @@
       "segment_implied": [
         {
           "name": "Netflix Streaming (integrated subscription + advertising)",
-          "implied_ev_b": 342.794
+          "implied_ev_b": 409.83
         }
       ],
-      "implied_px": 80.12,
+      "implied_px": 96.05,
       "probability": null,
       "probability_reasoning": "",
       "reasoning": "Theia demand.json bull_path 2030: $80.0B revenue ($70.0B subscription + $10.0B advertising at 400M subscribers). Bull advertising reaches $10.0B (Theia bull path, aligned with MoffettNathanson high end $9.6B plus slight upside from live sports calendar halo). Operating margin 38% (incremental ad revenue is near-zero marginal cost, lifting integrated margin). Cash tax 18%. NOPAT = $80.0B x 0.38 x 0.82 = $24.96B. g_LT 5.0%: advertising continues growing faster than GDP through the 2030s. ROIC 45%: higher as ad revenue is near-zero capital incremental. r 9.8%: slight de-risking from contracted advertiser base (4,000+ active advertisers growing 70% YoY per Q1 2026). Interim FCF PV $53.14B at bull parameters. Evidence type: EXTRAPOLATED (MoffettNathanson projection plus Theia's named bull mechanisms: ad-tech success, live sports appointment viewing, APAC net adds 20M/year)."
@@ -201,7 +201,7 @@
             "g_lt": 0.035,
             "roic": 0.35,
             "r": 0.108,
-            "interim_fcf_pv_b": 30.619
+            "interim_fcf_pv_b": 38.0
           }
         }
       ],
@@ -209,10 +209,10 @@
       "segment_implied": [
         {
           "name": "Netflix Streaming (integrated subscription + advertising)",
-          "implied_ev_b": 130.74
+          "implied_ev_b": 138.09
         }
       ],
-      "implied_px": 29.76,
+      "implied_px": 31.51,
       "probability": null,
       "probability_reasoning": "",
       "reasoning": "Theia demand.json bear_path 2030: $56.5B revenue ($52.5B subscription + $4.0B advertising at 355M subscribers). Bear advertising stalls at $4.0B -- YouTube retains 70%+ of streaming video ad budgets (its 12.7% US TV viewing share per Nielsen Dec 2025 vs. Netflix's 9.0%; Theia crux.json bear argument). Subscriber growth near-flat from ~340M in 2026 to 355M in 2030. Margin expansion halts at 30% (content spend inflation). NOPAT = $56.5B x 0.30 x 0.80 = $13.56B (using 20% tax rate in bear, as higher tax in a lower-income environment). g_LT 3.5%, ROIC 35%, r 10.8% (governance uncertainty from Hastings departure adds premium). Interim FCF PV $30.62B at bear parameters. Evidence type: MECHANISM-NOT-YET-FIRING (per Theia crux.json -- mechanisms are real but not yet firing)."

@@ -4,10 +4,10 @@
     "fair_value_today": 55.52,
     "target_12m": 59.95,
     "fair_value_12m": 61.24,
-    "band_low": 29.76,
-    "band_high": 80.12,
-    "method_primary": "SOTP",
-    "method_why": ""
+    "band_low": 31.51,
+    "band_high": 96.05,
+    "method_primary": "ExitMultiple",
+    "method_why": "Exit-multiple (Gordon steady-state) on the integrated subscription+advertising streaming business as a single segment. SOTP not applied: subscription and advertising share the same content cost base, technology infrastructure, and subscriber pool — splitting them with distinct WACCs would be artificial. Exit-multiple chosen over a 10-year explicit DCF because the crux is the 2030 NOPAT level (how large the advertising ramp becomes), which exit-multiple isolates directly without muddling the ramp into ROIC. Normalization year 2030 when revenue growth converges to GDP+ rates (~3-5%) as subscriber adds plateau and advertising matures. Interim FCF added ($45.2B PV at r=10.3%) per METHODS.md — material for a name generating $8-16B FCF during the 2026-2030 ramp."
   },
   "four_numbers": {
     "fair_value_today": {
