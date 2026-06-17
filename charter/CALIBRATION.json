@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "charter_version": "1.0.0",
+  "updated_utc": null,
+  "note": "Mechanical track-record stats. Auto-updated by .claude/skills/reflection/reflect.py once calls resolve. Applied only to FUTURE runs (no look-ahead). Always shows N. Do NOT hand-edit and do NOT let it change HOUSE_VIEW.md; priors change only with human sign-off.",
+  "conviction_reliability": {
+    "HIGH": { "n": 0, "hit_rate": null },
+    "MEDIUM": { "n": 0, "hit_rate": null },
+    "LOW": { "n": 0, "hit_rate": null }
+  },
+  "forecast_error": {
+    "revenue_growth": { "n": 0, "mean_error_pct": null, "stdev_pct": null },
+    "target_vs_realized": { "n": 0, "mean_error_pct": null }
+  },
+  "named_risk_hit_rate": { "n": 0, "rate": null },
+  "blindsided_rate": { "n": 0, "rate": null }
+}

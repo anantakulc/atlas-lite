@@ -1,0 +1,30 @@
+# ── Outputs (local only) ──────────────────────────────────────────────────────
+output/
+AVGO_archive*/
+
+# ── Render / deploy (IntelliDesk-specific, not core engine) ──────────────────
+engine/render_pdf.py
+engine/render_excel.py
+deploy/
+
+# ── Run-time data (local state, not source) ───────────────────────────────────
+runs/.edgar_cache/
+runs/ledger.jsonl
+runs/industry_log.jsonl
+
+# ── Python bytecode ───────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── Frozen data bundles (large, per-run snapshots) ────────────────────────────
+*_databundle.json
+
+# ── Local Claude settings ────────────────────────────────────────────────────
+.claude/settings.local.json
+.claude/worktrees/
+
+# ── OS / editor noise ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp

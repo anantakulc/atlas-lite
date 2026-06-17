@@ -1,0 +1,16 @@
+{
+  "category": "US-AI",
+  "note": "V1 RESULTS BELOW (status:done) ARE NOW STALE — the engine was reworked to v2 (comps-first, four numbers, scenario triples; see Atlas/CLAUDE.md + METHODS.md + BATCH_RUNBOOK.md). The v2 re-run starts with AVGO (interactive, to inspect), then the rest. To re-batch via the AFK loop, reset each ticker status to 'pending'. v2 per-ticker cycle: Hermes||Pheme (freeze) -> comps_implied (street reconstruction) -> Boreas||Cassandra blind on the contested lever -> Daedalus triples -> compute -> assemble (four numbers) -> voice_clean -> score -> render -> deploy -> BUILD-VERIFY -> push if green.",
+  "queue": [
+    {"ticker": "AVGO", "status": "done", "note": "live; clean re-run optional"},
+    {"ticker": "NVDA", "status": "done", "note": "live; HOLD, FV $159 vs $211, 12m target $214; panel caught eps_ntm artifact"},
+    {"ticker": "NOW", "status": "done", "note": "live; BUY (medium), FV $118 vs $107, 12m target $123; de-rated 47%, valued on SBC-adjusted owner FCF"},
+    {"ticker": "TSM", "status": "done", "note": "live; HOLD, FV $332 (FCF)/$383 (earnings) vs $440, 12m $432; panel caught eps_ntm artifact (#3), USD/FX reconciled, Taiwan tail"},
+    {"ticker": "GEV", "status": "done", "note": "live; HOLD-cautious (near SELL), FV $524 vs $976, 12m $890, implied -8.6%; GAAP a one-off tax mirage (Prolec), priced for perfection, most overvalued in batch"},
+    {"ticker": "VST", "status": "done", "note": "live; BUY (medium), FV $177 vs $154, 12m $180, +17%; contracted AWS/Meta nuclear PPAs (deferred 2027), IG-rated, valued on adjusted FCFbg not GAAP"},
+    {"ticker": "COHR", "status": "done", "note": "live; SELL (first SELL), FV $121 vs $408, 12m $362, implied -11.2%; valuation detached (~70% above intrinsic), cash not converting (9mo OCF ~$10M); eps_ntm was non-GAAP FY27"},
+    {"ticker": "CLS", "status": "done", "note": "live; HOLD-cautious, FV $176 vs $401, 12m $373, implied -7.0%; real growth + margin expansion but EMS priced like software (~55% above intrinsic), 3 customers >10%; eps_ntm was a yfinance artifact, Q1 'compression' was a sequential artifact"},
+    {"ticker": "MU", "status": "done", "note": "live; SELL (#2), FV $140 mid-cycle vs $1077, 12m $945, implied -12.3%; cyclical peak (RSI 85, street target below price), valued memory mid-cycle; data verified REAL (crossed $1T), eps_ntm $112 was a peak annualization"},
+    {"ticker": "CBRS", "status": "done", "note": "live; HOLD-speculative (LOW conviction), FV $144 vs $215, 12m $200, implied -7.1%; pre-profit (~$1B 2026 loss), ~86% UAE-concentrated, ~93x sales; 3 feed errors corrected (EV, eps_ntm, one-off NI). BATCH COMPLETE 10/10."}
+  ]
+}
