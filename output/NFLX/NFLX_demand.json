@@ -1,0 +1,332 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "normalization_year": 2030,
+
+  "revenue_identity": "Annual Revenue = (Subscribers_M x Subscription_ARPU_monthly x 12) + Advertising_Revenue_B. Subscription ARPU is the global blended average monthly fee per paying member. Advertising revenue is modeled separately as a distinct line growing from $1.5B (2025 actual) toward a MoffettNathanson-projected $6-10B range by 2030, since ad revenue per member is economically distinct from subscription fee revenue per member and is the primary contested variable. The implied global blended ARPU shown in each year combines both subscription and advertising revenue divided by subscribers x 12 months, for comparability.",
+
+  "actuals_anchor": {
+    "year": 2025,
+    "revenue_b": 45.2,
+    "subscription_revenue_b": 43.7,
+    "advertising_revenue_b": 1.5,
+    "subscribers_m": 325,
+    "subscription_arpu_monthly_usd": 11.20,
+    "advertising_revenue_per_member_monthly_usd": 0.38,
+    "blended_arpu_monthly_usd": 11.58,
+    "operating_margin_pct": 29.5,
+    "fcf_b": 9.0,
+    "source": "Netflix 10-K FY2025 (SEC filing nflx-20251231); ad revenue from Q4 2025 earnings disclosure; FCF from quarterly sum of Q1-Q4 2025 SEC Form 8-K filings"
+  },
+
+  "base_path": [
+    {
+      "year": 2025,
+      "revenue_b": 45.2,
+      "drivers": {
+        "subscribers_m": 325,
+        "subscription_revenue_b": 43.7,
+        "advertising_revenue_b": 1.5,
+        "subscription_arpu_monthly_usd": 11.20,
+        "net_adds_m": 23,
+        "advertising_arpu_per_member_monthly_usd": 0.38
+      },
+      "note": "ACTUAL (anchor). Password-sharing crackdown largely complete. Operating margin 29.5%. FCF $9.0B. $18B content spend."
+    },
+    {
+      "year": 2026,
+      "revenue_b": 51.2,
+      "drivers": {
+        "subscribers_m": 343,
+        "subscription_revenue_b": 48.4,
+        "advertising_revenue_b": 2.8,
+        "subscription_arpu_monthly_usd": 11.75,
+        "net_adds_m": 18,
+        "advertising_arpu_per_member_monthly_usd": 0.68
+      },
+      "note": "Midpoint of Netflix 2026 guidance range ($50.7-51.7B). Base uses $51.2B. Ad revenue slightly below the $3B target to reflect Q2 2026 guidance miss risk (stock fell 4% on Q2 guidance). Subscription ARPU growth of ~4.9% driven by March 2026 US price hike (Premium to $26.99, Standard to $19.99) adding ~$1.7B annualized per JPMorgan/Citi. Net adds of 18M reflects deceleration from 23M in 2025 as crackdown tailwind is fully absorbed. Operating margin 31.5% (guided). Content spend $20B (company stated). Source: Netflix Q1 2026 earnings release (SEC ex991_q126.htm)."
+    },
+    {
+      "year": 2027,
+      "revenue_b": 57.0,
+      "drivers": {
+        "subscribers_m": 358,
+        "subscription_revenue_b": 51.5,
+        "advertising_revenue_b": 5.5,
+        "subscription_arpu_monthly_usd": 11.99,
+        "net_adds_m": 15,
+        "advertising_arpu_per_member_monthly_usd": 1.28
+      },
+      "note": "Advertising ramp accelerates: MoffettNathanson base-case projects ~$6B in 2027. Base uses $5.5B to reflect some execution risk on ad-tech buildout and upfront cycle. Subscriber growth slows to ~15M/year as UCAN matures and EMEA approaches saturation; APAC and LATAM are primary driver (India is the swing). Subscription ARPU growth slows to ~2% as mix shift (faster growth in lower-ARPU regions) partially offsets UCAN price leverage. Revenue CAGR 2026-2027: ~11.3%."
+    },
+    {
+      "year": 2028,
+      "revenue_b": 60.5,
+      "drivers": {
+        "subscribers_m": 370,
+        "subscription_revenue_b": 54.0,
+        "advertising_revenue_b": 6.5,
+        "subscription_arpu_monthly_usd": 12.16,
+        "net_adds_m": 12,
+        "advertising_arpu_per_member_monthly_usd": 1.47
+      },
+      "note": "Subscriber growth further decelerates to ~12M/year as most accessible markets are penetrated. APAC/LATAM penetration continuing but lower-ARPU nature means revenue contribution per add is limited. Advertising revenue growth moderates from 2x annual to ~18% YoY as the early-adopter advertiser base stabilizes. Price discipline in UCAN limited by churn sensitivity at $19.99-26.99 levels. Revenue CAGR 2027-2028: ~6.1%."
+    },
+    {
+      "year": 2029,
+      "revenue_b": 63.0,
+      "drivers": {
+        "subscribers_m": 380,
+        "subscription_revenue_b": 55.8,
+        "advertising_revenue_b": 7.2,
+        "subscription_arpu_monthly_usd": 12.24,
+        "net_adds_m": 10,
+        "advertising_arpu_per_member_monthly_usd": 1.58
+      },
+      "note": "Growth continues to decelerate toward normalization. Net adds of ~10M/year is an equilibrium rate reflecting organic growth from new internet-connected households in APAC (India primarily) offset by modest churn in saturated markets. Advertising CPM improvement as Netflix's measurement tools mature and linear TV budgets continue migrating. Revenue CAGR 2028-2029: ~4.1%."
+    },
+    {
+      "year": 2030,
+      "revenue_b": 65.0,
+      "drivers": {
+        "subscribers_m": 390,
+        "subscription_revenue_b": 57.8,
+        "advertising_revenue_b": 7.2,
+        "subscription_arpu_monthly_usd": 12.35,
+        "net_adds_m": 10,
+        "advertising_arpu_per_member_monthly_usd": 1.54
+      },
+      "note": "Normalization year. Revenue growth approaching GDP+ levels (~3-4% CAGR from 2029). Operating margin ~34% (consistent with 150bps/year expansion from 29.5% in 2025). Owner-FCF margin ~21-22%. Subscription revenue is essentially mature-annuity at this point; advertising is the incremental growth engine but has plateaued below the bull-case MoffettNathanson trajectory. Note: base $7.2B ad revenue by 2030 is below MoffettNathanson's $9.6B projection -- this reflects the base being the honest most-likely, not the sell-side bull. Revenue CAGR 2025-2030: ~7.5%."
+    }
+  ],
+
+  "bull_path": [
+    {
+      "year": 2025,
+      "revenue_b": 45.2,
+      "drivers": {
+        "subscribers_m": 325,
+        "subscription_revenue_b": 43.7,
+        "advertising_revenue_b": 1.5,
+        "subscription_arpu_monthly_usd": 11.20,
+        "net_adds_m": 23,
+        "advertising_arpu_per_member_monthly_usd": 0.38
+      },
+      "note": "ACTUAL -- same as base."
+    },
+    {
+      "year": 2026,
+      "revenue_b": 52.0,
+      "drivers": {
+        "subscribers_m": 345,
+        "subscription_revenue_b": 48.8,
+        "advertising_revenue_b": 3.2,
+        "subscription_arpu_monthly_usd": 11.78,
+        "net_adds_m": 20,
+        "advertising_arpu_per_member_monthly_usd": 0.77
+      },
+      "note": "Bull assumes Netflix hits the top of its 2026 guidance range ($51.7B) plus advertising slightly exceeds the $3B target. Net adds of 20M (slight beat on subscriber momentum from strong content slate). Source: Netflix 2026 guidance top end."
+    },
+    {
+      "year": 2027,
+      "revenue_b": 62.5,
+      "drivers": {
+        "subscribers_m": 363,
+        "subscription_revenue_b": 56.5,
+        "advertising_revenue_b": 6.0,
+        "subscription_arpu_monthly_usd": 12.97,
+        "net_adds_m": 18,
+        "advertising_arpu_per_member_monthly_usd": 1.38
+      },
+      "note": "Bull ad revenue: MoffettNathanson's projected $6B is achieved in 2027 (vs. base $5.5B). Netflix's live sports calendar (NFL Christmas Day, WWE, MLB, international cricket/soccer expansion) drives above-trend engagement and ad demand from sports marketers migrating from linear TV. ARPU growth of ~3% in UCAN driven by another price cycle possible in late 2026."
+    },
+    {
+      "year": 2028,
+      "revenue_b": 70.0,
+      "drivers": {
+        "subscribers_m": 378,
+        "subscription_revenue_b": 62.5,
+        "advertising_revenue_b": 7.5,
+        "subscription_arpu_monthly_usd": 13.77,
+        "net_adds_m": 15,
+        "advertising_arpu_per_member_monthly_usd": 1.66
+      },
+      "note": "Bull 2028: advertising CPMs improve toward linear TV equivalency ($40-65 CPM) as Netflix's ad measurement matures and its own ad server (replacing Microsoft's) reduces the fee take-rate. Subscription ARPU benefits from EMEA price increases and UCAN premium tier growth. Net adds hold at 15M as India penetration accelerates."
+    },
+    {
+      "year": 2029,
+      "revenue_b": 76.0,
+      "drivers": {
+        "subscribers_m": 390,
+        "subscription_revenue_b": 66.5,
+        "advertising_revenue_b": 9.5,
+        "subscription_arpu_monthly_usd": 14.20,
+        "net_adds_m": 12,
+        "advertising_arpu_per_member_monthly_usd": 2.03
+      },
+      "note": "Bull 2029: approaching MoffettNathanson's $9.6B 2030 target one year early. Netflix has successfully onboarded streaming TV programmatic buying, becoming one of three dominant video ad platforms alongside YouTube and Amazon. Live event advertising (NFL, WWE) commands premium CPMs."
+    },
+    {
+      "year": 2030,
+      "revenue_b": 80.0,
+      "drivers": {
+        "subscribers_m": 400,
+        "subscription_revenue_b": 70.0,
+        "advertising_revenue_b": 10.0,
+        "subscription_arpu_monthly_usd": 14.58,
+        "net_adds_m": 10,
+        "advertising_arpu_per_member_monthly_usd": 2.08
+      },
+      "note": "Bull normalization: $10B advertising business (MoffettNathanson high end; slightly above their $9.6B) plus 400M subscribers. Operating margin ~38%. Revenue CAGR 2025-2030: ~12.1%. This ceiling check: 400M subscribers is 47% of Netflix's stated 850M-home TAM lower bound -- physically plausible. Ad revenue of $10B at 400M subscribers implies $25/year per subscriber from advertising, or $2.08/month. For context: YouTube generates ~$12-15/month per monetized viewer from advertising -- so Netflix at $2.08 per paying member implies far lower ad density (reasonable given Netflix's premium/intentional viewing environment vs. YouTube's algorithmic always-on model). WITHIN CEILING."
+    }
+  ],
+
+  "bear_path": [
+    {
+      "year": 2025,
+      "revenue_b": 45.2,
+      "drivers": {
+        "subscribers_m": 325,
+        "subscription_revenue_b": 43.7,
+        "advertising_revenue_b": 1.5,
+        "subscription_arpu_monthly_usd": 11.20,
+        "net_adds_m": 23,
+        "advertising_arpu_per_member_monthly_usd": 0.38
+      },
+      "note": "ACTUAL -- same as base."
+    },
+    {
+      "year": 2026,
+      "revenue_b": 50.5,
+      "drivers": {
+        "subscribers_m": 340,
+        "subscription_revenue_b": 48.0,
+        "advertising_revenue_b": 2.5,
+        "subscription_arpu_monthly_usd": 11.76,
+        "net_adds_m": 15,
+        "advertising_arpu_per_member_monthly_usd": 0.61
+      },
+      "note": "Bear 2026: revenue at the bottom of guidance range ($50.7B). Advertising slightly misses $3B target as Q2 2026 guidance miss signals early caution. Subscriber net adds of 15M (below the 18-20M consensus) as UCAN softness and LATAM FX headwind combine."
+    },
+    {
+      "year": 2027,
+      "revenue_b": 52.5,
+      "drivers": {
+        "subscribers_m": 348,
+        "subscription_revenue_b": 50.0,
+        "advertising_revenue_b": 2.5,
+        "subscription_arpu_monthly_usd": 11.96,
+        "net_adds_m": 8,
+        "advertising_arpu_per_member_monthly_usd": 0.60
+      },
+      "note": "Bear 2027: advertising growth stalls -- YouTube maintains dominance in streaming video ad budgets (its 12.7% viewing share dwarfs Netflix's 9.0%), CPMs disappoint, and Netflix's ad-tech migration away from Microsoft proves bumpy. Subscriber net adds of only 8M as a price hike cycle (UCAN) meets elevated churn from already-high prices ($19.99-$26.99). Disney+'s integration with Hulu creates a ~180M subscriber combined platform that competes aggressively for UCAN-market share. Revenue CAGR 2026-2027: ~3.9%."
+    },
+    {
+      "year": 2028,
+      "revenue_b": 53.5,
+      "drivers": {
+        "subscribers_m": 350,
+        "subscription_revenue_b": 50.5,
+        "advertising_revenue_b": 3.0,
+        "subscription_arpu_monthly_usd": 12.00,
+        "net_adds_m": 2,
+        "advertising_arpu_per_member_monthly_usd": 0.71
+      },
+      "note": "Bear 2028: near-zero subscriber growth. Advertising recovers modestly to $3B as Netflix rolls back the failed ad-tech migration and returns to a simplified programmatic model, but cannot match YouTube's scale economies. Content spend must increase to defend against Disney/Amazon competitive pressure -- margin expansion stalls at 30-31%, no further improvement. Revenue CAGR 2027-2028: ~1.9%."
+    },
+    {
+      "year": 2029,
+      "revenue_b": 55.0,
+      "drivers": {
+        "subscribers_m": 353,
+        "subscription_revenue_b": 51.5,
+        "advertising_revenue_b": 3.5,
+        "subscription_arpu_monthly_usd": 12.15,
+        "net_adds_m": 3,
+        "advertising_arpu_per_member_monthly_usd": 0.83
+      },
+      "note": "Bear 2029: slow recovery as Netflix stabilizes. A new content cycle (Stranger Things revival, major IP sequel) drives modest subscriber recovery. Advertising builds slowly but remains constrained by YouTube's dominant share. Revenue CAGR 2028-2029: ~2.8%."
+    },
+    {
+      "year": 2030,
+      "revenue_b": 56.5,
+      "drivers": {
+        "subscribers_m": 355,
+        "subscription_revenue_b": 52.5,
+        "advertising_revenue_b": 4.0,
+        "subscription_arpu_monthly_usd": 12.32,
+        "net_adds_m": 2,
+        "advertising_arpu_per_member_monthly_usd": 0.94
+      },
+      "note": "Bear normalization: effectively flat from 2026 revenue. Operating margin ~30% (no expansion from 2026 levels as content spend inflation eats gains). FCF margin ~18-19%. Revenue CAGR 2025-2030: ~4.6%. This bear is NOT a collapse -- Netflix at $56.5B and 355M subscribers is still the dominant streaming platform -- but it implies near-zero real earnings growth from 2026 forward, which would be a significant disappointment relative to the ~25x P/E the market currently awards."
+    }
+  ],
+
+  "ceiling_check": {
+    "base_implied_subscribers_2030": 390,
+    "bull_implied_subscribers_2030": 400,
+    "bear_implied_subscribers_2030": 355,
+    "addressable_ceiling": "700-850 million broadband-connected households globally ex-China (per Netflix CFO Spencer Neumann; also consistent with academic estimates of global internet-connected TV households by 2030). Source: IndiWire/Netflix CFO interview (https://www.indiewire.com/features/general/netflix-subscribers-guidance-broadband-cell-phones-1234708470/).",
+    "base_within_ceiling": true,
+    "bull_within_ceiling": true,
+    "bear_within_ceiling": true,
+    "base_implied_penetration_of_floor_ceiling": "390M / 700M = 55.7% penetration of the lower bound of the addressable ceiling -- stretched but not implausible given Netflix's current 38% penetration and the secular growth of broadband connectivity in APAC/LATAM",
+    "bull_implied_penetration_of_floor_ceiling": "400M / 700M = 57.1% -- toward the upper end of credible 2030 penetration; requires India and Southeast Asia to deliver at high end of growth expectations",
+    "advertising_ceiling_check": {
+      "base_ad_revenue_2030": 7.2,
+      "bull_ad_revenue_2030": 10.0,
+      "bear_ad_revenue_2030": 4.0,
+      "sourced_ceiling": "MoffettNathanson projects $9.6B by 2030 as its base/bull estimate. The US linear TV ad market was ~$60B in 2024; the total streaming video ad market is growing to $40-60B by 2030 across all platforms. Netflix at $10B would represent ~15-20% of the projected total streaming video ad market -- achievable given 9% US TV viewing share but requires capturing a disproportionate revenue share vs. YouTube.",
+      "base_within_sourced_ceiling": true,
+      "bull_within_sourced_ceiling": true,
+      "source": "MoffettNathanson April 2026 Netflix note (ainvest.com summary); US linear TV market data"
+    }
+  },
+
+  "bias_check": {
+    "subscriber_growth": "Base 390M (2030) vs. consensus ~350-380M: base is at the upper end of the consensus range -- not stacked conservative but also not aggressive. NEUTRAL.",
+    "arpu_subscription": "Base $12.35/month (2030) vs. 2025 actual $11.20 -- implies ~2% CAGR. This is conservative vs. historical UCAN pricing momentum but reflects mix-shift headwind from APAC/LATAM growth. SLIGHTLY CONSERVATIVE -- watch for stacking.",
+    "advertising_revenue": "Base $7.2B (2030) vs. MoffettNathanson $9.6B: base is below the primary named sell-side projection. This may introduce a slight conservative lean. MILDLY CONSERVATIVE.",
+    "operating_margin": "Base 34% (2030) vs. MoffettNathanson 40%: base is well below the sell-side projection. CONSERVATIVE -- but arguably correct given the historical pace of ~250-300bps/year expansion (29.5% in 2025 + 250bps/year x 5 years = 41.5% would be too high; 34% implies only 150bps/year, which is more cautious than the trend).",
+    "stacked_bias_audit": "Subscription ARPU is mildly conservative (mix-shift headwind acknowledged), advertising revenue is mildly conservative (below MoffettNathanson), and operating margin is conservative vs. sell-side. Three mild conservative leans -- approaching the §1.3 threshold of three same-direction leans constituting a bias. Daedalus should be aware. The base may be slightly too low on advertising and margin. However, these choices reflect genuine uncertainty about the advertising ramp (not yet contracted past 2026) and the subscriber saturation dynamic, so each is individually defensible. Flagged for Daedalus to review and not compound further."
+  },
+
+  "sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000034/nflx-20251231.htm",
+      "note": "Netflix 10-K FY2025: 2025 actuals ($45.2B revenue, 29.5% margin, $9.0B FCF, 325M members, $18B content spend)"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+      "note": "Netflix Q1 2026 earnings: 2026 guidance $50.7-51.7B revenue, 31.5% operating margin; regional subscribers: UCAN 89.6M, EMEA 101.1M, APAC 57.5M, LATAM 53.3M"
+    },
+    {
+      "url": "https://businesstats.com/netflix-monthly-streaming-revenue-per-customer/",
+      "note": "Netflix ARPU history 2023-2025 by region; global $11.95 in 2025"
+    },
+    {
+      "url": "https://www.ainvest.com/news/netflix-streaming-dominance-big-boost-moffettnathanson-upgrades-price-target-1-150-2504/",
+      "note": "MoffettNathanson: ad revenue ~$6B in 2027, ~$9.6B by 2030; operating margin 40% target by 2030"
+    },
+    {
+      "url": "https://medium.com/@thekeyword/netflix-ad-revenue-more-than-doubled-to-1-5-billion-in-2025-1da44715751f",
+      "note": "$1.5B Netflix ad revenue 2025; 190M ad-tier MAUs; Netflix targets $3B in 2026"
+    },
+    {
+      "url": "https://www.financialcontent.com/article/marketminute-2026-4-1-netflixs-pricing-power-unleashed-analysts-project-17-billion-revenue-surge-as-premium-tier-hits-2699",
+      "note": "JPMorgan/Citi: March 2026 US price hikes add ~$1.7B annualized revenue; Premium tier to $26.99, Standard to $19.99"
+    },
+    {
+      "url": "https://www.indiewire.com/features/general/netflix-subscribers-guidance-broadband-cell-phones-1234708470/",
+      "note": "Netflix CFO Neumann: 700M-1B home TAM (ex-China); ceiling calculation basis"
+    },
+    {
+      "url": "https://bleedingcool.com/tv/netflix-wraps-2025-with-325m-subscribers-20b-for-content-in-2026/",
+      "note": "Netflix content spend: $18B in 2025, $20B in 2026; 1.1x cash-to-amortization ratio"
+    },
+    {
+      "url": "https://adwave.com/resources/most-watched-streaming-service-q4-2025",
+      "note": "Nielsen December 2025: Netflix 9.0% vs YouTube 12.7% US TV viewing share -- competitive context for advertising market size"
+    }
+  ]
+}

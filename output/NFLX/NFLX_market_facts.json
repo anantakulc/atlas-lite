@@ -1,0 +1,265 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "price": 77.84,
+  "price_source": "stockanalysis.com, Jun 17 2026",
+  "price_52w_high": 134.12,
+  "price_52w_low": 75.01,
+  "price_vs_52w_high_pct": -41.9,
+  "consensus": {
+    "target_mean": 114.15,
+    "target_high": 151.40,
+    "target_low": 80.00,
+    "n_analysts": 50,
+    "rating": "Buy (Moderate Buy)",
+    "rating_breakdown": {
+      "strong_buy": 29,
+      "buy": 8,
+      "hold": 13,
+      "sell": 0,
+      "strong_sell": 0
+    },
+    "eps_ntm_bundle": null,
+    "eps_ntm_verified": 3.59,
+    "eps_ntm_source": "stockanalysis.com consensus FY2026, Jun 17 2026",
+    "eps_ntm_range_low": 3.19,
+    "eps_ntm_range_high": 3.96,
+    "forward_pe_on_clean_eps": 21.7,
+    "artifact_flag": "ARTIFACT: Q1 2026 reported GAAP EPS of $1.23 was inflated by a $2.8 billion one-time termination fee paid by Paramount/Skydance to Netflix when their Warner Bros. Discovery acquisition agreement collapsed in February 2026. The underlying Q1 operating EPS was approximately $0.76-$0.79, in line with the pre-earnings consensus. Trailing GAAP EPS ($3.10 per stockanalysis.com) carries this one-off and overstates run-rate earnings. The correct NTM forward EPS for valuation purposes is the consensus forward estimate of approximately $3.59 (FY2026). A forward PE of ~21.7x (on $3.59) is the clean multiple. The Simply Wall St source showed a 2027 EPS of $26.17 -- this is a data artifact, likely a split-adjusted legacy figure; the correct 2027 consensus is approximately $3.84-$3.92."
+  },
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2026-06-17",
+      "firm": "Moffett Nathanson",
+      "action": "cut",
+      "old_pt": 120,
+      "new_pt": 115,
+      "rating_change": "Buy (maintained)",
+      "note": "Target trimmed; ongoing deceleration in growth trajectory and competitive pressure cited."
+    },
+    {
+      "date": "2026-06-16",
+      "firm": "Bank of America Securities",
+      "action": "downgrade",
+      "old_pt": 125,
+      "new_pt": null,
+      "rating_change": "Buy -> Hold",
+      "note": "Analyst Jessica Reif Ehrlich downgraded after maintaining Buy with $125 target as recently as May 18. Specific rationale not disclosed in public release; coincides with 24% stock decline since Q1 earnings, insider selling, and leadership transition. First downgrade after sustained bullish stance."
+    },
+    {
+      "date": "2026-06-10",
+      "firm": "Jefferies",
+      "action": "cut",
+      "old_pt": 128,
+      "new_pt": 110,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst James Heaney reduced target citing reduced outlook; stock down ~24% since Q1 print. Implies 37% further downside from the cut level, despite Buy rating."
+    },
+    {
+      "date": "2026-06-04",
+      "firm": "Bernstein (Sanford C. Bernstein)",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 110,
+      "rating_change": "Outperform (maintained)",
+      "note": "Maintained stance; analyst Laurent Yoon holds $110 target."
+    },
+    {
+      "date": "2026-05-29",
+      "firm": "Barclays",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 110,
+      "rating_change": "Hold/Equal-Weight (maintained)",
+      "note": "Neutral stance maintained at $110."
+    },
+    {
+      "date": "2026-05-18",
+      "firm": "Bank of America Securities",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 125,
+      "rating_change": "Buy (maintained, prior to Jun 16 downgrade)",
+      "note": "Analyst Jessica Reif Ehrlich reiterated Buy at $125 on advertising momentum. Subsequently downgraded to Hold on Jun 16."
+    },
+    {
+      "date": "2026-05-15",
+      "firm": "Canaccord Genuity",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 125,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst Maria Ripps maintained $125 target."
+    },
+    {
+      "date": "2026-05-15",
+      "firm": "Guggenheim",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 120,
+      "rating_change": "Buy (maintained)",
+      "note": "Sustained bullish positioning; maintained at $120 after April cut from $130."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Guggenheim",
+      "action": "cut",
+      "old_pt": 130,
+      "new_pt": 120,
+      "rating_change": "Buy (maintained)",
+      "note": "Post-Q1 cut; analyst Michael Morris cited 'beat and maintain' as falling short of investor expectations; Q2 revenue growth decelerating to ~12% YoY from 14%."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Oppenheimer",
+      "action": "cut",
+      "old_pt": 135,
+      "new_pt": 120,
+      "rating_change": "Outperform (maintained)",
+      "note": "Reduced valuation expectations while keeping positive stance."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Barclays",
+      "action": "cut",
+      "old_pt": 115,
+      "new_pt": 110,
+      "rating_change": "Equal-Weight (maintained)",
+      "note": "Slight target reduction amid market recalibration following Q1 earnings."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Piper Sandler",
+      "action": "raise",
+      "old_pt": 103,
+      "new_pt": 115,
+      "rating_change": "Overweight (maintained)",
+      "note": "Raised price objective reflecting improved near-term prospects despite Q1 beat-and-maintain."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Rosenblatt",
+      "action": "cut",
+      "old_pt": 96,
+      "new_pt": 95,
+      "rating_change": "Neutral (maintained)",
+      "note": "Minimal downward adjustment; concerned about short-form competition."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "MoffettNathanson",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 120,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst Robert Fishman; unchanged margin guidance despite WBD deal exit; InterPositive acquisition offsets deal cost savings."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "TD Cowen",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 112,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst John Blackledge; Q2 guidance below consensus on content timing; U.S. price hikes expected to benefit Q3+."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Evercore ISI",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 115,
+      "rating_change": "Outperform (maintained)",
+      "note": "Analyst Mark Mahaney; Netflix remains 'high-quality compounder'; ad revenue on track to double; engagement metrics at all-time high."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "BMO Capital Markets",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 135,
+      "rating_change": "Outperform (maintained)",
+      "note": "Analyst Brian Pitz; 2026 on track; gaming and podcasts drive engagement; 60% of new ad-tier subscribers."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Wedbush",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 118,
+      "rating_change": "Outperform (maintained)",
+      "note": "Analyst Alicia Reese; price increases could boost profitability; strong H2 runway expected."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Pivotal Research Group",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 96,
+      "rating_change": "Hold (maintained)",
+      "note": "Analyst Jeffrey Wlodarczak; lowered subscriber estimates, raised ARPU forecast; concerned about short-form competition and FAST channels."
+    },
+    {
+      "date": "2026-04-06",
+      "firm": "Goldman Sachs",
+      "action": "upgrade",
+      "old_pt": 100,
+      "new_pt": 120,
+      "rating_change": "Neutral -> Buy",
+      "note": "Pre-earnings upgrade; analyst Eric Sheridan cited more favorable risk-reward profile and improving ad delivery and targeting infrastructure."
+    }
+  ],
+  "street_thesis_one_line": "Netflix is a durable content platform transitioning into a two-sided advertising business; the bull case rests on advertising revenue reaching $3 billion in 2026 and scaling further, combined with operating leverage from the existing ~330 million subscriber base, which together drive earnings at a faster rate than revenue.",
+  "whats_priced_in": "At $77.84, the market prices forward earnings of ~$3.59 at approximately 21.7x, a meaningful de-rating from the 30x+ multiples seen at the June 2025 peak of $134. The implied multiple reflects: (1) deceleration from the password-sharing-crackdown-driven growth surge of 2023-2024; (2) skepticism that advertising scales fast enough to compensate for maturing membership growth; and (3) governance discount for Reed Hastings' board departure. The consensus target of $114 at 31x forward earnings implies the street expects a re-rate back toward prior multiples as advertising scales, but the market itself currently demands evidence before paying for that re-rate.",
+  "news_narrative": "Netflix beat Q1 2026 revenue ($12.25B vs $12.18B consensus) and reported headline EPS of $1.23, but the beat was contaminated: $2.8 billion of the net income came from a one-time termination fee paid by Paramount/Skydance after the Warner Bros. Discovery acquisition agreement collapsed. Underlying operating EPS was approximately $0.76-$0.79, in line with expectations. Management maintained full-year 2026 guidance ($50.7-$51.7B revenue, 31.5% operating margin) without raising it. Q2 guidance for 13% revenue growth came in slightly below the street's 13.5%+ expectation. The stock fell 9-10% on the day -- a textbook beat-but-no-raise reaction on a name priced for upward revisions. A secondary shock was Reed Hastings announcing his board departure (Jay Hoag appointed chairman). Since the April print, the stock has declined a further 15-17% to $77-78, representing a 42% drawdown from the June 2025 all-time high. Subsequent catalysts driving the post-Q1 decline include: continued insider selling (CLO David Hyman sold $504k in shares), BofA downgrade to Hold (Jun 16), and target cuts from Jefferies and Moffett Nathanson in June. Institutional investors (Marsico Capital, Rothschild, Liberty One) have been accumulating on the dip, providing a floor. Q2 2026 earnings expected July 16.",
+  "sentiment_narrative": "Retail sentiment on Stocktwits shifted to 'extremely bearish' by mid-June 2026, with message volume down 85% over 30 days -- indicating disengagement rather than active short conviction. Institutional behavior diverges sharply: multiple long-only funds increased stakes in Q1 2026. Options market showed moderate bearish skew as of June 12. Insider selling (CLO shares) adds a modest negative signal. The bear/bull split by count: 13 Hold, 36 Buy/Strong Buy, 0 Sell across 50 analysts -- so the sell-side consensus remains constructive even as targets have been trimmed. This is a sentiment dislocation: retail bears vs. institutional accumulators, with the street holding a Buy consensus at a 47% implied upside from current price.",
+  "runway": "At $77.84 and 21.7x forward earnings, NFLX trades 42% below its June 2025 peak and roughly 32% below its consensus analyst target. The near-term runway for re-rating requires: (1) Q2 earnings (July 16) without further guidance disappointment; (2) evidence that advertising revenue is tracking toward the $3B 2026 target; (3) resolution of the Reed Hastings board transition without strategic drift. Content spend of $20 billion in 2026 (10% YoY increase) is the key fixed cost commitment. No subscriber count is disclosed quarterly, increasing uncertainty.",
+  "runway_verdict": "The fundamental runway is intact -- 325+ million subscribers, 12-14% revenue growth, 31.5% operating margin target, and an advertising business that grew advertiser count 70% YoY in Q1. The valuation risk is separate: at the current 21.7x forward PE the stock is no longer obviously expensive, but re-rating to consensus levels (~31x) requires advertising to scale as promised and Q2 not to disappoint again. A second consecutive guidance miss would test the 52-week low of $75.01. The valuation risk and fundamental risk are currently decoupled: the business is healthy, the stock is under pressure from expectations management, not from fundamental deterioration.",
+  "market_lean": "neutral to slightly bullish (fundamentals)",
+  "market_lean_strength": "moderate",
+  "market_lean_note": "Fundamental evidence (subscriber scale, revenue growth, margin, ad trajectory) leans bull. Market price action and sentiment lean bear. The reconciled read is neutral-to-slightly-bullish on fundamentals, with a clear valuation risk caveat: the re-rating from 21x to 31x (the consensus-implied multiple) is not certain and requires execution on advertising. The bear case is expectations/valuation, not a broken business.",
+  "capex_guidance": [
+    {
+      "buyer": "Netflix",
+      "fy": 2026,
+      "capex_guide": "$20 billion cash content spend",
+      "incl_finance_leases": false,
+      "quote": "Netflix has pegged its cash content budget at $20 billion for 2026, representing a 10% increase from the prior year. Co-CEO Ted Sarandos highlighted this spending in a blog post discussing Netflix's economic and cultural impact. A significant portion is earmarked for live events including expanded NFL broadcasting rights and WWE Raw.",
+      "source_url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-3-27-the-20-billion-content-war-netflix-hikes-prices-again-in-bold-pursuit-of-50-billion-revenue-goal",
+      "note": "Content spend is amortization-based; management guided cash content spend to amortization ratio of ~1.1x in 2026, with content amortization growth of ~10%, higher in H1 vs H2."
+    },
+    {
+      "buyer": "Netflix",
+      "fy": 2026,
+      "capex_guide": "$3 billion advertising revenue target",
+      "incl_finance_leases": false,
+      "quote": "CFO Spencer Neumann: 'We continue to expect to deliver that $3 billion in advertising revenue this year.' Advertising tier represented over 60% of new sign-ups in advertising countries in Q1 2026, with advertiser count up 70% YoY to more than 4,000. Programmatic buying projected to exceed 50% of non-live ad revenue.",
+      "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-netflix-beats-q1-2026-eps-estimates-stock-dips-93CH-4619468",
+      "note": "Advertising revenue roughly doubling YoY (2025 base ~$1.5B implied). This is demand-side, not capex -- included here as a key forward revenue driver Theia should model."
+    },
+    {
+      "buyer": "Netflix",
+      "fy": 2026,
+      "capex_guide": "Free cash flow $8 billion",
+      "incl_finance_leases": false,
+      "quote": "The $20 billion content budget for 2026 is being funded through Netflix's strong free cash flow of approximately $8 billion without taking on significant new debt.",
+      "source_url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-3-27-the-20-billion-content-war-netflix-hikes-prices-again-in-bold-pursuit-of-50-billion-revenue-goal",
+      "note": "FCF guidance from management; confirms content spend is operating cash flow funded, not levered."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/nflx/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/NFLX/forecast/",
+    "https://www.hollywoodreporter.com/business/business-news/netflix-stock-q1-2026-earnings-analysts-1236567345/",
+    "https://variety.com/2026/tv/news/netflix-earnings-q1-2026-1236723851/",
+    "https://deadline.com/2026/04/netflix-q1-2026-earnings-wall-street-1236863099/",
+    "https://www.tikr.com/blog/netflix-stock-fell-9-7-after-q1-2026-earnings-what-a-191-target-means-for-investors",
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-netflix-beats-q1-2026-eps-estimates-stock-dips-93CH-4619468",
+    "https://finance.yahoo.com/markets/stocks/articles/nflx-stock-down-40-time-034851990.html",
+    "https://www.theglobeandmail.com/investing/markets/stocks/NFLX-Q/pressreleases/2505820/bank-of-america-securities-downgrades-netflix-nflx-to-a-hold/",
+    "https://simplywall.st/stocks/us/media/nasdaq-nflx/netflix/future",
+    "https://markets.financialcontent.com/stocks/article/marketminute-2026-3-27-the-20-billion-content-war-netflix-hikes-prices-again-in-bold-pursuit-of-50-billion-revenue-group-50-billion-revenue-goal",
+    "https://247wallst.com/companies/nflx/earnings/2026/Q1",
+    "https://www.gurufocus.com/news/8914299/netflix-nflx-stock-shows-moderate-bearish-sentiment-amid-steady-options-activity"
+  ]
+}

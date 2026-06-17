@@ -1,0 +1,84 @@
+{
+  "valuation_headline": {
+    "current_price": 77.84,
+    "fair_value_today": 55.52,
+    "target_12m": 59.95,
+    "fair_value_12m": 61.24,
+    "band_low": 29.76,
+    "band_high": 80.12,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 55.52,
+      "multiple": 18.5,
+      "multiple_label": "EV/NTM NOPAT",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 77.84,
+      "multiple": 25.8,
+      "multiple_label": "EV/NTM NOPAT",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 61.24,
+      "basis": "#1 rolled forward at r=10.3% less dividend 0.0",
+      "convergence_return_pct": -21.3
+    },
+    "target_12m": {
+      "value": 59.95,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "P/E",
+        "defensible_multiple": 16.7,
+        "forward_metric_label": "FY2026 EPS (clean consensus)",
+        "forward_metric_value": 3.59,
+        "multiple_rationale": "16.7x P/E on FY2026 clean EPS of $3.59 = $59.91/share target. This is equivalent to 20x EV/NOPAT on $12.9B NTM NOPAT (EV $258B - net debt $5.4B = equity $252.6B / 4.211B shares = $59.97), confirming the two lenses converge. #4 target of ~$60 is derived from #3 ($61.24 fair value 12m) with a slight downward lean from documented judgment. Rationale for 16.7x forward P/E (vs. current 21.7x): (1) The current 21.7x already reflects ~42% YoY EPS growth from $2.53 (FY2025) to $3.59 (FY2026 consensus). If the multiple compresses from 21.7x toward 16-17x as growth decelerates post-2026, the stock converges toward $60 even as earnings grow. (2) Our base fair value today ($55.52) divided by forward EPS ($3.59) = 15.5x -- the 16.7x target is slightly generous vs. pure intrinsic convergence, reflecting that Netflix at 16-17x P/E on 13% revenue growth is reasonably valued if execution on 2026 advertising holds. (3) Per CONTRACT METHODS.md, the target is #3 leaned by documented judgment: a CONTRACTED bull moves the target UP; an OBSERVABLE bear moves it DOWN. The 2026 advertising at $3B is management-guided (CONTRACTED) and does not change our base (already incorporated). OBSERVABLE bears: BofA downgrade to Hold (Jun 16), insider selling (CLO), Reed Hastings board departure. These dampen re-rating probability. Net: lean is DOWN to 16.7x P/E = ~$60 target vs. #3 of $61.24. The gap is minimal because the evidence is balanced. The 21.7x -> 16.7x multiple compression is the structural finding: the market is pricing ~22x forward P/E on a decelerating growth story; our base says 16-17x is the honest steady-state multiple for this revenue trajectory.",
+        "price": 59.95
+      },
+      "implied_12m_total_return_pct": -23.0
+    }
+  },
+  "street_reconstruction": {
+    "currency": "EV/NOPAT",
+    "what_price_implies": "At 25.4x NTM NOPAT (FY2026E), the current price implies a ~9.7% earnings CAGR for 10y (then 4% terminal) at r=10.3%.",
+    "what_street_implies": "The street mean target implies ~14.8% for 10y.",
+    "history_anchor": "Netflix traded at 30-40x EV/NOPAT during the 2020-2021 growth peak (pre-correction), fell to 15-20x during the 2022 crash when subscriber growth stalled, and recovered to 25-35x in 2023-2025 as the password-crackdown drove subscriber reacceleration. The current 26x (EV $336B / NTM NOPAT $12.9B) is at the low end of the post-correction trading range, reflecting the Q1 2026 'beat-but-no-raise' disappointment and BofA downgrade. Historical context: Netflix at $78 is -42% from the $134 June 2025 all-time high (post-split basis). Source: market_facts.json, databundle.json.",
+    "contested_lever": "Advertising revenue trajectory 2027-2030 (the crux per Theia): bears argue YouTube's 12.7% vs. Netflix's 9.0% US viewing share makes it structurally disadvantaged for advertiser budgets; bulls argue Netflix's premium, appointment-viewing environment commands premium CPMs ($40-65) that make share of viewership less relevant than CPM quality. This is the lever that differentiates base ($7.2B by 2030) from bull ($10B) from bear ($4B)."
+  },
+  "street_target": {
+    "mean": 114.15,
+    "mean_multiple": 37.3,
+    "mean_implied_growth_pct": 14.8,
+    "high": 151.4,
+    "return_pct": 46.6,
+    "n_analysts": 50
+  },
+  "rating": {
+    "action": "SELL",
+    "tone": "negative",
+    "implied_12m_total_return_pct": -23.0,
+    "convergence_return_pct": -21.3,
+    "street_return_pct": 46.6,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "LOW",
+    "path_confidence": "MEDIUM",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "MEDIUM",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CORRECTED",
+    "band_ratio": 0.907,
+    "caps_applied": [],
+    "basis": "action SELL: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {},
+  "bridge_logic": "#1 fair value today 55.52 -> #3 fair value 12m 61.24 (x(1+0.103) - div 0.0); #4 target 12m 59.95 (defensible_multiple); implied return to #4 = -23.0%, to #3 = -21.3%, to street mean 114.15 = 46.6%"
+}

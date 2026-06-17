@@ -1,0 +1,98 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "role": "bull",
+  "bull_value_per_share": 96.05,
+  "base_value_per_share": 55.52,
+  "swing_vs_base": 40.53,
+  "scenario_spec": {
+    "nopat_T_b": 24.96,
+    "g_lt": 0.06,
+    "roic": 0.45,
+    "r": 0.098,
+    "interim_fcf_pv_b": 53.144,
+    "exit_multiple": 22.81,
+    "discount_factor": 1.5959,
+    "implied_ev_b": 409.889,
+    "engine_file": "/tmp/nflx_bull_result.json",
+    "derivation": "Revenue $80.0B (Theia demand.json bull_path 2030) x 38% operating margin x 0.82 (1-18% tax) = $24.96B NOPAT. g_LT=6% vs base 5%: a $10B advertising business compounding at 10-12%/year post-2030 lifts the blended long-run growth rate above GDP. ROIC=45% vs base 40%: ad revenue is near-zero incremental capital, raising system ROIC. r=9.8% vs base 10.3%: 4,000+ active advertisers (up 70% YoY per Q1 2026 10-Q), multi-year sports rights (WWE 10-year $5B deal, NFL, MLB), and contracted 2026 ad revenue (~$3B guided, CFO Q1 2026 earnings call) reduce cash flow volatility vs the pure subscription model. Interim FCF PV $53.14B reflects bull revenue path (FCF tracks operating income at ~70-80% conversion as content spend stabilizes)."
+  },
+  "key_debates": [
+    {
+      "debate": "Advertising Revenue: Can Netflix Build a $9.6-10B Ad Business by 2030, and Does Success Re-Rate the Terminal Multiple?",
+      "is_crux": true,
+      "bull_view": "The advertising thesis rests on three specific, observable mechanisms: (1) Netflix's own ad tech server (launched 2025, replacing Microsoft/Xandr) eliminates the 30-40% fee take-rate on CPMs, adding directly to realized revenue per impression -- the ad server transition is already in production and was cited on the Q1 2026 earnings call as the enabler of programmatic scale; (2) Programmatic buying exceeded 50% of non-live ad revenue by Q1 2026 per the CFO earnings call -- this is the distribution channel that scales without proportional sales headcount; (3) 190 million monthly ad-tier viewers and 4,000+ active advertisers (up 70% YoY per Q1 2026 10-Q) give Netflix a measurable premium video audience second only to YouTube's 12.7% US TV viewing share, with Netflix at 9.0% (Nielsen December 2025). The bull case is that Netflix builds the second-largest premium video ad platform in the US after YouTube, capturing roughly 15-20% of the projected $40-60B total streaming video ad market by 2030. MoffettNathanson projects $9.6B by 2030 in its base. The base here ($7.2B) is below this. At $10B in ad revenue, operating margin reaches 38% vs base's 36%, because incremental ad revenue has near-zero content cost -- the content is already paid for in the subscription model. The arithmetic: $10.0B vs $7.2B = $2.8B more ad revenue x 38% margin x 0.82 = $0.87B more NOPAT at 2030. But the deeper value driver is the multiple, not the NOPAT level: a $10B advertising business growing at 10%+ per year post-2030 justifies g_LT=6% vs the base's 5% (every $1B of high-growth ad revenue mixed into a maturing subscription base raises the blended long-run rate). At g_LT=6%, ROIC=45%, r=9.8%, the Gordon exit multiple rises from 16.51x to 22.81x. This g_LT re-rate alone (isolating it at base NOPAT) is worth +$23.70/share. Live sports as appointment-viewing catalyst: the WWE Raw deal ($500M/year, 10-year term) and NFL Christmas Day games are structurally distinct from VOD content -- they generate live ad demand at $40-65 CPM (vs $15-25 CPM for VOD per industry data in Theia crux.json), and they drive same-day spikes in new subscriber and advertiser sign-ups. These events convert ad-tier viewers into high-CPM opportunities Netflix did not have in the 2022-2024 period when the ad business was nascent. The ceiling check: Theia demand.json confirms $10B ad revenue is within the sourced ceiling (MoffettNathanson $9.6B cited; 400M subscribers with $25/year advertising per subscriber, vs YouTube's $12-15/month per monetized viewer -- Netflix at $2.08/month per paying member is a fraction of YouTube density and physically plausible). The base under-counts this because $7.2B by 2030 requires advertising to DECELERATE from 2x annual growth (2025-2026) to below 20% per year from 2027 onward, which is conservative given the still-early stage of CPM maturation and the untapped upfront advertiser cycle (Netflix achieved 'sufficient scale' in all 12 advertising markets in 2025, unlocking upfront sales for the first time).",
+      "what_would_change_our_mind": "Ad revenue below $4B by 2028 would signal the CPM gap vs YouTube is not closing and linear TV budget migration is going to Google/Amazon, not Netflix. The specific tell: MoffettNathanson's semi-annual ad revenue estimate revisions and the Netflix ad upfront season commitment levels (not yet public; first disclosed in annual report).",
+      "worth_per_share": 40.53,
+      "worth_per_share_decomposed": {
+        "nopat_lift_only": 1.99,
+        "g_lt_re_rate_5_to_6_pct": 11.47,
+        "roic_lift_40_to_45_pct": 1.13,
+        "r_compression_10p3_to_9p8_pct": 3.85,
+        "margin_lift_36_to_38_pct_in_bull_rev": 8.89,
+        "interim_fcf_lift_45p2_to_53p1_b": 13.20,
+        "note": "Decomposition is not additive due to cross-product effects in the Gordon formula. Full bull computed by engine at $96.05. The dominant swing is the combined g_LT and NOPAT lift, which together through the Gordon mechanism account for ~$35 of the $40.53. The crux and the terminal growth debate are the same bet expressed at two time horizons."
+      },
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "2026 ad revenue ($3B) is CONTRACTED per CFO Q1 2026 guidance ('we continue to expect to deliver $3B in advertising revenue this year'). 2027-2030 trajectory ($6B -> $9.6B per MoffettNathanson) is EXTRAPOLATED from named sell-side projection and the established doubling trend, but not committed to by Netflix management beyond 2026. The ad server launch and programmatic >50% share are CONTRACTED (confirmed in production). The live sports CPM premium is EXTRAPOLATED from industry data; not yet disclosed in Netflix ad revenue breakdowns.",
+      "specific_driver": "Netflix's own ad server (eliminating 30-40% Xandr fee), programmatic >50% of non-live ad revenue (Q1 2026 earnings call), 190M ad-tier MAUs, 4,000+ advertisers (70% YoY growth, Q1 2026 10-Q), live sports appointment viewing at $40-65 CPM (WWE Raw $500M/year, NFL, MLB), MoffettNathanson $9.6B 2030 projection as the named ceiling-clearing benchmark",
+      "sources": [
+        "Theia NFLX_crux.json: advertising_revenue driver, bull ceiling $9.6B MoffettNathanson",
+        "Theia NFLX_demand.json: bull_path advertising_revenue_b: $3.2B (2026) -> $6.0B (2027) -> $7.5B (2028) -> $9.5B (2029) -> $10.0B (2030)",
+        "Pheme NFLX_market_facts.json: capex_guidance CFO quote confirming $3B 2026 ad revenue; advertiser count 4,000+ up 70% YoY",
+        "Pheme NFLX_market_facts.json: MoffettNathanson Buy $115 target maintained Jun 17 2026"
+      ]
+    },
+    {
+      "debate": "Terminal Growth Rate: Does Advertising Success Justify 6-7% Long-Run Growth vs the Base's 5%?",
+      "is_crux": false,
+      "bull_view": "This debate is the mechanical consequence of the first: if advertising reaches $10B by 2030 and is growing at 10-12% per year at that point, the blended total company long-run growth rate after 2030 is materially above the base's 5%. In the base, subscription revenue ($57.8B of $65.0B total 2030) grows at roughly 3-4% per year post-2030 as subscriber count matures and ARPU tracks nominal GDP growth. Add $7.2B advertising at 10% = an additional 1.1% blended lift. Base g_LT = 3.5% subscription + 1.1% advertising blend = 4.6%, rounded to 5%. In the bull, $10B advertising at 10-12% growth on an $80B base adds 1.25-1.5% to blended growth. Subscription at 70% of revenue growing at 3.5% = 2.45%. Blended = 3.7-4.0% structural + advertising contribution 1.25-1.5% = 4.95-5.5%. Call this 5.5-6.0%. The bull uses g_LT=6%, which is arithmetically grounded in the higher advertising mix, not a wish. The market-implied g_LT at current price ($77.84) is approximately 7%: solving the Gordon formula for the market's implicit assumption with NOPAT_T=19.188B, r=10.3%, ROIC=40%: exit_multiple = (1-g/0.40)/(0.103-g); market implies exit = 25.0x at g=7%, consistent with the $79.22/share from the g_LT=7% isolation computation. The bull says 7% is slightly too high (it requires advertising to grow at 15%+ per year post-2030 into a large base, which is aggressive) but 6% is right for the advertising-success scenario. At g_LT=7% with base NOPAT, fair value is $79.22 -- essentially exactly the current price. This means the market is pricing in approximately the advertising bull winning AND g_LT staying at 7%, but is not paying for margin expansion or ROIC improvement. The bull at 6% ($96.05 full scenario) clears the current price by 23%.",
+      "what_would_change_our_mind": "Advertising growth decelerating below 15% per year by 2027 (the early window when the compounding matters most) would signal g_LT stalls below 6%. The specific tell: if Netflix's Q2 2026 or Q3 2026 ad revenue tracking falls below $750M per quarter (implying a sub-$3B annual rate), the 2027-2030 path toward $9B collapses. Also, if APAC subscriber adds fall below 10M/year by 2027, the long-run subscriber growth driver is impaired, reinforcing the lower g_LT.",
+      "worth_per_share": 23.70,
+      "worth_per_share_note": "Computed by engine: isolating g_LT=7% at base NOPAT ($19.188B), r=10.3%, ROIC=40%. Exit multiple rises 16.51x (5%) to 25.00x (7%). Fair value at 7% g_LT = $79.22. Swing from base $55.52 = +$23.70. The bull uses g_LT=6%, not 7%, giving a more modest +$11.47 from the g_LT lever alone (when combined with NOPAT lift). The $23.70 is the maximum value from this lever alone at 7%.",
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "The structural arithmetic grounding advertising success in g_LT=6% is a reasonable extrapolation of the Theia demand path, not a contracted number. Netflix has confirmed neither long-run growth beyond 2026 nor a terminal growth assumption. The APAC penetration trajectory (India at 57.5M of 170M internet households = 34% current, vs UCAN at ~60%) supports organic subscriber growth continuing at GDP+ rates through the 2030s, which is an extrapolation from Q1 2026 regional subscriber data.",
+      "specific_driver": "Advertising growth at 10-12% post-2030 on $10B base adding 125-150bps to blended company g_LT. APAC penetration still at 34% of Indian internet households (57.5M APAC subscribers per Q1 2026 10-Q vs 170M internet households addressable in India alone) sustaining organic subscriber growth at 3%+ per year through 2030.",
+      "sources": [
+        "Theia NFLX_demand.json: ceiling_check bull_implied_penetration 57.1% of 700M lower bound -- room remains",
+        "Theia NFLX_crux.json: what_decides_it -- advertising trajectory 2027-2030 differentiates bull from base",
+        "Engine computation: /tmp/nflx_glt7_result.json: g_LT=7%, NOPAT=19.188B -> $79.22/share (current price)"
+      ]
+    },
+    {
+      "debate": "Margin Expansion: 38-40% Operating Margin by 2030 vs the Base's 36%?",
+      "is_crux": false,
+      "bull_view": "The margin debate is second-order to the advertising revenue and growth debates, but it is a distinct and separately-argued lever. The mechanism: advertising revenue layered on the existing content cost base has near-zero incremental content cost. Netflix's content amortization base is roughly $18-20B annually -- that cost is already incurred before the first ad impression is served. Every dollar of advertising revenue is therefore running at roughly 75-80% incremental margin (ad tech costs and sales force are the only variable costs; content is sunk). At $10B in advertising (vs. $1.5B in 2025), the high-incremental-margin revenue stream lifts the consolidated operating margin meaningfully. The arithmetic: at $65B revenue (base) and $10B of that being advertising at 80% incremental margin, blended margin would be higher than the base's 36% even before content cost leverage. MoffettNathanson projects 40% operating margin by 2030, citing this dynamic. The bull uses 38% (vs base 36%) as a more conservative read on this dynamic: some ad tech investment and sales force buildout reduce the incremental margin from 80% theoretical to 60-65% realized. At 38% margin on base $65B revenue ($7.2B ad), NOPAT_T = $65B x 38% x 0.82 = $20.27B vs base $19.19B. At 38% on bull $80B revenue ($10B ad), NOPAT_T = $24.96B (the full bull). Margin at 40% on $65B base revenue gives $21.32B NOPAT, implied value $60.64/share -- a modest +$5.12 swing from base using base g_LT. The margin lever is real but the value is predominantly in the advertising revenue level and the terminal rate, not the margin per se: margin expansion from 36% to 40% at base revenue is worth $5.12/share; the combined advertising+g_LT bull is worth $40.53. Margin matters as a corroborating indicator but does not drive the bull on its own.",
+      "what_would_change_our_mind": "Content spend accelerating above 15% per year (well above the guided ~10%) would signal sports rights inflation or competitive pressure is consuming the advertising margin dividend. The specific tell: if the content-spend-to-revenue ratio (currently ~40%) rises to 43%+ by 2027, margin expansion stalls and the 38-40% target is unreachable.",
+      "worth_per_share": 5.12,
+      "worth_per_share_note": "Engine computation at /tmp/nflx_margin_result.json: margin 40%, base revenue $65B, base g_LT=5%, r=10.3%. NOPAT_T = $21.32B -> fair value $60.64/share. Swing from base: +$5.12. This is the isolated margin lever; in the full bull scenario, margin expansion is embedded in the $24.96B NOPAT (38% on $80B bull revenue).",
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "Historical margin expansion pace (270-300bps/year 2022-2025) supports reaching 38% by 2030 (290bps/year x 5 years from 29.5% = 44% -- base is conservative). MoffettNathanson's 40% projection is a named sell-side estimate. The high incremental margin of advertising revenue is structural (content cost sunk). Neither the 38% nor 40% is contracted. CFO has not guided margin beyond 2026 (31.5%).",
+      "specific_driver": "Advertising incremental margin ~60-65% realized (content sunk, ad tech and sales are only variable costs) layered on 190M existing ad-tier viewers. Content cost leverage: revenue growing at 12-16% while content spend grows at 10%, expanding margin ~150-200bps/year. MoffettNathanson 40% margin projection as named benchmark.",
+      "sources": [
+        "Theia NFLX_crux.json: operating_margin driver, MoffettNathanson 40% by 2030",
+        "Pheme NFLX_market_facts.json: content spend $20B 2026 guidance; 1.1x cash-to-amortization ratio stable",
+        "Engine computation: /tmp/nflx_margin_result.json: 40% margin -> $60.64/share"
+      ]
+    }
+  ],
+  "bull_vs_current_price": {
+    "bull_value": 96.05,
+    "current_price": 77.84,
+    "upside_pct": 23.4,
+    "note": "The bull clears the current price by 23.4% (+$18.21/share). At the current price of $77.84, the market already requires either the g_LT=7% thesis (which our g_LT=7% isolation puts at $79.22 -- essentially the current price) OR a combination of advertising success at the $10B level and moderate g_LT re-rate. The bull at $96.05 requires ALL THREE levers: $10B ad revenue, g_LT re-rating to 6%, and modest r compression to 9.8%. The bear at $29.76 (Daedalus scenario) requires $4B advertising and g_LT=3.5%. The range is honest: $29.76 to $96.05, with base $55.52 and current price $77.84 sitting between the base and the full bull."
+  },
+  "sensitivity_note": "The dominant lever is NOT advertising revenue in isolation -- it is the terminal multiple re-rate that advertising success triggers. Flexing ad revenue alone (holding g_LT at 5%) moves fair value by only $1.99/share (base to ad-only bull). Flexing g_LT from 5% to 7% at base NOPAT moves fair value by $23.70/share. The advertising thesis earns its value through the multiple, not through NOPAT alone. This is the key structural insight: Netflix is not primarily a NOPAT compounder -- it is a multiple story contingent on advertising proving it can sustain above-GDP growth into the 2030s.",
+  "ceiling_compliance": {
+    "bull_subscribers_2030": 400,
+    "addressable_ceiling": "700-850M broadband households ex-China (Netflix CFO, Theia demand.json ceiling_check)",
+    "bull_penetration": "57.1% of 700M lower bound -- within ceiling, per Theia demand.json ceiling_check.bull_within_sourced_ceiling: true",
+    "bull_ad_revenue_2030": 10.0,
+    "ad_revenue_sourced_ceiling": "MoffettNathanson $9.6B 2030 estimate plus minor upside from live sports, per Theia demand.json advertising_ceiling_check.bull_within_sourced_ceiling: true",
+    "verdict": "Bull stays within the addressable ceiling as confirmed by Theia demand.json ceiling_check fields."
+  },
+  "self_conviction": "MEDIUM",
+  "conviction_rationale": "The advertising thesis is EXTRAPOLATED, not contracted beyond 2026. Three specific mechanisms are observable and in-progress (ad server launch, programmatic >50%, 4,000+ advertisers up 70% YoY) but the 2027-2030 trajectory requires CPM improvement and linear TV budget migration to continue at scale -- neither of which is signed. The g_LT re-rate is the mechanical consequence of the advertising thesis winning; if the advertising thesis is right, the multiple re-rate follows. MEDIUM conviction reflects genuine uncertainty in the 2027-2030 advertising ramp, partially offset by the strong operational momentum (190M ad-tier viewers, confirmed 2026 guidance of $3B) that makes the first step of the journey well-supported.",
+  "evidence_quality_overall": "EXTRAPOLATED",
+  "evidence_quality_note": "2026 advertising ($3B, CFO-guided) is CONTRACTED. 2027-2030 ramp to $9.6-10B is EXTRAPOLATED from MoffettNathanson's named projection and the established doubling trend. The structural mechanisms (ad server, programmatic scale, live sports CPM) are observable and in progress but their magnitude at scale is not yet proven. Per CONTRACT.md evidence grading: EXTRAPOLATED (a reasonable read of the trend, not yet booked)."
+}

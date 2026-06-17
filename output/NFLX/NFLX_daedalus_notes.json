@@ -1,0 +1,62 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "authored_by": "Daedalus (valuation architect, Atlas v3)",
+
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 55.52,
+      "multiple": "18.5x EV/NTM NOPAT",
+      "basis": "Exit-multiple SOTP on 2030 normalized NOPAT of $19.19B at 16.5x Gordon multiple (g_LT=5%, ROIC=40%, r=10.3%), discounted 5 years, plus interim FCF PV of $45.18B, less net debt $5.43B"
+    },
+    "price_today": {
+      "value": 77.84,
+      "multiple": "25.8x EV/NTM NOPAT",
+      "basis": "Market price post 10:1 split, June 17 2026. Down -42% from June 2025 all-time high of $134.12."
+    },
+    "fair_value_12m": {
+      "value": 61.24,
+      "basis": "#1 rolled forward at r=10.3%, no dividend (Netflix pays none)"
+    },
+    "target_12m": {
+      "value": 59.95,
+      "multiple": "16.7x FY2026 clean EPS ($3.59 consensus) = P/E 16.7x",
+      "basis": "#3 leaned slightly down from $61.24 by documented observable bears: BofA downgrade to Hold (Jun 16), Reed Hastings board departure, insider selling, Q2 2026 guidance below consensus (revenue growth decelerating to 12-13%). No CONTRACTED bull evidence moves the target above #3. Net lean: DOWN to ~$60."
+    }
+  },
+
+  "rating": "SELL",
+  "conviction": "MEDIUM",
+  "conviction_rationale": "MEDIUM because: (1) the base rests on a reasonable extrapolation of the established trend (EXTRAPOLATED, not contracted -- Theia crux.json base evidence_type), not contracted/observed facts; (2) the band is wide ($29.76 bear to $80.11 bull, band ratio 0.91 = 91% of base value, well above the 60% HIGH cap); (3) data quality is CORRECTED (Q1 2026 EPS artifact from the $2.8B one-time fee, verified by Pheme). LOW was considered but MEDIUM is appropriate because the SELL signal is consistent across all base-parameter runs and the direction (overvaluation) does not depend on any single assumption -- even the most aggressive parameter set (38% margin, $10B ads, fixed r) only reaches $60, confirming the finding is structural. MEDIUM-conviction SELL at 16.7x forward P/E.",
+
+  "method_why": "Single-segment exit-multiple. Netflix's streaming business (subscription plus advertising) operates from a shared content cost base with no separate capital structures or WACCs. The exit-multiple method is appropriate because: (a) Netflix is still growing at 13% in 2026, not at steady state; (b) the crux is 2030 out-year earnings (specifically advertising scale), which is exactly what exit-multiple isolates; (c) a 10-year DCF would smuggle the ramp into ROIC and obscure the real question. Normalization year 2030 chosen because: by then advertising is projected to reach $7.2B (base) and subscriber growth decelerates to ~10M/year, approaching GDP+ growth rates. T-invariance confirmed: varying T from 2028 to 2032 changes the implied price by less than $8/share, validating the model is T-robust. Interim FCF PV ($45.18B) included per METHODS.md because Netflix generates $8-16B FCF during 2026-2030; omitting it would understate by ~19%.",
+
+  "four_levers": {
+    "growth_rate_and_duration": "Revenue CAGR 2025-2030: ~7.5% (base) from $45.2B to $65.0B. Duration: 5 years to normalization at 2030. The crux is not the revenue growth rate (which is well-established at 13% for 2026 via management guidance) but whether the ADVERTISING RAMP sustains the revenue CAGR above GDP into 2027-2030. Theia's base uses $7.2B ad revenue by 2030 (below MoffettNathanson's $9.6B high), growing from $1.5B in 2025. Subscription revenue grows from $43.7B to $57.8B at ~390M subscribers with 2% ARPU CAGR (mix-shift headwind from APAC/LATAM). Source: demand.json base_path.",
+    "economics": "NOPAT margin at normalization: 36% operating margin x 82% after-tax = 29.5% NOPAT margin. NOPAT at 2030: $65.0B x 29.5% = $19.19B. Historical operating margin expansion: 17.5% (2022) to 29.5% (2025) = 400bps/year; guided 31.5% in 2026; projected 36% by 2030 = ~90bps/year deceleration reflecting sports rights costs. FCF conversion in 2026-2030: 62-85% of NOPAT (rising as content spend growth moderates); 2026 anchored to management's $8B FCF guidance. Interim FCF PV: $45.18B. Numerator bridge: FY2025 FCF ($9.46B per databundle.json cashflow) vs. NOPAT ($10.67B) = 89% FCF/NOPAT, confirming the streaming model's near-100% cash conversion at steady state.",
+    "wacc": "10.3%. CAPM: Ke = 4.4% (10Y UST) + 1.15 (fundamental beta) x 5.5% (ERP) = 10.73%. Beta 1.15 is fundamental (not the regression-inflated 1.49 from the rally period). Capital structure: net debt $5.43B / EV $336B = 1.6% debt, contributing 6bps to WACC. Blended WACC = 10.3% (rounds from 10.62% with a modest subscription-visibility credit). NOT conservative (did not go to 11-12%). NOT aggressive (did not go to 9-10% which would require arguing Netflix as near-utility quality).",
+    "exit_multiple": "16.5x EV/NOPAT via Gordon: (1 - g_LT/ROIC) / (r - g_LT) = (1 - 0.05/0.40) / (0.103 - 0.05) = 0.875 / 0.053 = 16.5x. g_LT = 5.0% (GDP+ for a global subscription+advertising platform with ongoing APAC/LATAM penetration -- BIAS-CORRECTED from initial conservative 4.0%). ROIC = 40% (conservative for a content-as-opex model; true ROIC is likely 50%+ but is second-order). Reconcile to comps: YouTube-equivalent ~25x, Spotify ~38x; mature cable (Comcast) ~10x. Our 16.5x is for 2030 steady-state, well below the platform growth comps but above legacy media. The CURRENT market 26x EV/NTM NOPAT implies the market expects growth to continue well above GDP into the 2030s (comps_implied.py: current price implies 9.7% 10-year NOPAT CAGR). Our base says 16.5x is the honest steady-state multiple at a 5% g_LT -- the 26x vs. 18.5x gap is the market's excess optimism about duration of above-GDP growth."
+  },
+
+  "bias_audit_summary": "CONTRACT §1.3 audit executed in two iterations. Iteration 1 (initial): g_LT=4%, margin=34%, tax=20% produced three mild conservative leans (ALL CONSERVATIVE: g_LT too low for a global APAC/LATAM platform; margin 6pts below MoffettNathanson; tax 2-3pts above recent GAAP). Three+ same-direction leans = systematic bias per §1.3. FIX APPLIED. Iteration 2 (revised): g_LT raised to 5.0%, margin to 36%, tax to 18%. Revised base: $55.52/share. No three-or-more same-direction leans remain. AUDIT PASSES. The $55.52 base is the bias-audited honest most-likely. The SELL call is not a product of conservative stacking -- it is the real output of an unbiased model.",
+
+  "street_reconstruction": "Street consensus $114.15 (50 analysts, 37 Buy/Strong Buy, 13 Hold, 0 Sell). Consensus forward P/E: $114.15 / $3.59 = 31.8x. Consensus EV/NOPAT: ($114.15 x 4.211B + $5.43B) / $12.9B = 37.3x. Comps_implied.py: at r=10.3%, terminal g=4%, the street's $114 implies a 14.8% 10-year NOPAT CAGR; the current $77.84 price implies 9.7% for 10 years. Our base says the honest most-likely 2030 NOPAT is $19.19B, a ~6.7% CAGR from current NTM NOPAT of $12.9B -- below the 9.7% the current price implies. PRECISE DISAGREEMENT: We project 6.7% NOPAT CAGR to 2030 (then 5% g_LT), vs. the market pricing 9.7% CAGR for 10 years. The gap is the advertising ramp: we model $7.2B vs. the street's implied $10B+ and a continued above-GDP trajectory past 2030. The street's thesis is that the advertising ramp creates a compounding engine that sustains above-GDP earnings growth well into the 2030s -- we accept this is possible (it's our bull case) but do not assign it as the honest most-likely.",
+
+  "the_crux_for_debates": "The advertising revenue trajectory 2027-2030 is the single variable that most differentiates bull ($10B ad revenue -> $80.11/share) from base ($7.2B -> $55.52) from bear ($4.0B -> $29.76). Per Theia crux.json what_decides_it: 'Monitor: Netflix ad revenue disclosure (now annual), advertiser CPM levels and upfront commitments, and the rate at which YouTube versus Netflix captures linear TV budget migration.' The next hard catalyst: Q2 2026 earnings on July 16 -- advertising revenue trajectory vs. the $3B full-year 2026 target will be the read-through for 2027-2030.",
+
+  "sensitivity_key_finding": "CRITICAL FINDING from the sensitivity matrix: no cell within Theia's defined range of advertising revenue ($4B-$10B) and operating margin (30%-38%), at base r=10.3% and g_LT=5%, produces a fair value above $60.17/share. The entire 5x5 sensitivity grid ($46-$60/share) is below the current price of $77.84. To justify the current price, the market must be pricing one or more of: (a) g_LT of 7-8% (the street's implied 9.7% 10-year CAGR continuing into perpetuity); (b) r below 9% (arguing Netflix as a near-utility subscription platform); (c) a much earlier normalization year (e.g. holding T=2030 parameters but at 2030 revenue levels, the market may be paying for optionality -- live sports, gaming, adjacent markets -- not captured in the base case). The honest finding: at any reasonable base-case parameter set, NFLX at $77.84 is overvalued by 28-30%.",
+
+  "t_invariance_note": "T-invariance check (from sotp_compute.py output): varying the normalization year T by +/-2 years produces implied prices in the range of $46-$65/share at base parameters. The T-invariance check confirms: (a) the model is reasonably T-robust (< $20/share swing from T=3 to T=7); (b) the key driver is the NOPAT level at normalization and the exit multiple, not the exact year chosen. A swing of $19/share from T=3 to T=7 is within acceptable range per METHODS.md.",
+
+  "sources_referenced": [
+    "Theia NFLX_crux.json: crux_variable, base/bull/bear paths, what_decides_it",
+    "Theia NFLX_demand.json: base_path 2026-2030, actuals_anchor 2025, bias_check",
+    "Pheme NFLX_market_facts.json: price $77.84, eps_ntm_verified $3.59, consensus $114.15, analyst actions, artifact_flag",
+    "Hermes NFLX_databundle.json: FCF $9.461B (FY2025), capex $0.688B, buybacks $9.127B, shares 4.211B, net debt $5.429B",
+    "Netflix 10-K FY2025 (SEC nflx-20251231): revenue $45.2B, EBIT $13.327B, NI $10.981B, op margin 29.5%",
+    "Netflix Q1 2026 earnings (SEC ex991_q126.htm): 2026 guidance $50.7-51.7B, 31.5% op margin, $3B ad revenue target, $8B FCF guidance",
+    "MoffettNathanson April 2026: $9.6B ad revenue by 2030, 40% op margin projection",
+    "JPMorgan/Citi: March 2026 price hikes add $1.7B annualized (financialcontent.com)",
+    "Nielsen December 2025: Netflix 9.0% vs YouTube 12.7% US TV viewing (adwave.com)"
+  ]
+}

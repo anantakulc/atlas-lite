@@ -1,0 +1,907 @@
+{
+  "ticker": "NFLX",
+  "name": "Netflix, Inc.",
+  "listings": "NMS",
+  "sector": "Communication Services",
+  "industry": "Entertainment",
+  "business_type": "high_growth_platform",
+  "currency": "USD",
+  "date": "2026-06-17",
+  "engine": "Atlas v3",
+
+  "our_view": "SELL, MEDIUM conviction. Netflix is a world-class streaming franchise worth owning at the right price -- and the right price is not $77.84. The exit-multiple analysis on an unbiased base case produces fair value today of $55.52, implying 29% downside to intrinsic and a 12-month target of $59.95. What you are buying at $77.84 is a $10-per-share narrative bet: the market prices in a terminal growth rate of approximately 7%, which requires Netflix to build a $9-10 billion advertising business by 2030 AND sustain above-GDP revenue growth well past that point. Our base says 5% long-run growth is the honest most-likely for a maturing global subscription platform, producing a 16.5x exit multiple on 2030 NOPAT of $19.2 billion -- a number that is fully bias-audited (three initial conservative leans were corrected upward before this call was made). The crux: whether the advertising ramp reaches $7.2 billion (base), $10 billion (bull), or stalls at $4 billion (bear) by 2030 decides whether the stock is 23% overvalued, 23% undervalued, or 60% overvalued from here. The primary risk to owning NFLX at this price is not the business -- it is the multiple, and Q2 earnings on July 16 is the first moment the market recalibrates it.",
+
+  "crux": {
+    "variable": "Advertising revenue trajectory 2027-2030: whether Netflix compounds its ad business from $3 billion in 2026 to $7-10 billion by 2030, and whether that scale justifies a long-run growth rate above GDP that re-rates the terminal multiple",
+    "one_line": "Can Netflix build a $9-10 billion advertising business by 2030 -- against YouTube's structural dominance in streaming video ad budgets -- and if so, does that success re-rate the exit multiple from 16.5x to 22-25x, converting the stock from a 29% overvaluation to a 23% undervaluation?",
+    "base": "Ad revenue reaches $7.2 billion by 2030 (base path per Theia demand.json); 2030 NOPAT $19.2 billion; g_LT 5%; exit multiple 16.5x; fair value $55.52",
+    "bull": "Ad revenue reaches $10 billion by 2030 (MoffettNathanson high end); g_LT re-rates to 6% on blended advertising + subscription compounding; exit multiple 22.8x; fair value $96.05",
+    "bear": "Ad revenue stalls at $4 billion by 2030 (YouTube structural cap); margin expansion halts at 30%; g_LT 3.5%; fair value $31.51",
+    "what_decides_it": "Netflix's 2027-2028 advertising upfront commitments and CPM trajectory relative to YouTube ($40-65 vs sub-$30 CPM). If Netflix closes the CPM gap and advertisers begin migrating linear TV budgets to Netflix at scale, the bull argument becomes CONTRACTED. If CPMs stay structurally below YouTube's and the 2026 $3B ad target is missed or barely met, the bear mechanism fires. The Q2 2026 earnings call on July 16 will provide the first interim read."
+  },
+
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 77.84,
+    "target_12m": 59.95,
+    "upside_pct": -23.0,
+    "conviction": "MEDIUM",
+    "rationale": "Base fair value $55.52 vs. current price $77.84 represents 29% downside to intrinsic. The 12-month target of $59.95 reflects fair value rolled forward at 10.3% cost of equity (=$61.24) leaned modestly downward by observable evidence: BofA downgrade to Hold (June 16), CLO insider selling, and the Q2 guide of 13% revenue growth below the street's 13.5% expectation. MEDIUM conviction because the SELL is driven by the terminal multiple disagreement (we price g_LT=5%, the market prices ~7%), and the advertising thesis -- which would vindicate the market -- is plausible and already partially in motion (190 million ad-tier viewers, $3 billion 2026 target guided by CFO). A clean SELL requires either the advertising ramp to stall OR the market to converge its multiple toward our base-case 16.5x. The first is uncertain; the second is a matter of time if the advertising thesis disappoint.",
+    "next_earnings": "Q2 2026: expected July 16, 2026"
+  },
+
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 55.52,
+      "multiple": 18.5,
+      "multiple_label": "EV/NTM NOPAT",
+      "basis": "Exit-multiple on 2030 normalized NOPAT of $19.2 billion at 16.5x Gordon multiple (g_LT=5%, ROIC=40%, r=10.3%), discounted at 10.3% over 5 years, plus interim FCF PV of $45.2 billion, less net debt $5.4 billion; divided by 4.211 billion shares. Bias-audited: three initial conservative leans corrected before this number was finalized."
+    },
+    "price_today": {
+      "value": 77.84,
+      "multiple": 25.8,
+      "multiple_label": "EV/NTM NOPAT",
+      "basis": "Market price as of June 17, 2026. Implied g_LT approximately 7% in the Gordon model (i.e., the market prices the full advertising bull thesis AND sustained above-GDP growth beyond 2030)."
+    },
+    "fair_value_12m": {
+      "value": 61.24,
+      "basis": "Fair value today $55.52 compounded at r=10.3% for 12 months; no dividend",
+      "convergence_return_pct": -21.3
+    },
+    "target_12m": {
+      "value": 59.95,
+      "basis": "16.7x forward P/E on FY2026 clean consensus EPS of $3.59; confirmed by 20x EV/NOPAT on $12.9 billion NTM NOPAT. The target is fair value 12m ($61.24) leaned slightly downward by observable bears: BofA downgrade to Hold, CLO insider sale, and a Q2 guide below consensus. The gap is minimal because the evidence is balanced -- the lean is a documented judgment, not a conviction call.",
+      "implied_12m_total_return_pct": -23.0
+    }
+  },
+
+  "valuation_headline": {
+    "current_price": 77.84,
+    "fair_value_today": 55.52,
+    "target_12m": 59.95,
+    "fair_value_12m": 61.24,
+    "band_low": 29.76,
+    "band_high": 96.05,
+    "band_note": "band_low=$29.76 is the Daedalus bear scenario (interim_fcf_pv_b=$30.619B, valuation.json). The Cassandra agent independently computed the bear at $31.51 using interim_fcf_pv_b=$38.0B (a slightly less extreme FCF compression in the bear). Both are within the same scenario range and the $1.75 difference is attributable to the interim FCF assumption. The range reported here uses the Daedalus band (the official valuation output); the scenario_assumptions section uses the Cassandra bear values as the argued debate scenario.",
+    "method_primary": "ExitMultiple",
+    "method_why": "Netflix generates $8-16 billion FCF per year during its normalization ramp (2026-2030) and the contested variable is out-year earnings level at normalization, not the current period multiple. The exit-multiple method isolates the advertising ramp question cleanly: what does 2030 NOPAT look like, and what steady-state multiple does that earnings level deserve? A 10-year explicit DCF would obscure the ramp assumptions inside a stream of declining discount factors; the exit-multiple makes the crux assumption explicit and auditable. Interim FCF ($45.2 billion PV) is added per METHODS.md because omission would materially understate for a heavy FCF generator."
+  },
+
+  "thesis": [
+    {
+      "pillar": "The business is excellent; the multiple is demanding",
+      "detail": "Netflix earns $19.2 billion in 2030 NOPAT on our base case at a 36% operating margin -- a genuinely impressive compounding trajectory from $13.3 billion EBIT in 2025. At 16.5x exit multiple (Gordon at g_LT=5%, ROIC=40%, r=10.3%), that NOPAT is worth $55.52 per share today. The stock trades at $77.84, implying the market prices g_LT approximately 7% -- requiring the advertising business to sustain double-digit growth well into the 2030s on a multi-billion-dollar base. We are not arguing Netflix is broken; we are arguing you are overpaying for a call option on the advertising thesis."
+    },
+    {
+      "pillar": "The advertising crux is genuinely uncertain beyond 2026",
+      "detail": "The 2026 target of $3 billion in advertising revenue is CFO-guided and therefore contracted. The $7.2-10 billion range by 2030 is extrapolated from MoffettNathanson's named projection. YouTube holds 12.7% of US TV viewing minutes versus Netflix's 9.0% (Nielsen, December 2025) and has a decade-long advertiser relationship advantage via GA4/DV360. Netflix's own ad server is new, its programmatic stack is still scaling, and its CPMs have not yet been disclosed at the level needed to confirm the $40-65 premium that the bull thesis requires. A $2.8 billion gap between bull and bear ad revenue by 2030 translates to a $64 difference in fair value per share ($96 vs $32) -- primarily because ad success re-rates the terminal multiple, not because $2.8 billion of NOPAT is intrinsically transformative."
+    },
+    {
+      "pillar": "The Q2 2026 earnings event on July 16 is the first major catalyst in either direction",
+      "detail": "Netflix established a beat-but-no-raise pattern in Q1 2026: revenue beat by $70 million but guidance was maintained, and the stock fell 9-10% on the day. It has since declined another 15-17% to $77.84, now 42% below its June 2025 all-time high of $134.12. Q2 guidance calls for 13% revenue growth, slightly below the street's 13.5% expectation. BofA's Jessica Reif Ehrlich downgraded to Hold on June 16 after holding a $125 Buy target as recently as May 18 -- a 29-day reversal. A Q2 repeat (beat but no raise, or worse, an ad-revenue miss relative to the $3 billion 2026 target) would accelerate the multiple compression from the current 21.7x toward the justified 15.5-16.7x, converging the stock toward our $55.52 fair value in a shorter window than our 12-month base assumes."
+    }
+  ],
+
+  "business_overview": {
+    "summary": "Netflix is the world's largest paid streaming entertainment service, with 325 million paid memberships across 190 countries as of Q1 2026. The company earns revenue by charging monthly subscription fees (approximately 96.7% of 2025 revenue) and by selling programmatic and direct-sold video advertising on its lower-priced ad-supported tier (3.3% of 2025 revenue, but growing at 2.5x per year). The economic model is scale leverage: the content library is a near-fixed cost amortized across an expanding membership base, so incremental subscribers and higher ARPU flow almost entirely to operating income. A 10:1 stock split was executed in mid-2025; all figures herein use the post-split basis (approximately $77-78 per share, 4.211 billion shares outstanding).",
+    "business_model": "Recurring monthly subscription fees (Standard with Ads at approximately $7.99, Standard without ads at $19.99, Premium 4K at $26.99 in the US as of March 2026 price hike) plus advertising CPM revenue from the ad-supported tier's 190 million monthly active viewers. No meaningful per-title revenue outside subscription; no B2B enterprise revenue. Content is sourced via Netflix Originals (produced through owned and third-party studios) and content licensing. Games are bundled at no incremental charge and function as a retention tool rather than a revenue line -- 271.8 million game downloads in 2025 but no standalone monetization.",
+    "segments": [
+      {
+        "name": "Streaming Subscriptions (ad-free tiers)",
+        "revenue_share_pct": 96.7,
+        "revenue_2025_b": 43.7,
+        "revenue_growth_pct": 14.5,
+        "margin_note": "Revenue grew 16% in 2025 while content spend grew approximately 6%; operating margin expanded 270 basis points to 29.5%, demonstrating the content cost leverage that drives the margin expansion story.",
+        "nature": "growth",
+        "note": "The dominant segment: all Standard/Premium subscribers and the subscription-fee component of ad-tier plans. Netflix does not disaggregate advertising from subscription in its filed regional revenue lines; the $43.7 billion is an estimate of subscription revenue as total $45.2 billion minus estimated $1.5 billion advertising."
+      },
+      {
+        "name": "Advertising (Ad-Supported Tier)",
+        "revenue_share_pct": 3.3,
+        "revenue_2025_b": 1.5,
+        "revenue_growth_pct": 150,
+        "margin_note": "Incremental margin is structurally high: ad revenue is layered on an existing content cost base, with ad tech and sales force as the only meaningful variable costs. Near-term headwind from Netflix's own ad server buildout (replacing Microsoft Xandr, which charged 30-40% of CPM), but scale should lift incremental margins to 60-65% realized.",
+        "nature": "growth",
+        "note": "The crux segment. $1.5 billion in 2025 (2.5x YoY growth), guided to $3 billion in 2026. 190 million monthly active ad-tier viewers. Netflix achieved sufficient scale in all 12 advertising markets in 2025, unlocking upfront sales cycles for the first time. MoffettNathanson projects this segment reaching $6 billion in 2027 and $9.6 billion by 2030; our base uses $7.2 billion by 2030."
+      },
+      {
+        "name": "Games",
+        "revenue_share_pct": 0,
+        "revenue_2025_b": 0,
+        "revenue_growth_pct": null,
+        "margin_note": "Currently a cost center. 271.8 million game downloads in 2025 but only a small fraction of subscribers actively play.",
+        "nature": "optionality",
+        "note": "No standalone monetization today. Bundled within subscription as a retention mechanism. Genuine optionality exists on IP-based narrative games and party games but the timeline and monetization path are speculative. Not included in base case valuation."
+      }
+    ],
+    "customers": [
+      "Individual consumers paying recurring monthly subscriptions -- no customer concentration; largest customer is a household",
+      "Advertisers (brand and performance marketers) buying premium video inventory: 4,000+ active advertisers in Q1 2026, up 70% year-over-year",
+      "No B2B enterprise revenue of consequence"
+    ],
+    "geographic": [
+      {
+        "region": "UCAN (United States and Canada)",
+        "revenue_2025_b": 19.96,
+        "revenue_share_pct": 44.2,
+        "paid_memberships_m": 89.63,
+        "arpu_monthly_2025_usd": 17.28,
+        "growth_pct_2025": 15,
+        "note": "Highest-ARPU region at $17.28/month. Most mature market -- approximately 40-53% household penetration depending on definition. Growth driven by ARPU expansion (pricing and advertising) rather than subscriber volume."
+      },
+      {
+        "region": "EMEA (Europe, Middle East, Africa)",
+        "revenue_2025_b": 14.51,
+        "revenue_share_pct": 32.1,
+        "paid_memberships_m": 101.13,
+        "arpu_monthly_2025_usd": 11.14,
+        "growth_pct_2025": 17,
+        "note": "Largest subscriber region. Mid-cycle penetration; room to grow in Eastern Europe, Middle East, and Africa. FX headwinds across 50+ countries periodically compress reported ARPU."
+      },
+      {
+        "region": "LATAM (Latin America)",
+        "revenue_2025_b": 5.36,
+        "revenue_share_pct": 11.9,
+        "paid_memberships_m": 53.33,
+        "arpu_monthly_2025_usd": 7.48,
+        "growth_pct_2025": 11,
+        "note": "ARPU declined 2023-2024 due to BRL/MXN depreciation and pricing adjustments; modest recovery in 2025. Subscriber growth robust but ARPU is 2.3x below UCAN, limiting revenue leverage per added member."
+      },
+      {
+        "region": "APAC (Asia Pacific)",
+        "revenue_2025_b": 5.35,
+        "revenue_share_pct": 11.8,
+        "paid_memberships_m": 57.54,
+        "arpu_monthly_2025_usd": 7.72,
+        "growth_pct_2025": 21,
+        "note": "Fastest-growing region. India is the key volume driver at roughly 34% penetration of 170 million internet households. Japan and South Korea contribute high-quality local content that exports globally. Fastest revenue growth despite lowest ARPU."
+      }
+    ]
+  },
+
+  "historical_financials": [
+    {
+      "fy": "FY2022",
+      "revenue_b": 31.6,
+      "revenue_growth_pct": 6.7,
+      "gross_profit_b": 12.4,
+      "gross_margin_pct": 39.4,
+      "ebit_b": 5.6,
+      "ebit_margin_pct": 17.8,
+      "ebitda_b": 20.3,
+      "ebitda_margin_pct": 64.2,
+      "net_income_b": 4.5,
+      "fcf_b": 1.6,
+      "eps": 1.00,
+      "paid_members_m": 231.0
+    },
+    {
+      "fy": "FY2023",
+      "revenue_b": 33.7,
+      "revenue_growth_pct": 6.7,
+      "gross_profit_b": 14.0,
+      "gross_margin_pct": 41.5,
+      "ebit_b": 7.0,
+      "ebit_margin_pct": 20.6,
+      "ebitda_b": 21.5,
+      "ebitda_margin_pct": 63.8,
+      "net_income_b": 5.4,
+      "fcf_b": 6.9,
+      "eps": 1.20,
+      "paid_members_m": 260.3
+    },
+    {
+      "fy": "FY2024",
+      "revenue_b": 39.0,
+      "revenue_growth_pct": 15.6,
+      "gross_profit_b": 18.0,
+      "gross_margin_pct": 46.1,
+      "ebit_b": 10.4,
+      "ebit_margin_pct": 26.7,
+      "ebitda_b": 26.3,
+      "ebitda_margin_pct": 67.4,
+      "net_income_b": 8.7,
+      "fcf_b": 6.9,
+      "eps": 1.98,
+      "paid_members_m": 301.6
+    },
+    {
+      "fy": "FY2025",
+      "revenue_b": 45.2,
+      "revenue_growth_pct": 15.9,
+      "gross_profit_b": 21.9,
+      "gross_margin_pct": 48.5,
+      "ebit_b": 13.3,
+      "ebit_margin_pct": 29.5,
+      "ebitda_b": 30.3,
+      "ebitda_margin_pct": 67.0,
+      "net_income_b": 11.0,
+      "fcf_b": 9.5,
+      "eps": 2.53,
+      "paid_members_m": 325.0
+    }
+  ],
+  "historical_financials_read": "The 2022-2025 arc tells three things cleanly. First, the great stagnation (2022-2023): revenue grew only 7% per year while the subscriber count barely moved (231M to 260M) as the free-rider problem peaked and the password-sharing crackdown had not yet landed. FCF collapsed to $1.6 billion in 2022 as Netflix over-invested in content against declining growth. Second, the crackdown inflection (2023-2024): password-sharing enforcement beginning May 2023 drove subscriber growth from 260M to 302M -- a net 42M adds in 18 months -- lifting revenue from $33.7 billion to $39.0 billion (15.6% growth) and EBIT margin from 20.6% to 26.7% as the content cost base was leveraged more aggressively. FCF snapped back to $6.9 billion. Third, the maturation phase (2025): revenue grew another 15.9% to $45.2 billion as subscriber growth moderated to 23 million net adds (the crackdown tailwind is spent) but ARPU growth -- driven by price hikes and nascent advertising -- offset the subscriber deceleration. EBIT margin expanded to 29.5% and FCF reached $9.5 billion. The trend says: this is a business that needed the crackdown to reset the growth narrative; what comes next is advertising and international penetration, neither of which has yet shown up at scale in the income statement.",
+
+  "snapshot": [
+    {"label": "Price", "value": "$77.84"},
+    {"label": "Market cap", "value": "$327.7 billion"},
+    {"label": "Enterprise value", "value": "$336.1 billion"},
+    {"label": "52-week range", "value": "$75.01 - $134.12"},
+    {"label": "YTD return", "value": "-14.5%"},
+    {"label": "1-year return", "value": "-36.3%"},
+    {"label": "Beta", "value": "1.49"},
+    {"label": "Paid memberships", "value": "325 million (Q1 2026 global)"},
+    {"label": "FY2025 revenue", "value": "$45.2 billion (+16%)"},
+    {"label": "FY2025 EBIT", "value": "$13.3 billion (29.5% margin)"},
+    {"label": "FY2025 FCF", "value": "$9.5 billion ($2.25/share)"},
+    {"label": "FY2025 EPS (clean)", "value": "$2.53 (post-split)"},
+    {"label": "FY2026 EPS consensus (clean)", "value": "$3.59 (+42% YoY)"},
+    {"label": "Forward P/E (clean)", "value": "21.7x"},
+    {"label": "NTM NOPAT", "value": "$12.9 billion"},
+    {"label": "EV/NTM NOPAT (current)", "value": "25.8x"},
+    {"label": "Net debt", "value": "$5.4 billion"},
+    {"label": "Shares outstanding", "value": "4.211 billion"},
+    {"label": "FY2025 buybacks", "value": "$9.1 billion (5.7x SBC coverage)"},
+    {"label": "Content spend 2026 (guided)", "value": "$20 billion"},
+    {"label": "Ad revenue 2025", "value": "$1.5 billion (+2.5x YoY)"},
+    {"label": "Ad revenue 2026 (guided)", "value": "$3 billion"},
+    {"label": "Ad-tier monthly active users", "value": "190 million"}
+  ],
+
+  "industry_position": {
+    "market_overview": "Netflix competes in the global paid subscription video-on-demand (SVOD) market, which research firms size at $73-162 billion in 2025 depending on scope. The relevant Netflix addressable market is better defined by household penetration math than by a research-firm TAM: roughly 800-900 million broadband-connected households globally outside China. At 325 million paid members, Netflix has penetrated approximately 36-41% of its current technical ceiling, leaving meaningful headroom concentrated in APAC and LATAM. The more immediate competitive battleground is viewing TIME, not subscriber count: Nielsen's December 2025 Gauge shows YouTube at 12.7% of total US TV viewing minutes, Netflix at 9.0%, Disney combined at 4.7%, and Amazon Prime Video at 4.3%.",
+    "tam_usd_bn": 162,
+    "tam_usd_bn_source": "Fortune Business Insights SVOD-specific estimate 2025; broader video streaming market $416.8 billion by 2030 per Grand View Research. Netflix management characterizes addressable market as 700 million to 1 billion homes globally (ex-China).",
+    "tam_growth_pct": 14,
+    "addressable_market": "Approximately 800-900 million broadband-connected households globally outside China. Netflix at 325 million paid members has captured roughly 38% of the lower bound. At 700 million addressable homes (Netflix CFO's conservative floor), Netflix's current penetration is 46%. The realistic revenue ceiling by 2030 at constant pricing is approximately $85-100 billion, assuming roughly 400 million subscribers at a global blended ARPU of $18-20 per month including advertising contributions.",
+    "the_share_dynamic": "Netflix GAINED subscriber share and viewer share through 2023-2025 via three mechanisms: the password-sharing crackdown (May 2023 onward), which converted an estimated 50 million freeloading households to paying status; the ad-supported tier, which attracted price-sensitive subscribers at 55%+ of new sign-ups in advertising markets; and content investment scale ($18-20 billion annually) maintaining a breadth advantage. That tailwind is now spent. Going forward, the contest shifts: YouTube surpassed Netflix in US TV viewing minutes in mid-2025 (12.7% vs 9.0%) and is widening the gap by pushing aggressively onto connected TV screens (35% of YouTube viewing now on TVs). The more meaningful competitive threat is no longer for subscriber count (Netflix leads all SVOD peers by 2x or more) but for viewing time and advertising budgets -- where YouTube's free model, 2.7 billion monthly active users, and decade-long advertiser infrastructure represent a structurally different and larger incumbent.",
+    "revenue_drivers": [
+      "Subscriber net additions: 23 million added in 2025 (302M to 325M), slowing from 29 million in 2024. Future adds driven by APAC and LATAM penetration at an estimated 15-20 million per year in the base.",
+      "ARPU growth via pricing: two US price hikes by Q1 2026 (Premium to $26.99, Standard to $19.99) contributing approximately $1.7 billion annualized per JPMorgan/Citi estimates.",
+      "Advertising revenue: $1.5 billion in 2025 (2.5x YoY), guided to $3 billion in 2026. The key growth driver from 2027 onward -- the entire valuation disagreement sits here.",
+      "Content quality driving engagement: 9.0% of US TV viewing in December 2025 (Netflix record high); members watched over 95 billion hours in H1 2025."
+    ],
+    "product_differentiation": "Netflix's primary moat is library breadth, brand trust, and algorithmic personalization. The content library is unmatched in SVOD volume -- Netflix held more titles in Nielsen's Top 10 film, series, and licensed categories combined in H1 2024 than all other streamers combined. The recommendation engine (trained on 325 million members' histories) drives engagement and reduces churn. The moat is real but not impregnable: YouTube's free creator-driven model is a structurally different threat to time allocation; Disney's IP (Marvel, Star Wars, Pixar) has demonstrated sustained viewer demand; and live sports -- where Netflix has limited rights (NFL Christmas Day, WWE RAW) -- represent a gap vs. Peacock, ESPN/Disney, and Amazon.",
+    "five_forces": {
+      "supplier_power": "MEDIUM. Content producers have moderate leverage with top showrunners and IP owners commanding high deals. Netflix's $18-20 billion annual spend makes it the most important buyer for most producers, conferring bargaining power. Sports rights are the area of most acute supplier leverage, with the NFL, NBA, and major properties extracting competitive bidding premiums.",
+      "buyer_power": "LOW-TO-MEDIUM. Individual consumers have low switching costs (cancel anytime) but are held by original content lock-in. Price hike elasticity has been manageable historically; the March 2026 hike generated concern but did not produce sustained above-normal churn.",
+      "new_entrants": "LOW. Competing at Netflix's scale requires an $18-20 billion annual content library, global distribution infrastructure, brand trust, and a 325-million-member data flywheel. No significant new pure-play SVOD entrant has achieved scale after Apple TV+ seven years in.",
+      "substitutes": "HIGH. Time spent on Netflix competes with YouTube, TikTok/Instagram Reels, gaming, and linear TV. YouTube's 12.7% US TV viewing share surpassing Netflix's 9.0% is the observable sign of this substitution.",
+      "rivalry": "MEDIUM-HIGH among SVOD (Disney+, Max, Paramount+, Peacock, Apple TV+), but those peers are losing share or under financial pressure. The more meaningful rivalry is with platforms on different economics: YouTube (free, ad-funded, creator-driven) and Amazon Prime Video (commerce-subsidized bundle)."
+    },
+    "moat": "Netflix has a durable moat built on content scale ($18-20 billion annual spend), global brand, and a data flywheel from 325 million members' viewing histories. The moat is strongest in long-form scripted premium content and weakest in sports, news, and social/short-form. YouTube's creator ecosystem and Google's ad infrastructure represent the most credible structural threat to the moat over the next decade.",
+    "competitors": [
+      {
+        "name": "YouTube (Alphabet)",
+        "position": "Largest US TV viewership platform as of mid-2025",
+        "share": "12.7% of total US TV viewing minutes (Nielsen December 2025). Free ad-supported model; YouTube Premium approximately 100 million subscribers (undisclosed).",
+        "trajectory": "GAINING SHARE aggressively. Surpassed Netflix in total US TV viewing minutes in mid-2025. Growing connected TV presence (35% of YouTube viewing on TVs, up from 28% in January 2024). Free model and infinite creator supply is structurally advantaged in the attention economy. $35+ billion annual advertising revenue with decade-long advertiser relationships via GA4/DV360 -- the primary competitive threat to Netflix's advertising ambitions.",
+        "threat_type": "Viewing time substitution and advertising budget competition"
+      },
+      {
+        "name": "Disney+ / Hulu (Walt Disney Co.)",
+        "position": "Second-largest SVOD by subscriber count",
+        "share": "Disney+ 124.6 million subscribers (end 2024, modest declining trend); Hulu 53.6 million; combined 4.7% US TV viewing share (Nielsen December 2025).",
+        "trajectory": "MIXED. Disney+ losing subscribers from price hikes; Hulu gaining. Disney integrating Hulu into Disney+ in 2026 to create a combined approximately 180 million US subscriber platform. Disney's IP portfolio (Marvel, Star Wars, Pixar, ESPN sports) is the most valuable content moat of any peer. Streaming turned profitable in Q4 2024. A financially stabilized Disney with a merged platform and live sports is the strongest single competitive threat in the medium term.",
+        "threat_type": "Premium SVOD and IP competition; Hulu's existing advertising platform"
+      },
+      {
+        "name": "Amazon Prime Video (Amazon)",
+        "position": "Approximately 200 million monthly viewers globally, bundled with Prime commerce",
+        "share": "200 million monthly viewers (Amazon disclosed); 4.3% US TV viewing share (Nielsen December 2025).",
+        "trajectory": "GAINING VIEWING SHARE. Advertising tier launched January 2024. NFL Thursday Night Football, NBA (starting 2025 season), Premier League in UK. Commerce subsidy allows Prime Video to compete on different economics than pure-play streamers -- a persistent structural advantage Netflix cannot replicate.",
+        "threat_type": "Bundle competition, sports rights, and advertising market competition"
+      },
+      {
+        "name": "Max (Warner Bros. Discovery)",
+        "position": "Fourth-largest global SVOD",
+        "share": "116.9 million paid subscribers globally (Q4 2024); 1.8% US TV viewing share.",
+        "trajectory": "GAINING SLOWLY. Targeting 150 million subscribers by end-2026. Heavy WBD debt constrains content investment. HBO brand remains the premium scripted quality signal in the US.",
+        "threat_type": "Premium scripted content competition"
+      },
+      {
+        "name": "Paramount+ (Paramount Global / Skydance)",
+        "position": "Fifth-largest global SVOD",
+        "share": "77.5 million subscribers (Q4 2024). Still loss-making at streaming level.",
+        "trajectory": "CHALLENGED. Merged with Skydance. NFL on CBS, Champions League soccer provide retention hooks. Financial constraints limit content investment.",
+        "threat_type": "Sports rights competition"
+      },
+      {
+        "name": "Peacock (Comcast/NBCUniversal)",
+        "position": "US-focused streaming with strong sports rights",
+        "share": "36 million subscribers (Q4 2024); 1.7% US TV viewing share.",
+        "trajectory": "SLOW GROWTH. NFL Sunday Night Football exclusives and Olympics drive subscriber spikes but limited international ambition. Loss-making at $372 million quarterly loss in Q4 2024 (narrowing).",
+        "threat_type": "US live sports competition"
+      }
+    ]
+  },
+
+  "peers": [
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet (YouTube)",
+      "pe_ntm": 19.5,
+      "ev_ebitda": 13.2,
+      "rev_growth_ttm": 12.8,
+      "highlight": "YouTube holds 12.7% of US TV viewing vs Netflix 9.0%; YouTube's ad revenue of $35+ billion annually is the benchmark Netflix is trying to access"
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney Co.",
+      "pe_ntm": 17.8,
+      "ev_ebitda": 12.1,
+      "rev_growth_ttm": 4.2,
+      "highlight": "Disney+ 124.6M subscribers + Hulu 53.6M; streaming profitable Q4 2024 for first time; trades at a steep discount to NFLX on NTM earnings"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon (Prime Video)",
+      "pe_ntm": 32.1,
+      "ev_ebitda": 16.8,
+      "rev_growth_ttm": 13.2,
+      "highlight": "Prime Video bundled with commerce; 200M monthly viewers; ad tier launched January 2024; sports rights (NFL, NBA, Premier League) building"
+    },
+    {
+      "ticker": "WBD",
+      "name": "Warner Bros. Discovery",
+      "pe_ntm": 8.4,
+      "ev_ebitda": 6.9,
+      "rev_growth_ttm": -3.1,
+      "highlight": "Max 116.9M subscribers; HBO brand premium; heavy debt from Discovery merger constrains content investment; trading at a severe discount on earnings"
+    }
+  ],
+  "peers_read": "Netflix trades at a meaningful premium to every peer: 21.7x NTM P/E vs Disney 17.8x, Alphabet 19.5x, and WBD at just 8.4x. The premium is only partially justified by Netflix's superior subscriber scale (325M vs 124M Disney+) and higher operating margin (29.5% vs Disney streaming recently profitable). What the premium truly prices is the advertising ramp: the market is willing to pay 22x NTM earnings for a platform it believes will grow NOPAT at 9-15% per year for a decade via advertising. The relevant comparison is not Disney or WBD -- it is YouTube's unit economics at $35+ billion in annual ad revenue, which is the aspirational end-state the bull argues Netflix is heading toward. Our base says Netflix closes only part of that gap.",
+
+  "market_view": {
+    "whats_priced_in": "At $77.84, the market prices NTM earnings of $3.59 at 21.7x -- a meaningful de-rating from the 30-37x multiples at the June 2025 peak of $134.12. The EV-to-NTM-NOPAT multiple of 25.8x ($336 billion EV / $12.9 billion NTM NOPAT) implies -- via the reverse Gordon decomposition -- that the market assigns a terminal growth rate of approximately 7%, meaning investors are paying for both the advertising bull thesis succeeding (reaching $9-10 billion by 2030) AND sustained above-GDP growth beyond 2030 on a very large base. The market at current prices is NOT pricing in the bear scenario (ad revenue stalling at $4 billion); it is pricing something close to the full bull. At $77.84, the stock is 42% below its all-time high of $134.12 yet still 40% above our base fair value, which is a useful summary of where the disagreement sits: the market's 'de-rated' price is still demanding by any honest intrinsic measure.",
+    "street_view": "Fifty analysts cover Netflix: 29 Strong Buy, 8 Buy, 13 Hold, 0 Sell. Mean target $114.15 (37.3x implied NTM earnings), high $151.40. Street thesis: Netflix is a durable content platform transitioning into a two-sided advertising business; advertising revenue doubling to $3 billion in 2026 and further in 2027-2030 drives earnings faster than revenue growth, re-rating the multiple back toward 30x+. Key sell-side bulls (Evercore ISI $115, BMO $135, MoffettNathanson $115 trimmed from $120) point to ad tech maturation, engagement metrics at record highs, and gaming/podcasts as incremental engagement. The only formally Hold-rated large-cap coverage is Barclays ($110, Equal-Weight) and the newly-downgraded BofA.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-06-17",
+        "firm": "MoffettNathanson",
+        "action": "cut",
+        "old_pt": 120,
+        "new_pt": 115,
+        "rating_change": "Buy (maintained)",
+        "note": "Target trimmed; ongoing deceleration in growth trajectory and competitive pressure cited."
+      },
+      {
+        "date": "2026-06-16",
+        "firm": "Bank of America Securities",
+        "action": "downgrade",
+        "old_pt": 125,
+        "new_pt": null,
+        "rating_change": "Buy to Hold",
+        "note": "Analyst Jessica Reif Ehrlich downgraded after holding $125 Buy as recently as May 18 -- a 29-day reversal. First downgrade after sustained bullish stance. Coincides with 24% stock decline since Q1 earnings, CLO insider sale, and Hastings board departure."
+      },
+      {
+        "date": "2026-06-10",
+        "firm": "Jefferies",
+        "action": "cut",
+        "old_pt": 128,
+        "new_pt": 110,
+        "rating_change": "Buy (maintained)",
+        "note": "Analyst James Heaney cut target citing reduced outlook; stock down approximately 24% since Q1 print."
+      },
+      {
+        "date": "2026-06-04",
+        "firm": "Bernstein",
+        "action": "reiterate",
+        "old_pt": null,
+        "new_pt": 110,
+        "rating_change": "Outperform (maintained)",
+        "note": "Analyst Laurent Yoon holds $110 target."
+      },
+      {
+        "date": "2026-04-17",
+        "firm": "Guggenheim",
+        "action": "cut",
+        "old_pt": 130,
+        "new_pt": 120,
+        "rating_change": "Buy (maintained)",
+        "note": "Post-Q1 cut; Q2 revenue growth decelerating to approximately 12% YoY from 14%."
+      },
+      {
+        "date": "2026-04-17",
+        "firm": "BMO Capital Markets",
+        "action": "reiterate",
+        "old_pt": null,
+        "new_pt": 135,
+        "rating_change": "Outperform (maintained)",
+        "note": "Highest target on the street; gaming and podcasts cited as engagement drivers."
+      },
+      {
+        "date": "2026-04-06",
+        "firm": "Goldman Sachs",
+        "action": "upgrade",
+        "old_pt": 100,
+        "new_pt": 120,
+        "rating_change": "Neutral to Buy",
+        "note": "Pre-Q1 upgrade on improved risk/reward and ad delivery infrastructure."
+      }
+    ],
+    "news_narrative": "Netflix beat Q1 2026 revenue ($12.25 billion vs $12.18 billion consensus) but the EPS headline was contaminated: $2.8 billion of net income came from a one-time termination fee paid by Paramount/Skydance after their Warner Bros. Discovery acquisition collapsed. Underlying operating EPS was approximately $0.76-0.79, in line with expectations. Management maintained full-year 2026 guidance ($50.7-51.7 billion revenue, 31.5% operating margin) without raising. Q2 guidance for 13% revenue growth came in slightly below the street's 13.5% expectation. The stock fell 9-10% on the day. A secondary shock was Reed Hastings announcing his board departure (Jay Hoag appointed chairman). Since April, the stock has declined a further 15-17% to $77-78, a 42% drawdown from the June 2025 all-time high. Key post-earnings negatives: CLO David Hyman sold $504 thousand in shares; BofA downgrade (June 16); Jefferies and MoffettNathanson target cuts. Institutional accumulation (Marsico Capital, Rothschild, Liberty One) has provided a floor near the 52-week low of $75.01.",
+    "sentiment_narrative": "Retail sentiment on Stocktwits shifted to 'extremely bearish' by mid-June 2026, with message volume down 85% over 30 days -- indicating disengagement rather than active short conviction. Institutional behavior diverges: multiple long-only funds increased stakes in Q1 2026. Options market showed moderate bearish skew as of June 12. The sell-side consensus remains 36 Buy/Strong Buy, 13 Hold, 0 Sell across 50 analysts -- constructive even as targets have been trimmed. This is a sentiment dislocation: retail bears vs. institutional accumulators, with the street holding a mean target of $114.15 implying 47% upside from current price.",
+    "runway": "The near-term re-rating runway requires (1) Q2 earnings (July 16) without guidance disappointment; (2) evidence that advertising revenue is tracking toward the $3 billion 2026 target; and (3) resolution of the Hastings board transition without strategic drift. The fundamental runway (APAC penetration, price hike cycle) is intact; the valuation risk is what restrains the re-rating.",
+    "runway_verdict": "Business fundamentals are healthy: 325+ million subscribers, 13-16% revenue growth, 31.5% operating margin target, advertising growing 70% YoY in advertiser count. The stock is under pressure from expectations management -- beat-but-no-raise -- not fundamental deterioration. The valuation risk and fundamental risk are currently decoupled. A Q2 beat-and-raise on July 16 re-rates the stock toward consensus ($114); a second beat-but-no-raise (or worse) accelerates convergence toward our base fair value ($55.52).",
+    "market_lean": "neutral to slightly bullish (fundamentals)",
+    "market_lean_note": "Fundamental evidence leans bull. Market price action and sentiment lean bear. The reconciled read is neutral-to-slightly-bullish on fundamentals with a clear valuation risk caveat: the re-rating from 22x to 31x (the consensus-implied multiple) requires execution on advertising that has not yet been demonstrated beyond 2026."
+  },
+
+  "street_reconstruction": {
+    "currency": "EV/NTM NOPAT",
+    "what_price_implies": "At 25.8x NTM NOPAT ($336 billion EV / $12.9 billion NTM NOPAT), the current price implies a terminal growth rate of approximately 7% in the Gordon steady-state model (g_LT=7%, ROIC=40%, r=10.3% gives exit multiple of 25.0x; fair value check: $79.22 vs current price $77.84). The market is therefore paying for the advertising bull thesis winning, and for Netflix to sustain that level of growth well past 2030 on a large base.",
+    "what_street_implies": "The street mean target of $114.15 implies approximately 14.8% long-run NOPAT CAGR for 10 years (then 4% terminal). At a 37.3x implied multiple, the street prices a scenario materially more optimistic than even our bull case ($96.05 at 22.8x). The street consensus is grounded in the advertising thesis succeeding at or above MoffettNathanson's $9.6 billion 2030 projection, plus multiple re-rating back toward peak levels as advertising proves out.",
+    "history_anchor": "Netflix traded at 30-40x EV/NOPAT during the 2020-2021 growth peak, fell to 15-20x during the 2022 crash when subscriber growth stalled, and recovered to 25-35x in 2023-2025 as the password-crackdown drove subscriber reacceleration. The current 25.8x sits at the low end of the post-correction trading range, reflecting the Q1 2026 beat-but-no-raise and BofA downgrade. At $77.84, Netflix is 42% below its June 2025 all-time high of $134.12.",
+    "our_justified_multiple": "18.5x EV/NTM NOPAT (base) or 15.5x NTM P/E. Derived as: exit-multiple NOPAT at T=5 (2030) of $19.2 billion at Gordon 16.5x, PV'd at r=10.3% plus $45.2 billion interim FCF PV, yielding $239.2 billion EV / $12.9 billion NTM NOPAT = 18.5x. The 15.5x NTM P/E confirms consistency: $239.2 billion EV less $5.4 billion net debt = $233.8 billion equity / 4.211 billion shares = $55.52 / $3.59 NTM EPS = 15.5x.",
+    "agree_disagree": "DISAGREE with the market multiple. We price g_LT=5% (16.5x exit multiple at T=5); the market prices approximately g_LT=7% (25.0x exit multiple). The gap of 850 basis points in terminal growth is the precise disagreement -- it maps entirely to whether the advertising business sustains above-GDP growth well into the 2030s on a $7-10 billion base. Our base says GDP+ (5%) is the honest center for a mature global subscription platform with maturing subscribers in UCAN and EMEA; the market says advertising growth alone can keep the blended rate at 7%. The bull argument makes this credible but not certain -- hence SELL at MEDIUM conviction."
+  },
+
+  "management": {
+    "ceo": {
+      "name": "Ted Sarandos (Co-CEO) and Greg Peters (Co-CEO)",
+      "tenure": "Sarandos named co-CEO 2020; Peters named co-CEO 2023 replacing Reed Hastings as CEO; Hastings announced board departure in Q1 2026",
+      "track_record": "Under the Sarandos/Peters dual-CEO structure, Netflix executed the password-sharing crackdown (the most operationally significant decision in the company's history outside the original streaming pivot), launched the ad tier, executed two US price hikes without sustained churn, and guided the company to 29.5% operating margin. The co-CEO structure has functioned more smoothly than Wall Street initially feared."
+    },
+    "cfo": {
+      "name": "Spencer Neumann",
+      "tenure": "CFO since January 2019",
+      "track_record": "Guided the company through the content-spend discipline reorientation that lifted FCF from $1.6 billion (2022) to $9.5 billion (2025) while maintaining the $18-20 billion content library. Publicly stated that content spending is 'not anywhere near ceiling' -- implying spend discipline is a choice, not a constraint, which is a key input to the margin expansion thesis."
+    },
+    "capital_allocation_history": "Netflix repurchased $9.1 billion of shares in FY2025 (up from $6.3 billion in 2024 and $6.0 billion in 2023), covering SBC issuance of approximately $1.6 billion at a 5.7x ratio and reducing diluted share count from 4.344 billion to 4.211 billion. The buybacks were executed across a price range of approximately $77-134 per share during 2025 -- implying management bought at an average that is materially above our base fair value of $55.52. This either signals management disagreement with our valuation (a check worth acknowledging) or a reflexive buyback program that prioritizes EPS accretion regardless of intrinsic price. No dividend is paid; no commitment to return capital beyond the discretionary buyback program. Content spend is the dominant capital allocation decision at $20 billion planned for 2026.",
+    "recent_insider_activity": [
+      {
+        "date": "2026-Q2",
+        "person": "David Hyman (CLO)",
+        "transaction": "Sale",
+        "amount_usd": 504000,
+        "note": "CLO sold approximately $504 thousand in shares. Insider selling by the CLO -- not a top-3 executive -- is a modest negative signal. Context: the CLO may have personal liquidity needs; this is not a CEO or CFO sale."
+      },
+      {
+        "date": "2026-Q1",
+        "person": "Reed Hastings (co-founder)",
+        "transaction": "Board departure announcement",
+        "note": "Reed Hastings announced he would not stand for re-election to the board. Jay Hoag, a financial investor and long-time Netflix board member, appointed chairman. This removes the co-founder governance anchor at a critical inflection in the advertising business buildout."
+      }
+    ]
+  },
+
+  "valuation_method": {
+    "method": "ExitMultiple (Gordon steady-state) on single integrated segment",
+    "why_it_fits": "Netflix is a single integrated streaming business: subscriptions and advertising share the same content cost base, technology infrastructure, and subscriber pool. Splitting them into separate SOTP segments with distinct WACCs would be artificial and potentially misleading. The exit-multiple method is appropriate for two specific reasons: (1) Netflix is still growing at approximately 13% revenue CAGR in 2026 and has not yet normalized to steady state; the crux question is what the business earns in 2030 when the advertising ramp matures, not what it earns today. The exit-multiple isolates that question cleanly. (2) A 10-year explicit DCF would muddle the advertising ramp assumptions inside a stream of declining discount factors, obscuring rather than exposing the crux. Normalization year is 2030, when total revenue growth is projected to approach GDP+ rates as UCAN/EMEA subscriber adds plateau and advertising matures. Interim FCF PV is added per METHODS.md because Netflix generates $8-16 billion in FCF during the ramp window (2026-2030) and omitting it would materially understate.",
+    "method_primary": "ExitMultiple",
+    "bias_audit_verdict": "PASSES §1.3. The initial base used g_LT=4%, operating margin 34% at normalization, and tax rate 20% -- three same-direction conservative leans. CONTRACT §1.3 flags three-or-more same-direction leans as systematic bias. All three were corrected before the final base was locked: g_LT raised to 5% (honest center for a global platform still growing in APAC/LATAM), margin raised to 36% (above the midpoint of the 29.5%-40% range; below MoffettNathanson's 40%), tax lowered to 18% (above recent GAAP but not padded). Revised base fair value: $55.52. The SELL call at $55.52 vs $77.84 is NOT a product of conservative stacking -- it is the bias-audited honest most-likely."
+  },
+
+  "segment_valuation": [
+    {
+      "name": "Netflix Streaming (integrated subscription + advertising)",
+      "nature": "growth",
+      "method": "ExitMultiple",
+      "wacc": 0.103,
+      "revenue_path_b": {
+        "2025_actual": 45.2,
+        "2026": 51.2,
+        "2027": 57.0,
+        "2028": 60.5,
+        "2029": 63.0,
+        "2030_normalized": 65.0
+      },
+      "margin_path_pct": {
+        "2026": 31.5,
+        "2027": 32.5,
+        "2028": 34.0,
+        "2029": 35.0,
+        "2030_normalized": 36.0
+      },
+      "nopat_path_b": [13.225, 15.191, 16.867, 18.081, 19.188],
+      "nopat_T_b": 19.188,
+      "g_lt": 0.05,
+      "roic": 0.40,
+      "r": 0.103,
+      "exit_multiple_gordon": 16.51,
+      "exit_multiple_formula": "(1 - 0.05/0.40) / (0.103 - 0.05) = 0.875 / 0.053 = 16.51x",
+      "ev_at_T_b": 316.8,
+      "discount_factor": 1.6326,
+      "pv_of_terminal_b": 193.9,
+      "interim_fcf_pv_b": 45.2,
+      "interim_fcf_detail": {
+        "Y1_2026_fcf_b": 8.0,
+        "Y1_pv": 7.25,
+        "Y2_pv": 8.74,
+        "Y3_pv": 9.43,
+        "Y4_pv": 9.77,
+        "Y5_pv": 9.99,
+        "total_interim_pv_b": 45.18,
+        "note": "FCF guided to $8.0 billion in 2026 by management (Q1 2026 earnings call). Y2-Y5 FCF grows at approximately 15-20% per year as content spend growth decelerates relative to revenue growth; FCF/NOPAT conversion rises from approximately 60% to 75% as amortization catch-up tapers."
+      },
+      "implied_ev_b": 239.2,
+      "weight_pct": 100
+    }
+  ],
+
+  "sotp_aggregate": {
+    "sum_segment_ev_b": 239.2,
+    "net_debt_b": 5.4,
+    "implied_equity_b": 233.8,
+    "shares_outstanding_b": 4.211,
+    "implied_px": 55.52
+  },
+
+  "four_levers": {
+    "growth_rate_and_duration": {
+      "assumption": "Revenue CAGR of approximately 13.3% 2025-2030 (from $45.2 billion to $65.0 billion), then g_LT=5% in perpetuity",
+      "argument": "Near-term (2026): Netflix guided $50.7-51.7 billion for 2026 (13% growth), with Q1 2026 actual revenue of $12.25 billion running at the midpoint. This is CONTRACTED. 2027-2030: Theia's demand.json base path models $57.0 billion (2027), $60.5 billion (2028), $63.0 billion (2029), $65.0 billion (2030), representing 3-4% annual growth deceleration as the password-crackdown tailwind is spent and APAC/LATAM net adds of approximately 15-18 million per year become the primary subscriber driver. The advertising ramp (base $7.2 billion by 2030) accounts for roughly $5.7 billion of the $19.8 billion revenue increase from 2025 to 2030. After 2030, g_LT=5% reflects: subscription revenue at approximately $57.8 billion growing at 3-4% (GDP+ for a global platform still growing in APAC); advertising at $7.2 billion growing at 8-10% annually (below its 2025-2030 pace as the base matures); blended approximately 5%. This is above pure GDP (reflecting APAC/LATAM penetration runway) but below the aggressive 7% the market prices.",
+      "source": "Theia demand.json base_path; Netflix Q1 2026 10-Q guidance; Theia crux.json"
+    },
+    "economics": {
+      "assumption": "Operating margin expanding from 29.5% (2025) to 36% at 2030 normalization; NOPAT margin approximately 29.5% after 18% cash tax",
+      "argument": "The margin path from 29.5% (2025) to 36% (2030) represents approximately 130 basis points per year, decelerating from the 270 basis points per year achieved 2022-2025. The deceleration reflects: (1) sports rights costs (WWE RAW at $500 million/year already in the P&L; potential NFL expansion in 2027-2028 adding $2-4 billion per year if bid); (2) advertising buildout investment (ad tech, sales force) as a near-term headwind before scale economics kick in; (3) content spend growing at approximately 10% per year while revenue grows at 12-16% in the near term. The 36% is below MoffettNathanson's 40% projection but above the original conservative 34% that was identified as a stacked-bias lean and corrected. ROIC at 40% reflects Netflix's subscription business requiring minimal incremental capital (content is expensed, not capitalized); the advertising segment is near-zero incremental capital, supporting the ROIC assumption.",
+      "source": "Netflix 10-K FY2025; Netflix Q1 2026 10-Q guidance (31.5% margin 2026); MoffettNathanson (40% by 2030); Theia crux.json operating_margin driver"
+    },
+    "wacc": {
+      "assumption": "r=10.3% (WACC/cost of equity for an integrated streaming platform)",
+      "argument": "CAPM build: risk-free rate approximately 4.4% (10-year Treasury); market risk premium 5.5%; beta 1.49 (databundle.json) x 5.5% = 8.2% equity risk premium; r = 4.4% + 8.2% = 12.6%. In practice, Netflix's stable subscription revenue with 325 million members and predictable churn reduces realized earnings volatility below what beta implies. A WACC of 10.3% (the number used in the model) represents a moderate downward adjustment from the raw CAPM for the subscription revenue quality -- structurally in line with rates used for other global consumer subscription platforms. The bear adds 50 basis points to 10.8% for governance uncertainty from Hastings' board departure; the bull compresses to 9.8% reflecting 4,000+ contracted advertisers reducing cash flow volatility.",
+      "source": "Databundle.json beta 1.49; standard CAPM; Daedalus inputs.json"
+    },
+    "exit_multiple": {
+      "assumption": "16.5x EV/NOPAT at 2030 normalization (Gordon steady-state at g_LT=5%, ROIC=40%, r=10.3%)",
+      "argument": "Gordon formula: (1 - g_LT/ROIC) / (r - g_LT) = (1 - 0.05/0.40) / (0.103 - 0.05) = 0.875 / 0.053 = 16.5x. Context: Netflix at mature steady state in 2030 (after the advertising ramp has been absorbed) is a global subscription platform with characteristics similar to a cable network or pay-TV service at maturity. Historical cable network EBITDA multiples at steady state were 12-16x; accounting for Netflix's technology moat and global scale, 16.5x EV/NOPAT is at the upper end of reasonable for a mature subscription platform. Comparable mature digital platforms: YouTube-equivalent approximately 25x (but YouTube grows at 12% per year and has structural advertising scale Netflix lacks); Spotify approximately 38x (but Spotify is growing faster than Netflix on a smaller base). The 16.5x multiple is sensitive to g_LT: g_LT=6% produces 22.8x; g_LT=7% produces 25.0x. This sensitivity is the dominant lever in the valuation.",
+      "source": "Engine exit_multiple_compute.py; comparable cable/network multiples; Daedalus valuation.json"
+    }
+  },
+
+  "bias_audit": {
+    "rows": [
+      {"assumption": "Terminal growth rate (g_LT)", "lean": "NEUTRAL (corrected from conservative lean: raised 4% to 5%)"},
+      {"assumption": "Operating margin at normalization", "lean": "NEUTRAL (corrected from conservative lean: raised 34% to 36%)"},
+      {"assumption": "Cash tax rate", "lean": "NEUTRAL (corrected from conservative lean: lowered 20% to 18%)"},
+      {"assumption": "ROIC at normalization", "lean": "NEUTRAL (40%; neither stretch nor conservative for a subscription + ad platform)"},
+      {"assumption": "WACC (r)", "lean": "SLIGHTLY CONSERVATIVE (10.3% vs pure CAPM of 12.6%; moderate downward adjustment for subscription revenue quality)"},
+      {"assumption": "Advertising revenue base path ($7.2B 2030)", "lean": "SLIGHTLY CONSERVATIVE (below MoffettNathanson's $9.6B high estimate; above the bear stall at $4B; below the named analyst base)"}
+    ],
+    "same_direction_count": 0,
+    "verdict": "PASSES CONTRACT §1.3. No three-or-more same-direction leans in the final base. The initial base (g_LT=4%, margin=34%, tax=20%) failed with three conservative leans and was corrected before the rating was determined. The SELL call is the honest most-likely output, not a product of stacked conservatism."
+  },
+
+  "earnings_bridge": {
+    "reported_eps": 2.53,
+    "note_on_q1_artifact": "Q1 2026 GAAP EPS of $1.23 was inflated by a $2.8 billion one-time Paramount/Skydance termination fee. This does not affect FY2025 reported EPS ($2.53), but it corrupts any trailing GAAP P/E calculation using combined 2025 + Q1 2026 data. The correct forward EPS for valuation is $3.59 (FY2026 clean consensus per Pheme market_facts.json).",
+    "one_offs_per_share": 0.0,
+    "sbc_per_share": 0.38,
+    "normalized_eps": 2.53,
+    "owner_earnings_per_share": 2.25,
+    "fcf_per_share": 2.25,
+    "fcf_vs_eps_note": "FCF per share ($2.25) converges closely to normalized EPS ($2.53), confirming Netflix's asset-light model. The approximately 11% gap reflects content amortization being larger than cash content spend in any given year (amortization catch-up from prior years' investments). FY2025 FCF $9.46 billion / 4.211 billion shares = $2.25. Buybacks at $9.1 billion vs SBC at $1.6 billion = 5.7x coverage; share count declining (from 4.344 billion to 4.211 billion)."
+  },
+
+  "multiple_maths": {
+    "current_multiple": {
+      "ev_nopat_ntm": 25.8,
+      "pe_ntm": 21.7,
+      "pe_ntm_basis": "Clean consensus FY2026 EPS $3.59 per Pheme artifact check; NOT the corrupted trailing including Q1 2026 one-time fee"
+    },
+    "justified_multiple": {
+      "ev_nopat_ntm": 18.5,
+      "pe_ntm": 15.5,
+      "derivation": "Exit-multiple base fair value $55.52 / NTM NOPAT $12.9B = 18.5x EV/NTM NOPAT; $55.52 / $3.59 NTM EPS = 15.5x P/E. The justified multiple is below current because our base g_LT (5%) is below the market-implied g_LT (approximately 7%)"
+    },
+    "duality_decomposition": {
+      "current_price_implied_g_lt": "approximately 7%",
+      "our_base_g_lt": "5%",
+      "gap_per_share": "$23.70 (the value of moving from g_LT=5% to g_LT=7% at base NOPAT, computed by Boreas at $79.22 vs $55.52)",
+      "what_closes_the_gap": "Advertising revenue reaching $9-10 billion by 2030 growing at 10-12% per year post-2030, combined with subscriber growth sustaining at 3%+ in APAC/LATAM. This is the specific arithmetic that justifies g_LT=7%."
+    }
+  },
+
+  "key_debates": [
+    {
+      "debate": "Advertising revenue trajectory 2027-2030: does Netflix build a $9-10 billion ad business, or does YouTube's structural advantage cap it at $4 billion?",
+      "is_crux": true,
+      "bull_view": "Netflix has three observable and in-progress mechanisms: its own ad server (replacing Microsoft Xandr's 30-40% fee take-rate, confirmed in production as of Q1 2026); programmatic buying exceeding 50% of non-live ad revenue (CFO Q1 2026 earnings call); and 4,000+ active advertisers growing 70% year-over-year (Q1 2026 10-Q). At 190 million monthly ad-tier viewers, Netflix is already the second-largest premium video ad platform in the US after YouTube. Live sports at $40-65 CPM (WWE RAW $500 million/year, NFL Christmas Day, MLB package) creates appointment-viewing inventory with premium pricing. MoffettNathanson, the named sell-side benchmark, projects $9.6 billion by 2030 in its base -- meaning our base ($7.2 billion) is already more conservative than the most cited analyst projection. The key insight Boreas surfaces: advertising value flows primarily through the MULTIPLE re-rate, not the NOPAT level alone. A $2.8 billion increase in ad revenue (from $7.2 billion to $10 billion) at 36% margin adds only approximately $2 per share in NOPAT value. But that success justifies g_LT=6% (blended subscription + advertising growth), which in the Gordon formula lifts the exit multiple from 16.5x to 22.8x -- worth $40 per share. The advertising thesis is a multiple story, not a NOPAT story.",
+      "bear_view": "YouTube holds 12.7% of US TV viewing minutes versus Netflix's 9.0% (Nielsen, December 2025) and YouTube is gaining, having surpassed Netflix in mid-2025. Advertisers have spent a decade calibrating attribution tools (Google's GA4 and DV360) to YouTube's ecosystem; the switching cost to move even 10% of a $50 billion video ad budget to an unproven Netflix platform is real and not obviously offset by CPM quality. Netflix's own ad server migration from Microsoft Xandr, actively underway in 2025-2026, introduces a single-point failure risk: any CPM degradation or fill-rate disruption during the transition hands advertisers a concrete reason to defer. Amazon (Prime Video ads launched January 2024), Hulu/Disney, Peacock, and Max all have operational streaming ad stacks ahead of Netflix in the bidding cycle. The bear path: ad revenue reaches $2.5 billion in 2026 (missing the $3 billion target), stays flat in 2027 as migration proves bumpy, then recovers slowly to $4 billion by 2030. That stall, combined with margin compression (30% as sports rights inflate costs) and higher r (10.8% from governance uncertainty), produces fair value of $31.51 -- 59% below current.",
+      "our_verdict": "The advertising thesis is plausible and mechanistically grounded -- but the critical inflection is 2027-2028 upfront commitments, not 2026. The 2026 $3 billion target is contracted; the 2027-2030 ramp to $7-10 billion is extrapolated. YouTube's structural advantage (GAD/DV360 lock-in, measurement scale, $35+ billion ad revenue with a decade-long compounding flywheel) is real, named, and observable. We do not take the bear stall scenario ($4 billion) as the honest most-likely -- Netflix's 190 million ad-tier viewers and 4,000+ advertiser momentum are real. But we do not take the bull scenario ($10 billion) either, because the advertiser budget migration from linear TV has not yet occurred at scale beyond 2026. Base $7.2 billion by 2030 -- below MoffettNathanson's projection, reflecting the YouTube competition discount. The advertising thesis remains the open question; everything else (subscriber growth, margin trajectory) is reasonably well-established.",
+      "what_would_change_our_mind": "Bull trigger: Netflix advertising exceeds $3.5 billion in 2026 (above the management $3 billion target) AND 2027 upfront commitments publicly disclosed at a $5+ billion annual run-rate with documented CPMs above $40 for premium inventory. That would upgrade the evidence from EXTRAPOLATED toward CONTRACTED and would revise our fair value toward $75-80. Bear trigger: 2026 ad revenue misses the $3 billion target; 2027 upfront commitments below $4 billion run-rate; CPM data from MediaRadar/Standard Media Index showing Netflix CPMs below $30 while YouTube holds $40+.",
+      "worth_per_share": 40.53,
+      "worth_per_share_note": "Full bull scenario ($96.05) minus base ($55.52) = $40.53 per share. Full bear scenario ($31.51) minus base ($55.52) = -$24.01 per share. The asymmetry (bull +$41, bear -$24) reflects that advertising success re-rates the terminal multiple from 16.5x to 22.8x, while advertising failure compresses it to 12.3x.",
+      "evidence_quality": "EXTRAPOLATED (2026 advertising is CONTRACTED; 2027-2030 is EXTRAPOLATED per Theia crux.json evidence grading)"
+    },
+    {
+      "debate": "Q2 2026 earnings event (July 16): is beat-but-no-raise a structural multiple compression trigger or a one-quarter stumble?",
+      "is_crux": false,
+      "bull_view": "The Q1 pattern was a high-multiple management artifact, not a structural signal. Netflix guided conservatively: the Q1 revenue beat ($12.25 billion vs $12.18 billion consensus) demonstrates the business is tracking above management expectations even as guidance stays flat. Management conservatism is a known Netflix behavior (co-CEO Sarandos has historically guided below achievable levels to preserve flexibility). If Q2 delivers 13% revenue growth as guided or better, and ad revenue tracking toward $3 billion is confirmed in the commentary, the beat-but-no-raise pattern terminates and the stock re-rates toward $90-100. The institutional accumulation at current levels (Marsico Capital, Rothschild, Liberty One buying the dip) is a forward-looking signal that the smart money has already discounted the Q1 disappointment.",
+      "bear_view": "Two consecutive quarters of beat-but-no-raise on a name priced at 30x+ forward earnings at its peak is the historical signature of a prolonged multiple compression cycle. Meta 2022: beat-but-no-raise at 30x+ produced a 26% single-day decline and 12 months of sustained re-rating. Netflix itself in 2022 compressed from 60x to 18x P/E on a single subscriber miss. Reed Hastings' board departure removes the co-founder governance anchor at precisely the wrong moment. BofA's Jessica Reif Ehrlich -- one of the market's most persistently bullish media analysts -- reversed from $125 Buy to Hold in 29 days (May 18 to June 16), coinciding with the CLO's $504 thousand insider sale. A Q2 repeat (13% growth, maintained guidance) targets multiple compression from the current 21.7x toward 15-16x on $3.59 NTM EPS = $53-58 per share in a single de-rating event.",
+      "our_verdict": "Beat-but-no-raise is a path risk, not an intrinsic value risk -- our base fair value already sits at $55.52 regardless of Q2. The debate is about the SPEED of convergence. A Q2 beat-and-raise accelerates the re-rating away from our target (the stock goes to $90+) and would force a revision of our thesis. A Q2 repeat (beat-but-no-raise) validates the path and accelerates convergence toward $55.52, potentially overshooting to $45-50 if sentiment breaks further. Our 12-month target of $59.95 assumes gradual convergence; a Q2 disappointment compresses the timeline. Watch July 16.",
+      "what_would_change_our_mind": "Q2 beats consensus on both revenue and operating margin AND raises full-year 2026 guidance above $51.7 billion. That restores the beat-and-raise cadence and would require us to revise the target to approximately $75-80 (not because intrinsic changed materially, but because the path to convergence lengthens and the market's willingness to pay 22-24x P/E becomes credible for longer).",
+      "worth_per_share": -19.85,
+      "worth_per_share_note": "Multiple compression from 21.7x NTM to 15-16x NTM (our justified range): 16x on $3.59 NTM EPS = $57.44. At 15x = $53.85. The midpoint $55.65 approximately equals our base $55.52. The $19.85 downside is the gap between the current price ($77.84) and the justified multiple range, not an additional downside from our base -- it is the path risk the base has already incorporated.",
+      "evidence_quality": "OBSERVABLE-AND-NEAR (Q2 earnings July 16, 29 days away; Q1 beat-but-no-raise OBSERVABLE; BofA downgrade OBSERVABLE; multiple compression already underway from 37x to 21.7x)"
+    },
+    {
+      "debate": "Operating margin path to 2030: does advertising revenue's incremental margin lift the consolidated margin to 38-40%, or does sports rights inflation cap it at 30-31%?",
+      "is_crux": false,
+      "bull_view": "Advertising revenue is structurally near-zero incremental content cost: the content is already paid for in the subscription model. At $10 billion in ad revenue, incremental margin of 60-65% realized (ad tech and sales force are the only variable costs) lifts the blended operating margin from the base's 36% to approximately 38-40%. MoffettNathanson projects 40% by 2030. The historical expansion pace of 270-300 basis points per year since 2022 supports reaching 38-40% without aggressive assumptions; the base's 36% already implies deceleration to approximately 130 basis points per year, reflecting sports rights costs but potentially understating the advertising margin dividend.",
+      "bear_view": "Content costs are entering a new cycle. Netflix holds NFL Christmas Day games but not a full NFL Sunday Ticket package; if Netflix bids for expanded NFL rights in 2027-2028, the incremental cost is $2-4 billion per year -- enough to reverse 300-400 basis points of margin. WWE RAW at $500 million per year is already in the P&L. Disney integrating Hulu into Disney+ creates a combined approximately 180 million US subscriber platform that will force Netflix to respond defensively. If the advertising ramp stalls (Debate 1), the incremental high-margin advertising revenue that was supposed to absorb sports rights costs fails to arrive, making the 30% margin cap more likely. At 30% margin on $65 billion base revenue, NOPAT = $15.99 billion vs. $19.19 billion in the base -- worth $7.67 per share less.",
+      "our_verdict": "The margin debate is second-order to the advertising debate. If advertising reaches $7-10 billion (base or bull), the incremental margin on that revenue is genuinely near-zero content cost and should support 36-38% consolidated margins. If advertising stalls at $4 billion (bear), the sports rights cost cycle simultaneously becomes harder to absorb. The two debates are correlated: advertising success and margin expansion are jointly determined by the ad business outcome. Base margin of 36% at 2030 is the appropriate honest center -- neither the aggressive MoffettNathanson 40% nor the bear's 30%. Watch: content spend-to-revenue ratio above 42% for two consecutive quarters is the quantitative bear signal.",
+      "what_would_change_our_mind": "Content spend guidance for 2027 remaining at or below $22 billion (less than 10% growth from 2026's $20 billion) while revenue grows above 12% would indicate margin expansion is on track. NFL expansion bid in the 2027-2028 rights cycle -- reported in sports/media trade press months before closing -- would force a downward revision.",
+      "worth_per_share": -7.67,
+      "worth_per_share_note": "Isolated margin lever: 30% margin vs base 36% on $65 billion 2030 revenue (with base g_LT and r) implies NOPAT of $15.99 billion, fair value $47.85 vs base $55.52 = -$7.67. This is not an additive bear; it compounds with Debate 1 in the full bear scenario ($31.51 per share).",
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING (WWE RAW OBSERVABLE-AND-NEAR; NFL expansion bid unfired; Disney response unfired per Cassandra)"
+    }
+  ],
+
+  "bear_paragraph": "The structural bear on Netflix is not a broken business -- it is a business priced for an advertising ramp that has not yet demonstrated the unit economics needed to justify the multiple. YouTube holds 12.7% of US TV viewing minutes and has spent a decade building the advertiser relationships (via Google's GA4 and DV360 infrastructure) that Netflix is now trying to displace. Advertisers moving streaming video budgets from linear TV have a structurally simpler path to YouTube than to Netflix; the CPM proof point is the missing data -- Netflix does not disclose CPM levels. Netflix's own ad server migration (replacing Microsoft Xandr) is a near-term risk rather than a solved problem. Meanwhile, the business is generating $8-9 billion in FCF per year while repurchasing shares at prices materially above our base fair value ($9.1 billion repurchased in FY2025 at prices ranging to $134 per share versus our $55.52 intrinsic). The combination of an unproven advertising ramp, a demanding terminal growth rate embedded in the current price, and a near-term earnings catalyst (Q2 July 16) that could crystallize the multiple compression makes NFLX a SELL at $77.84 even though the underlying franchise is excellent and the business will almost certainly be worth more in five years than in twelve months.",
+
+  "key_risks": [
+    {
+      "rank": 1,
+      "category": "Valuation / Multiple",
+      "severity": "HIGH",
+      "likelihood": "HIGH",
+      "risk": "Multiple compression from 21.7x NTM P/E toward 15-16x as beat-but-no-raise cadence continues and the advertising ramp fails to visibly accelerate beyond the $3 billion 2026 guided target",
+      "monitor": "Q2 2026 earnings July 16: revenue vs. $12.9 billion consensus; any advertising revenue commentary vs. the $3 billion annual tracking; full-year guidance raised or maintained"
+    },
+    {
+      "rank": 2,
+      "category": "Advertising Ramp",
+      "severity": "HIGH",
+      "likelihood": "MEDIUM",
+      "risk": "Advertising revenue stalls below $5 billion by 2028 because YouTube retains 70%+ of streaming video ad budgets and Netflix's CPMs fail to achieve the $40-65 premium required to differentiate from YouTube/linear TV",
+      "monitor": "Annual advertising revenue disclosure; CPM data from MediaRadar / Standard Media Index; 2027 upfront advertising commitment levels (disclosed in spring 2027 industry press)"
+    },
+    {
+      "rank": 3,
+      "category": "Content Cost Inflation",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "NFL rights expansion bid (2027-2028 cycle) adds $2-4 billion per year to content spend, reversing 300-400 basis points of margin expansion and capping NOPAT below our base trajectory",
+      "monitor": "NFL rights bidding cycle in sports/media trade press (Sports Business Journal, SportsPro); Netflix 2027 content budget guidance (typically disclosed with Q4 results in January 2027)"
+    },
+    {
+      "rank": 4,
+      "category": "Governance / Leadership",
+      "severity": "MEDIUM",
+      "likelihood": "LOW",
+      "risk": "Reed Hastings' board departure and replacement by financial investor Jay Hoag creates a governance gap at a critical advertising business inflection; dual-CEO structure (Sarandos/Peters) faces its first major strategic test without the co-founder's franchise judgment",
+      "monitor": "Board composition and strategic communications in Q2 2026 and Q3 2026; any changes to content strategy or capital allocation policy"
+    },
+    {
+      "rank": 5,
+      "category": "Subscriber Opacity",
+      "severity": "MEDIUM",
+      "likelihood": "HIGH",
+      "risk": "Netflix's elimination of quarterly subscriber count disclosure (Q1 2025 onward) removes the primary leading indicator of growth deceleration at the precise moment when the password-crackdown tailwind is exhausted and organic growth pace is most uncertain",
+      "monitor": "Revenue per region as a proxy for subscriber * ARPU momentum; any voluntary commentary on subscriber trends at quarterly earnings"
+    }
+  ],
+
+  "range_and_sensitivity": {
+    "anchor": "base = fair value today ($55.52) -- the argued intrinsic, bias-audited, exit-multiple on 2030 NOPAT at g_LT=5%",
+    "cases": [
+      {
+        "label": "Base",
+        "implied_value": 55.52,
+        "thesis_one_line": "Advertising reaches $7.2 billion by 2030, margin expands to 36%, g_LT=5%; the honest most-likely is a SELL at current prices",
+        "evidence_grade": "EXTRAPOLATED (2026 guidance CONTRACTED; 2027-2030 EXTRAPOLATED from Theia demand path)",
+        "key_driver": "Advertising revenue $7.2 billion by 2030 at g_LT=5% terminal growth"
+      },
+      {
+        "label": "Bull",
+        "implied_value": 96.05,
+        "thesis_one_line": "Advertising reaches $10 billion by 2030, g_LT re-rates to 6%, margin 38% -- full bull clears current price by 23%",
+        "evidence_grade": "EXTRAPOLATED (MoffettNathanson $9.6B projection as named benchmark; 2027-2030 path not contracted)",
+        "key_driver": "Advertising revenue $10 billion by 2030 + g_LT re-rate to 6% (dominant lever: +$35 per share from multiple re-rate, not NOPAT alone)"
+      },
+      {
+        "label": "Bear",
+        "implied_value": 31.51,
+        "thesis_one_line": "YouTube caps Netflix ad revenue at $4 billion by 2030; margin stalls at 30%; g_LT=3.5%; bear scenario implies 59% downside from current price",
+        "evidence_grade": "MECHANISM-NOT-YET-FIRING (YouTube structural advantage OBSERVABLE; ad stall is the unfired mechanism per Theia crux.json)",
+        "key_driver": "Advertising revenue stalls at $4 billion; margin compressed by sports rights costs; g_LT=3.5%"
+      }
+    ],
+    "sensitivity_matrix": {
+      "axis_x": "Advertising revenue by 2030 ($ billions)",
+      "axis_y": "Operating margin at 2030 normalization (%)",
+      "x_values": [4.0, 5.5, 7.2, 9.0, 10.0],
+      "y_values": [30, 32, 34, 36, 38],
+      "grid": {
+        "30": {"4.0": 45.95, "5.5": 46.84, "7.2": 47.84, "9.0": 48.90, "10.0": 49.49},
+        "32": {"4.0": 48.38, "5.5": 49.33, "7.2": 50.40, "9.0": 51.53, "10.0": 52.16},
+        "34": {"4.0": 50.82, "5.5": 51.82, "7.2": 52.96, "9.0": 54.16, "10.0": 54.83},
+        "36": {"4.0": 53.25, "5.5": 54.31, "7.2": 55.52, "9.0": 56.80, "10.0": 57.50},
+        "38": {"4.0": 55.68, "5.5": 56.81, "7.2": 58.08, "9.0": 59.43, "10.0": 60.17}
+      },
+      "base_cell": {"ad_rev_b": 7.2, "margin_pct": 36, "implied_px": 55.52},
+      "where_cases_land": {
+        "base": {"ad_rev_b": 7.2, "margin_pct": 36, "value": 55.52},
+        "current_price": 77.84,
+        "note": "CRITICAL: No cell in this matrix reaches $77.84. Even at the maximum sensitivity cell (38% margin, $10 billion ad revenue), the implied price is $60.17. To justify $77.84 requires EITHER g_LT above 5% (approximately 7% is what the market implies) OR a lower discount rate, neither of which our base arguments support at current evidence."
+      },
+      "dominant_lever": "g_LT (terminal growth rate) dominates: moving from g_LT=5% to g_LT=7% at base NOPAT adds $23.70 per share ($79.22 vs $55.52). Within this sensitivity matrix (g_LT held fixed at 5%), margin is the dominant lever (spread of $10.24 per share across the 30-38% range), while advertising revenue in isolation is worth only $4.25 per share (at base 36% margin, across $4-10 billion). The critical lesson: advertising wins through the MULTIPLE (g_LT re-rate), not directly through NOPAT."
+    },
+    "vs_price_pct": {
+      "to_fair_value_today": -28.7,
+      "to_target_12m": -23.0,
+      "to_fair_value_12m": -21.3,
+      "to_bear": -59.5,
+      "to_bull": 23.4
+    }
+  },
+
+  "scenario_assumptions": {
+    "base": {
+      "label": "Base",
+      "one_line": "Advertising reaches $7.2 billion by 2030 (below MoffettNathanson); margins expand to 36%; g_LT=5%; fair value $55.52",
+      "implied_value": 55.52,
+      "rows": [
+        {"driver": "Revenue 2030", "value": "$65.0 billion", "note": "13.3% CAGR 2025-2030 decelerating to 2-3% by 2030; subscription $57.8B + advertising $7.2B"},
+        {"driver": "Advertising revenue 2030", "value": "$7.2 billion", "note": "Base path per Theia demand.json: $1.5B (2025) -> $3.0B (2026 guided) -> $7.2B (2030). Below MoffettNathanson's $9.6B high estimate."},
+        {"driver": "Subscribers 2030", "value": "~390 million", "note": "Net adds approximately 13 million per year; APAC and LATAM drive growth; UCAN and EMEA near-mature"},
+        {"driver": "Operating margin 2030", "value": "36%", "note": "Expansion from 29.5% (2025) at approximately 130bps/year; deceleration from historical pace reflects sports rights costs"},
+        {"driver": "NOPAT 2030 (T-normalized)", "value": "$19.2 billion", "note": "$65B x 36% x 0.82 (18% cash tax) = $19.19B"},
+        {"driver": "g_LT (terminal growth after 2030)", "value": "5.0%", "note": "GDP+ for a global platform still growing in APAC/LATAM; below market-implied 7%"},
+        {"driver": "ROIC", "value": "40%", "note": "Subscription business near-zero incremental capital; advertising also capital-light"},
+        {"driver": "WACC (r)", "value": "10.3%", "note": "CAPM beta 1.49 x 5.5% ERP + 4.4% risk-free, adjusted downward for subscription revenue quality"},
+        {"driver": "Exit multiple (Gordon)", "value": "16.5x", "note": "(1-0.05/0.40)/(0.103-0.05) = 16.51x EV/NOPAT at normalization"},
+        {"driver": "Interim FCF PV (2026-2030)", "value": "$45.2 billion", "note": "Y1-Y5 FCF discounted at r=10.3%; Y1 $8.0B guided by management; growing approximately 15-20%/year"},
+        {"driver": "Net debt", "value": "$5.4 billion", "note": "$14.5B total debt less $9.0B cash as of FY2025"},
+        {"driver": "Shares outstanding", "value": "4.211 billion", "note": "Post-10:1-split basis; declining via buybacks"},
+        {"driver": "Implied fair value per share", "value": "$55.52", "note": "($239.2B EV - $5.4B net debt) / 4.211B shares = $55.52"}
+      ]
+    },
+    "bull": {
+      "label": "Bull",
+      "one_line": "Advertising reaches $10 billion by 2030; g_LT re-rates to 6%; margin expands to 38%; full bull clears current price at $96.05",
+      "implied_value": 96.05,
+      "rows": [
+        {"driver": "Revenue 2030", "value": "$80.0 billion", "note": "Advertising $10B + subscription $70B; 12.1% CAGR 2025-2030"},
+        {"driver": "Advertising revenue 2030", "value": "$10.0 billion", "note": "Bull path per Theia: $3.2B (2026) -> $6.0B (2027) -> $10.0B (2030); MoffettNathanson high-end ($9.6B) plus live sports CPM halo"},
+        {"driver": "Subscribers 2030", "value": "~400 million", "note": "Net adds approximately 20 million per year; India/APAC penetration accelerating"},
+        {"driver": "Operating margin 2030", "value": "38%", "note": "Advertising high incremental margin (60-65% realized) on existing content base; MoffettNathanson projects 40%"},
+        {"driver": "NOPAT 2030", "value": "$24.96 billion", "note": "$80B x 38% x 0.82 = $24.96B"},
+        {"driver": "g_LT", "value": "6.0%", "note": "$10B advertising at 10%+ post-2030 growth blended with subscription at 3.5% on $70B base = approximately 6% blended"},
+        {"driver": "ROIC", "value": "45%", "note": "Advertising is near-zero incremental capital; system ROIC improves"},
+        {"driver": "WACC (r)", "value": "9.8%", "note": "4,000+ contracted advertisers reduce cash flow volatility; modest de-risking from current 10.3%"},
+        {"driver": "Exit multiple (Gordon)", "value": "22.8x", "note": "(1-0.06/0.45)/(0.098-0.06) = 22.81x; primary driver of bull value over base"},
+        {"driver": "Interim FCF PV (2026-2030)", "value": "$53.1 billion", "note": "Bull revenue path; FCF tracks operating income at 70-80% conversion"},
+        {"driver": "Net debt", "value": "$5.4 billion", "note": "Same as base"},
+        {"driver": "Shares outstanding", "value": "4.211 billion", "note": "Same as base"},
+        {"driver": "Implied fair value per share", "value": "$96.05", "note": "($409.9B EV - $5.4B net debt) / 4.211B shares; clears current price by 23.4%"}
+      ]
+    },
+    "bear": {
+      "label": "Bear",
+      "one_line": "YouTube caps ad revenue at $4 billion; margins stall at 30%; g_LT=3.5%; fair value $31.51 -- 59% below current price",
+      "implied_value": 31.51,
+      "rows": [
+        {"driver": "Revenue 2030", "value": "$56.5 billion", "note": "Advertising $4.0B + subscription $52.5B; essentially flat from 2026 guided $51.2B"},
+        {"driver": "Advertising revenue 2030", "value": "$4.0 billion", "note": "Bear path: $2.5B (2026 -- misses $3B target) -> flat 2027 -> slow recovery to $4B (2030)"},
+        {"driver": "Subscribers 2030", "value": "~355 million", "note": "Near-flat from 2026; password-sharing tailwind exhausted; APAC growth below trend"},
+        {"driver": "Operating margin 2030", "value": "30%", "note": "Sports rights inflation (NFL expansion) and Disney competitive response prevent expansion beyond 30-31%"},
+        {"driver": "NOPAT 2030", "value": "$13.56 billion", "note": "$56.5B x 30% x 0.80 (20% tax in bear) = $13.56B"},
+        {"driver": "g_LT", "value": "3.5%", "note": "Near-GDP; no above-GDP driver once subscribers stall and advertising disappoints"},
+        {"driver": "ROIC", "value": "35%", "note": "Lower ROIC as content cost inflation and sports rights reduce capital efficiency"},
+        {"driver": "WACC (r)", "value": "10.8%", "note": "+50bps premium for Hastings departure governance uncertainty and ad-tech execution risk"},
+        {"driver": "Exit multiple (Gordon)", "value": "12.3x", "note": "(1-0.035/0.35)/(0.108-0.035) = 12.33x; lower multiple on lower quality earnings"},
+        {"driver": "Interim FCF PV (2026-2030)", "value": "$38.0 billion", "note": "Bear revenue path; FCF constrained by content spend inflation"},
+        {"driver": "Net debt", "value": "$5.4 billion", "note": "Same as base"},
+        {"driver": "Shares outstanding", "value": "4.211 billion", "note": "Same as base"},
+        {"driver": "Implied fair value per share", "value": "$31.51", "note": "($138.1B EV - $5.4B net debt) / 4.211B shares"}
+      ]
+    }
+  },
+
+  "synthesis_paths": [
+    {
+      "label": "Advertising succeeds: multiple re-rates toward bull ($80-96)",
+      "outcome_range": "$80 - $96",
+      "description": "Netflix's ad server goes live at scale, programmatic fill rates improve, CPMs converge toward $40+ for premium inventory, and the 2027 upfront season delivers $5+ billion committed run-rate. g_LT re-rates to 6-7%, exit multiple expands from 16.5x to 22-25x, and fair value moves toward $80-96. The bull scenario ($96.05) requires ALL three levers: ad revenue $10 billion, g_LT=6%, and modest r compression. At g_LT=7% (market-implied), the stock is approximately fairly valued at $79.",
+      "evidence_grade": "EXTRAPOLATED"
+    },
+    {
+      "label": "Gradual convergence to base fair value: SELL validates ($55-62)",
+      "outcome_range": "$55 - $62",
+      "description": "Advertising continues on a 2x-per-year trajectory through 2026 (as guided) but the 2027-2028 ramp decelerates toward our base path ($7.2 billion by 2030). Subscriber growth continues at 13-18 million per year in APAC/LATAM. Multiple converges gradually from 21.7x to 15-17x NTM P/E over 12-18 months as the advertising growth rate decelerates and the market re-calibrates to a maturing subscriber base. 12-month target $59.95; fair value today $55.52.",
+      "evidence_grade": "EXTRAPOLATED"
+    },
+    {
+      "label": "Bear fires: YouTube structural cap crystallizes ($30-50)",
+      "outcome_range": "$30 - $50",
+      "description": "Q2 2026 advertising commentary disappoints; 2027 upfront commitments come in below $4 billion run-rate; CPM data shows Netflix structurally below YouTube. Multiple compression accelerates from 21.7x toward 13-15x in one or two de-rating events (consistent with the 2022 compression cycle). The Q2 2026 earnings report on July 16 is the first date this scenario could begin to materialize. At 30% operating margin and g_LT=3.5%, fair value is $31.51.",
+      "evidence_grade": "MECHANISM-NOT-YET-FIRING"
+    }
+  ],
+
+  "catalysts_to_watch": [
+    {
+      "theme": "Q2 2026 Earnings Execution (July 16)",
+      "horizon": "29 days",
+      "what_to_watch": "Revenue vs $12.9 billion consensus; operating margin vs 31.5% guided; any advertising commentary vs $3 billion 2026 annual tracking; whether full-year guidance is raised above $51.7 billion",
+      "why_it_matters": "The second consecutive beat-but-no-raise would confirm the pattern and accelerate multiple compression toward $53-58. A beat-and-raise restores growth momentum and would require upward revision of our target toward $75-80.",
+      "bull_or_bear_tell": "BULL if Q2 revenue above $13.2 billion AND guidance raised; BEAR if revenue below $12.8 billion OR advertising commentary disappointing"
+    },
+    {
+      "theme": "Advertising Revenue Ramp (2027 Upfront Season)",
+      "horizon": "9-15 months",
+      "what_to_watch": "2026 annual advertising revenue disclosure (typically January 2027 Q4 report); 2027 upfront advertising commitment levels (spring 2027 industry press); CPM data from MediaRadar/Standard Media Index showing Netflix vs YouTube CPM differential",
+      "why_it_matters": "This is the crux variable. The 2027 upfront season is the first data point that confirms or refutes the advertising ramp at the scale needed to justify g_LT=6-7%. A $5+ billion 2027 committed run-rate converts the advertising thesis from EXTRAPOLATED toward CONTRACTED; below $4 billion signals the bear mechanism is firing.",
+      "bull_or_bear_tell": "BULL if Netflix CPMs above $40 for premium inventory (confirmed in trade press) and 2027 committed ad revenue above $5 billion annual run-rate; BEAR if CPMs remain sub-$30 or 2026 actual ad revenue misses $3 billion"
+    },
+    {
+      "theme": "Content Cost Cycle (NFL Rights 2027-2028)",
+      "horizon": "12-24 months",
+      "what_to_watch": "NFL rights renewal cycle bidding in sports/media trade press (Sports Business Journal, SportsPro); Netflix 2027 content budget guidance (Q4 2026 earnings, January 2027); content spend-to-revenue ratio each quarter",
+      "why_it_matters": "A Netflix bid for expanded NFL rights at $2-4 billion per year would reverse 300-400 basis points of operating margin, reducing our 2030 NOPAT from $19.2 billion toward $15.6 billion and cutting fair value by approximately $8-12 per share. This is the margin debate made concrete.",
+      "bull_or_bear_tell": "BULL if Netflix management explicitly passes on expanded NFL rights in 2027-2028 AND content spend-to-revenue ratio stays below 40%; BEAR if Netflix bids for and wins an expanded NFL package"
+    },
+    {
+      "theme": "APAC Subscriber Penetration (India Inflection)",
+      "horizon": "6-24 months",
+      "what_to_watch": "APAC revenue growth rate (a proxy for subscriber x ARPU trajectory since Netflix stopped quarterly subscriber disclosure); India-specific commentary; total APAC paid memberships if/when disclosed",
+      "why_it_matters": "APAC at 57.5 million subscribers against 170 million internet households in India alone represents the largest remaining whitespace in the subscriber model. If APAC net adds accelerate above 15 million per year, the g_LT=5-6% base becomes more defensible. If India fails to penetrate due to price sensitivity, the organic subscriber growth story weakens.",
+      "bull_or_bear_tell": "BULL if APAC revenue growth rate accelerates above 22% in any two consecutive quarters; BEAR if APAC revenue growth decelerates below 15%"
+    }
+  ],
+
+  "conclusion": "Netflix at $77.84 is an excellent franchise at the wrong price: the exit-multiple analysis produces a bias-audited base fair value of $55.52, implying 29% downside to intrinsic and a 12-month target of $59.95 (-23%). The call is SELL, MEDIUM conviction -- medium because the advertising thesis that would vindicate the market's 22x P/E is plausible, partially in motion, and not obviously wrong, but the 2027-2030 ramp to $7-10 billion in ad revenue has not yet been demonstrated and YouTube's structural advertising advantage is real. The stock that would be a BUY is NFLX at $48-52 (bear scenario convergence with margin of safety) or NFLX at $78+ if Q2 2026 restores a beat-and-raise cadence and 2027 ad commitments publicly exceed $5 billion -- neither of which is the present situation.",
+
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "LOW",
+    "path_confidence": "MEDIUM",
+    "basis": "The SELL at MEDIUM conviction reflects: (1) HIGH confidence the base is unbiased (three initial conservative leans identified and corrected); (2) MEDIUM confidence the base assumptions (g_LT=5%, margin 36%, ad revenue $7.2 billion) are the honest most-likely vs alternatives; (3) LOW valuation confidence because the dominant variable -- g_LT -- is extremely sensitive (±1% g_LT = ±$12-24 per share) and depends on an advertising outcome that is EXTRAPOLATED, not contracted beyond 2026. Bull ($96.05) and bear ($31.51) conviction are both MEDIUM, reflecting genuine two-sided uncertainty on the advertising crux. The SELL rating is not in doubt at our base; what is uncertain is the timing and probability of the market converging to that base."
+  },
+
+  "run_manifest": {
+    "engine": "Atlas v3",
+    "date": "2026-06-17",
+    "ticker": "NFLX",
+    "agents_run": [
+      {"agent": "Hermes (us.py)", "output": "NFLX_databundle.json"},
+      {"agent": "Pheme", "output": "NFLX_market_facts.json, NFLX_market_view.json"},
+      {"agent": "Theia", "output": "NFLX_industry.json, NFLX_crux.json, NFLX_demand.json"},
+      {"agent": "Daedalus", "output": "NFLX_inputs.json, NFLX_comps_inputs.json, NFLX_comps.json, NFLX_valuation.json, NFLX_headline.json"},
+      {"agent": "Boreas", "output": "NFLX_boreas.json"},
+      {"agent": "Cassandra", "output": "NFLX_cassandra.json"},
+      {"agent": "Atlas (synthesis)", "output": "NFLX.json"}
+    ],
+    "pipeline_order": "Freeze (Hermes + Pheme + Theia parallel) -> Valuation (Daedalus) -> Debate (Boreas + Cassandra parallel) -> Synthesize (Atlas)"
+  },
+
+  "change_log": [
+    {
+      "version": "1.0",
+      "date": "2026-06-17",
+      "change": "Initial Atlas v3 report for NFLX",
+      "prior_rating": null,
+      "new_rating": "SELL",
+      "justification": "First run; no prior report to diff"
+    }
+  ],
+
+  "data_gaps": [
+    "Netflix does not disclose quarterly subscriber counts (stopped Q1 2025); regional revenue lines do not split subscription from advertising -- estimates derived from total revenue minus announced ad revenue figures",
+    "Netflix does not publicly disclose CPM levels or programmatic fill rates; ad revenue trajectory beyond 2026 is EXTRAPOLATED from MoffettNathanson projections and management trend commentary",
+    "Netflix does not break out India subscriber count separately; APAC figures include 57.5 million subscribers across a large heterogeneous region",
+    "Q1 2026 10-Q EDGAR filing includes the $2.8 billion one-time Paramount/Skydance termination fee; forward earnings require manual artifact-correction per Pheme market_facts.json",
+    "Buyback prices paid in FY2025 are estimated from the $77-134 per share range during 2025; Netflix does not disclose average repurchase price per quarter"
+  ],
+
+  "sources": [
+    {"url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000034/nflx-20251231.htm", "note": "Netflix 10-K FY2025: full year results, balance sheet, cash flow"},
+    {"url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "note": "Netflix Q1 2026 earnings release: revenue $12.25B, 2026 guidance $50.7-51.7B, ad revenue $3B target, regional subscriber data"},
+    {"url": "https://www.investing.com/news/transcripts/earnings-call-transcript-netflix-beats-q1-2026-eps-estimates-stock-dips-93CH-4619468", "note": "Q1 2026 earnings call transcript: CFO Neumann confirms $3B ad revenue target; programmatic >50% of non-live ad revenue"},
+    {"url": "https://www.ainvest.com/news/netflix-streaming-dominance-big-boost-moffettnathanson-upgrades-price-target-1-150-2504/", "note": "MoffettNathanson: ad revenue $6B in 2027, $9.6B by 2030; operating margin 40% by 2030"},
+    {"url": "https://adwave.com/resources/most-watched-streaming-service-q4-2025", "note": "Nielsen Gauge December 2025: YouTube 12.7% US TV viewing, Netflix 9.0%"},
+    {"url": "https://businesstats.com/netflix-monthly-streaming-revenue-per-customer/", "note": "Netflix ARPU by region 2023-2025: global $11.95, UCAN $17.28, EMEA $11.14, LATAM $7.48, APAC $7.72"},
+    {"url": "https://www.financialcontent.com/article/marketminute-2026-4-1-netflixs-pricing-power-unleashed-analysts-project-17-billion-revenue-surge-as-premium-tier-hits-2699", "note": "JPMorgan/Citi: US price hikes (Premium $26.99, Standard $19.99) add approximately $1.7B annualized revenue"},
+    {"url": "https://www.theglobeandmail.com/investing/markets/stocks/NFLX-Q/pressreleases/2505820/bank-of-america-securities-downgrades-netflix-nflx-to-a-hold/", "note": "BofA: Jessica Reif Ehrlich downgrade from Buy to Hold, June 16 2026"},
+    {"url": "https://medium.com/@thekeyword/netflix-ad-revenue-more-than-doubled-to-1-5-billion-in-2025-1da44715751f", "note": "Netflix ad revenue $1.5B in 2025, 190M+ monthly ad-tier viewers, 4,000+ advertisers as of Q1 2026"},
+    {"url": "https://www.indiewire.com/features/general/netflix-subscribers-guidance-broadband-cell-phones-1234708470/", "note": "Netflix CFO: TAM of 700M-1B homes globally; Netflix at 325M = approximately 38% of lower bound"},
+    {"url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-3-27-the-20-billion-content-war-netflix-hikes-prices-again-in-bold-pursuit-of-50-billion-revenue-goal", "note": "Netflix content spend: $20B planned 2026, WWE RAW live events included; FCF guidance $8B for 2026"}
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "role": "bear",
+  "bear_value_per_share": 31.51,
+  "base_value_per_share": 55.52,
+  "swing_vs_base": -24.01,
+  "scenario_spec": {
+    "nopat_T_b": 13.56,
+    "g_lt": 0.035,
+    "roic": 0.35,
+    "r": 0.108,
+    "interim_fcf_pv_b": 38.0,
+    "revenue_2030_b": 56.5,
+    "op_margin_2030_b": 0.30,
+    "tax_rate_b": 0.20,
+    "ad_revenue_2030_b": 4.0,
+    "subscribers_2030_b_m": 355,
+    "exit_multiple_gordon": 12.33,
+    "net_debt_b": 5.429,
+    "shares_outstanding_b": 4.211,
+    "computation_source": "/tmp/nflx_bear_result.json -- exit_multiple_compute.py output"
+  },
+  "bear_computation_detail": {
+    "gordon_formula": "(1 - g_lt/roic) / (r - g_lt) = (1 - 0.035/0.35) / (0.108 - 0.035) = 0.9 / 0.073 = 12.33x",
+    "ev_at_T_b": 167.195,
+    "discount_factor": 1.6699,
+    "pv_of_terminal_b": 100.121,
+    "interim_fcf_pv_b": 38.0,
+    "total_ev_b": 138.121,
+    "less_net_debt_b": 5.429,
+    "implied_equity_b": 132.692,
+    "implied_px": 31.51
+  },
+  "key_debates": [
+    {
+      "debate": "YouTube Structurally Caps Netflix Ad Revenue at $3-4B by 2030",
+      "is_crux": true,
+      "bear_view": "The crux -- advertising revenue from 2027 to 2030 -- resolves against Netflix because YouTube has already won the structural battle for streaming video ad budgets. YouTube holds 12.7% of total US TV viewing minutes against Netflix's 9.0% (Nielsen December 2025), and YouTube is the gainer, having surpassed Netflix in mid-2025. That gap is not a temporary content cycle artifact. YouTube supplies an algorithmically infinite library at zero marginal cost to advertisers; its 2.7 billion monthly active users give it measurement scale that Netflix's 190 million ad-tier viewers cannot match. Advertisers allocating streaming video budgets have spent a decade calibrating their attribution tools (Google's GA4 and DV360) to YouTube's ecosystem. The switching cost of moving even 10% of a $50B video ad budget to an unproven Netflix platform is a real organizational risk brand managers will not take without demonstrated performance data at scale. Netflix's own ad server migration away from Microsoft Xandr, actively underway in 2025-2026, is a single-point-of-failure risk: any CPM quality degradation or fill-rate disruption during the transition hands advertisers a concrete reason to defer budget commitments. The programmatic video ad market is also contested by Amazon (Prime Video ads launched January 2024), Hulu/Disney, Peacock, and Max -- all of whom have operational streaming ad stacks ahead of Netflix. The base case assumes $7.2B in ad revenue by 2030, implying ad revenue per member per month of $1.54 on 390M subscribers. The bear says $4.0B on 355M subscribers ($0.94/member/month) -- still growing from today's $0.38 but failing to replicate YouTube's $12-15/member/month, or even Hulu's $3-4/member/month. Netflix reaching $4B by 2030 is not a disaster -- it is simply the outcome where the new ad platform fails to displace incumbent budget allocations at the rate the base assumes.",
+      "named_break_mechanism": "YouTube's structural advantage in streaming video ad infrastructure -- advertiser relationship depth in GA4/DV360, 2.7B MAU measurement scale, $35B+ annual ad revenue with a decade-long compounding flywheel -- prevents Netflix from commanding premium CPMs and winning significant budget reallocation from linear TV. Specific trigger: Netflix's 2025-2026 ad-tech migration away from Microsoft Xandr introduces execution risk; if two consecutive upfront seasons (2026 and 2027) disappoint CPM delivery vs. commitments, advertiser contracts renew at lower rates or migrate back to YouTube/Amazon.",
+      "historical_precedent": "Every major streaming service that launched an ad tier after the market leader consolidated budgets has underperformed initial projections. Peacock launched with ambitious ad revenue targets and is still loss-making four years in with 36 million subscribers. Amazon's Prime Video ads launched January 2024 with a projected $3B first-year revenue; actual 2024 performance was not publicly disclosed but analyst estimates were significantly revised downward by year end. The pattern: the second and third entrants into a programmatic video ad market receive structurally lower CPMs because advertisers use scarcity to negotiate. YouTube as dominant incumbent extracts the premium pricing.",
+      "how_to_see_it_coming": "Watch Netflix's ad revenue disclosure (now annual). The bear triggers if: (1) 2026 full-year ad revenue misses the $3B management target; (2) 2027 upfront advertising commitments (disclosed in spring 2027 industry reporting) fall below $4B annual run-rate; (3) CPM data from industry trade sources (MediaRadar, Standard Media Index) shows Netflix ad CPMs below $30 while YouTube holds $40+ for comparable inventory. Any of these, appearing before the 2027 fiscal year close, is the leading indicator.",
+      "what_would_change_our_mind": "Netflix ad revenue exceeding $3.5B in 2026 (above management's $3B target) and upfront 2027 commitments publicly disclosed at a $5B+ annual run-rate, with documented CPMs above $40 for premium inventory. That would indicate the advertiser budget migration is occurring at the base-case pace and upgrade the evidence grade from MECHANISM-NOT-YET-FIRING to CONTRACTED.",
+      "worth_per_share": -24.01,
+      "worth_per_share_note": "Full bear scenario (ad stall to $4B + margin compression to 30% + subscriber stall at 355M + higher r of 10.8%): $31.51 vs base $55.52 = -$24.01/share. The crux lever (ad revenue) is not isolable from margin because lower ad revenue directly suppresses the incremental high-margin revenue that drives margin expansion -- the two variables are jointly determined by the ad business outcome.",
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING",
+      "evidence_quality_citation": "YouTube 12.7% vs Netflix 9.0% US TV viewing share is OBSERVABLE (Nielsen December 2025, crux.json). Netflix ad revenue stalling is the MECHANISM: real and named (advertiser budget inertia, GA4/DV360 lock-in, ad-tech migration risk), but not yet firing -- Netflix's 2025 ad revenue grew 2.5x and the $3B 2026 target has not yet been missed. Per crux.json bear note: 'mechanisms are real but not yet firing.'"
+    },
+    {
+      "debate": "Beat-But-No-Raise is a Structural Derating Trigger, Not a One-Quarter Event",
+      "is_crux": false,
+      "bear_view": "The Q1 2026 result was not a random stumble. Netflix beat on revenue ($12.25B vs $12.18B consensus) but maintained guidance -- for a name priced at 30x+ forward earnings at its June 2025 peak, that is a structural signal. The stock fell 9-10% on the print. Since then it has declined an additional 15-17% to $77-78, sitting 42% below its all-time high. The mechanism is expectations management compressing the multiple: at $134 in June 2025 the market priced NFLX at roughly 37x NTM earnings, implying continued beat-and-raise cadence. The Q1 result invalidated that cadence. The stock now trades at 21.7x NTM earnings (on clean $3.59 EPS per market_facts.json artifact note). The bear says the multiple stabilizes below that, not above it. The specific mechanism: Q2 guidance calls for 13% revenue growth, slightly below the street's 13.5%+ estimate. If Q2 (reporting July 16, 2026) also maintains guidance without raising, that is two consecutive quarters of beat-but-no-raise on a declining multiple -- the kind of pattern that historically produces a prolonged re-rating to 15-16x on a maturing consumer platform. Netflix stopped reporting quarterly subscriber counts in Q1 2025; the market therefore has less forward visibility into the growth engine at precisely the moment it needs it most. Reed Hastings' board departure (announced Q1 2026) removes the co-founder governance signal. Jay Hoag, the incoming chairman, is a financial investor, not an operational streaming executive. BofA's Jessica Reif Ehrlich, one of the most consistently bullish and high-profile media analysts, downgraded to Hold on June 16, 2026, after maintaining a $125 Buy target as recently as May 18 -- a 29-day reversal that signals the smart-money consensus is reassessing the re-rating thesis, not just trimming a target.",
+      "named_break_mechanism": "The derating trigger is Q2 2026 earnings on July 16: if Netflix delivers 13% revenue growth (as guided) and does not raise full-year guidance above $50.7-51.7B, the market's earnings revision cycle stalls. At current 21.7x NTM P/E, a stall in revisions with a maturing growth profile historically compresses the multiple to 15-17x (the range for a platform with 3-5% long-run earnings growth). That compression, applied to $3.59 NTM EPS, targets $53-61/share from the current $77.84. The specific failure point: Netflix has no subscriber count disclosure to cushion the multiple. If Q2 also shows any softness in ad revenue commentary, the dual miss (subscription growth opaque + ad ramp slower than hoped) accelerates the compression.",
+      "historical_precedent": "Facebook (Meta) in 2022: beat-but-no-raise on a high multiple (30x+ P/E at peak) produced a 26% single-day decline followed by 12 months of sustained re-rating. Netflix itself in 2022: subscriber miss led to a 35% single-day decline and a multi-year multiple compression from 60x to 18x. The pattern for high-multiple consumer platforms where the growth narrative cracks is not a smooth glide path -- it is a step-function re-rating when two consecutive quarters fail to beat-and-raise.",
+      "how_to_see_it_coming": "Q2 2026 revenue vs $12.9B consensus (July 16 report). Operating margin vs 31.5% guided. Any voluntary subscriber commentary that implies below-15M net adds for Q2. Ad revenue trajectory commentary vs the $3B 2026 annual target. A Q2 miss on any two of these is the trigger.",
+      "what_would_change_our_mind": "Q2 2026 beats consensus on both revenue and operating margin AND raises full-year 2026 guidance above $51.7B. That restores the beat-and-raise cadence and re-rates the multiple toward 24-25x, supporting a price of $86-90. It would not invalidate the bear thesis on advertising (Debate 1) but would separate the multiple compression risk from the fundamental ad-ramp risk.",
+      "worth_per_share": -19.85,
+      "worth_per_share_note": "Multiple compression from 21.7x NTM to 16x NTM (the justified multiple per valuation.json: justified_pe_ntm=15.5x): 16x on $3.59 NTM EPS = $57.44; at 15x = $53.85. The midpoint is $55.65, near our base intrinsic $55.52. The downside from current $77.84 to the 15-16x justified multiple = roughly $20-24/share from current price. Stated as deviation from base: our base already incorporates full multiple convergence to intrinsic; the debate is whether that convergence happens via a single de-rating event (bear: fast, July 16 trigger) or a smooth re-rating over 12-18 months (base). The near-term path risk, not the intrinsic value, is the debate here -- and a Q2 disappointment makes the path faster and potentially overshoots intrinsic to the downside.",
+      "evidence_quality": "OBSERVABLE-AND-NEAR",
+      "evidence_quality_citation": "Q2 2026 earnings July 16, 2026 -- 29 days away. Q1 2026 beat-but-no-raise is OBSERVABLE (market_facts.json news_narrative). BofA downgrade June 16 is OBSERVABLE. Multiple compression already underway (from 37x in June 2025 to 21.7x today, market_facts.json forward_pe_on_clean_eps). Q2 guide of 13% revenue growth below street 13.5%+ is OBSERVABLE (market_facts.json news_narrative)."
+    },
+    {
+      "debate": "Content Cost Inflation Prevents Margin Expansion Beyond 30-31%, Capping NOPAT Growth",
+      "is_crux": false,
+      "bear_view": "The base case projects operating margin expanding from 29.5% in 2025 to 36% by 2030 -- 650bps of expansion over five years. That rate of expansion has been well-established historically (270bps/year since 2022) and is the foundation of the NOPAT growth that makes the exit-multiple math work. The bear says this expansion stalls at 30-31% because the content arms race is entering a new cost cycle. Three named mechanisms make this concrete. First, live sports rights are repricing: Netflix holds NFL Christmas Day games but not a full NFL Sunday Ticket-equivalent package. The NFL's current Sunday Ticket arrangement with Amazon ($1B+/year) reprices before 2028; if Netflix bids for expanded NFL rights, the incremental cost is $2-4B/year on a base of $20B -- enough to reverse 300-400bps of margin. Second, WWE RAW at $500M/year ($5B over 10 years, confirmed) is already flowing through the income statement. Netflix is NOT in the NBA package, which went to Amazon and NBC. If the sports rights inventory expands beyond what Netflix currently holds -- and Sarandos has publicly committed to live sports as a retention tool -- the content spend ceiling the CFO called 'nowhere near' becomes more proximate. Third, Disney's integration of Hulu into Disney+, creating a combined platform of approximately 180 million US subscribers in 2026, will force Netflix to respond with defensive content investment once Disney stabilizes its balance sheet (Fox acquisition debt refinancing cycle ends 2026-2027). The margin math: at 30% operating margin on $65B 2030 revenue (base revenue, bear margin), NOPAT = $65B x 0.30 x 0.82 = $16.0B vs. the base's $19.2B. Using the base exit multiple (16.51x, g_LT=5%, ROIC=40%, r=10.3%), the margin lever alone implies $47.85/share -- $7.67 below the base $55.52. This is the smallest of the three debates in isolation, but it is not independent: if the advertising ramp stalls (Debate 1), the incremental ad revenue that was supposed to cover sports rights costs at zero incremental content expense fails to arrive, making the margin compression worse.",
+      "named_break_mechanism": "Specific: NFL rights renewal cycle (2027-2028 bidding). Current Disney bundling defensive spend (confirmed Hulu integration). WWE RAW $500M/year confirmed spend already in P&L. The margin break triggers if Netflix adds a full NFL package bid ($2-4B/year additional) OR if content spend grows above 12%/year for two consecutive years while revenue grows below 10%. Watch: content spend guidance vs. revenue guidance each quarter (the ratio, not the absolute). A content spend/revenue ratio exceeding 42% (from current 39-40%) for two consecutive quarters is the leading indicator of margin expansion stalling.",
+      "historical_precedent": "Hulu's trajectory: Hulu launched an ad business in 2016 and had a decade of advertiser relationships by 2026, yet still requires the Disney bundle and live sports (live TV package) to justify its content spend. Its operating margins have never exceeded 10-12% on a standalone basis because sports rights costs are structural, not cyclic. Netflix is entering the same bidding pool for live sports (NFL, boxing, combat sports) that forced Hulu and Peacock into persistent losses.",
+      "how_to_see_it_coming": "Netflix quarterly filings: content spend (cash) vs. content amortization ratio. Management 2027 content budget guidance (typically disclosed alongside Q4 results in January 2027). The 2027-2028 NFL rights bidding -- reported in sports/media trade press (Sports Business Journal, SportsPro) months before the deal closes. Content amortization-to-revenue ratio exceeding 42% in any two consecutive quarters is the quantitative signal.",
+      "what_would_change_our_mind": "Netflix content spend guidance for 2027 remaining at or below $22B (less than 10% growth from 2026's $20B) while revenue grows above 12%. That would indicate Netflix is not entering the arms-race phase and that sports rights costs are being selectively absorbed, not structurally escalating.",
+      "worth_per_share": -7.67,
+      "worth_per_share_note": "Margin compression alone (30% vs base 36%), at base revenue $65B and base g_LT/ROIC/r: NOPAT = $65B x 0.30 x 0.82 = $15.99B. Exit multiple 16.51x. EV at T = $264.0B. Discounted: $264.0B / 1.6326 = $161.7B. Plus interim FCF PV $45.18B = $206.9B EV. Less net debt $5.43B = $201.5B equity / 4.211B shares = $47.85/share vs base $55.52 = -$7.67/share. This is the isolated margin debate. It compounds with Debate 1 if ad revenue stalls -- the combined outcome is reflected in the full bear of $31.51/share.",
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING",
+      "evidence_quality_citation": "WWE RAW $500M/year is OBSERVABLE-AND-NEAR (confirmed per industry.json capex_guidance; already in P&L 2026). NFL expansion is MECHANISM-NOT-YET-FIRING (rights renewal cycle 2027-2028, not yet bid). Disney bundle integration is MECHANISM-NOT-YET-FIRING (Hulu integration confirmed in progress, competitive impact on Netflix content spend is unfired). Overall grade: MECHANISM-NOT-YET-FIRING because the dominant cost (NFL expansion) has not yet been bid."
+    }
+  ],
+  "forensic_flags": [
+    {
+      "flag": "FCF guided DOWN to $8.0B in 2026 despite revenue growing 13% and operating income expected to grow proportionately",
+      "detail": "Netflix guided FCF to $8.0B in 2026 (per market_facts.json capex_guidance) while revenue is guided to $50.7-51.7B (13% YoY growth) and operating margin is guided to expand to 31.5% from 29.5% in 2025. Operating income should therefore grow from $13.3B to approximately $16.3B -- yet FCF falls from $9.46B (FY2025 databundle.json cashflow) to $8.0B guided. The reconciliation: $20B cash content spend in 2026 vs $18B in 2025 is a $2B cash headwind that does not yet flow through content amortization (cash-to-amortization ratio stays at 1.1x, per market_facts.json, but the cash goes out in 2026 while the amortization hit is deferred). This is not a manipulation signal -- it is the well-understood accounting structure of a library-building business. BUT: if cash content spend continues growing 10%+/year (to $22B in 2027, $24.2B in 2028) while revenue grows at the bear-case pace of 3-5%, FCF could DECLINE in nominal terms despite growing operating income. Watch the ratio: content spend as % of revenue. Any two consecutive quarters above 42% (current ~40%) confirms the bear's content cost inflation thesis and would pressure FCF below $8B in out-years.",
+      "flag_type": "cash_conversion_divergence"
+    },
+    {
+      "flag": "Buybacks at $9.1B (FY2025) at $77-134/share represent capital destruction vs intrinsic value of $55.52",
+      "detail": "Netflix repurchased $9.127B of shares in FY2025 (databundle.json cashflow buybacks_b), executed across the $77-134/share range during 2025. Our base intrinsic value is $55.52. If we take the midpoint of the buyback price range at approximately $105/share, Netflix paid roughly 89% above intrinsic value per share retired. This is mild capital destruction at scale -- at $9.1B per year, the excess cost (relative to intrinsic) is approximately $4.3B per year in economic value destroyed. SBC at $1.6B/year is well-covered by buybacks ($9.1B), so the net share count IS declining (shares fell from 4.344B diluted to 4.211B outstanding). The quality issue is not dilution -- it is buying at $105 what the business is worth at $56. Management apparently disagrees with our valuation (they bought aggressively), which is worth noting as a check on our bear.",
+      "flag_type": "buyback_quality"
+    },
+    {
+      "flag": "Q1 2026 GAAP EPS of $1.23 is a $2.8B one-time artifact and must not be used in forward modeling",
+      "detail": "The $2.8B one-time Paramount/Skydance termination fee inflated Q1 2026 GAAP EPS from a clean $0.76-0.79 (the underlying operating run-rate) to the reported $1.23. Per market_facts.json artifact_flag: 'trailing GAAP EPS ($3.10) carries this one-off and overstates run-rate earnings.' The correct forward EPS for valuation is the $3.59 NTM consensus (FY2026 full-year). Any analyst using the trailing P/E of 25.1x (databundle.json pe_ttm: 25.1x, computed on inflated trailing EPS) instead of the clean 21.7x NTM forward P/E is working with a corrupted numerator. The clean multiple is already demanding; the artifact makes it appear more reasonable than it is.",
+      "flag_type": "accounting_artifact"
+    },
+    {
+      "flag": "Subscriber count opacity since Q1 2025 limits forward visibility at a critical inflection point",
+      "detail": "Netflix stopped reporting quarterly paid subscriber counts beginning Q1 2025, citing a shift to revenue and margin as primary metrics. This is strategically rational (it defocuses the market from a slowing metric) but practically it means the market and sell-side analysts must infer subscriber trajectory from revenue, ARPU, and management commentary. At precisely the point where subscriber growth is decelerating (password-sharing tailwind spent, UCAN mature at 40%+ household penetration per industry.json), the primary observable leading indicator of that deceleration has been removed from public disclosure. This is not fraud but it is an information quality degradation that should widen the uncertainty band on any forward model -- including ours.",
+      "flag_type": "disclosure_quality"
+    }
+  ],
+  "self_conviction": "MEDIUM",
+  "conviction_rationale": "The crux mechanism (YouTube structural advertising advantage) is real and named, but it is not yet firing -- Netflix's 2025 ad revenue grew 2.5x and the 2026 $3B target has not been missed. The bear thesis requires a trend break in 2027-2028 that has not yet occurred. The multiple compression debate (Debate 2) is OBSERVABLE-AND-NEAR and the Q2 print on July 16 will either confirm or disconfirm it within four weeks. The content cost debate (Debate 3) depends on an NFL rights cycle that is 2027-2028, not 2026. Overall: the mechanisms are credible and named, but two of the three are unfired. MEDIUM conviction is the honest grade -- not LOW because the evidence structure is clear and non-speculative, not HIGH because the bear requires a forward break, not a current observation.",
+  "evidence_quality_overall": "MECHANISM-NOT-YET-FIRING",
+  "evidence_quality_note": "The dominant bear mechanism (YouTube structural ad advantage capping Netflix ad revenue at $4B vs base $7.2B by 2030) is MECHANISM-NOT-YET-FIRING per crux.json. The near-term market/multiple compression is OBSERVABLE-AND-NEAR but is a price risk, not an intrinsic value risk. The intrinsic bear is driven by the unfired mechanisms. Evidence grading follows CONTRACT §5 and cassandra.md: a tail dressed as observable would corrupt the target.",
+  "scenario_spec_for_daedalus": {
+    "revenue_2030_b": 56.5,
+    "ad_revenue_2030_b": 4.0,
+    "subscription_revenue_2030_b": 52.5,
+    "subscribers_2030_m": 355,
+    "op_margin_2030_b": 0.30,
+    "tax_rate": 0.20,
+    "nopat_T_b": 13.56,
+    "g_lt": 0.035,
+    "roic": 0.35,
+    "r": 0.108,
+    "interim_fcf_pv_b": 38.0,
+    "exit_multiple": 12.33,
+    "implied_ev_b": 138.121,
+    "net_debt_b": 5.429,
+    "implied_equity_b": 132.692,
+    "shares_b": 4.211,
+    "bear_value_per_share": 31.51,
+    "base_value_per_share": 55.52,
+    "swing_vs_base": -24.01
+  }
+}

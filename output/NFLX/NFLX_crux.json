@@ -1,0 +1,112 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+
+  "crux_variable": "Revenue per member per year (ARPU x subscribers) -- specifically the trajectory of two compounding drivers: (1) global blended ARPU growth (driven by the advertising ramp and periodic subscription price increases) and (2) the pace of subscriber net additions as the market matures past the password-sharing tailwind",
+
+  "crux_one_line": "Can Netflix compound revenue at double-digit rates through 2030 by turning its 190M ad-tier viewers into a $9B advertising business while continuing to extract 4-6% annual ARPU growth from subscriptions, or does subscriber saturation and competitive pressure cap revenue growth below what the current ~25x P/E implies?",
+
+  "crux_decomposition": {
+    "identity": "Annual Revenue = Paid Subscribers (M) x Monthly ARPU (USD) x 12 + Advertising Revenue = [Subscriber Pool x Penetration Rate x Conversion to Paid] x [Subscription ARPU x 12] + [Ad-Tier MAUs x Ad CPM x Ad Load x Viewable Hours]",
+    "simplified_identity": "Annual Revenue = Subscribers x Monthly ARPU x 12; where Monthly ARPU = [Weighted avg subscription fee x (1 - ad tier mix)] + [Ad ARPU x ad tier mix]. The advertising segment is better modeled separately as: Ad Revenue = Ad-Tier MAUs (M) x Monthly Ad Revenue Per MAU (USD) x 12.",
+    "drivers": [
+      {
+        "driver": "Global paid subscribers (stock)",
+        "current_level": "325 million as of Q4 2025 / Q1 2026 (milestone disclosed); regional: UCAN 89.6M, EMEA 101.1M, APAC 57.5M, LATAM 53.3M",
+        "trajectory": "Grew from 260M (2022) to 302M (2024) to 325M (2025), a net +65M over 3 years. Of that, ~50M was password-sharing-crackdown-driven (2023-2024). Organic/structural growth going forward is estimated at ~15-25M/year, concentrated in APAC and LATAM. UCAN is mature (~40% household penetration per Antenna; 53% US penetration per some estimates). Netflix stopped reporting quarterly subscribers in Q1 2025 -- a signal that subscriber growth is no longer the primary financial metric. Analyst consensus expects ~26M net adds per year going forward.",
+        "source": "Netflix Q4 2025 earnings release; Q1 2026 10-Q",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm"
+      },
+      {
+        "driver": "Subscription ARPU (average monthly revenue per paying member)",
+        "current_level": "Global blended $11.95/month (2025 full year average). UCAN $17.28, EMEA $11.14, LATAM $7.48, APAC $7.72.",
+        "trajectory": "Global blended ARPU was nearly flat from 2022-2024 ($11.70 to $11.75) despite UCAN price hikes, because the mix shift toward lower-ARPU APAC/LATAM and ad-tier subscribers offset the pricing gains. In 2025, global ARPU grew to $11.95 (+1.7%) driven by ad revenue scaling and UCAN price hikes. Two US price hikes by Q1 2026 (Premium to $26.99, Standard to $19.99) add ~$1.7B annualized revenue per JPMorgan/Citi estimates. Subscription ARPU growth structurally faces a mix headwind: faster growth in lower-ARPU regions means raw subscriber adds dilute the global average.",
+        "source": "businesstats.com Netflix ARPU data compiled from SEC filings; JPMorgan/Citi analyst estimates",
+        "source_url": "https://businesstats.com/netflix-monthly-streaming-revenue-per-customer/"
+      },
+      {
+        "driver": "Advertising revenue (the swing factor)",
+        "current_level": "$1.5 billion in 2025 (first year of public disclosure). 190 million monthly active users on ad-supported tier. 4,000+ active advertisers as of Q1 2026, up 70% YoY. Netflix's own ad tech server (replacing Microsoft) launched. Ad-supported tier was 55%+ of new sign-ups in advertising countries in Q1 2025.",
+        "trajectory": "Ad revenue grew ~2.5x in 2025. Netflix guides to ~$3B in 2026 (another ~2x). MoffettNathanson projects ~$6B in 2027 and ~$9.6B by 2030. For context: linear TV ad market is ~$60B/year in the US alone; if Netflix captures the streaming premium video share it deserves by audience size, $9B by 2030 is plausible but requires significant advertiser budget shifts and Netflix closing the CPM gap vs. YouTube/linear TV. The ramp is real but the 2028-2030 extrapolation is EXTRAPOLATED, not contracted.",
+        "source": "MoffettNathanson analyst note April 2026; Netflix Q4 2025 earnings; CNBC reporting",
+        "source_url": "https://www.ainvest.com/news/netflix-streaming-dominance-big-boost-moffettnathanson-upgrades-price-target-1-150-2504/"
+      },
+      {
+        "driver": "Operating margin expansion",
+        "current_level": "29.5% operating margin in 2025 (up from 26.7% in 2024, 21% in 2023, 17.5% in 2022). Guided 31.5% for 2026.",
+        "trajectory": "Margin has expanded ~250-300bps/year since 2022 through content cost leverage (revenue grows faster than content amortization), SG&A scale, and nascent ad revenue with high incremental margins. MoffettNathanson and others project margins at 35-40% by 2030, analogous to a mature TV network. FCF was $9.0B in 2025 (20% FCF margin on $45.2B revenue). The margin story is well-established and not the primary contested variable -- it depends on the revenue trajectory being correct.",
+        "source": "Netflix 10-K FY2025; MoffettNathanson April 2026",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000034/nflx-20251231.htm"
+      },
+      {
+        "driver": "Content spend as a percentage of revenue (cost control)",
+        "current_level": "~$18B cash content spend in 2025 on $45.2B revenue (~39.8%). $20B planned for 2026 on guidance $50.7-51.7B revenue (~39-40%).",
+        "trajectory": "Netflix has guided a stable ~1.1x cash-to-amortization ratio. Content spend is growing at roughly 10% per year vs. revenue growing at 12-16%. This asymmetry is the core source of margin expansion. The key question is whether Netflix MUST accelerate content spend (due to competitive pressure from Amazon, Disney, sports rights inflation) or can maintain discipline. The CFO explicitly said content spending in 2025 is 'not anywhere near ceiling' in terms of what they could justify if ROI warranted it -- implying spend discipline is a choice, not a constraint.",
+        "source": "Variety: Netflix CFO content spend comment; Netflix 10-K FY2025",
+        "source_url": "https://variety.com/2025/digital/news/netflix-content-spending-2025-ceiling-cfo-1236328510/"
+      }
+    ]
+  },
+
+  "base": {
+    "value": "Revenue of ~$62B by 2030, at ~350M subscribers and global blended ARPU of ~$14.8/month (subscription ~$12.5 + advertising per member ~$2.3). Operating margin ~34%. Owner-FCF margin ~22-24%. Revenue CAGR from 2025: ~6.5%.",
+    "argument": "The base starts from the 2026 consensus ($50.7-51.7B, guided by Netflix itself). Beyond 2026, the honest most-likely is that subscriber growth continues at a moderating pace: APAC and LATAM drive ~15-18M net adds per year (the crackdown tailwind is spent; organic growth is the residual), while UCAN and EMEA contribute 5-8M combined. By 2030 this implies ~350-360M subscribers -- entirely consistent with Netflix's own 700M-1B home TAM and 40% penetration of the lower bound. Global blended ARPU grows at ~4% per year (subscriptions 2-3% real plus mix shift partially offset, plus advertising scaling from $1.5B in 2025 to ~$5-6B in 2030 per MoffettNathanson's base). Revenue at $62B implies ~6.5% CAGR from 2025 -- a deceleration from the 16% of 2025 as the password-sharing tailwind fades and the subscriber count matures. Operating margin expands to ~34% (roughly 150bps/year from 29.5% in 2025, consistent with the historical pace but acknowledging sports rights costs rising). This base is the honest most-likely: it does NOT assume Netflix can maintain 12%+ revenue growth through 2030 (which would require the advertising ramp to hit the top end of projections AND subscriber growth to be stronger than the saturation indicators suggest), nor does it assume a collapse in subscriber growth or competitive loss of material scale.",
+    "evidence_type": "EXTRAPOLATED",
+    "note": "Near-term (2026) is management-guided and thus CONTRACTED. 2027-2030 is EXTRAPOLATED from the established trend in subscriber penetration and the advertising ramp trajectory per MoffettNathanson."
+  },
+
+  "bull": {
+    "value": "Revenue of ~$78B by 2030, at ~375M subscribers and global blended ARPU of ~$17.3/month (subscription ~$13.5 + advertising per member ~$3.8). Operating margin ~38%. Owner-FCF margin ~26-28%. Revenue CAGR from 2025: ~11.5%.",
+    "argument": "The bull case rests on Netflix delivering the advertising ramp at the high end of analyst projections ($9.6B by 2030 per MoffettNathanson) while also sustaining 3-4% subscription ARPU growth through periodic price hikes and faster EMEA/APAC ARPU convergence. This requires: (1) Netflix's ad tech platform succeeding in capturing premium video CPMs ($40-65 CPM for TV-like viewing) as advertisers shift linear TV budgets to streaming -- credible given Netflix's 190M ad-tier viewers and exclusive live events driving appointment viewing; (2) Subscriber growth holding at ~20M net adds per year to 2030 as APAC and LATAM continue penetration expansion (India alone has ~170M internet households that Netflix has barely penetrated); (3) Live sports/events (WWE, NFL, MLB package) proving strong enough engagement anchors to reduce quarterly churn from 2-3% to below 2% in UCAN. The bull case ($78B) represents 11.5% CAGR from 2025, close to what Netflix has guided for 2026 (12-14%) but extending that growth rate further than the base case, sustained by advertising becoming a significant enough contributor (~$9-10B by 2030 vs. $5-6B in base) that total company revenue growth is higher even as subscription growth decelerates. Operating margins of 38% would be consistent with a mature premium cable network (HBO parent at peak was ~35-38% EBITDA margin).",
+    "evidence_type": "EXTRAPOLATED",
+    "note": "The ad revenue trajectory is the key distinction from base. MoffettNathanson's $9.6B by 2030 is a named third-party sell-side projection, not a management commitment. Netflix has confirmed 'doubling' ad revenue year over year through 2026 but has not guided beyond 2026 on advertising."
+  },
+
+  "bear": {
+    "value": "Revenue of ~$50B by 2030, at ~335M subscribers and global blended ARPU of ~$12.4/month (subscription ~$11.5 + advertising per member ~$0.9). Operating margin ~30%. Owner-FCF margin ~19-20%. Revenue CAGR from 2025: ~2%.",
+    "argument": "The bear case is not a disaster scenario -- it is the outcome where the advertising ramp disappoints materially AND subscriber growth stalls near current levels. The mechanism: (1) The advertising business fails to scale CPMs because YouTube retains 70%+ of streaming video ad budgets (its 12.7% US TV viewing share dwarfs Netflix's 9.0%, and YouTube has a decade of advertiser relationships and measurement tools Netflix lacks); Netflix's ad revenue stalls at $3-4B by 2030 rather than $9-10B. (2) Subscriber growth slows to single-digit million adds per year as UCAN and EMEA approach saturation (50%+ of addressable broadband households) while LATAM currency risk and APAC pricing sensitivity suppress net adds below trend -- Netflix reaches ~335M by 2030 rather than 350-375M. (3) Content spend must accelerate beyond 10%/year to defend against a financially-recovered Disney+ (combined with Hulu at ~180M US subscribers post-2026 merger) and Amazon's bundled sports rights -- margin expansion stalls at 30-31% rather than reaching 35%+. (4) A price hike cycle in 2027-2028 triggers above-normal churn in UCAN (the mature market most sensitive to further increases from already-high $19.99-$26.99 plans). Revenue at $50B by 2030 represents near-flat growth from the 2026 guided $50.7-51.7B -- an unusual but not impossible plateau if subscriber growth truly stalls and advertising disappoints.",
+    "evidence_type": "MECHANISM-NOT-YET-FIRING",
+    "note": "The bear mechanisms are real (YouTube share data is observed; Disney integration is occurring; ad-tech is unproven at scale) but are not yet firing -- Netflix's current trends are positive. This is a 'the trend breaks' scenario, not an 'the trend has already broken' scenario."
+  },
+
+  "ceiling": "Approximately 700-900 million broadband-connected households globally (ex-China, per Netflix CFO and management guidance). At Netflix's current global blended penetration of ~38% (325M / 850M homes), the physical ceiling on subscribers is 700-850M, but the economic ceiling is much lower: at $12-18/month, the revenue ceiling reachable by 2030 within a credible subscriber count of 400-450M is approximately $85-100B annually (400M x $15/month x 12 months + $10-12B advertising). Netflix has not committed to a 400M subscriber target, and the company's own stop in subscriber reporting suggests they do not expect near-term step changes.",
+
+  "floor": "Approximately $45-48B revenue in 2030, representing effectively zero real growth from the 2026 guided base, if both subscriber growth stalls and the advertising ramp fails to scale beyond $2-3B total by 2030. This outcome would require simultaneous failure of the advertising business, price elasticity problems (churn from hikes), and competitive losses of significant viewing share. Netflix's content moat and brand make this outcome unlikely but not zero probability.",
+
+  "what_decides_it": "The advertising revenue trajectory from 2027-2030 is the single variable that most differentiates the bull ($78B) from the base ($62B) from the bear ($50B). Subscription revenue alone, with 350M subscribers and 4% ARPU growth, produces roughly $55B by 2030 in all three scenarios -- the scenarios diverge almost entirely on whether Netflix builds a $9B advertising business (bull), a $5-6B advertising business (base), or a $3-4B advertising business (bear). Monitor: Netflix ad revenue disclosure (now annual), advertiser CPM levels and upfront commitments, and the rate at which YouTube versus Netflix captures linear TV budget migration. Secondary: subscriber net adds trajectory in APAC/LATAM (the remaining growth region) and churn response to price hikes in UCAN.",
+
+  "sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+      "note": "Netflix Q1 2026 earnings release: 2026 guidance $50.7-51.7B revenue, 31.5% operating margin, ad revenue on track for $3B in 2026; subscriber counts by region"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000034/nflx-20251231.htm",
+      "note": "Netflix 10-K FY2025: $45.2B revenue, 29.5% operating margin, $13.3B operating income, $9.0B FCF, 325M paid memberships, $1.5B ad revenue, $18B content spend"
+    },
+    {
+      "url": "https://businesstats.com/netflix-monthly-streaming-revenue-per-customer/",
+      "note": "Netflix ARPU historical data 2023-2025 by region: global blended $11.95 in 2025"
+    },
+    {
+      "url": "https://www.ainvest.com/news/netflix-streaming-dominance-big-boost-moffettnathanson-upgrades-price-target-1-150-2504/",
+      "note": "MoffettNathanson: ad revenue $6B in 2027, $9.6B by 2030; operating margin 40% by 2030 projection"
+    },
+    {
+      "url": "https://medium.com/@thekeyword/netflix-ad-revenue-more-than-doubled-to-1-5-billion-in-2025-1da44715751f",
+      "note": "Netflix ad revenue $1.5B in 2025, 190M+ monthly ad-tier viewers, 4,000+ advertisers as of Q1 2026"
+    },
+    {
+      "url": "https://adwave.com/resources/most-watched-streaming-service-q4-2025",
+      "note": "Nielsen December 2025: YouTube 12.7% US TV viewing, Netflix 9.0% -- the competitive tension in viewing share"
+    },
+    {
+      "url": "https://www.financialcontent.com/article/marketminute-2026-4-1-netflixs-pricing-power-unleashed-analysts-project-17-billion-revenue-surge-as-premium-tier-hits-2699",
+      "note": "JPMorgan/Citi: March 2026 US price hikes (Premium to $26.99, Standard to $19.99) add ~$1.7B annualized revenue"
+    },
+    {
+      "url": "https://www.indiewire.com/features/general/netflix-subscribers-guidance-broadband-cell-phones-1234708470/",
+      "note": "Netflix CFO: TAM of 700M-1B homes globally; Netflix at 325M = ~38% of lower bound"
+    }
+  ]
+}

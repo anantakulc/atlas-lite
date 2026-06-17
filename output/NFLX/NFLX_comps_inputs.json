@@ -1,0 +1,60 @@
+{
+  "ticker": "NFLX",
+  "currency": "USD",
+  "current_price": 77.84,
+  "shares_outstanding_b": 4.211,
+  "net_debt_b": 5.429,
+  "fundamental_discount_rate": 0.103,
+  "terminal_growth": 0.04,
+  "horizon_years": 10,
+  "anchor": {
+    "type": "EV/NOPAT",
+    "metric_label": "NTM NOPAT (FY2026E)",
+    "metric_value": 12.9,
+    "fcf_conversion": 1.0,
+    "roic": 0.40,
+    "note": "NTM NOPAT = FY2026 estimated revenue $51.2B x 31.5% op margin x 0.80 (1 - 20% cash tax) = $12.902B rounded to $12.9B. Using EV/NOPAT as the primary anchor because Netflix's content is expensed (not capitalized), making NOPAT the cleanest measure of unlevered after-tax earnings for the streaming business. FCF conversion is ~1.0 for NOPAT (by construction; NOPAT is the pre-interest, pre-debt cash earnings measure). Note: EV/EBITDA is the street's preferred metric but Netflix's EBITDA ($30.3B TTM, databundle.json) is inflated by content amortization that is genuinely an economic cost; NOPAT is the economically honest numerator."
+  },
+  "street": {
+    "thesis": "Netflix is a durable content platform transitioning into a two-sided advertising business; the bull case rests on advertising reaching $3B in 2026 and scaling further, combined with operating leverage from the ~330M subscriber base driving earnings faster than revenue. (Source: market_facts.json street_thesis_one_line)",
+    "n_analysts": 50,
+    "rating": "Moderate Buy (29 Strong Buy, 8 Buy, 13 Hold, 0 Sell per market_facts.json)",
+    "target_mean": 114.15,
+    "target_high": 151.40,
+    "target_low": 80.00
+  },
+  "justified_g_grid": [0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.12],
+  "roic_grid": [0.20, 0.30, 0.40, 0.50],
+  "duality_g_grid": [0.04, 0.06, 0.08],
+  "peers": [
+    {
+      "name": "YouTube (Alphabet segment)",
+      "multiple": 25.0,
+      "note": "YouTube advertising revenue ~$35B in 2025; estimated NOPAT with 25% margin = $8.75B; EV implied for the YouTube business at ~$220B (from Alphabet sum-of-parts) = ~25x EV/NOPAT. YouTube is the primary direct competitor for streaming video advertising budgets (12.7% US TV viewing share per Nielsen Dec 2025 vs. Netflix 9.0%)."
+    },
+    {
+      "name": "Walt Disney (DIS) -- streaming assets",
+      "multiple": 18.0,
+      "note": "Disney+ + Hulu combined streaming NOPAT approaching profitability; Disney overall EV/EBITDA ~11x, but the streaming segment deserves a premium. Estimated Disney streaming EV/NOPAT in the 15-20x range as it scales from breakeven. Disney is a secondary competitor; combined Disney+/Hulu at ~180M US subscribers post-merger is a meaningful UCAN competitive threat."
+    },
+    {
+      "name": "Amazon Prime Video (AWS subsidy context)",
+      "multiple": null,
+      "note": "Prime Video is bundled with Prime membership; not separately monetized. Amazon's advertising revenue (including Prime Video ads) was ~$56B in 2024, but is not directly comparable to Netflix's streaming-only advertising. Amazon is a meaningful streaming competitor but the multiple is not isolatable."
+    },
+    {
+      "name": "Comcast (CMCSA) -- NBCUniversal Peacock",
+      "multiple": 10.0,
+      "note": "Comcast at ~10x EV/EBITDA; Peacock is a sub-scale streaming service at $4B+ revenue. Legacy cable business drags the multiple down. Reference for mature cable media valuations."
+    },
+    {
+      "name": "Spotify (SPOT) -- subscription analogy",
+      "multiple": 38.0,
+      "note": "Spotify at ~38x EV/NOPAT as a profitable subscription audio platform growing at ~20%. Relevant as a subscription-plus-advertising model precedent, though Spotify's content cost structure differs materially (music licensing is more like a royalty than Netflix's content amortization)."
+    }
+  ],
+  "history": {
+    "note": "Netflix traded at 30-40x EV/NOPAT during the 2020-2021 growth peak (pre-correction), fell to 15-20x during the 2022 crash when subscriber growth stalled, and recovered to 25-35x in 2023-2025 as the password-crackdown drove subscriber reacceleration. The current 26x (EV $336B / NTM NOPAT $12.9B) is at the low end of the post-correction trading range, reflecting the Q1 2026 'beat-but-no-raise' disappointment and BofA downgrade. Historical context: Netflix at $78 is -42% from the $134 June 2025 all-time high (post-split basis). Source: market_facts.json, databundle.json."
+  },
+  "contested_lever": "Advertising revenue trajectory 2027-2030 (the crux per Theia): bears argue YouTube's 12.7% vs. Netflix's 9.0% US viewing share makes it structurally disadvantaged for advertiser budgets; bulls argue Netflix's premium, appointment-viewing environment commands premium CPMs ($40-65) that make share of viewership less relevant than CPM quality. This is the lever that differentiates base ($7.2B by 2030) from bull ($10B) from bear ($4B)."
+}

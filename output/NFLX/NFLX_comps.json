@@ -1,0 +1,179 @@
+{
+  "schema_version": "2.0",
+  "ticker": "NFLX",
+  "currency": "USD",
+  "computed_at": "2026-06-17T16:17:49Z",
+  "basis": "EV/NOPAT",
+  "metric_label": "NTM NOPAT (FY2026E)",
+  "metric_value": 12.9,
+  "fcf_conversion": 1.0,
+  "roic": 0.4,
+  "fundamental_discount_rate": 0.103,
+  "terminal_growth": 0.04,
+  "horizon_years": 10,
+  "current": {
+    "price": 77.84,
+    "value_b": 327.8,
+    "multiple": 25.4,
+    "implied_growth": 0.0974,
+    "implied_growth_pct": 9.7
+  },
+  "street": {
+    "thesis": "Netflix is a durable content platform transitioning into a two-sided advertising business; the bull case rests on advertising reaching $3B in 2026 and scaling further, combined with operating leverage from the ~330M subscriber base driving earnings faster than revenue. (Source: market_facts.json street_thesis_one_line)",
+    "n_analysts": 50,
+    "rating": "Moderate Buy (29 Strong Buy, 8 Buy, 13 Hold, 0 Sell per market_facts.json)",
+    "target_mean": {
+      "price": 114.15,
+      "value_b": 480.7,
+      "multiple": 37.3,
+      "implied_growth": 0.1483,
+      "implied_growth_pct": 14.8
+    },
+    "target_high": {
+      "price": 151.4,
+      "value_b": 637.5,
+      "multiple": 49.4,
+      "implied_growth": 0.1862,
+      "implied_growth_pct": 18.6
+    },
+    "target_low": {
+      "price": 80.0,
+      "value_b": 336.9,
+      "multiple": 26.1,
+      "implied_growth": 0.101,
+      "implied_growth_pct": 10.1
+    }
+  },
+  "history_context": {
+    "note": "Netflix traded at 30-40x EV/NOPAT during the 2020-2021 growth peak (pre-correction), fell to 15-20x during the 2022 crash when subscriber growth stalled, and recovered to 25-35x in 2023-2025 as the password-crackdown drove subscriber reacceleration. The current 26x (EV $336B / NTM NOPAT $12.9B) is at the low end of the post-correction trading range, reflecting the Q1 2026 'beat-but-no-raise' disappointment and BofA downgrade. Historical context: Netflix at $78 is -42% from the $134 June 2025 all-time high (post-split basis). Source: market_facts.json, databundle.json."
+  },
+  "justified_grid": [
+    {
+      "growth": 0.04,
+      "growth_pct": 4.0,
+      "justified_multiple": 16.5,
+      "value_b": 213.0,
+      "implied_price": 50.57
+    },
+    {
+      "growth": 0.05,
+      "growth_pct": 5.0,
+      "justified_multiple": 17.8,
+      "value_b": 229.5,
+      "implied_price": 54.51
+    },
+    {
+      "growth": 0.06,
+      "growth_pct": 6.0,
+      "justified_multiple": 19.2,
+      "value_b": 247.4,
+      "implied_price": 58.76
+    },
+    {
+      "growth": 0.07,
+      "growth_pct": 7.0,
+      "justified_multiple": 20.7,
+      "value_b": 266.7,
+      "implied_price": 63.34
+    },
+    {
+      "growth": 0.08,
+      "growth_pct": 8.0,
+      "justified_multiple": 22.3,
+      "value_b": 287.6,
+      "implied_price": 68.29
+    },
+    {
+      "growth": 0.09,
+      "growth_pct": 9.0,
+      "justified_multiple": 24.0,
+      "value_b": 310.1,
+      "implied_price": 73.63
+    },
+    {
+      "growth": 0.1,
+      "growth_pct": 10.0,
+      "justified_multiple": 25.9,
+      "value_b": 334.3,
+      "implied_price": 79.39
+    },
+    {
+      "growth": 0.12,
+      "growth_pct": 12.0,
+      "justified_multiple": 30.1,
+      "value_b": 388.6,
+      "implied_price": 92.28
+    }
+  ],
+  "duality_decomposition": {
+    "note": "single-stage justified forward P/E = (1 - g/ROIC)/(r - g); shows the ROIC/payout lever",
+    "r": 0.103,
+    "roic_columns": [
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "rows": [
+      {
+        "growth": 0.04,
+        "growth_pct": 4.0,
+        "roic_20": 12.7,
+        "roic_30": 13.8,
+        "roic_40": 14.3,
+        "roic_50": 14.6
+      },
+      {
+        "growth": 0.06,
+        "growth_pct": 6.0,
+        "roic_20": 16.3,
+        "roic_30": 18.6,
+        "roic_40": 19.8,
+        "roic_50": 20.5
+      },
+      {
+        "growth": 0.08,
+        "growth_pct": 8.0,
+        "roic_20": 26.1,
+        "roic_30": 31.9,
+        "roic_40": 34.8,
+        "roic_50": 36.5
+      }
+    ]
+  },
+  "peers": [
+    {
+      "name": "YouTube (Alphabet segment)",
+      "multiple": 25.0,
+      "note": "YouTube advertising revenue ~$35B in 2025; estimated NOPAT with 25% margin = $8.75B; EV implied for the YouTube business at ~$220B (from Alphabet sum-of-parts) = ~25x EV/NOPAT. YouTube is the primary direct competitor for streaming video advertising budgets (12.7% US TV viewing share per Nielsen Dec 2025 vs. Netflix 9.0%)."
+    },
+    {
+      "name": "Walt Disney (DIS) -- streaming assets",
+      "multiple": 18.0,
+      "note": "Disney+ + Hulu combined streaming NOPAT approaching profitability; Disney overall EV/EBITDA ~11x, but the streaming segment deserves a premium. Estimated Disney streaming EV/NOPAT in the 15-20x range as it scales from breakeven. Disney is a secondary competitor; combined Disney+/Hulu at ~180M US subscribers post-merger is a meaningful UCAN competitive threat."
+    },
+    {
+      "name": "Amazon Prime Video (AWS subsidy context)",
+      "multiple": null,
+      "note": "Prime Video is bundled with Prime membership; not separately monetized. Amazon's advertising revenue (including Prime Video ads) was ~$56B in 2024, but is not directly comparable to Netflix's streaming-only advertising. Amazon is a meaningful streaming competitor but the multiple is not isolatable."
+    },
+    {
+      "name": "Comcast (CMCSA) -- NBCUniversal Peacock",
+      "multiple": 10.0,
+      "note": "Comcast at ~10x EV/EBITDA; Peacock is a sub-scale streaming service at $4B+ revenue. Legacy cable business drags the multiple down. Reference for mature cable media valuations."
+    },
+    {
+      "name": "Spotify (SPOT) -- subscription analogy",
+      "multiple": 38.0,
+      "note": "Spotify at ~38x EV/NOPAT as a profitable subscription audio platform growing at ~20%. Relevant as a subscription-plus-advertising model precedent, though Spotify's content cost structure differs materially (music licensing is more like a royalty than Netflix's content amortization)."
+    }
+  ],
+  "peer_median_multiple": 25.0,
+  "reconstruction": {
+    "currency": "EV/NOPAT",
+    "what_price_implies": "At 25.4x NTM NOPAT (FY2026E), the current price implies a ~9.7% earnings CAGR for 10y (then 4% terminal) at r=10.3%.",
+    "what_street_implies": "The street mean target implies ~14.8% for 10y.",
+    "history_anchor": "Netflix traded at 30-40x EV/NOPAT during the 2020-2021 growth peak (pre-correction), fell to 15-20x during the 2022 crash when subscriber growth stalled, and recovered to 25-35x in 2023-2025 as the password-crackdown drove subscriber reacceleration. The current 26x (EV $336B / NTM NOPAT $12.9B) is at the low end of the post-correction trading range, reflecting the Q1 2026 'beat-but-no-raise' disappointment and BofA downgrade. Historical context: Netflix at $78 is -42% from the $134 June 2025 all-time high (post-split basis). Source: market_facts.json, databundle.json.",
+    "contested_lever": "Advertising revenue trajectory 2027-2030 (the crux per Theia): bears argue YouTube's 12.7% vs. Netflix's 9.0% US viewing share makes it structurally disadvantaged for advertiser budgets; bulls argue Netflix's premium, appointment-viewing environment commands premium CPMs ($40-65) that make share of viewership less relevant than CPM quality. This is the lever that differentiates base ($7.2B by 2030) from bull ($10B) from bear ($4B)."
+  }
+}

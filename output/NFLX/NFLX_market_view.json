@@ -1,0 +1,182 @@
+{
+  "whats_priced_in": "At $77.84 the stock trades at 21.7x the clean forward EPS consensus of $3.59 -- a 42% discount to the June 2025 peak of $134 and a significant de-rating from the 30x+ multiples the street assigned when password-sharing monetization was the visible growth driver. The implied multiple prices in: deceleration from that one-time pull-forward, skepticism that the advertising business scales to justify prior multiples, and a leadership discount for Reed Hastings' board departure. The consensus target of $114 (46% above the current price) at roughly 31x forward earnings implies analysts expect a re-rate once advertising evidence accumulates -- but the market is demanding the proof before paying for the story.",
+  "street_view": "The street bull case is that Netflix has built a two-sided platform: a subscription tier that funds content at scale ($20 billion in 2026) and an advertising tier growing at 70%+ advertiser count per year, targeted to reach $3 billion in revenue in 2026 and scale further. With 325+ million paying subscribers and operating margins already at 31.5%, bulls argue the incremental advertising dollar is high-margin and requires no new fixed investment. The ad tier already accounts for over 60% of new sign-ups in advertising-enabled markets. At 21.7x forward earnings, bulls argue the stock is cheaply valued relative to its earnings growth rate and the optionality in live sports and games.",
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2026-06-17",
+      "firm": "Moffett Nathanson",
+      "action": "cut",
+      "old_pt": 120,
+      "new_pt": 115,
+      "rating_change": "Buy (maintained)",
+      "note": "Target trimmed; ongoing deceleration in growth trajectory and competitive pressure cited."
+    },
+    {
+      "date": "2026-06-16",
+      "firm": "Bank of America Securities",
+      "action": "downgrade",
+      "old_pt": 125,
+      "new_pt": null,
+      "rating_change": "Buy -> Hold",
+      "note": "Analyst Jessica Reif Ehrlich downgraded after maintaining Buy with $125 target as recently as May 18. Coincides with 24% post-Q1 stock decline, insider selling, and leadership transition."
+    },
+    {
+      "date": "2026-06-10",
+      "firm": "Jefferies",
+      "action": "cut",
+      "old_pt": 128,
+      "new_pt": 110,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst James Heaney; reduced outlook; stock down ~24% since Q1 print."
+    },
+    {
+      "date": "2026-06-04",
+      "firm": "Bernstein",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 110,
+      "rating_change": "Outperform (maintained)",
+      "note": "Analyst Laurent Yoon maintained stance at $110."
+    },
+    {
+      "date": "2026-05-29",
+      "firm": "Barclays",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 110,
+      "rating_change": "Equal-Weight (maintained)",
+      "note": "Neutral stance maintained."
+    },
+    {
+      "date": "2026-05-18",
+      "firm": "Bank of America Securities",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 125,
+      "rating_change": "Buy (subsequently downgraded Jun 16)",
+      "note": "Last Buy reiteration before the June downgrade."
+    },
+    {
+      "date": "2026-05-15",
+      "firm": "Canaccord Genuity",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 125,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst Maria Ripps; maintained $125 target."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Guggenheim",
+      "action": "cut",
+      "old_pt": 130,
+      "new_pt": 120,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst Michael Morris; post-Q1 cut; 'beat and maintain' disappointed; Q2 revenue deceleration."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Oppenheimer",
+      "action": "cut",
+      "old_pt": 135,
+      "new_pt": 120,
+      "rating_change": "Outperform (maintained)",
+      "note": "Reduced valuation expectations."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Barclays",
+      "action": "cut",
+      "old_pt": 115,
+      "new_pt": 110,
+      "rating_change": "Equal-Weight (maintained)",
+      "note": "Target reduction post-Q1."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Piper Sandler",
+      "action": "raise",
+      "old_pt": 103,
+      "new_pt": 115,
+      "rating_change": "Overweight (maintained)",
+      "note": "Raised target; improved near-term prospects."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "MoffettNathanson",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 120,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst Robert Fishman; unchanged margin guidance post-WBD; InterPositive acquisition noted."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "TD Cowen",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 112,
+      "rating_change": "Buy (maintained)",
+      "note": "Analyst John Blackledge; Q2 guidance miss on content timing; U.S. price hikes benefit H2."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Evercore ISI",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 115,
+      "rating_change": "Outperform (maintained)",
+      "note": "Analyst Mark Mahaney; 'high-quality compounder'; ad revenue doubling on track."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "BMO Capital Markets",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 135,
+      "rating_change": "Outperform (maintained)",
+      "note": "Analyst Brian Pitz; highest post-Q1 target; gaming and podcasts cited."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Wedbush",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 118,
+      "rating_change": "Outperform (maintained)",
+      "note": "Analyst Alicia Reese; price increases boost profitability; strong H2 expected."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Pivotal Research",
+      "action": "reiterate",
+      "old_pt": null,
+      "new_pt": 96,
+      "rating_change": "Hold (maintained)",
+      "note": "Analyst Jeffrey Wlodarczak; short-form competition and FAST channel risk cited."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Rosenblatt",
+      "action": "cut",
+      "old_pt": 96,
+      "new_pt": 95,
+      "rating_change": "Neutral (maintained)",
+      "note": "Minimal adjustment; maintains neutral."
+    },
+    {
+      "date": "2026-04-06",
+      "firm": "Goldman Sachs",
+      "action": "upgrade",
+      "old_pt": 100,
+      "new_pt": 120,
+      "rating_change": "Neutral -> Buy",
+      "note": "Pre-earnings upgrade; analyst Eric Sheridan; favorable risk-reward and improving ad infrastructure."
+    }
+  ],
+  "news_narrative": "Netflix Q1 2026 (reported April 16): revenue $12.25 billion (+16% YoY, beat vs. $12.18B consensus) and headline EPS $1.23, but the EPS beat was artificial -- $2.8 billion of net income came from a one-time termination fee paid by Paramount/Skydance when the Warner Bros. Discovery acquisition agreement collapsed in February 2026. Underlying operating EPS was approximately $0.76-$0.79, matching expectations. Management held full-year guidance ($50.7-$51.7B revenue, 31.5% operating margin) unchanged, and Q2 guidance for 13% revenue growth came in slightly below the street's expectation. The stock fell 9-10% on the day: a beat-but-no-raise reaction on a priced-for-perfection name. Reed Hastings' concurrent board departure announcement added a governance shock. The stock has since fallen a further ~17% to $77-78 by mid-June, bringing the total drawdown from the June 2025 high to 42%. The BofA downgrade to Hold (June 16) and target cuts from Jefferies ($128 to $110) and Moffett Nathanson ($120 to $115) in June have accelerated the drift. Next catalyst: Q2 earnings on July 16, 2026.",
+  "sentiment_narrative": "Retail sentiment on Stocktwits is 'extremely bearish' as of mid-June 2026, with message volume down 85% over 30 days -- reflecting disengagement more than active short pressure. Institutional investors have been accumulating (Marsico Capital, Rothschild, Liberty One increased stakes in Q1 2026). Options market showed moderate bearish skew as of June 12. Insider selling (CLO David Hyman: $504k) adds a small negative signal. The analyst distribution remains 36 Buy / 13 Hold / 0 Sell across 50 analysts -- constructive consensus at a 47% implied upside to the $114 mean target. This is a dislocation: retail bears, institutional buyers, sell-side bulls. The unresolved question is which cohort is correctly reading the advertising ramp.",
+  "runway": "At $77.84 and 21.7x clean forward earnings, the near-term re-rating runway requires: (1) Q2 earnings (July 16) without a second consecutive guidance miss; (2) advertising revenue tracking toward the $3B 2026 target; (3) management stability post-Hastings departure. The 52-week low of $75.01 is 3.6% below current price and represents technical support. The $20 billion content commitment in 2026 is fixed-cost pressure that limits downside margin flexibility if revenue disappoints.",
+  "runway_verdict": "The fundamental runway is intact: 325+ million subscribers, 12-14% revenue growth, 31.5% margin target, $3B advertising business in construction. The stock is under pressure from expectations disappointment and governance transition, not from fundamental deterioration. The valuation risk is distinct from the business risk: re-rating from 21x to 31x (the consensus-implied multiple) requires advertising execution. A second Q2 miss would test $75 and could trigger further analyst downgrades. The bear argument is an expectations and valuation argument, not a business deterioration argument.",
+  "market_lean": "neutral to slightly bullish on fundamentals; bearish near-term on sentiment and expectations"
+}
