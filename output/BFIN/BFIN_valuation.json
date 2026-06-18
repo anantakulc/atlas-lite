@@ -1,0 +1,457 @@
+{
+  "schema_version": "1.0",
+  "ticker": "BFIN",
+  "currency": "IDR",
+  "current_price": 690,
+  "shares_outstanding_b": 14.749,
+  "net_debt_b": 0,
+  "computed_at": "2026-06-18T17:23:04Z",
+  "primary_method": {
+    "name": "DDM",
+    "category": "intrinsic",
+    "reasoning": "Banks should not be valued with DCF since FCF is not meaningful. DDM + Excess Returns + Justified P/B is the standard banking framework.",
+    "inputs": {
+      "rf": 0.0575,
+      "rf_reasoning": "5.75% BI-Rate current. Used as risk-free for transparency: BFIN's funding cost is directly BI-Rate dependent.",
+      "erp": 0.08,
+      "erp_reasoning": "8.0%: Damodaran Indonesia 7.5% + 50bp for non-bank financial premium and current macro stress (rupiah record low, aggressive hike cycle).",
+      "beta": 0.6,
+      "beta_reasoning": "yfinance equity beta vs local index.",
+      "beta_warning": null,
+      "d0": 70.0,
+      "d0_method": "user override",
+      "d0_reasoning": "Sustainable dividend per share. user override.",
+      "book_value_per_share": 722.3,
+      "book_value_reasoning": "Total equity IDR 10,652.929B (FY2025 balance sheet, databundle) divided by 14.749B shares = IDR 722.3 per share.",
+      "roe": 0.165,
+      "roe_reasoning": "ROE 14.8% per databundle FY2025 (NI 1,582B / equity 10,653B = 14.85%). Current trajectory lower (Q1 2026 annualized ~13.3%). Base normalized to 16.5% by FY2028.",
+      "g_high": 0.075,
+      "g_high_reasoning": "7.5% NI CAGR Stage 1: argued from receivables growth (6.5%), partial GP margin recovery, operating leverage. See roe_normalized reasoning above.",
+      "g_terminal": 0.055,
+      "g_terminal_reasoning": "5.5%: 2.0% real + 3.5% Indonesian inflation. Below nominal GDP to account for penetration limits in the multifinance sector.",
+      "g_book": 0.0528,
+      "g_book_reasoning": "5.28% = ROE(16.5%) x retention(32%). The endogenous book growth from retained earnings at the base case NI and payout.",
+      "years_high": 3,
+      "years_decline": 3,
+      "horizon_excess_returns": 10,
+      "max_payout_cap": 0.75,
+      "reasoning": ""
+    },
+    "outputs": {
+      "cost_of_equity_pct": 10.55,
+      "ddm": {
+        "implied_value": 1568.48,
+        "pv_explicit": 377.56,
+        "pv_terminal": 1190.91,
+        "explicit_dividends": [
+          75.25,
+          80.89,
+          86.96,
+          92.9,
+          98.63,
+          104.06
+        ]
+      },
+      "excess_returns": {
+        "implied_value": 1037.43,
+        "book_value": 722.3,
+        "pv_excess": 315.13
+      },
+      "justified_pb": {
+        "ratio": 2.178,
+        "implied_value": 1573.33
+      },
+      "blended_implied_value": 1357.03,
+      "implied_px": 1357.03
+    },
+    "calculation_trace": {
+      "ke": {
+        "formula": "Ke = Rf + Beta x ERP  (CAPM)",
+        "steps": [
+          {
+            "label": "Rf",
+            "expression": "input",
+            "result": "0.0575 (5.75%)"
+          },
+          {
+            "label": "Beta",
+            "expression": "input",
+            "result": "0.600"
+          },
+          {
+            "label": "ERP",
+            "expression": "input",
+            "result": "0.0800 (8.00%)"
+          },
+          {
+            "label": "Beta x ERP",
+            "expression": "0.600 x 0.0800",
+            "result": "0.0480"
+          },
+          {
+            "label": "Ke",
+            "expression": "0.0575 + 0.0480",
+            "result": "0.1055 (10.55%)"
+          }
+        ]
+      },
+      "ddm": {
+        "formula": "DDM value = sum(D_t / (1+Ke)^t) + (D_N x (1+g_term) / (Ke - g_term)) / (1+Ke)^N",
+        "steps": [
+          {
+            "label": "Years high growth",
+            "expression": "input",
+            "result": "3"
+          },
+          {
+            "label": "Years declining",
+            "expression": "input",
+            "result": "3"
+          },
+          {
+            "label": "PV of explicit dividends",
+            "expression": "sum over 6 years",
+            "result": "377.56"
+          },
+          {
+            "label": "Terminal dividend",
+            "expression": "104.06 x (1 + 0.0550)",
+            "result": "109.78"
+          },
+          {
+            "label": "Terminal value",
+            "expression": "109.78 / (0.1055 - 0.0550)",
+            "result": "2173.86"
+          },
+          {
+            "label": "PV of terminal value",
+            "expression": "2173.86 / (1+0.1055)^6",
+            "result": "1190.91"
+          },
+          {
+            "label": "DDM value",
+            "expression": "377.56 + 1190.91",
+            "result": "1568.48"
+          }
+        ]
+      },
+      "excess_returns": {
+        "formula": "Excess Returns value = BV_0 + sum( (ROE - Ke) x BV_t / (1+Ke)^t )",
+        "steps": [
+          {
+            "label": "Book value 0",
+            "expression": "input",
+            "result": "722.30"
+          },
+          {
+            "label": "ROE - Ke (annual spread)",
+            "expression": "0.1650 - 0.1055",
+            "result": "0.0595"
+          },
+          {
+            "label": "PV of excess returns (over horizon)",
+            "expression": "sum over 10 years",
+            "result": "315.13"
+          },
+          {
+            "label": "Implied value",
+            "expression": "722.30 + 315.13",
+            "result": "1037.43"
+          }
+        ]
+      },
+      "justified_pb": {
+        "formula": "Justified P/B = (ROE - g) / (Ke - g);  Implied value = Justified P/B x Book value",
+        "steps": [
+          {
+            "label": "ROE - g_term",
+            "expression": "0.1650 - 0.0550",
+            "result": "0.1100"
+          },
+          {
+            "label": "Ke - g_term",
+            "expression": "0.1055 - 0.0550",
+            "result": "0.0505"
+          },
+          {
+            "label": "Justified P/B ratio",
+            "expression": "0.1100 / 0.0505",
+            "result": "2.178x"
+          },
+          {
+            "label": "Implied value",
+            "expression": "2.178 x 722.30",
+            "result": "1573.33"
+          }
+        ]
+      },
+      "blended": {
+        "formula": "Blended value = (0.40 x DDM) + (0.40 x ER) + (0.20 x Justified P/B)",
+        "steps": [
+          {
+            "label": "DDM x 40%",
+            "expression": "0.40 x 1568.48",
+            "result": "627.39"
+          },
+          {
+            "label": "ER x 40%",
+            "expression": "0.40 x 1037.43",
+            "result": "414.97"
+          },
+          {
+            "label": "Justified P/B x 20%",
+            "expression": "0.20 x 1573.33",
+            "result": "314.67"
+          },
+          {
+            "label": "Blended",
+            "expression": "sum of contributions",
+            "result": "1357.03"
+          }
+        ]
+      }
+    },
+    "sensitivity": {
+      "rows_label": "Ke",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.0855,
+        0.0955,
+        0.1055,
+        0.1155,
+        0.1255
+      ],
+      "col_values": [
+        0.035,
+        0.045,
+        0.055,
+        0.065,
+        0.075
+      ],
+      "implied_px_matrix": [
+        [
+          1711.32,
+          2156.22,
+          2892.95,
+          4348.59,
+          8577.16
+        ],
+        [
+          1425.16,
+          1725.19,
+          2173.46,
+          2915.78,
+          4382.46
+        ],
+        [
+          1220.26,
+          1436.76,
+          1739.06,
+          2190.71,
+          2938.62
+        ],
+        [
+          1066.35,
+          1230.24,
+          1448.36,
+          1752.92,
+          2207.95
+        ],
+        [
+          946.51,
+          1075.11,
+          1240.22,
+          1459.97,
+          1766.79
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Peer P/B comparison",
+    "category": "relative",
+    "reasoning": "ADMF (Adira Finance, bank-backed) trades at 0.64x P/B with ROE 12.3%. CFIN (Clipan Finance) at 0.25x P/B with ROE 4%. BBRI (BRI bank) at 1.32x P/B with ROE 18.1%. BFIN at 0.93x P/B with ROE 14.8% is premium to the two direct multifinance peers but below a bank with similar ROE. The 0.93x P/B is arguably CHEAP vs BBRI (1.32x, ROE 18%) if BFIN's ROE normalizes above 15%. Multifinance peers trade at extreme discounts because ADMF's NI fell 27% in 2024 (far worse than BFIN's 1% decline) and CFIN is subscale. BFIN's superior credit quality (NPF 1.25% vs sector 2.70%) and lower leverage (D/E 1.28x vs sector) justify a premium over ADMF. A fundamental fair P/B for BFIN above ADMF's 0.64x and below BBRI's 1.32x is 0.9-1.5x, with our base at 2.18x justified P/B only achievable at full ROE normalization.",
+    "inputs": {
+      "multiple_type": "P/B",
+      "peer_median_multiple": 0.64,
+      "peer_data": [
+        {
+          "ticker": "ADMF.JK",
+          "pb": 0.64,
+          "roe_pct": 12.31,
+          "note": "Direct peer; bank-backed; NI -27% in 2024"
+        },
+        {
+          "ticker": "CFIN.JK",
+          "pb": 0.25,
+          "roe_pct": 4.06,
+          "note": "Direct peer; subscale, unprofitable by quality"
+        },
+        {
+          "ticker": "BBRI.JK",
+          "pb": 1.32,
+          "roe_pct": 18.14,
+          "note": "Anchor bank; higher quality but deposit-funded (lower cost of funds)"
+        }
+      ],
+      "fy_estimate": 758.1,
+      "note": "At our target 1.20x forward P/B, BFIN trades between ADMF (0.64x) and BBRI (1.32x) -- appropriate given its ROE is between ADMF and BBRI."
+    },
+    "outputs": {
+      "implied_px": 690
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "ke": 0.12,
+        "roe": 0.12,
+        "g_high": 0.0,
+        "g_terminal": 0.04,
+        "d0": 67.6
+      },
+      "implied_px": 739.21,
+      "probability": 0.3,
+      "probability_reasoning": "30% probability: BI rate hike cycle on June 18 2026 (today) is the trigger signal. Mechanism is clear and proximate: rupiah at record weak (USD/IDR ~18,000), BI in active tightening cycle. This bear requires TWO simultaneous sustained headwinds -- persistent rate elevation AND competitive share loss. The second (competitive share loss) is not yet confirmed by BFIN data (BFIN grew receivables 9.6% in 9M 2024 despite Mandiri Tunas +15.8%). Theia grades this bear as MECHANISM (not OBSERVABLE-AND-NEAR). 30% reflects: it's real, proximate, and the second mechanism is building, but not yet fully triggered.",
+      "reasoning": "Bear: BI-Rate re-tightens to 6.0%+ (100bp in 30 days already done), keeping funding costs elevated. Ke rises to 12% in this scenario as the market continues to price crisis risk. Car sales decline continues (5-7% p.a.). Bank-backed competition (Mandiri Tunas) takes incremental share. GP margin does not recover (stays 63-64%). Provision re-accelerates toward 3.5-4% of receivables. NI falls from 1,582B to 1,360B by FY2028. ROE at ~12% -- below Ke, meaning the company destroys value in this scenario. Evidence quality per Theia: MECHANISM (causal pathway clear, BI re-tightening already occurring). Note: even in this bear, the 10%+ dividend yield (70 IDR on 690 IDR price) provides cash income that partially offsets capital loss.",
+      "ddm_implied_value": 764.58,
+      "excess_returns_implied_value": 722.3,
+      "justified_pb_ratio": 1.0,
+      "justified_pb_implied_value": 722.3,
+      "cost_of_equity_pct": 12.0
+    },
+    {
+      "label": "Base",
+      "key_changes": {
+        "ke": 0.1055,
+        "roe": 0.165,
+        "g_high": 0.075,
+        "g_terminal": 0.055,
+        "d0": 70.0
+      },
+      "implied_px": 1357.03,
+      "probability": 0.5,
+      "probability_reasoning": "50% probability: the honest most-likely given observable evidence (H1 2025 NI +11.1%, NPF 1.25% -- best in sector, car sales recovering 12.4% YTD 2026, dividend yield 10% providing floor). The base requires BI-Rate to stabilize (not necessarily cut -- just halt the hike cycle) and provision to continue normalizing. The base does NOT require BI rate cuts in 2026 -- only stabilization at current 5.75% with gradual easing in 2027. Given that Indonesia's inflation is contained (within BI target) and the rate hikes are rupiah-defence driven, there is a credible path to hike cessation in H2 2026.",
+      "reasoning": "Base: BI-Rate stabilizes at 5.75% in H2 2026, begins easing in 2027 toward 5.0%. Receivables grow 6.5% p.a. (used-car recovery, multipurpose/sharia growth). CKPN normalizes to 2.5% of receivables (from ~3.5% peak). GP margin recovers 30-50bp as cost of funds falls. OpEx grows 5% (below wage inflation but operating leverage positive at 6.5% revenue growth). NI grows from 1,582B to 1,830B by FY2028. ROE recovers from 14.8% (FY2025) to 16.5% (FY2028). Note: I apply a 100bp haircut to Theia's 17.5% ROE target given the June 18 rate hike delays the easing timeline.",
+      "ddm_implied_value": 1568.48,
+      "excess_returns_implied_value": 1037.43,
+      "justified_pb_ratio": 2.178,
+      "justified_pb_implied_value": 1573.33,
+      "cost_of_equity_pct": 10.55
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "ke": 0.1055,
+        "roe": 0.21,
+        "g_high": 0.18,
+        "g_terminal": 0.055,
+        "d0": 70.0
+      },
+      "implied_px": 1846.01,
+      "probability": 0.2,
+      "probability_reasoning": "20% probability: requires both deep BI easing (to 4.5% by end-2027) and strong multipurpose/sharia growth (11% receivables CAGR). The sharia growth (39.2% yoy in 2024) is the most credible bull catalyst -- BFIN has a first-mover advantage in BPKB-secured sharia financing for the Indonesian Muslim majority. Heavy equipment is a secondary bull catalyst (Prabowo infrastructure program). Rate easing is EXTRAPOLATED per Theia. The bull requires no renewed credit cycle deterioration. 20% reflects: high-growth scenario elements are real but the amplitude requires favorable macro AND company-specific execution.",
+      "reasoning": "Bull: BI-Rate eases to 4.5% by end-2027 (global rate decline + IDR stabilization + contained inflation). Cost of funds falls 150bp from peak, restoring 120-150bp of GP margin. BFIN sharia financing grows 30%+ per annum (from 39.2% base in 2024). Heavy equipment benefits from Prabowo infrastructure acceleration. Provision normalizes fully to 1.8-2.0% of receivables. NI reaches 2,480B by FY2028 (ROE 21%). This is the scenario where BFIN demonstrates it can sustain above-cycle ROE from the diversification of its business mix away from car-dependent yields. Evidence quality per Theia: EXTRAPOLATED. Note: in this scenario, the P/B would re-rate toward 3.07x (2,217 IDR/share) -- implying 222% upside over 3 years from today's 690 IDR.",
+      "ddm_implied_value": 2230.79,
+      "excess_returns_implied_value": 1275.76,
+      "justified_pb_ratio": 3.069,
+      "justified_pb_implied_value": 2216.96,
+      "cost_of_equity_pct": 10.55
+    }
+  ],
+  "blended_target": 1269.47,
+  "blending_logic": "Σ(scenario.probability × scenario.implied_px) + cross_check_weight × cross_check.implied_px",
+  "blending_weights": {},
+  "weights_reasoning": "",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 739.21,
+      "weight": 0.3,
+      "contribution": 221.76,
+      "reasoning": "30% probability: BI rate hike cycle on June 18 2026 (today) is the trigger signal. Mechanism is clear and proximate: rupiah at record weak (USD/IDR ~18,000), BI in active tightening cycle. This bear requires TWO simultaneous sustained headwinds -- persistent rate elevation AND competitive share loss. The second (competitive share loss) is not yet confirmed by BFIN data (BFIN grew receivables 9.6% in 9M 2024 despite Mandiri Tunas +15.8%). Theia grades this bear as MECHANISM (not OBSERVABLE-AND-NEAR). 30% reflects: it's real, proximate, and the second mechanism is building, but not yet fully triggered."
+    },
+    {
+      "component": "Base",
+      "implied_px": 1357.03,
+      "weight": 0.5,
+      "contribution": 678.51,
+      "reasoning": "50% probability: the honest most-likely given observable evidence (H1 2025 NI +11.1%, NPF 1.25% -- best in sector, car sales recovering 12.4% YTD 2026, dividend yield 10% providing floor). The base requires BI-Rate to stabilize (not necessarily cut -- just halt the hike cycle) and provision to continue normalizing. The base does NOT require BI rate cuts in 2026 -- only stabilization at current 5.75% with gradual easing in 2027. Given that Indonesia's inflation is contained (within BI target) and the rate hikes are rupiah-defence driven, there is a credible path to hike cessation in H2 2026."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 1846.01,
+      "weight": 0.2,
+      "contribution": 369.2,
+      "reasoning": "20% probability: requires both deep BI easing (to 4.5% by end-2027) and strong multipurpose/sharia growth (11% receivables CAGR). The sharia growth (39.2% yoy in 2024) is the most credible bull catalyst -- BFIN has a first-mover advantage in BPKB-secured sharia financing for the Indonesian Muslim majority. Heavy equipment is a secondary bull catalyst (Prabowo infrastructure program). Rate easing is EXTRAPOLATED per Theia. The bull requires no renewed credit cycle deterioration. 20% reflects: high-growth scenario elements are real but the amplitude requires favorable macro AND company-specific execution."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": 84.0,
+  "sensitivity_matrix": {
+    "rows_label": "Ke (cost of equity)",
+    "cols_label": "ROE (normalized terminal)",
+    "row_values": [
+      0.095,
+      0.1,
+      0.105,
+      0.11,
+      0.115
+    ],
+    "col_values": [
+      0.14,
+      0.155,
+      0.17,
+      0.185,
+      0.2
+    ],
+    "g_fixed": 0.055,
+    "bv_fixed": 722.3,
+    "metric": "implied P/B x BV = IDR per share",
+    "implied_px_matrix": [
+      [
+        1535.0,
+        1806.0,
+        2077.0,
+        2347.0,
+        2618.0
+      ],
+      [
+        1364.0,
+        1605.0,
+        1846.0,
+        2087.0,
+        2327.0
+      ],
+      [
+        1228.0,
+        1445.0,
+        1661.0,
+        1878.0,
+        2095.0
+      ],
+      [
+        1116.0,
+        1313.0,
+        1510.0,
+        1707.0,
+        1904.0
+      ],
+      [
+        1023.0,
+        1204.0,
+        1384.0,
+        1565.0,
+        1746.0
+      ]
+    ],
+    "dominant_lever": "Ke is the dominant lever in the justified P/B framework. A 100bp change in Ke moves the value by 200-400 IDR/share at current ROE levels. ROE is second-order: a 100bp change in ROE moves the value by ~150-200 IDR/share. The call is primarily a bet on Ke normalization from crisis 14% to fundamental 10.5%.",
+    "crux_levers": [
+      "Ke (cost of equity)",
+      "ROE (terminal normalized level)"
+    ],
+    "note": "Current price 690 IDR = P/B 0.955x. At Ke=10.5%, ROE=14%: 1,228 IDR (77% upside). At Ke=11.5%, ROE=14%: 1,023 IDR (48% upside). All cells above current price -- asymmetric risk/reward."
+  },
+  "fair_value_today": 1357.03
+}

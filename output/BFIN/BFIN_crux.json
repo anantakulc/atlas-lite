@@ -1,0 +1,129 @@
+{
+  "ticker": "BFIN",
+  "crux_variable": "Gross profit margin (net financing yield) plus provision cost (CKPN) — together the net financing income margin",
+  "one_line": "BFIN's earnings power hinges on whether net financing income margin (gross yield minus cost of funds, minus credit cost) recovers as the BI-Rate eases and post-COVID provision normalization completes — or whether bank-backed competition and weak vehicle volumes entrench a structurally lower ROE.",
+
+  "argument": "BFI Finance's net income declined 12% from IDR 1,807B (FY2022) to IDR 1,582B (FY2025) despite revenue growing 29%. The cause is NOT the interest expense line (interest expense FELL from IDR 290B in FY2023 to IDR 207B in FY2025 — this is likely a financial statement presentation artifact reflecting interest as a separate line from funding cost which sits in COGS). The cause is NOT the effective income tax rate, which was stable at 18.8-20% in 2022-2024 (pretax income of IDR 1,927-1,973B; tax provision IDR 362-392B per Yahoo Finance / company filings). The crux is TWO compounding forces acting simultaneously on below-gross-profit costs: (1) PROVISION FOR IMPAIRMENT LOSSES (CKPN) DOUBLED: from IDR 367B in FY2022 to IDR 786B in FY2023. This is the single-largest swing factor. The timing aligns with Indonesia's implementation of PSAK 71 (IFRS 9 equivalent) from 2020 onward, which mandated forward-looking expected credit loss provisioning — and the post-COVID loan restructuring vintage normalizing through the income statement in 2022-2023. (2) GROSS PROFIT MARGIN COMPRESSED 160BP: from 65.9% (FY2022) to 64.3% (FY2024-2025). In a multifinance company, gross profit equals gross financing income minus cost of funds. The BI-Rate rose 275bp from 3.50% (mid-2022) to 6.25% (mid-2024). Because multifinance companies fund via wholesale bank credit and bonds — not deposits — their funding cost repriced faster than their fixed-rate receivable portfolios. BFIN's yield on its portfolio is fixed at origination; its funding cost floated up. The result was ~160bp of GP margin compression. The combined effect: above-GP revenue grew 29%, but below-GP costs grew ~74% (IDR 1,177B to IDR 2,050B from FY2022 to FY2025), compressing the EBIT margin from 43.0% to 33.8%. The forward thesis turns on the REVERSAL of both forces: (a) BI-Rate has eased from 6.25% to 4.75% by October 2025, then re-raised to 5.75% by June 2026 — partial benefit already captured, further gains uncertain; (b) provision normalization — FY2025 NPF gross is 1.25% vs industry 2.70%, suggesting current book is clean and provision-to-receivables ratio is normalizing, which supports lower CKPN charges going forward. H1 2025 net profit +11.1% yoy is the first evidence of recovery. The call turns on the pace and durability of this margin recovery, which itself depends on the BI-Rate trajectory and whether receivables growth can be sustained above 6% in a sluggish vehicle market (car sales down 7.2% in 2025).",
+
+  "crux_decomposition": {
+    "identity": "Net income = (Receivables × Gross yield) - (Receivables × Cost of funds) - (Receivables × Credit cost %) - Operating expenses - Tax",
+    "lever_1_gross_yield": "Fixed at origination on each contract. New business yield reflects current market rates. 2025 new-origination yield is likely higher than 2022 base (rates up) but the portfolio average blends old and new contracts. Implied gross portfolio yield ~25-28% p.a. from revenue/receivables math (IDR 6.3T revenue / ~IDR 22T avg net receivables = ~29%).",
+    "lever_2_cost_of_funds": "Floating with BI-Rate cycle and credit spread. Peaked 2023-mid2024. BFI bonds at 6.9-7.15% coupon (2025-2027 maturity bonds visible). Bank credit lines presumably at BI-Rate plus margin. With BI-Rate back at 5.75% (June 2026), cost of funds has partially repriced down from peak.",
+    "lever_3_credit_cost": "Provision for impairment (CKPN) as % of receivables. Doubled FY2022 to FY2023 (367B → 786B). 9M 2025 CKPN = IDR 1,096B annualized — still elevated but H1 2025 profit up 11%, suggesting credit cost normalizing. NPF gross 1.25% and net 0.21% = very low absolute impairment. The CKPN as % of receivables was ~1.7% in 2022, ~3.6% in 2023, declining in 2024-2025 toward 2.5-3% range.",
+    "lever_4_operating_expenses": "Salary, branch, marketing, technology. Operating expense ratio 66.5% (BFIN) vs industry 79.4%. Employee count ~5,510. OpEx grew from IDR 1,176B (FY2022) to IDR 1,792B (FY2024) = +52%. Growth partly discretionary (IT investment, branch expansion) and partly structural (Indonesia minimum wage hikes ~8% annually). With receivables base growing, operating leverage should improve if receivables grow faster than OpEx."
+  },
+
+  "base": {
+    "label": "Base",
+    "assumption": "BI-Rate stabilizes at 5.5-5.75% in 2026 before easing to 5.0% by 2027. Receivables grow 6-7% p.a. (moderate vehicle market recovery, multipurpose growth). Provision/CKPN normalizes toward 2.5% of receivables (vs ~3.5-4% in 2023 peak). GP margin recovers 50-80bp from 2024 trough as new business originated at higher rates reprices the book. OpEx grows 5-7% p.a. (Indonesia wage inflation + IT, partially offset by scale). Effective tax ~20%.",
+    "implied_receivables_growth_pct": 6.5,
+    "implied_ni_growth_pct": 7.0,
+    "implied_ni_idr_b_in_3yr": 1940,
+    "implied_roe_pct": 17.5,
+    "argument": "The base reads the current trajectory. H1 2025 NI +11.1% yoy confirms the bottom was FY2023-FY2024. BFIN's receivables grew 9.6% yoy through 9M 2024 (to IDR 24.1T), which provides 5-7% revenue growth even without yield expansion. Provision normalization is observable: NPF gross 1.25% vs peak ~2.5% implies the bad-debt vintage from post-COVID restructuring has largely burned through. BI-Rate is at 5.75% in June 2026, with consensus expecting gradual easing to ~5.0% by end-2027 as Indonesian inflation stays contained near 3%. At 5% BI-Rate, multifinance funding costs would decline ~75bp from peak, restoring ~60bp of GP margin. Moderate receivables growth at 6.5% p.a. plus margin expansion returns ROE from current ~14-15% toward 17-18% in 2027-2028. This is the most-likely path given observable evidence: recovering credit quality, partial rate easing already in train, and manageable competitive pressure from bank-backed peers.",
+    "what_could_go_wrong": "BI-Rate stays elevated (Bank Indonesia re-raised to 5.75% June 2026, signaling caution). Car sales continue declining (FY2025 down 7.2%). Mandiri Tunas and BCA Finance aggressively price down vehicle loan spreads."
+  },
+
+  "bull": {
+    "label": "Bull",
+    "assumption": "BI-Rate eases to 4.50% by end-2027, reducing cost of funds by 150bp from 2024 peak. Receivables grow 10-12% p.a. driven by recovery in used-car market and rapid multipurpose/Sharia growth (Sharia +39.2% in 2024). Provision/CKPN normalizes fully to 1.8-2.0% of receivables (matching BFIN's own ~1.3% historical NPF). GP margin recovers 120-150bp. Operating leverage positive as OpEx grows 4-5% while receivables grow 10%.",
+    "implied_receivables_growth_pct": 11.0,
+    "implied_ni_growth_pct": 18.0,
+    "implied_ni_idr_b_in_3yr": 2480,
+    "implied_roe_pct": 21.0,
+    "argument": "The bull requires an assertive Indonesian rate easing cycle — which is plausible if global rates fall (Fed cuts), the IDR stabilizes, and Indonesian inflation stays below 3%. BFIN's Sharia segment grew 39.2% yoy in 2024 and now represents ~4.3% of the portfolio; sharia financing (based on murabahah/ijara structures) is growing across the Indonesian Muslim majority and BFIN has a first-mover advantage in BPKB-secured sharia financing. Heavy equipment (14.9% of portfolio) benefits from infrastructure investment under Prabowo's government priorities. If both Sharia and equipment grow 20%+ and provision normalizes fully, NI could reach IDR 2.3-2.5T by FY2028, with ROE near 20-21%. This is CONTRACTED in part — existing diversification into these higher-growth segments is already showing 9.6% receivables growth. The EXTRAPOLATED portion is the rate easing amplitude and full provision normalization.",
+    "evidence_quality": "EXTRAPOLATED — rate easing path is plausible but not contracted; sharia/equipment growth is a real trend but the magnitude of full portfolio repricing is uncertain"
+  },
+
+  "bear": {
+    "label": "Bear",
+    "assumption": "BI-Rate re-tightens to 6.0% in 2026-2027 (Bank Indonesia June 2026 already at 5.75%, signaling hawkish bias). Car sales continue declining 5-7% per annum. Bank-backed competitors (Mandiri Tunas, BCA Finance) expand aggressively in used-car and multipurpose, compressing BFIN's origination yields by 50-100bp over 3 years. NPF edges back up toward 2.0% (credit cycle deteriorates). BFIN receivables growth slows to 2-3% p.a. GP margin does not recover, stays at 63-64%.",
+    "implied_receivables_growth_pct": 2.5,
+    "implied_ni_growth_pct": -5.0,
+    "implied_ni_idr_b_in_3yr": 1360,
+    "implied_roe_pct": 12.0,
+    "argument": "The bear is not speculative — it has specific mechanism. Bank Indonesia raised rates 25bp to 5.75% at its June 18, 2026 meeting (the very date of this analysis), reversing the 2024-2025 easing. The stated reason was IDR stability. If this re-tightening cycle extends (global uncertainty, weak IDR, commodity price pressure), funding costs stay high for BFIN. Car sales fell 7.2% in FY2025 and the trajectory into 2026 is uncertain. Mandiri Tunas grew receivables 15.8% in 2024 by pricing aggressively below BFIN on certain car loan segments. If Mandiri Tunas and BCA Finance each grow 15% in used-car while industry grows 2%, BFIN's volume growth stalls. The bear requires two simultaneous headwinds: persistent rate environment AND competitive share loss. The evidence for competitive share loss so far is indirect (Mandiri Tunas growth) — not yet shown as direct BFIN share erosion (BFIN grew receivables 9.6% in 9M 2024). Thus this bear is MECHANISM-BASED but not yet OBSERVABLE-AND-NEAR.",
+    "evidence_quality": "MECHANISM — causal pathway is clear and proximate (BI re-tightening already occurring, bank competition structurally real), but actual BFIN share loss is not yet confirmed in data"
+  },
+
+  "ceiling": "Total Indonesian multifinance receivables IDR 503T. BFIN's serviceable market (used cars + multipurpose BPKB + equipment, ex-captive-brand new cars) is approximately IDR 150-175T. BFIN has IDR 22-24T receivables = 14-16% of its serviceable segment. Growing to 20% share (IDR 30-35T receivables) is the reasonable ceiling within 5 years, implying ~6-9% receivables CAGR from current base. Any scenario implying receivables above IDR 40T by FY2030 would require either industry-level growth above 8% p.a. or share gains that would require displacing bank-backed captive flow — implausible.",
+
+  "floor": "BFIN's IDR 10.65T equity base at book value provides a downside anchor. At 0.9x P/B (current), the market is already near book. The dividend (IDR 70/share, 10.1% yield) is paid from FCF and the payout exceeds 60% — any structural NI decline below IDR 1T would force a dividend cut. The floor NI scenario would require both full-cycle credit stress (NPF 3%+) AND sustained funding cost elevation — possible but requires a macro recession. Bear case NI IDR 1.36T is above the dividend-cut threshold.",
+
+  "what_decides_it": "Three observable triggers: (1) Bank Indonesia's rate path through 2H 2026 — another hike takes the bear path; sustained hold or cut toward 5.0% by end-2026 opens base/bull. (2) BFIN Q2 2026 receivables growth rate yoy — above 8% suggests portfolio momentum and multipurpose/sharia gaining; below 4% suggests vehicle demand or competitive share loss. (3) BFIN CKPN/provision in H1 2026 results — normalization below 2.5% of receivables annualized confirms the credit cycle has passed its peak.",
+
+  "monitor": [
+    "Bank Indonesia monetary policy decisions (currently 5.75% June 2026 — watch for July 2026 meeting direction)",
+    "BFIN quarterly new financing origination and managed receivables growth (next: Q2 2026 results)",
+    "CKPN/provision expense as % of average receivables — track toward 2.0-2.5% normalized level",
+    "Mandiri Tunas Finance receivables growth rate as proxy for bank-backed competitive intensity",
+    "Indonesia car wholesale sales monthly (Gaikindo) — proxy for asset origination volume",
+    "BFIN sharia and heavy equipment segment growth — the higher-growth portfolio tails",
+    "BFIN NPF gross ratio — if it rises above 2.0%, provision normalization story breaks",
+    "IDR/USD exchange rate — IDR weakness forces BI hawkishness, delays rate cuts"
+  ],
+
+  "sources": [
+    {
+      "description": "BFIN FY2025 NI IDR 1,582B; FY2024 IDR 1,565B; FY2023 IDR 1,644B; FY2022 IDR 1,807B — yfinance databundle",
+      "url": "internal_databundle",
+      "tier": "company_reported_via_yfinance"
+    },
+    {
+      "description": "BFIN operating expenses below GP: FY2022 IDR 1,176B; FY2023 IDR 1,729B; FY2024 IDR 1,792B",
+      "url": "https://finance.yahoo.com/quote/BFIN.JK/financials/",
+      "tier": "financial_data_aggregator"
+    },
+    {
+      "description": "BFIN provision for impairment losses: IDR 367B (FY2022) to IDR 786B (FY2023) — doubled",
+      "url": "https://digital-bucket.prod.bfi.co.id/assets/pdf/Laporan%20Tahunan/EN/BFI_2023IR_EN_Final.pdf",
+      "tier": "company_filed_via_search_synthesis",
+      "note": "PDF 403; figure from search result snippet citing BFI Finance 2023 integrated annual report"
+    },
+    {
+      "description": "BFIN effective tax rate 18.8% (2022), 19.9% (2023), 19.9% (2024) on pretax income IDR 1,927/1,973/1,910B",
+      "url": "https://finance.yahoo.com/quote/BFIN.JK/financials/",
+      "tier": "financial_data_aggregator"
+    },
+    {
+      "description": "BFIN H1 2025 net profit +11.14% yoy to IDR 762B — first recovery signal",
+      "url": "https://www.idnfinancials.com/news/56164/bfin-net-profit-rises-11-14-shares-climb-4-64-at-session-ii-close",
+      "tier": "press_citing_company"
+    },
+    {
+      "description": "BFIN 9M 2025 CKPN IDR 1,096B; NFI IDR 4,085B +8.1% yoy; NPF gross 1.55%, net 0.22%",
+      "url": "https://pintarsaham.id/kinerja-keuangan-pt-bfi-finance-indonesia-tbk-bfin-kuartal-iii-2025/",
+      "tier": "press_citing_company"
+    },
+    {
+      "description": "Bank Indonesia BI-Rate: 3.50% (mid-2022) → peak 6.25% (mid-2024) → 4.75% (Oct 2025) → 5.75% (June 18, 2026)",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2727425.aspx",
+      "tier": "central_bank_official"
+    },
+    {
+      "description": "BFIN 2024 managed receivables IDR 24.1T, +9.6% yoy; NPF gross 1.25%, net 0.21%",
+      "url": "https://www.idnfinancials.com/news/51284/bfi-finance-financing-hit-idr-q",
+      "tier": "press_citing_company"
+    },
+    {
+      "description": "BFIN funding structure: banks 75.6%, bonds 20.1%; bonds at 6.9-7.15% coupon",
+      "url": "https://cbonds.com/bonds/1736161/",
+      "tier": "bond_market_data"
+    },
+    {
+      "description": "PSAK 71 (IFRS 9) implementation in Indonesia: impairment cost increased ~53% on implementation from 2020",
+      "url": "https://feb.ui.ac.id/uploads/2022/11/Endy-Rakhmat-Wibowo_casc_1.1.pdf",
+      "tier": "academic_research"
+    },
+    {
+      "description": "Mandiri Tunas Finance assets grew 15.8% yoy in 2024 — proxy for bank-backed competitive intensity",
+      "url": "https://finansial.bisnis.com/read/20250511/89/1876117/leasing-astra-group-asii-jadi-perusahaan-multifinance-paling-cuan-pada-2024",
+      "tier": "press"
+    },
+    {
+      "description": "BFIN sharia financing grew 39.2% yoy in 2024 — high-growth portfolio tail",
+      "url": "https://www.idnfinancials.com/news/51284/bfi-finance-financing-hit-idr-q",
+      "tier": "press_citing_company"
+    }
+  ]
+}

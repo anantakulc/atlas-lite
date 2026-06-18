@@ -1,0 +1,89 @@
+{
+  "ticker": "BFIN",
+  "company": "PT BFI Finance Indonesia Tbk",
+  "currency": "IDR",
+  "current_price": 690,
+  "shares_outstanding_b": 14.749,
+  "net_debt_b": 12043.309,
+  "book_value_per_share": 722.3,
+  "book_value_total_b": 10652.929,
+  "forward_book_value_per_share_fy2026": 758.1,
+  "fundamental_discount_rate": 0.1055,
+  "terminal_growth": 0.055,
+  "horizon_years": 6,
+
+  "anchor": {
+    "type": "P/B",
+    "metric_label": "Book value per share (current)",
+    "metric_value": 722.3,
+    "forward_metric_label": "Book value per share (FY2026 forward)",
+    "forward_metric_value": 758.1,
+    "fcf_conversion": null,
+    "roic": null,
+    "roe_current_pct": 14.8,
+    "roe_normalized_pct": 16.5,
+    "note": "P/B is the industry standard for multifinance companies. The value driver is ROE vs Ke -- the spread determines the justified premium or discount to book. No EV/FCF or EV/EBITDA anchor used because FCF is not meaningful in a receivables-growth business."
+  },
+
+  "street": {
+    "target_mean": 860,
+    "target_median": 870,
+    "target_high": 1000,
+    "target_low": 700,
+    "n_analysts": 4,
+    "rating": "cautiously_positive",
+    "rec_breakdown": {"buy": 2, "hold": 1, "sell": 1},
+    "thesis": "Bulls: sub-2% NPF (best-in-class), 9%+ new financing growth, 10%+ dividend yield durable; justified P/B above 1.0x if ROE holds and credit costs normalize. Bear (UBS): credit cycle turn driven by Indonesia's shrinking middle class, rising cost of credit, higher funding costs will compress ROE to 12-13%.",
+    "ubs_note": "UBS downgraded to Sell at PT 745 on August 29, 2025 -- the only sell in the panel. Cut estimates 8-29% for 2025-27, forecasting credit costs of 4.6-5.1% and loan CAGR of 2.5%. This is 30% below then-consensus and is the dominant bearish data point in the analyst tape."
+  },
+
+  "history": {
+    "roe_history": [
+      {"fy": "FY2022", "roe_pct": 20.6, "ni_b": 1806.7, "equity_b": 8755.1},
+      {"fy": "FY2023", "roe_pct": 17.3, "ni_b": 1643.9, "equity_b": 9499.1},
+      {"fy": "FY2024", "roe_pct": 15.7, "ni_b": 1564.8, "equity_b": 9969.0},
+      {"fy": "FY2025", "roe_pct": 14.8, "ni_b": 1581.8, "equity_b": 10652.9}
+    ],
+    "anchor_cagr_note": "NI CAGR FY2022-FY2025: -4.4% p.a. (NI declined from 1,807B to 1,582B as provision spike and GP margin compression offset revenue growth). Revenue CAGR over same period: +8.9% p.a. (5,142B to 6,646B). The NI decline while revenue grew 29% is the crux."
+  },
+
+  "peers": [
+    {
+      "ticker": "ADMF.JK",
+      "name": "Adira Dinamika Multi Finance",
+      "pb": 0.64,
+      "roe_pct": 12.31,
+      "pe_ttm": 6.13,
+      "ni_decline_2024_pct": -27.0,
+      "note": "Bank-backed (Danamon/MUFG); NI fell 27% in 2024 -- far worse than BFIN; 0.64x P/B reflects the worse ROE (12.3%) and weaker earnings trend. Direct competitor in used cars and multipurpose.",
+      "relevant": true
+    },
+    {
+      "ticker": "CFIN.JK",
+      "name": "Clipan Finance Indonesia",
+      "pb": 0.25,
+      "roe_pct": 4.06,
+      "pe_ttm": 6.23,
+      "note": "Subscale, low ROE (4%), very low P/B. Not relevant as a valuation benchmark -- is a distressed/subscale peer. The 0.25x P/B reflects value destruction (ROE well below any reasonable Ke).",
+      "relevant": false
+    },
+    {
+      "ticker": "BBRI.JK",
+      "name": "Bank Rakyat Indonesia (BRI)",
+      "pb": 1.32,
+      "roe_pct": 18.14,
+      "pe_ntm": 6.72,
+      "note": "Deposit-taking bank; lower cost of funds gives BRI structural advantage over multifinance. At 1.32x P/B with ROE 18.1%, BRI is a ceiling reference for BFIN -- BFIN should trade at a discount to BRI given its wholesale-funded model and smaller scale. But BFIN's ROE of 14.8% (vs BRI's 18.1%) at 0.93x P/B (vs BRI's 1.32x) suggests BFIN is cheap relative to the ROE gap.",
+      "relevant": true
+    }
+  ],
+
+  "peer_median_multiple": 0.64,
+  "peer_note": "Peer median P/B of 0.64x (ADMF only, excluding the distressed CFIN). BFIN at 0.93x trades at a 45% premium to ADMF -- justified by BFIN's superior NPF (1.25% vs sector 2.70%) and higher ROE (14.8% vs ADMF 12.3%). The premium is earned and historically consistent.",
+
+  "contested_lever": "Ke (cost of equity) and ROE normalization trajectory. The market prices Ke at ~14% (crisis), we use 10.5% (fundamental). The market prices no ROE recovery (ROE stays ~13%); we price recovery to 16.5% by FY2028. The call resolves over 12-18 months as BI rate cycle clarifies and H2 2026 earnings show whether provision is normalizing.",
+
+  "justified_g_grid": [0.04, 0.05, 0.055, 0.06, 0.065, 0.07],
+  "roe_grid": [0.12, 0.14, 0.155, 0.165, 0.175, 0.185, 0.21],
+  "ke_grid": [0.095, 0.100, 0.105, 0.110, 0.115]
+}

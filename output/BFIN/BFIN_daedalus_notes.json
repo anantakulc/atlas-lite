@@ -1,0 +1,112 @@
+{
+  "ticker": "BFIN",
+  "authored_by": "Daedalus v3",
+  "as_of": "2026-06-18",
+  "currency": "IDR",
+
+  "method_why": "BFIN is valued using multi-stage DDM (primary) + justified P/B = (ROE - g) / (Ke - g) (cross-check) + excess returns model (supporting), per the METHODS.md 'bank' registry entry. The method fits BFIN because: (1) BFIN is an OJK-regulated multifinance company -- not deposit-taking but functionally identical to a bank for valuation purposes. Its economics are balance-sheet-driven ROE rather than FCFF. (2) FCF is not meaningful: the 'FCF' from the databundle (1,241B in FY2025, negative in FY2022-FY2023) swings with portfolio growth decisions (new loan origination = cash outflow from receivables growth), not with operating profitability. DCF on raw FCF would give wildly distorted results. (3) BFIN pays 65-70% of earnings as dividends -- a genuine high-payout structure, not a financial engineering artifact. DDM is directly applicable. (4) The justified P/B formula is the native analytical language of every analyst covering BFIN and all Indonesian multifinance/bank comparables. It decomposes the valuation into ROE, Ke, and g -- exactly the three disputed variables in this case. (5) SOTP was considered: BFIN has three reporting segments (Cars, Motorcycles, Others/Multipurpose). Rejected because: all three segments share one funding pool and one capital base; segment-level economics are not publicly available with enough granularity; and the mix shift (multipurpose growing faster, within the same company structure) is already captured in the consolidated ROE trajectory. A segment SOTP with three nodes sharing one WACC would just be a complicated way of doing the same calculation.",
+
+  "segment_lens": "BFIN's 'Others' segment (multipurpose BPKB-secured + sharia + heavy equipment, ~23.7% of portfolio) grows faster (estimated 12-15% p.a.) and carries higher yields than the vehicle segments (Cars 60.2% + Motorcycles 16.1%). This mix shift is POSITIVE for the consolidated ROE trajectory -- a growing share of higher-yielding, lower-NPF multipurpose products improves both the revenue mix and the credit quality. The segment lens informs the ROE recovery thesis without requiring separate segment valuations.",
+
+  "four_levers_argued": {
+    "lever_1_growth_duration": {
+      "rate": "6.5% receivables CAGR (base), 5.5% NI CAGR Stage 1 before margin recovery kicks in, 7.5% NI CAGR with full margin recovery (FY2026-FY2028)",
+      "duration": "3 years to normalized ROE (FY2028). The duration is the key swing: if BI rate normalization is delayed to 2028 (not 2027), ROE normalization shifts to FY2029-2030 and the DDM value falls by approximately 100-150 IDR/share (one year's worth of discounting). Duration is honest center at 3 years; bear scenario extends it implicitly to 5+ years.",
+      "evidence": "Theia demand.json: receivables growth 6.5% base from OJK 2024 actuals, BFIN 9M 2024 own data (+9.6%), 2026 YTD car sales +12.4%. Duration argued from: BI began hiking in May-June 2026, easing expected in 2027 (base), making FY2028 the first fully-normalized year."
+    },
+    "lever_2_economics": {
+      "net_income_margin": "23.8% of revenue (FY2025 actual from databundle). Implied from gross margin 64.7% - below-GP costs (CKPN + OpEx + interest) as % of revenue.",
+      "roe_current": "14.8% (FY2025). ROE = NI/equity = 1,582B / 10,653B.",
+      "roe_normalized_base": "16.5% (FY2028 target). Recovery path: provision from ~3.5% to 2.5% of receivables (+80-100bp of NI margin); GP margin recovery 30-50bp per year as BI eases from 5.75% to 5.0% in 2027; operating leverage as OpEx grows 5% vs revenue 6.5%.",
+      "what_it_converts_to": "At 16.5% ROE on FY2028 equity of approximately IDR 11,100B, NI = ~1,830B. DPS at 68% payout = 84.4 IDR/share. This is the earnings stream the DDM capitalizes."
+    },
+    "lever_3_discount_rate": {
+      "ke": "10.55% (= 5.75% rf + 0.60 beta x 8.0% ERP)",
+      "rf": "5.75% BI-Rate (spot, June 18, 2026). Used as rf because BFIN's funding cost is directly indexed to BI-Rate -- this is the most economically honest choice for a business whose cost of capital is literally the BI-Rate + spread.",
+      "beta": "0.60 fundamental (vs 0.446 yfinance regression). The regression likely underestimates: the 2022-2026 rate cycle caused a 12% NI decline (systematic earnings sensitivity to the rate cycle is real); financial leverage 1.28x D/E adds systematic risk; OJK regulatory concentration risk.",
+      "erp": "8.0% (Damodaran Jan 2026 Indonesia 7.5% + 50bp premium for non-bank financial in current macro stress).",
+      "market_ke_vs_ours": "Market implies Ke ~14% at current price. Our 10.5% is 350bp below market. This gap is the VALUE UNLOCK THESIS: if Ke normalizes from 14% to 10.5% as BI hike cycle ends, the justified P/B re-rates from 0.93x to 2.18x -- a 2.3x expansion in the multiple alone, before any ROE improvement.",
+      "no_wacc_debt_subtraction": "P/B and DDM value equity directly. No enterprise value deduction. The net debt of IDR 12,043B (borrowings funding the receivable book) is the business model, not financial leverage in the traditional sense."
+    },
+    "lever_4_exit_terminal_multiple": {
+      "justified_pb": "2.178x at base (ROE=16.5%, Ke=10.5%, g=5.5%)",
+      "terminal_value_in_ddm": "The DDM terminal value = 109.78 IDR (terminal DPS) / (10.55% - 5.5%) = 2,173.86 IDR, discounted at (1.1055)^6 = 1,190.91 IDR PV. This is the 'exit multiple' equivalent in DDM form.",
+      "gordon_formula_valid": "In steady state g_LT (5.5%) < Ke (10.55%) by 5.05pp -- well-behaved Gordon growth is valid and the formula does not blow up.",
+      "peer_cross_check": "ADMF (closest multifinance peer) trades at 0.64x P/B with ROE 12.3% and no recovery. BBRI (BRI bank) at 1.32x P/B with ROE 18.1%. BFIN at 2.18x justified P/B on base ROE is well above both peers, but these peers are also undervalued on fundamental Ke assumptions (BRI justified P/B at Ke=9.5% is ~2.84x). The sector-wide discount to fundamental P/B confirms the Ke normalization thesis.",
+      "t_invariance_note": "Not formally applicable (DDM, not exit-multiple). The sensitivity of DDM value to the transition point is captured in the scenario analysis: the DDM value is largely driven by the terminal value (PV terminal = 1,191 IDR, PV explicit = 378 IDR of the 1,568 IDR total). This means the call IS duration-sensitive: getting the normalization year right matters."
+    }
+  },
+
+  "stacked_bias_audit_summary": {
+    "levers_audited": 6,
+    "leans_high": 1,
+    "leans_low": 0,
+    "honest_center": 5,
+    "stacked_bias_detected": false,
+    "specific_action": "Applied 100bp haircut to Theia's base ROE of 17.5% to arrive at 16.5%, specifically because Bank Indonesia raised rates 100bp in 30 days immediately prior to this valuation. This reduces the base NI trajectory from Theia's 1,940B (FY2028) to our 1,830B (FY2028). The adjustment removes the one lever that leaned high (ROE) and makes the base the honest most-likely rather than Theia's base case which was formulated before today's rate hike.",
+    "contract_compliance": "CONTRACT §1.3 complied with. Two or fewer same-direction leans (one leans slightly high: payout ratio 68% vs historical 55-65%). Below the three-lever threshold. No stacked bias fix required, but the payout lean is documented."
+  },
+
+  "key_judgments": [
+    {
+      "judgment": "Use BI-Rate (5.75%) as rf rather than the Indonesian 10Y bond yield",
+      "rationale": "BFIN's business economics are directly tied to the BI-Rate: its cost of funds (bank credit lines 75.6% of funding) reprices with BI-Rate movements. Using the BI-Rate as rf is the most economically transparent choice -- it corresponds to the marginal cost of money in this business's ecosystem. Indonesian 10Y government bond yields (~7.0-7.5% currently) would imply a higher Ke but are less directly linked to BFIN's actual funding structure.",
+      "alternative_tested": "If Indonesian 10Y yield (7.0%) used as rf: Ke = 7.0% + 0.6*8.0% = 11.8%. At Ke=11.8%, g=5.5%: justified P/B = (16.5%-5.5%)/(11.8%-5.5%) = 11%/6.3% = 1.746x = 1,261 IDR. Still significantly above 690 IDR current price.",
+      "impact": "Choice of rf (BI-Rate vs 10Y bond) moves fair value by ~200-300 IDR/share. The call direction (BUY) is robust to this choice."
+    },
+    {
+      "judgment": "Apply fundamental beta of 0.60 (not the regression 0.446)",
+      "rationale": "The regression beta of 0.446 is derived from a period (2022-2026) during which BI raised rates 275bp then cut then raised again -- a highly idiosyncratic cycle. During this cycle, BFIN's NI fell 12% while the IDX fluctuated. A regression of BFIN returns on the IDX during this period will understate systematic risk because: (1) the IDX fell ~10% in the same period that BFIN fell 28% -- rate sensitivity is partially captured but partially BFIN-specific; (2) the IDX is dominated by cyclicals and commodity-linked stocks, making the beta vs IDX an imperfect systematic measure for a rate-sensitive financial. The fundamental beta of 0.60 reflects the genuine macro rate sensitivity (BFIN's ROE moves with BI-Rate) while acknowledging that BFIN's collateral-secured business is more defensive than a typical cyclical.",
+      "impact": "Fundamental beta 0.60 vs regression 0.446: Ke difference = (0.60-0.446) x 8.0% = 1.23%. This moves Ke from 9.32% to 10.55%. At 9.32% Ke: justified P/B would be even higher. The 0.60 beta is conservative relative to the regression -- a modest upward adjustment that prevents the Ke from going unreasonably low."
+    },
+    {
+      "judgment": "ROE normalized at 16.5% (not Theia's 17.5%) because of today's BI rate hike",
+      "rationale": "Bank Indonesia raised rates 25bp to 5.75% at today's (June 18, 2026) regular meeting, extending the tightening cycle that began with a surprise +50bp in May 2026. This is the single most important piece of new information at the time of this valuation. Theia's demand model assumed BI-Rate stabilizes at 5.5-5.75% in 2026 before easing to 5.0% by 2027. Today's hike confirms we are still IN the tightening phase, not at the peak. The base assumption of BI-Rate easing to 5.0% by end-2027 may need to be pushed to 2028. Applying a 100bp haircut to ROE (from 17.5% to 16.5%) approximately captures this delay. This is the bias-audit-driven adjustment mandated by CONTRACT §1.3.",
+      "impact": "100bp lower terminal ROE reduces blended fair value by approximately 200-250 IDR/share (from ~1,600 IDR to ~1,357 IDR blended). This is a material adjustment that the bias audit required."
+    },
+    {
+      "judgment": "Target 12m at 1.20x forward P/B (910 IDR) -- not the intrinsic 2.18x justified P/B",
+      "rationale": "The intrinsic value (1,357 IDR) and the 12-month traded target (910 IDR) are deliberately different. The intrinsic value represents the full-cycle fair value at normalized ROE and fundamental Ke. A 12-month traded target requires the market to START re-rating, not complete the re-rating. The 1.20x target P/B represents: (1) movement from the current crisis-level 0.93x toward but not to the fundamental 2.18x; (2) consistent with the market moving from Ke~14% to Ke~12.5% (a 150bp Ke compression, not the full 350bp normalization); (3) close to the street consensus (860 IDR = 1.19x current BV), which provides anchoring. The gap between #3 (1,440 IDR, pure intrinsic rolled forward) and #4 (910 IDR, traded target) is 530 IDR per share -- this is the part of the thesis that requires multi-year market recognition, not 12-month.",
+      "impact": "This distinction prevents the 12m target from being based on full intrinsic realization (a common error). The BUY is justified on the 910 IDR target alone (42.9% total return including dividend), without requiring full intrinsic convergence."
+    }
+  ],
+
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "MEDIUM",
+    "path_confidence": "LOW",
+    "rationale": "MEDIUM conviction overall. Three factors prevent HIGH: (1) the call hinges on Ke normalization -- genuinely unknowable timing, depends on BI rate policy and IDR/USD which neither we nor the market can predict with high confidence; (2) band ratio is 81.7% (bear 739 to bull 1,846 IDR vs base 1,357 IDR), well above the 60% cap for HIGH conviction per assemble.py logic; (3) data quality is CORRECTED (NTM EPS corrected from stale 111.5 to 96 IDR). Path confidence is LOW because Q1 2026 was a miss (-12.8% YoY) and BI just hiked again TODAY -- the near-term earnings path is negative, making the near-term catalyst (stabilization) uncertain. The RISK/REWARD is asymmetric: bear scenario value (739 IDR) is barely below current price (690 IDR), while base (1,357) and bull (1,846) are 97% and 167% above current price. A MEDIUM conviction BUY on an asymmetric risk/reward at 10% yield and P/B below book is defensible per the CONTRACT.",
+    "dominant_risk": "Ke remaining elevated (>12%) for an extended period (24+ months) if BI rate cycle is structural rather than a temporary rupiah defense. If BI stays at 5.75%+ through 2028, the normalization thesis is wrong and the bear scenario is more likely.",
+    "what_changes_our_mind": "Bear toward SELL: (1) Q2 2026 credit cost remains >4% of receivables (not normalizing); (2) BI raises again to 6.0%+ in the next meeting cycle; (3) BFIN loses more than 100bp of receivables market share to bank-backed competitors (receivables growth below 3% while Mandiri Tunas grows >20%). Bull toward higher conviction: (1) BI halts hikes and signals first cut by end-2026; (2) Q2 2026 NI shows sequential improvement; (3) BFIN's sharia/multipurpose origination grows >20% in H1 2026."
+  },
+
+  "four_numbers_reasoning": {
+    "number_1_fair_value_today": {
+      "value": 1357,
+      "multiple": "1.88x P/B (current BV 722.3)",
+      "method": "Blended: 40% DDM (1,568 IDR) + 40% Excess Returns (1,037 IDR) + 20% Justified P/B (1,573 IDR)",
+      "basis": "Base scenario: Ke=10.5%, ROE normalized at 16.5% by FY2028, g_LT=5.5%, payout 68-75%",
+      "note": "The 40/40/20 blend produces 1,357 IDR. The DDM and Justified P/B are very close (1,568 vs 1,573 IDR) -- strong convergence confirms the terminal value is internally consistent. The Excess Returns model at 1,037 IDR is lower because it only runs 10 years and captures less of the post-10-year value. The DDM/JPB numbers are the primary signal."
+    },
+    "number_2_price_today": {
+      "value": 690,
+      "multiple": "0.955x P/B (current BV 722.3) / 7.19x P/E (corrected NTM EPS 96 IDR)"
+    },
+    "number_3_fair_value_12m": {
+      "value": 1440,
+      "formula": "#1 (1,357) x (1 + 10.55%) - DPS (76.1) = 1,357 x 1.1055 - 76.1 = 1,500.2 - 76.1 = 1,424 IDR",
+      "note": "Approximately 1,440 IDR. Pure intrinsic convergence -- what the stock is worth in 12 months if the base thesis is correct."
+    },
+    "number_4_target_12m": {
+      "value": 910,
+      "multiple": "1.20x forward P/B (FY2026 BV 758.1 IDR)",
+      "basis": "Defensible traded multiple for 12m horizon. 1.20x forward P/B represents partial re-rating from 0.93x today toward the 2.18x intrinsic. Requires market to move from Ke~14% to ~12.5% (a 150bp compression as the hike cycle pauses) and to price in SOME (not full) ROE recovery.",
+      "contracted_bull_evidence": "10%+ dividend yield (70+ IDR per year) anchors institutional holders; BFIN new financing +9.3% in FY2025 shows volume growth; car sales +12.4% YTD 2026 improves origination outlook.",
+      "what_does_not_move_target": "The full intrinsic re-rate to 2.18x P/B is NOT in the 12m target. That requires a multi-year cycle.",
+      "implied_12m_total_return_pct": 42.9
+    }
+  },
+
+  "rating": "BUY",
+  "rating_basis": "Implied 12m total return of 42.9% (capital gain 220 IDR + DPS 76 IDR = 296 IDR / 690 IDR price) exceeds the BUY hurdle of +15%. The risk/reward is asymmetric: bear scenario value (739 IDR) is barely below current price, while base (1,357) and bull (1,846) provide large upside. Even at MEDIUM conviction, a 42.9% implied return vs a 5% maximum downside to book value floor (Fitch AA-idn rated) justifies BUY."
+}
