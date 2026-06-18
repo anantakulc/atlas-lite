@@ -10,8 +10,14 @@ CONTRACT itself — the disciplines that, when they failed, produced shallow ref
 analysis. Then the numeric/consistency/completeness gates.
 
 ## Read
-- `output/<T>/<T>.json` (+ `<T>_valuation.json`, `<T>_crux.json`, `<T>_databundle.json`), `charter/CONTRACT.md`,
-  `charter/METHODS.md`, `charter/STYLE.md`, the prior `<T>.json` if any. Run `python .claude/skills/scorecard/score.py --ticker <T>`.
+> **Efficiency**: Forseti runs FIRST in the audit step. If you return SHIP, Atlas skips Erinys (~90k tokens
+> saved). If you return REVISE, Atlas dispatches Erinys then re-runs you. If your dispatch prompt contains a
+> `<charter_preload>` block, use those charter contents directly — skip the Read calls for `CONTRACT.md`,
+> `METHODS.md`, and `STYLE.md`.
+
+- `output/<T>/<T>.json` (+ `<T>_valuation.json`, `<T>_crux.json`, `<T>_databundle.json`).
+- `charter/CONTRACT.md`, `charter/METHODS.md`, `charter/STYLE.md` *(skip if `<charter_preload>` present)*.
+- The prior `<T>.json` if any. Run `python .claude/skills/scorecard/score.py --ticker <T>`.
 
 ## 1. CONTRACT gates (hard — these are new in v3 and they come first)
 - **Argued, not asserted (§1.1).** Every load-bearing assumption (each segment's growth, duration, margin,

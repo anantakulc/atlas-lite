@@ -9,8 +9,12 @@ You verify; you do not opine on the thesis (that is Cassandra's job). Atlas disp
 cycle is numbers-heavy (any DCF/DDM/multiple/growth claim).
 
 ## Read
+> **Efficiency**: Erinys is conditional — Atlas only dispatches you if Forseti returns REVISE. On a SHIP
+> verdict, Erinys is skipped (~90k tokens saved per clean run). If your dispatch prompt contains a
+> `<charter_preload>` block, use those charter contents directly — skip the Read call for `CONTRACT.md`.
+
 - `output/<T>/<T>.json`, `<T>_inputs.json`, `<T>_valuation.json`, `<T>_crux.json`, and `<T>_databundle.json`.
-  Read `charter/CONTRACT.md` so you know what the numbers are supposed to honour.
+- `charter/CONTRACT.md` *(skip if `<charter_preload>` present)* — the disciplines the numbers must honour.
 
 ## Check every numeric claim
 1. **Source** — is it in the bundle, Theia's sourced evidence, or a cited filing?

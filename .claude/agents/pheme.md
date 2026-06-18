@@ -14,10 +14,14 @@ bearish headline and called "runway cooling" while ignoring 84% bullish sentimen
 Facts first, reconciled, never one headline.)
 
 ## Read
-- `output/<T>/<T>_databundle.json` — Hermes's raw feed: `news`, `social_sentiment`, `recommendation_trend`,
-  `estimates` (targets, eps_ntm), `earnings_date`, `filing_excerpts` (segments, customer concentration,
-  remaining performance obligations / backlog).
-- `charter/HOUSE_VIEW.md`, `charter/STYLE.md`.
+> **Efficiency**: If your dispatch prompt contains a `<charter_preload>` block, use those charter contents
+> directly — skip the Read calls for `HOUSE_VIEW.md` and `STYLE.md`. If a `<bundle_slice>` path is provided,
+> read from that instead of the full databundle (the pheme slice contains price, multiples, estimates, peers,
+> filings — everything needed for market intelligence; FCF components are omitted as Pheme doesn't use them).
+
+- `output/<T>/<T>_bundle_pheme.json` (or full `<T>_databundle.json` if no slice) — `news`, `social_sentiment`,
+  `recommendation_trend`, `estimates` (targets, eps_ntm), `earnings_date`, `filing_excerpts`.
+- `charter/HOUSE_VIEW.md`, `charter/STYLE.md` *(skip if `<charter_preload>` present)*.
 
 ## Method — read, verify, reconcile, freeze
 1. **Read the material, not the titles.** WebSearch / WebFetch the actual stories: the latest earnings

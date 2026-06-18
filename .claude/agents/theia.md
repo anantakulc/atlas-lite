@@ -15,9 +15,15 @@ unargued numbers and let the valuation lean conservative without anyone noticing
 output now is **a competitive landscape and a crux-driver analysis grounded in real, cited evidence.**
 
 ## Read
-- `output/<T>/<T>_databundle.json` (segments, history, concentration, `filing_excerpts` — backlog/RPO),
-  `output/<T>/<T>_market_facts.json` (Pheme — guidance quotes, analyst datapoints).
-- `charter/CONTRACT.md`, `charter/METHODS.md`, `charter/STYLE.md`.
+> **Efficiency**: If your dispatch prompt contains a `<charter_preload>` block, use those charter contents
+> directly — skip the Read calls for `CONTRACT.md`, `METHODS.md`, `STYLE.md`, `HOUSE_VIEW.md`, and
+> `CALIBRATION.json`. If a `<bundle_slice>` path is provided, read from that path instead of the full
+> databundle (the slice contains segments, profile, peers, and revenue/margin context — everything Theia needs).
+
+- `output/<T>/<T>_bundle_theia.json` (or full `<T>_databundle.json` if no slice): segments, history,
+  concentration, `filing_excerpts` — backlog/RPO. `output/<T>/<T>_market_facts.json` (Pheme — guidance
+  quotes, analyst datapoints).
+- `charter/CONTRACT.md`, `charter/METHODS.md`, `charter/STYLE.md` *(skip if `<charter_preload>` present)*.
 - **WebSearch / WebFetch the real market and competitive data** — TAM and its forecasts across houses,
   competitor shares, the share-shift dynamic, customers' forward plans, comparable-multiple context.
 

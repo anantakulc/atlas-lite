@@ -14,6 +14,55 @@ buying into and what decides it.**
 ## Read first (every run)
 `charter/CONTRACT.md`, `charter/METHODS.md`, `charter/STYLE.md`, `CALIBRATION.json`; the prior `<T>.json` if any.
 
+## Token efficiency (atlas-lite optimizations — ~60% reduction per stock on Sonnet)
+
+**1. Charter pre-load (saves ~200k tokens per stock).** After reading the charter files above, embed
+their full contents as a single `<charter_preload>` block at the top of every sub-agent dispatch prompt:
+
+```
+<charter_preload>
+=== CONTRACT.md ===
+{CONTRACT.md contents}
+=== METHODS.md ===
+{METHODS.md contents}
+=== STYLE.md ===
+{STYLE.md contents}
+=== HOUSE_VIEW.md ===
+{HOUSE_VIEW.md contents}
+=== CALIBRATION.json ===
+{CALIBRATION.json contents}
+</charter_preload>
+```
+
+Each agent spec recognizes this block and skips its own charter Read calls. Atlas reads the files
+once; all 8 sub-agents use the cached text. (~25k tokens × 8 agents avoided = 200k tokens.)
+
+**2. Bundle slicing (saves ~100-150k tokens per stock).** Before dispatching each analysis agent,
+run `bundle_slice.py` to create a per-agent view and pass the slice path instead of the full bundle:
+
+```bash
+python engine/bundle_slice.py --bundle output/<T>/<T>_databundle.json --for theia   # → prints slice path
+python engine/bundle_slice.py --bundle output/<T>/<T>_databundle.json --for pheme
+python engine/bundle_slice.py --bundle output/<T>/<T>_databundle.json --for daedalus  # full bundle
+python engine/bundle_slice.py --bundle output/<T>/<T>_databundle.json --for debate    # for Boreas+Cassandra
+```
+
+In each agent prompt, replace the full databundle path with the slice path. Daedalus receives the
+full bundle (its slice is a pass-through); Theia, Pheme, and the debate agents receive trimmed views.
+
+**3. Conditional Erinys (saves ~90k tokens on clean runs).** Run Forseti FIRST. Only invoke Erinys
+if Forseti returns REVISE — on a SHIP verdict, skip Erinys. See updated step 5 in the pipeline below.
+
+**4. Batch runs (3 stocks, one Pro window).** For multi-stock batches, freeze all tickers in parallel
+BEFORE starting any per-stock analysis:
+
+```bash
+python engine/batch_run.py --tickers <T1> <T2> <T3>
+```
+
+Then process each stock's full pipeline sequentially (~150-200k tokens per stock on Sonnet with the
+above optimizations). Do NOT run analysis for multiple stocks in parallel — they compete for context.
+
 ## Pipeline (v3 — landscape and argument first, the call last; see METHODS.md "order of work")
 1. **Freeze — Hermes ‖ Pheme ‖ Theia (parallel).** `python .claude/skills/hermes/us.py --ticker <T>` →
    `<T>_databundle.json`. Dispatch **Pheme** (market facts, the analyst tape, what's priced in) and **Theia**
@@ -27,7 +76,8 @@ buying into and what decides it.**
 3. **Debate — Boreas ‖ Cassandra (blind, parallel).** The **2–4 key debates** anchored on the crux, each
    argued both ways and **quantified** ($/share worth), each ending in an `evidence_quality` grade.
 4. **Synthesize `<T>.json`** as the 8-section story (below).
-5. **Audit + gate — Erinys → Forseti.** Then render + ledger.
+5. **Audit + gate — Forseti first, Erinys conditional.** Run Forseti. If SHIP, skip Erinys (saves ~90k
+   tokens). If REVISE, run Erinys for numeric verification, then re-run Forseti with the findings.
 
 ## Synthesize — the 8-section story (CONTRACT §6), in `charter/STYLE.md` voice
 Write to `schema/REPORT_SCHEMA.md`. Readable PROSE, conclusion-first, no filler, no card-dump:

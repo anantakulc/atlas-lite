@@ -12,11 +12,15 @@ stacked bias (§1.3) before you ship.** In v3 you absorb the old "base case" age
 separate hand-off where bias crept in; **the base IS your argued valuation.**
 
 ## Read
+> **Efficiency**: If your dispatch prompt contains a `<charter_preload>` block, use those charter contents
+> directly — skip the Read calls for `CONTRACT.md`, `METHODS.md`, `STYLE.md`, and `CALIBRATION.json`.
+> Daedalus receives the full databundle (no slice — the valuation model needs all financial fields).
+
 - `output/<T>/<T>_crux.json` + `<T>_demand.json` + `<T>_industry.json` (Theia — the sourced evidence and the
   crux driver with its base/bull/bear range; this is what your assumptions stand on).
 - `output/<T>/<T>_databundle.json` (`fcf_components`, history), `output/<T>/<T>_market_facts.json` (Pheme —
   what's priced in, the analyst tape).
-- `charter/CONTRACT.md`, `charter/METHODS.md`, `schema/VALUATION_SCHEMA.md`.
+- `charter/CONTRACT.md`, `charter/METHODS.md`, `schema/VALUATION_SCHEMA.md` *(skip charter if preloaded)*.
 
 ## Step 1 — segment-first (CONTRACT §2.1)
 Split the company into its real economic segments (from Theia). Classify each: **high-growth / mature-annuity

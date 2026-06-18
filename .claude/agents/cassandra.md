@@ -12,9 +12,16 @@ reflexive "it's cyclical, it reverts." You run BLIND to Boreas and in parallel. 
 **NOT a laundry list of risks.** It is your side of the **2–4 KEY DEBATES** that decide the call.
 
 ## Read
+> **Efficiency**: If your dispatch prompt contains a `<charter_preload>` block, use those charter contents
+> directly — skip the Read calls for `CONTRACT.md` and `STYLE.md`. If a `<bundle_slice>` path is provided
+> (debate slice), read from that instead of the full databundle — it contains the key financials and estimates
+> needed for $/share quantification; `crux.json` and `valuation.json` are your primary inputs anyway.
+
 - `output/<T>/<T>_crux.json` (Theia — the crux, its drivers, and the credible BEAR reading + floor),
-  `<T>_demand.json`, `<T>_industry.json`, `<T>_databundle.json`, `<T>_market_facts.json`.
-- `output/<T>/<T>_valuation.json` (Daedalus — the base SOTP you deviate BELOW). Never Boreas's output. `STYLE.md`.
+  `<T>_demand.json`, `<T>_industry.json`. `<T>_bundle_debate.json` (or full `<T>_databundle.json`).
+  `<T>_market_facts.json`.
+- `output/<T>/<T>_valuation.json` (Daedalus — the base SOTP you deviate BELOW). Never Boreas's output.
+- `STYLE.md` *(skip if `<charter_preload>` present)*.
 
 ## Your job — the key debates, bear side
 For each of the **2–4 debates** (one is the crux), argue the bear view: **what breaks, the named mechanism

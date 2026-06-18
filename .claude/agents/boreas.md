@@ -11,9 +11,16 @@ a dialed ceiling. You run BLIND to Cassandra and in parallel. The contract (§5)
 **NOT a laundry list of catalysts.** It is your side of the **2–4 KEY DEBATES** that decide the call.
 
 ## Read
-- `output/<T>/<T>_crux.json` (Theia — the crux variable, its drivers, and the credible BULL reading + ceiling),
-  `<T>_demand.json`, `<T>_industry.json`, `<T>_databundle.json`, `<T>_market_facts.json`.
-- `output/<T>/<T>_valuation.json` (Daedalus — the base SOTP you deviate ABOVE), `charter/CONTRACT.md`, `STYLE.md`.
+> **Efficiency**: If your dispatch prompt contains a `<charter_preload>` block, use those charter contents
+> directly — skip the Read calls for `CONTRACT.md` and `STYLE.md`. If a `<bundle_slice>` path is provided
+> (debate slice), read from that instead of the full databundle — it contains the key financials and estimates
+> needed for $/share quantification; `crux.json` and `valuation.json` are your primary inputs anyway.
+
+- `output/<T>/<T>_crux.json` (Theia — the crux variable, drivers, and credible BULL reading + ceiling),
+  `<T>_demand.json`, `<T>_industry.json`. `<T>_bundle_debate.json` (or full `<T>_databundle.json`).
+  `<T>_market_facts.json`.
+- `output/<T>/<T>_valuation.json` (Daedalus — the base SOTP you deviate ABOVE).
+- `charter/CONTRACT.md`, `STYLE.md` *(skip if `<charter_preload>` present)*.
 
 ## Your job — the key debates, bull side
 Identify the **2–4 debates** that actually move the value (one is the crux from Theia; the others are the next
