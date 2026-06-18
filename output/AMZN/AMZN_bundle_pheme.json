@@ -1,0 +1,187 @@
+{
+  "_meta": {
+    "ticker": "AMZN",
+    "snapshot_id": "AMZN_2026-06-18T1223Z",
+    "as_of_utc": "2026-06-18T12:23:11Z",
+    "market": "US",
+    "currency": "USD",
+    "adapter": "hermes/us",
+    "sources": [
+      {
+        "name": "yfinance",
+        "fetched_utc": "2026-06-18T12:23:11Z"
+      },
+      {
+        "name": "SEC EDGAR",
+        "fetched_utc": "2026-06-18T12:23:11Z",
+        "cik": "0001018724"
+      }
+    ],
+    "gaps": [
+      "segment revenue: see filing_excerpts (parse the 10-Q segment note); not in structured yfinance data"
+    ]
+  },
+  "profile": {
+    "name": "Amazon.com, Inc.",
+    "listings": "NMS",
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail",
+    "country": "United States",
+    "description": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington.",
+    "employees": 1575000.0,
+    "business_type_hint": "software"
+  },
+  "price": {
+    "current": 237.5,
+    "currency": "USD",
+    "high_52w": 278.55999755859375,
+    "low_52w": 196.0,
+    "ma50": 256.6374005126953,
+    "ma200": 232.7084001159668,
+    "ytd_pct": 4.86,
+    "return_1y_pct": 11.75,
+    "beta": 1.444
+  },
+  "market_stats": {
+    "market_cap_b": 2554.813,
+    "enterprise_value_b": 2738.7,
+    "shares_outstanding_b": 10.757,
+    "net_debt_b": 66.177,
+    "adtv_usd_m": 10027.0,
+    "dividend_per_share": null,
+    "dividend_yield_pct": null
+  },
+  "valuation_multiples": {
+    "pe_ttm": 30.56628,
+    "pe_ntm": 24.08732,
+    "ev_ebitda_ttm": 17.571,
+    "ev_sales_ttm": 3.687,
+    "pb": 5.7795734,
+    "peg": 1.8344
+  },
+  "estimates": {
+    "eps_ntm": 9.85996,
+    "target_mean": 312.98715,
+    "target_median": 315.0,
+    "num_analysts": 63.0,
+    "rec_mean": 1.34328,
+    "target_high": 370.0,
+    "target_low": 207.0,
+    "recommendation_key": "strong_buy",
+    "eps_ntm_consensus": 9.87854,
+    "eps_ntm_consensus_period": "+1y"
+  },
+  "peers": [],
+  "filings": [
+    {
+      "type": "8-K",
+      "filed": "2026-06-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926073562/tm2613616d5_8k.htm"
+    },
+    {
+      "type": "8-K",
+      "filed": "2026-06-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/tm2613616d4_8k.htm"
+    },
+    {
+      "type": "8-K",
+      "filed": "2026-05-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926065717/tm2614288d1_8k.htm"
+    },
+    {
+      "type": "10-Q",
+      "filed": "2026-04-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm"
+    },
+    {
+      "type": "8-K",
+      "filed": "2026-04-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260429.htm"
+    },
+    {
+      "type": "8-K",
+      "filed": "2026-04-14",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm"
+    },
+    {
+      "type": "8-K",
+      "filed": "2026-04-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041034/tm263815d2_8k.htm"
+    },
+    {
+      "type": "8-K",
+      "filed": "2026-03-16",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926028556/tm266670d9_8k.htm"
+    }
+  ],
+  "segments": [],
+  "financials": {
+    "income": [
+      {
+        "fy": "FY2025",
+        "revenue_b": 716.924,
+        "ebit_b": 79.975,
+        "net_income_b": 77.67,
+        "eps": 7.17
+      },
+      {
+        "fy": "FY2024",
+        "revenue_b": 637.959,
+        "ebit_b": 68.593,
+        "net_income_b": 59.248,
+        "eps": 5.53
+      },
+      {
+        "fy": "FY2023",
+        "revenue_b": 574.785,
+        "ebit_b": 36.852,
+        "net_income_b": 30.425,
+        "eps": 2.9
+      },
+      {
+        "fy": "FY2022",
+        "revenue_b": 513.983,
+        "ebit_b": 12.248,
+        "net_income_b": -2.722,
+        "eps": -0.27
+      }
+    ],
+    "cashflow": [
+      {
+        "fy": "FY2025",
+        "cfo_b": 139.514,
+        "fcf_b": 7.695,
+        "buybacks_b": null,
+        "dividends_paid_b": null
+      },
+      {
+        "fy": "FY2024",
+        "cfo_b": 115.877,
+        "fcf_b": 32.878,
+        "buybacks_b": 0.0,
+        "dividends_paid_b": null
+      },
+      {
+        "fy": "FY2023",
+        "cfo_b": 84.946,
+        "fcf_b": 32.217,
+        "buybacks_b": 0.0,
+        "dividends_paid_b": null
+      },
+      {
+        "fy": "FY2022",
+        "cfo_b": 46.752,
+        "fcf_b": -16.893,
+        "buybacks_b": -6.0,
+        "dividends_paid_b": null
+      },
+      {
+        "fy": "FY2021",
+        "cfo_b": null,
+        "fcf_b": null,
+        "buybacks_b": 0.0,
+        "dividends_paid_b": null
+      }
+    ]
+  }
+}
