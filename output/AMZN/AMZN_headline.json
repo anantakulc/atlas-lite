@@ -14,7 +14,7 @@
       "value": 211.64,
       "multiple": 21.1,
       "multiple_label": "EV/NTM EBIT",
-      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+      "basis": "base case intrinsic value: the anchor, not a weighted blend"
     },
     "price_today": {
       "value": 237.5,
@@ -35,7 +35,7 @@
         "defensible_multiple": 28.0,
         "forward_metric_label": "FY2027E EPS",
         "forward_metric_value": 10.37,
-        "multiple_rationale": "At $204 base fair value, the honest intrinsic convergence target in 12m is $204 x 1.10 = $224. However, Daedalus documents a justified 12m target of 28x FY2027 EPS of $10.37 = $290 — reflecting: (1) the $364bn contracted backlog is a hard, company-filed fact that the market will continue to reprice over the next 4 quarters as it converts to revenue; (2) AWS re-acceleration to 28% (the fastest in 15 quarters) in Q1 2026 is a verifiable data point that reduces the deceleration risk the bear case rests on; (3) the 14.7% pullback from the all-time high to $237.50 provides a technical entry within the bull-bear range ($145-$244); (4) 28x on FY2027 EPS reflects a MODEST re-rating toward the lower end of the post-Q1 analyst cluster (JPMorgan uses 32x), which is defensible given the capex cycle FCF risk. This is NOT engineered to produce a BUY — it produces a HOLD, which is the honest verdict when the base fair value sits 14% below price but contracted demand evidence is strong enough to keep the target within the analyst range.",
+        "multiple_rationale": "At $204 base fair value, the honest intrinsic convergence target in 12m is $204 x 1.10 = $224. However, Daedalus documents a justified 12m target of 28x FY2027 EPS of $10.37 = $290, reflecting: (1) the $364bn contracted backlog is a hard, company-filed fact that the market will continue to reprice over the next 4 quarters as it converts to revenue; (2) AWS re-acceleration to 28% (the fastest in 15 quarters) in Q1 2026 is a verifiable data point that reduces the deceleration risk the bear case rests on; (3) the 14.7% pullback from the all-time high to $237.50 provides a technical entry within the bull-bear range ($145-$244); (4) 28x on FY2027 EPS reflects a MODEST re-rating toward the lower end of the post-Q1 analyst cluster (JPMorgan uses 32x), which is defensible given the capex cycle FCF risk. This is NOT engineered to produce a BUY. It produces a HOLD, which is the honest verdict when the base fair value sits 14% below price but contracted demand evidence is strong enough to keep the target within the analyst range.",
         "price": 290.36
       },
       "implied_12m_total_return_pct": 22.3

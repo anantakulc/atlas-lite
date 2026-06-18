@@ -30,7 +30,7 @@
   "four_numbers": {
     "fair_value_today": {
       "value": 211.64,
-      "multiple": 20.4,
+      "multiple": 21.1,
       "multiple_label": "EV/NTM EBIT",
       "basis": "SOTP base case: AWS (ExitMultiple, 16.5x EV/NOPAT, FY2028 normalization) + Advertising (ExitMultiple, 20.4x, FY2027) + NA Retail (12x FY2027E EBIT) + International (10x FY2027E EBIT), less $66.2bn net debt, divided by 10.757bn shares"
     },
@@ -252,7 +252,7 @@
     },
     {
       "label": "SOTP Base Fair Value",
-      "value": "$211.64 (20.4x EV/EBIT)"
+      "value": "$211.64 (21.1x EV/EBIT)"
     },
     {
       "label": "SOTP Bull Fair Value",
@@ -638,7 +638,7 @@
   },
   "multiple_maths": {
     "current_multiple": "30.6x NTM P/E (corrected), 23.6x EV/NTM EBIT",
-    "justified_multiple": "26.3x NTM P/E, 20.4x EV/NTM EBIT (SOTP base)",
+    "justified_multiple": "26.3x NTM P/E, 21.1x EV/NTM EBIT (SOTP base)",
     "premium_to_justified": "16% on P/E, 16% on EV/EBIT",
     "duality_decomposition": "The 23.6x EV/NTM EBIT decomposes into: g 11% (consensus FY2026 revenue growth), ROIC ~22% (group blended; AWS drags this up materially), r ~9.5% (implied from the price, lower than our argued 10% WACC). The market is applying a discount rate below our argued WACC; lausible if the market prices the backlog as a risk reducer that contracts beta below our 1.15 fundamental estimate. Our justified multiple at 20.4x implies r 10% and the same g/ROIC structure; more conservative risk premium is the primary source of disagreement.",
     "justified_grid": [
@@ -676,7 +676,7 @@
       "bear_view": "Multi-year enterprise cloud contracts carry optionality; olume minimums rather than hard volume commitments, renegotiation rights if AI ROI disappoints at scale. Azure grew 40% versus AWS 28% in Q1 2026, meaning Microsoft's OpenAI exclusivity is pulling the fastest-growing AI workloads. A massive single-quarter backlog surge could reflect customers locking in capacity commitments ahead of anticipated price increases rather than organic demand expansion; pull-forward, not structural growth.",
       "our_verdict": "The backlog's legal status and the $120bn quarterly addition are the strongest near-term evidence in the bull case. The conversion risk is real but requires a specific observable mechanism. AI ROI failure at enterprise scale; o invalidate. The DA Davidson thesis (AWS losing market share) was tested by Q1 data and refuted: AWS grew at the same rate as GCP (both 28%) and faster than the prior-year quarter. We hold the base case at $230bn FY2028 (17% growth by that year) but argue that the probability of the bull outcome ($256bn, 22% growth) is higher than the probability of the bear ($210bn, 15%) given the filed evidence. This asymmetry supports a BUY with a target that leans toward the bull.",
       "what_would_change_our_mind": "AWS Q2 or Q3 2026 revenue growth decelerating below 24% despite the $364bn backlog; hich would signal either capacity delays suppressing conversion, or demand softness in new bookings offsetting conversion. Alternatively, management commentary on backlog cancellation or renegotiation rates would be a material negative surprise.",
-      "worth_per_share": "$99/share from bear ($55 AWS segment value) to bull ($91 AWS segment value), a $36/share swing from base ($83). Moving from base to bull AWS scenario adds $8/share; from base to bear subtracts $28/share. The asymmetry reflects that the base already embeds conservative revenue assumptions that the filed backlog partially contradicts."
+      "worth_per_share": "$47/share from bear AWS ($54/share) to bull AWS ($102/share), using consistent Daedalus-computed values: bear at r=11.5% yields $54.24/share (bear SOTP $145 total), base at r=10.0% yields $83.16/share (base SOTP $212 total), bull at r=10.0% yields $101.55/share (bull SOTP $254 total). Moving from base to bull AWS adds $18/share; from base to bear subtracts $29/share. The downside asymmetry is larger than it appears because the bear also applies a higher discount rate (11.5% vs 10%), compounding the NOPAT reduction."
     },
     {
       "debate": "Does $200bn of annual capex compress Amazon's return on invested capital for long enough to warrant a lower multiple today, or is the capex cycle a temporary FCF trough that investors should look through?",
@@ -714,7 +714,7 @@
       "severity": "HIGH",
       "likelihood": "MEDIUM",
       "risk": "Capex cycle extends into 2027 without FCF inflection, compressing the defensible 12m multiple and forcing the stock toward the intrinsic convergence target ($233) rather than the market target ($290)",
-      "monitor": "FY2026 capex guidance update in Q2/Q3 earnings; management commentary on capex moderation timeline"
+      "monitor": "FY2026 capex guidance update in Q2/Q3 earnings; management commentary on capex moderation timeline. FY2026 FCF reported at or below $5bn signals cycle extension."
     },
     {
       "rank": 2,
@@ -722,7 +722,7 @@
       "severity": "HIGH",
       "likelihood": "MEDIUM",
       "risk": "Azure sustains 40%+ growth for 4-6 consecutive quarters, pulling enterprise AI application workloads away from AWS Bedrock and slowing AWS bookings below the base assumption",
-      "monitor": "AWS quarterly revenue growth rate; Azure growth rate; AWS share in new AI workloads per Synergy Research"
+      "monitor": "AWS quarterly revenue growth rate; Azure growth rate; AWS share in new AI workloads per Synergy Research. Azure AI 40%+ for 3 consecutive quarters while AWS holds at or below 28% is the break signal."
     },
     {
       "rank": 3,
@@ -771,7 +771,7 @@
         "implied_value": 145.36,
         "thesis_one_line": "AWS decelerates to 20% by H2 2026 and 15% by FY2028 ($210bn); Azure's OpenAI advantage pulls AI workloads; advertising grows only 18%; NA Retail margin stalls at 7-8%.",
         "evidence_grade": "MECHANISM. Azure's 40% growth vs AWS 28% is an observable dynamic; the bear requires it to sustain and intensify",
-        "key_driver": "AWS bear: NOPAT $59.7bn × 13.1x exit multiple (higher r, lower g, lower ROIC) / 1.25 discount factor = $594bn AWS EV (vs $894bn base)"
+        "key_driver": "AWS bear: NOPAT $59.7bn × 12.15x exit multiple (higher r, lower g, lower ROIC) / 1.25 discount factor = $583bn AWS EV (vs $894bn base)"
       }
     ],
     "sensitivity_matrix": {
@@ -795,42 +795,42 @@
         [
           217.1,
           207.5,
-          193.2,
+          199.7,
           182.9,
           178.8
         ],
         [
           223.4,
           213.2,
-          197.8,
+          204.8,
           186.8,
           182.4
         ],
         [
           232.0,
           220.8,
-          204.0,
+          211.6,
           192.1,
           187.3
         ],
         [
           239.2,
           227.3,
-          209.3,
+          217.5,
           196.5,
           191.4
         ],
         [
           247.2,
           234.3,
-          215.1,
+          223.8,
           201.4,
           195.9
         ]
       ],
       "grid_note": "Each cell is the full SOTP implied price with only the AWS NOPAT and AWS WACC varying; other segments fixed at base. The current price of $237.50 corresponds to approximately NOPAT $75bn at r=9.5%; he market is pricing both the bull NOPAT AND a lower-than-base WACC.",
       "dominant_lever": "AWS WACC (r) is approximately equal in sensitivity to AWS NOPAT: a 100bp change in r moves the implied price by roughly $12-15/share; a $5bn change in NOPAT moves it by roughly $6-8/share. The market-price sensitivity test confirms that the current price of $237.50 requires BOTH a NOPAT above the base AND a WACC below the base; onfirming the market is pricing a premium for the contracted demand evidence (which justifies a lower β/WACC) as well as for the bull growth trajectory.",
-      "where_cases_land": "Base (NOPAT $65.4bn, r 10.0%): $204; rid cell (row 3, col 3). Bull (NOPAT $72.7bn, r 10.0%): $212 per grid (row 4, col 3). Full bull with NA/Intl expansion: $244. Bear (NOPAT $59.7bn, r 11.5%): grid estimates $187 for AWS-only bear; full SOTP bear with all segments compressed: $145."
+      "where_cases_land": "Base (NOPAT $65.4bn, r 10.0%): $212; grid cell (row 3, col 3). Bull (NOPAT $72.7bn, r 10.0%): $218 per grid (row 4, col 3). Full bull with NA/Intl expansion: $254. Bear (NOPAT $59.7bn, r 11.5%): grid estimates $187 for AWS-only bear; full SOTP bear with all segments compressed: $145."
     },
     "vs_price_pct": -10.9
   },
@@ -934,8 +934,8 @@
         },
         {
           "driver": "AWS exit EV/NOPAT multiple",
-          "value": "16.5x",
-          "note": "Same Gordon formula; g_lt 5.0%, ROIC 55%, r 10.0% = 16.8x"
+          "value": "18.18x",
+          "note": "Same Gordon formula; g_lt 5.0%, ROIC 55%, r 10.0% = 18.18x"
         },
         {
           "driver": "AWS WACC",
@@ -1006,8 +1006,8 @@
         },
         {
           "driver": "AWS exit EV/NOPAT multiple",
-          "value": "13.1x",
-          "note": "Gordon: g_lt 4.0%, ROIC 45%, r 11.5% = (1-0.089)/0.075 = 12.2x (engine output: 13.1x)"
+          "value": "12.15x",
+          "note": "Gordon: g_lt 4.0%, ROIC 45%, r 11.5% = (1 - 0.04/0.45)/(0.115 - 0.04) = 0.9111/0.075 = 12.15x"
         },
         {
           "driver": "AWS WACC",
@@ -1068,7 +1068,7 @@
     {
       "label": "bear",
       "outcome_range": "$145-$180",
-      "description": "Azure's OpenAI advantage intensifies in FY2026-2027 as enterprise AI applications use Microsoft's proprietary model ecosystem; AWS new bookings stall even as the old backlog converts; capex cycle extends; multiple compresses.",
+      "description": "Azure's OpenAI structural advantage pulls enterprise AI application workloads away from AWS Bedrock; $200bn capex at near-zero FCF creates WACC repricing risk if AI ROI disappoints at scale; the $364bn backlog converts existing signed commitments but new bookings stall as Azure 40%+ growth sustains for 4+ quarters. The bear is not a cloud collapse; it is backlog-conversion-not-demand: the signed contracts convert but the growth engine behind them fades, decelerating AWS to 15% by FY2028.",
       "evidence_grade": "MECHANISM; equires Azure 40%+ growth to sustain for 4+ quarters and pull cloud-native workloads"
     }
   ],
@@ -1120,7 +1120,7 @@
       "Pheme (Market)",
       "Daedalus (Valuation)",
       "Boreas (Bull)",
-      "Cassandra (Bear; ending)",
+      "Cassandra (Bear; completed)",
       "Erinys (Audit; tep 4)",
       "Forseti (Gate; tep 5)"
     ],
@@ -1136,7 +1136,6 @@
     "Advertising segment P&L not separately disclosed by Amazon; 55% contribution margin is a bottom-up derived estimate, not company-filed.",
     "Q3 2025 advertising quarterly revenue not found in the data sources; implied from annual total minus other quarters.",
     "International segment advertising contribution not separately quantifiable; treated as embedded in the segment margin.",
-    "Cassandra (bear) agent file not yet generated at synthesis time; ear scenario parameters used from SOTP inputs and the crux analysis in AMZN_crux.json; will be updated when AMZN_bear.json is written.",
     "SBC FY2026 not yet reported; projected at $17-18bn based on declining trend ($22bn FY2024 → $19.5bn FY2025).",
     "Amazon's reported capex includes finance leases in the CFO statement; the $131.8bn FY2025 and $200bn FY2026 figures may include lease obligations that slightly overstate the pure growth capex."
   ],
