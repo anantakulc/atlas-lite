@@ -1,0 +1,133 @@
+{
+  "ticker": "AMZN",
+  "as_of_date": "2026-06-18",
+  "pheme_market_context": {
+    "sector": "Consumer Discretionary / Technology",
+    "industry_classification": "Internet Retail / Cloud Computing / Digital Advertising",
+    "market_cap_bn": 2554.8,
+    "price_vs_52wk": {
+      "price": 237.5,
+      "high_52wk": 278.56,
+      "low_52wk": 196.0,
+      "pct_from_52wk_high": -14.7
+    },
+    "peer_multiples_context": [
+      {"ticker": "MSFT", "ev_ebitda": 22.0, "pe_fwd": 28.0, "revenue_growth_pct": 15.0, "note": "Azure growing ~40% YoY in cloud; AI co-pilot integration a key growth driver"},
+      {"ticker": "GOOGL", "ev_ebitda": 14.0, "pe_fwd": 18.0, "revenue_growth_pct": 12.0, "note": "GCP growing 28%+ YoY; Gemini AI platform scaling; advertising still 75%+ of revenue"},
+      {"ticker": "META", "ev_ebitda": 13.0, "pe_fwd": 19.0, "revenue_growth_pct": 19.0, "note": "Advertising compounder; Llama AI models; Reality Labs drag on multiples"},
+      {"ticker": "AMZN", "ev_ebitda": 17.6, "pe_fwd": 24.1, "revenue_growth_pct": 16.0, "note": "Current; SOTP discount applies given conglomerate structure"}
+    ]
+  },
+  "theia_landscape": {
+    "business_description": "Amazon is a three-segment conglomerate — North America retail ($426bn), International retail ($162bn), and AWS ($129bn) — with an analytically distinct Advertising business (~$69bn) embedded within the retail segments. The value is heavily concentrated in two high-growth engines: AWS (~57% of group operating income despite ~18% of revenue) and Advertising (~18-20% estimated group OI at near-zero marginal cost). The retail segments, once the core identity, are now the base that funds the high-return growth platforms.",
+    "segment_overview": [
+      {
+        "segment": "AWS",
+        "fy2025_revenue_bn": 128.7,
+        "q1_2026_revenue_bn": 37.6,
+        "q1_2026_growth_yoy_pct": 28.0,
+        "revenue_share_pct": 18.0,
+        "oi_share_pct": 57.0,
+        "current_margin_pct": 37.7,
+        "nature": "high-growth",
+        "valuation_method": "exit-multiple on FY2028 normalized EBIT"
+      },
+      {
+        "segment": "Advertising",
+        "fy2025_revenue_bn": 68.6,
+        "q1_2026_revenue_bn": 17.2,
+        "q1_2026_growth_yoy_pct": 24.0,
+        "revenue_share_pct": 9.6,
+        "oi_share_pct": 20.0,
+        "estimated_margin_pct": 55.0,
+        "nature": "high-growth",
+        "note": "Not a GAAP segment; reported within NA and International",
+        "valuation_method": "exit-multiple on FY2027 normalized EBIT"
+      },
+      {
+        "segment": "NA Retail",
+        "fy2025_revenue_bn": 426.3,
+        "q1_2026_revenue_bn": 104.1,
+        "q1_2026_growth_yoy_pct": 12.0,
+        "revenue_share_pct": 59.5,
+        "oi_share_pct": 20.0,
+        "current_margin_pct": 9.0,
+        "nature": "mature/recovering",
+        "valuation_method": "FY2027E earnings x justified multiple"
+      },
+      {
+        "segment": "International",
+        "fy2025_revenue_bn": 161.9,
+        "q1_2026_revenue_bn": 39.8,
+        "q1_2026_growth_yoy_pct": 19.0,
+        "revenue_share_pct": 22.6,
+        "oi_share_pct": 3.0,
+        "current_margin_pct": 3.5,
+        "nature": "subscale/building",
+        "valuation_method": "FY2027E earnings x discounted multiple"
+      }
+    ],
+    "named_competitors": [
+      {
+        "name": "Microsoft Azure",
+        "segment": "AWS",
+        "market_share_pct": 25.0,
+        "q1_2026_growth_pct": 40.0,
+        "share_dynamic": "gaining_slowly",
+        "key_advantage": "Deep enterprise lock-in via Microsoft 365/Teams + OpenAI partnership provides AI differentiation; Azure AI revenues growing ~40% vs AWS at 28%",
+        "competitive_verdict": "Azure is a credible, well-funded rival. Its faster AI-specific growth (Azure AI up 40% YoY) reflects Microsoft's OpenAI exclusivity advantage. However, Azure's growth is concentrated in Microsoft's existing enterprise customer base migrating AI workloads, a different cohort than AWS's cloud-native customers. The share shift is real but gradual — Azure has gained ~3-4pp in 3 years against a market growing fast enough that AWS still added ~$20bn in annual revenue."
+      },
+      {
+        "name": "Google Cloud (GCP)",
+        "segment": "AWS",
+        "market_share_pct": 13.0,
+        "q1_2026_growth_pct": 28.0,
+        "share_dynamic": "gaining_slowly",
+        "key_advantage": "AI/ML leadership (Gemini, TPUs), BigQuery data analytics, aggressive pricing (8% compute price cuts Q1 2026)",
+        "competitive_verdict": "GCP is growing as fast as AWS (both ~28% YoY in Q1 2026) from a much smaller base. GCP's aggressive pricing is deflationary for the industry and a margin headwind for AWS, but GCP's scale (~$11.4bn Q1 2026 revenue vs AWS $37.6bn) means it cannot shift market dynamics meaningfully without sustained years of outgrowth."
+      },
+      {
+        "name": "Google Ads + Meta",
+        "segment": "Advertising",
+        "share_dynamic": "stable/slightly_losing",
+        "key_advantage": "Broader audience targeting (Google: intent search; Meta: social graph); larger scale and more diverse ad formats",
+        "competitive_verdict": "Amazon is gaining advertising share from Google/Meta by offering high-intent purchase-funnel placement. Product searches now start on Amazon for 50%+ of US consumers. Google has responded with AI-powered Shopping results, but Amazon's native purchase intent data is structurally superior for product advertising. Advertising share shift favors Amazon structurally."
+      },
+      {
+        "name": "Walmart / Walmart+",
+        "segment": "NA Retail",
+        "share_dynamic": "stable",
+        "key_advantage": "Grocery dominance, physical stores enabling same-day delivery, Walmart+ membership growing",
+        "competitive_verdict": "Walmart is a credible competitor in grocery and everyday essentials. Walmart+ has scaled but remains far smaller than Prime (~$14bn/year revenue vs Amazon subscription $46bn). Amazon's response is Amazon Fresh expansion and Whole Foods. The battle is for grocery mind share; Amazon's overall retail dominance (35.7% US ecommerce) is not under threat from Walmart on a 3-5 year horizon."
+      },
+      {
+        "name": "Temu / Shein",
+        "segment": "NA Retail",
+        "share_dynamic": "entering",
+        "key_advantage": "Ultra-low pricing on Chinese manufactured goods; direct-from-factory model undercuts Amazon sellers on unit economics",
+        "competitive_verdict": "Temu/Shein are a real competitive threat in low-price categories (apparel, consumables). Amazon launched Haul as a direct response. However, Amazon's response has been swift, and the tariff environment post-2025 significantly disadvantages direct-from-China pricing models. The threat to overall Amazon GMV share is meaningful but manageable."
+      }
+    ],
+    "addressable_market": {
+      "cloud_IaaS_PaaS_tam_2025_bn": 295.0,
+      "cloud_tam_cagr_pct_to_2030": 19.0,
+      "cloud_tam_2030_bn": 705.0,
+      "cloud_tam_source": "Precedence Research via searchlab.nl; $295bn 2025 growing at 18-20% CAGR",
+      "digital_advertising_global_tam_2026_bn": 916.0,
+      "digital_advertising_amazon_share_2026_pct": 9.0,
+      "digital_advertising_source": "eMarketer 2026 projection",
+      "us_ecommerce_tam_2025_bn": 1140.0,
+      "amazon_us_ecommerce_share_pct": 35.7,
+      "us_ecommerce_source": "synctify.net 2026 US ecommerce market share report"
+    },
+    "industry_position": "AWS is the global cloud infrastructure market leader at 30-31% share (Synergy Research Q1 2026), ahead of Azure at ~25% and GCP at ~13%. AWS's leadership rests on service breadth (200+ services), years of enterprise customer embedding, and now custom silicon (Trainium/Graviton) that differentiates on cost. The AI infrastructure cycle is an amplifier: Amazon's $200bn 2026 capex commitment and $364bn backlog signal that demand is contracted, not speculative. In advertising, Amazon is the third-largest digital advertiser globally (behind Google and Meta) and the fastest-growing at ~24% YoY, driven by the structural shift of product searches from Google to Amazon. In retail, Amazon maintains 35.7% of US ecommerce with no credible challenger at scale; the competitive risk is from below (Temu) and from adjacent (Walmart+), neither of which disrupts the marketplace flywheel on a 3-5 year horizon.",
+    "crux_statement": "Whether AWS can sustain 25%+ revenue growth through 2027-2028 as AI workloads compound on cloud infrastructure determines roughly 60% of the SOTP valuation swing, because AWS at that growth rate on a $150bn run-rate base accretes ~$200-250bn of incremental enterprise value versus a deceleration to 15-18% by 2027.",
+    "sources": [
+      "Synergy Research: cloud market shares Q1 2026",
+      "businesstats.com: AWS 30-31% share, Azure 24-25%, GCP 12-13%",
+      "eMarketer: Amazon 9% global digital ad share 2026",
+      "synctify.net: Amazon 35.7% US ecommerce 2025",
+      "Amazon Q1 2026 earnings: segment data, backlog, capex guidance"
+    ]
+  }
+}

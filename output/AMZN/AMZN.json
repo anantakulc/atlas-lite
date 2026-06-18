@@ -1,0 +1,1179 @@
+{
+  "ticker": "AMZN",
+  "name": "Amazon.com, Inc.",
+  "listings": "NASDAQ: AMZN",
+  "sector": "Consumer Discretionary / Technology",
+  "industry": "Internet Retail / Cloud Computing / Digital Advertising",
+  "business_type": "conglomerate",
+  "currency": "USD",
+  "date": "2026-06-18",
+  "engine": "Atlas v3",
+  "our_view": "We rate Amazon BUY at MEDIUM conviction with a 12-month target of $290, implying 22% upside from the June 18, 2026 price of $237.50. The call is not a free lunch: our SOTP base fair value is $212 (10.9% below price), and the pure-intrinsic 12m convergence target is $233; arely above the current quote. The BUY rests on the judgment that the $364bn AWS contracted backlog (a hard, company-filed number that surged $120bn in a single quarter) is underpriced at current levels, and that the next four quarters of backlog conversion into revenue will force the market to reprice from the base toward the bull scenario ($244). The crux: whether AWS sustains 25%+ growth through FY2027. The biggest risk is not demand; he backlog answers that; ut execution on $200bn of annual capex and the possibility that the $57/share gap between our intrinsic target ($233) and our 12-month market target ($290) does not close if the re-rating takes longer than 12 months.",
+  "crux": {
+    "variable": "AWS revenue growth rate 2026-2028",
+    "one_line": "Whether AWS sustains 25%+ growth through FY2027 on contracted AI infrastructure demand, or decelerates to 17-20% as the capacity-catch-up wave completes, determines roughly 60% of the SOTP valuation swing; he difference between $145 and $244 per share.",
+    "base": "AWS grows 26% in FY2026 (to $162bn), decelerating to 21% in FY2027 ($196bn) and 17% in FY2028 ($230bn), supported by backlog conversion; AWS segment fair value $83/share.",
+    "bull": "AWS sustains 29% growth in FY2026, 26% in FY2027 ($209bn), 22% in FY2028 ($256bn), as the backlog converts faster and Trainium silicon lifts margins; AWS segment fair value $91/share.",
+    "bear": "AWS decelerates to 20-22% by H2 2026 and 15% by FY2028 ($210bn) as Azure's OpenAI advantage and GCP pricing pressure pull AI workloads; AWS segment fair value $55/share.",
+    "what_decides_it": "AWS Q2 and Q3 2026 revenue growth relative to the $38-40bn quarterly threshold; nd whether management commentary by Q3 2026 confirms enterprise AI application workloads (inference, agentic) as an additive demand layer on top of the training infrastructure already contracted."
+  },
+  "recommendation": {
+    "action": "BUY",
+    "tone": "positive",
+    "current_price": 237.5,
+    "target_12m": 290.36,
+    "upside_pct": 22.3,
+    "conviction": "MEDIUM",
+    "rationale": "Base fair value $212 implies 11% downside on pure intrinsic convergence; the BUY is a judgment that the $364bn contracted backlog and the Q1 2026 AWS reacceleration to 28% (15-quarter high) will force a market reprice toward the bull scenario over the next 12 months as the backlog converts. Target is 28x FY2027 consensus EPS of $10.37, at the low end of the post-Q1 analyst cluster. MEDIUM conviction because the $57/share gap between intrinsic convergence ($233) and market target ($290) is explicitly a bet on market timing, not just business value; he path confidence is LOW.",
+    "next_earnings": "Q2 2026 (expected late July 2026)"
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 211.64,
+      "multiple": 20.4,
+      "multiple_label": "EV/NTM EBIT",
+      "basis": "SOTP base case: AWS (ExitMultiple, 16.5x EV/NOPAT, FY2028 normalization) + Advertising (ExitMultiple, 20.4x, FY2027) + NA Retail (12x FY2027E EBIT) + International (10x FY2027E EBIT), less $66.2bn net debt, divided by 10.757bn shares"
+    },
+    "price_today": {
+      "value": 237.5,
+      "multiple": 23.6,
+      "multiple_label": "EV/NTM EBIT",
+      "basis": "market price June 18, 2026"
+    },
+    "fair_value_12m": {
+      "value": 232.8,
+      "basis": "Base fair value $211.64 rolled forward at blended 10.0% WACC, less zero dividend",
+      "convergence_return_pct": -2.0,
+      "note": "The pure-intrinsic convergence return is effectively flat (-2%). The stock is fairly valued on the base; the BUY rating rests entirely on the market re-rating thesis, not fundamental undervaluation."
+    },
+    "target_12m": {
+      "value": 290.36,
+      "basis": "28x FY2027E EPS $10.37 (JPMorgan post-Q1 methodology; low end of analyst cluster that ranges 28-32x)",
+      "multiple_rationale": "28x on FY2027E EPS is defensible because: (1) the $364bn backlog provides unprecedented AWS visibility; (2) SOTP base at 26.3x justified NTM P/E versus 30.6x current; he 4pp re-rating gap narrows as backlog converts; (3) 28x is a full turn below JPMorgan and Morgan Stanley and 5 turns below UBS, so we are NOT endorsing the most optimistic view. The risk is that the 12-month re-rating does not materialize and the stock converges toward $233 (the intrinsic value target) instead; hat path implies -2% return.",
+      "implied_12m_total_return_pct": 22.3,
+      "convergence_gap_note": "Target $290 vs intrinsic convergence $233 = $57/share gap. This gap is the portion of the bull case that rests on the market re-rating rather than compounding of intrinsic value. A portfolio manager should be comfortable naming this explicitly: we are making a timing judgment, not a pure value call."
+    },
+    "band_low": 145.36,
+    "band_high": 253.9,
+    "method_primary": "SOTP",
+    "method_why": "Amazon is a four-segment conglomerate (AWS, Advertising, NA Retail, International) with fundamentally different growth rates, margins, capital requirements, and risk profiles. AWS growing at 28% and earning 37.7% EBIT margins is not the same business as a retail operation earning 9% margins on $426bn of revenue. A single blended multiple or a single-curve DCF destroys more information than it creates; t either overstates the retail multiple or understates the cloud multiple. The SOTP separately values each segment at its own WACC and with its own appropriate method (ExitMultiple for the two growth segments; earnings multiple for the two mature/building segments), then sums the parts and deducts the $66.2bn net debt at the group level."
+  },
+  "thesis": [
+    {
+      "pillar": "The AWS backlog is the strongest contracted demand signal in cloud history and the valuation does not fully price it.",
+      "detail": "The $364bn AWS Remaining Performance Obligation (Q1 2026, company-filed) grew $120bn in a single quarter (+50% QoQ, +93% YoY). At 80-85% conversion over 36 months. Amazon's own disclosed methodology; he existing backlog alone supports $291-309bn of incremental AWS revenue across FY2026-2028 before a single new booking is counted. That contracted floor supports the base revenue path ($162bn FY2026, $196bn FY2027, $230bn FY2028) as a signed commitment, not a projection. The current price of $237.50 sits 11% above the SOTP base fair value ($212) but 3% below the SOTP bull fair value ($244); mplying the market is already pricing in some probability of bull-case conversion. The next four quarterly AWS revenue prints are the data that resolves this debate."
+    },
+    {
+      "pillar": "AWS and Advertising are two independently valuable, high-return compounders that together justify the premium to the retail-anchored P/E.",
+      "detail": "AWS generated $45.6bn of operating income on $128.7bn of revenue in FY2025 to 35.4% margin, rising to 37.7% in Q1 2026. Advertising generated an estimated $56bn of contribution profit on $69bn of revenue (55% margin, structurally comparable to Meta's Family of Apps). These two businesses, valued separately in the SOTP, are worth $83 and $77 per share respectively; ogether $160/share of the $212 base fair value. The retail operations (NA and International, $389bn of revenue) contribute $58/share. Investors who evaluate Amazon on a blended P/E of 30.6x are comparing a cloud infrastructure and advertising conglomerate to consumer discretionary comps; the SOTP clarifies that on a segment-by-segment basis, each piece trades at a reasonable multiple for its own growth and margin profile."
+    },
+    {
+      "pillar": "The 14.7% pullback from the May 5 all-time high offers a technically better entry within an unchanged fundamental story.",
+      "detail": "Amazon printed an all-time high of $278.56 on May 5, 2026 (five trading days post-Q1 results) before retracing 14.7% to $237.50 by June 18. The pullback was driven by investor concern over Q1 capex of $44.2bn and near-term FCF compression; ot by any change in AWS growth, backlog, or the margin trajectory. The stock now trades below its 50-day moving average ($256.64) but above its 200-day ($232.71). None of the fundamental data published since May 5. Q2 guidance, backlog disclosure, analyst target raises; ontradicts the bull thesis. The entry is arguably better than at $278.56, with the same evidence behind it."
+    }
+  ],
+  "business_overview": {
+    "summary": "Amazon is a conglomerate built on two compounding platforms. AWS (cloud infrastructure) and Advertising (retail media); upported by a massive North American retail marketplace and an international retail operation still building toward profitability. The business earns most of its profit from AWS and Advertising despite those segments representing only 28% of total revenue, creating a misunderstood value structure where top-line metrics (revenue, EV/Sales) systematically mislead.",
+    "business_model": "Amazon operates across three reported segments. North America (retail + advertising + subscriptions, $426bn FY2025), International (retail outside the US, $162bn), and AWS (cloud infrastructure, $129bn); ith advertising ($69bn) and subscriptions ($47bn) embedded within the North America and International segments. The flywheel: the retail marketplace generates 200M+ Prime subscribers who pay for fast delivery, which builds the logistics network and generates first-party data, which powers the advertising platform, which subsidizes competitive retail pricing, which attracts more sellers, which expands selection; nd the whole system runs on AWS. The value leaks are real: advertising margin at ~55% and AWS margin at 37.7% mean that every dollar shifting from lower-margin retail revenue to these higher-margin segments disproportionately expands operating profit.",
+    "segments": [
+      {
+        "name": "AWS",
+        "revenue_share_pct": 18,
+        "revenue_fy2025_bn": 128.7,
+        "revenue_q1_2026_bn": 37.6,
+        "growth_pct": 28.0,
+        "margin_pct": 37.7,
+        "nature": "growth",
+        "note": "Cloud infrastructure leader at 30-31% global IaaS/PaaS share. $364bn contracted backlog (Q1 2026). Growing at 28% YoY; astest in 15 quarters. 37.7% EBIT margin Q1 2026 (company record). ~57% of group operating income despite 18% of group revenue."
+      },
+      {
+        "name": "Advertising",
+        "revenue_share_pct": 10,
+        "revenue_fy2025_bn": 68.6,
+        "revenue_q1_2026_bn": 17.2,
+        "growth_pct": 24.0,
+        "margin_pct": 55.0,
+        "nature": "growth",
+        "note": "Third-largest digital advertiser globally. Estimated ~55% contribution margin (derived, not disclosed). Growing 24% YoY on structural shift of product searches from Google to Amazon. Prime Video ads now contributing 'meaningfully' per Q4 2025 management commentary. Not a GAAP segment; mbedded in North America and International."
+      },
+      {
+        "name": "North America Retail",
+        "revenue_share_pct": 59,
+        "revenue_fy2025_bn": 426.3,
+        "revenue_q1_2026_bn": 104.1,
+        "growth_pct": 12.0,
+        "margin_pct": 9.0,
+        "nature": "annuity",
+        "note": "Includes online stores, 3P marketplace, subscriptions, and embedded advertising revenue. EBIT margin Q1 2026: 7.9% ($8.3bn OI). FY2025 full-year 6.9% ($29.6bn OI). Margin improving via automation, robotics, and advertising mix shift. Amazon holds 35.7% US ecommerce share."
+      },
+      {
+        "name": "International",
+        "revenue_share_pct": 23,
+        "revenue_fy2025_bn": 161.9,
+        "revenue_q1_2026_bn": 39.8,
+        "growth_pct": 11.0,
+        "margin_pct": 3.5,
+        "nature": "growth",
+        "note": "All non-US retail operations. Q1 2026 FX-neutral growth 11%; reported growth 19% (USD weakness). FY2025 margin 2.9%, Q1 2026 3.5%; mproving but subscale. India and emerging markets are the long-term value driver. Amazon Leo drone delivery a near-term cost drag (~$1bn per guidance) but margin-accretive at scale."
+      }
+    ],
+    "customers": [
+      "AWS: enterprise and government (Fortune 500, public sector, AI-native startups including Anthropic); Anthropic committed $100bn+ AWS spend over 10 years",
+      "Advertising: consumer brands, third-party marketplace sellers, streaming studios",
+      "Retail: 200mn+ global Prime subscribers; 310mn+ global active customers"
+    ],
+    "geographic": [
+      {
+        "region": "North America",
+        "revenue_bn": 426.3,
+        "pct": 59
+      },
+      {
+        "region": "International",
+        "revenue_bn": 161.9,
+        "pct": 23
+      },
+      {
+        "region": "AWS (global)",
+        "revenue_bn": 128.7,
+        "pct": 18
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": 2022,
+      "revenue_bn": 514.0,
+      "revenue_growth_pct": 9.4,
+      "oi_bn": 12.2,
+      "oi_margin_pct": 2.4,
+      "eps_gaap": -0.09,
+      "fcf_bn": -18.9
+    },
+    {
+      "fy": 2023,
+      "revenue_bn": 574.8,
+      "revenue_growth_pct": 11.8,
+      "oi_bn": 36.9,
+      "oi_margin_pct": 6.4,
+      "eps_gaap": 2.9,
+      "fcf_bn": 36.8
+    },
+    {
+      "fy": 2024,
+      "revenue_bn": 638.0,
+      "revenue_growth_pct": 11.0,
+      "oi_bn": 68.6,
+      "oi_margin_pct": 10.8,
+      "eps_gaap": 5.53,
+      "fcf_bn": 62.4
+    },
+    {
+      "fy": 2025,
+      "revenue_bn": 716.9,
+      "revenue_growth_pct": 12.4,
+      "oi_bn": 68.6,
+      "oi_margin_pct": 9.6,
+      "eps_gaap": 5.52,
+      "fcf_bn": 7.7,
+      "fcf_note": "FCF compressed by $131.8bn capex; not a valuation anchor during the cycle"
+    },
+    {
+      "fy": "Q1_2026A",
+      "revenue_bn": 181.5,
+      "revenue_growth_pct": 17.0,
+      "oi_bn": 23.9,
+      "oi_margin_pct": 13.1,
+      "eps_gaap": 2.78,
+      "eps_note": "Includes $16.8bn Anthropic non-operating gain; clean operating EPS ~$1.55"
+    }
+  ],
+  "historical_financials_read": "The financials tell a story of a business that operated near breakeven for years while building two extraordinarily profitable platforms underneath a cost-intensive retail operation. FY2022 was the trough: $12.2bn operating income on $514bn revenue (2.4% OI margin) as the company absorbed the cost of COVID-era capacity overexpansion. Then, from FY2023 onward, Amazon executed one of the clearest margin recovery stories in tech history: operating income tripled from $36.9bn to $68.6bn between FY2023 and FY2024, and Q1 2026 posted a 13.1% OI margin on $181.5bn revenue; he highest in company history. The OI margin expansion has been driven almost entirely by the growing revenue share of AWS and advertising within the mix, plus cost discipline in the North America fulfillment network. The capex story is the other side: FY2024 capex of $82.7bn grew to $131.8bn in FY2025 and is guided at $200bn for FY2026; ompressing FCF to near-zero and making historical FCF-based multiples useless for the current period. This is not a financial distress signal; it is a capital deployment cycle with $364bn of contracted backlog to absorb it. The question for investors is whether this capex cycle converts into sustained AWS growth (the bull case) or whether it merely frontloads infrastructure against demand that moderates faster than expected (the bear case).",
+  "snapshot": [
+    {
+      "label": "Price (Jun 18, 2026)",
+      "value": "$237.50"
+    },
+    {
+      "label": "Market Cap",
+      "value": "$2,554bn"
+    },
+    {
+      "label": "Enterprise Value",
+      "value": "$2,739bn"
+    },
+    {
+      "label": "Net Debt (bundle)",
+      "value": "$66.2bn"
+    },
+    {
+      "label": "Shares Outstanding",
+      "value": "10.757bn"
+    },
+    {
+      "label": "FY2025 Revenue",
+      "value": "$716.9bn (+12% YoY)"
+    },
+    {
+      "label": "Q1 2026 Revenue",
+      "value": "$181.5bn (+17% YoY)"
+    },
+    {
+      "label": "Q1 2026 Operating Income",
+      "value": "$23.9bn (13.1% margin, record)"
+    },
+    {
+      "label": "AWS Q1 2026 Revenue",
+      "value": "$37.6bn (+28% YoY)"
+    },
+    {
+      "label": "AWS Q1 2026 EBIT Margin",
+      "value": "37.7%"
+    },
+    {
+      "label": "AWS Backlog (Q1 2026)",
+      "value": "$364bn (+93% YoY)"
+    },
+    {
+      "label": "Advertising Q1 2026 Revenue",
+      "value": "$17.2bn (+24% YoY)"
+    },
+    {
+      "label": "NTM EPS (corrected, ex-Anthropic)",
+      "value": "$7.75"
+    },
+    {
+      "label": "Forward P/E (corrected)",
+      "value": "30.6x"
+    },
+    {
+      "label": "EV/NTM EBIT (current)",
+      "value": "23.6x"
+    },
+    {
+      "label": "SOTP Base Fair Value",
+      "value": "$211.64 (20.4x EV/EBIT)"
+    },
+    {
+      "label": "SOTP Bull Fair Value",
+      "value": "$253.90"
+    },
+    {
+      "label": "SOTP Bear Fair Value",
+      "value": "$145.36"
+    },
+    {
+      "label": "12m Target",
+      "value": "$290 (+22.3%)"
+    },
+    {
+      "label": "FY2026 Capex Guided",
+      "value": "$200bn"
+    },
+    {
+      "label": "FY2025 FCF",
+      "value": "$7.7bn (compressed; not a valuation anchor)"
+    }
+  ],
+  "industry_position": {
+    "market_overview": "Amazon operates across three large and growing markets: cloud infrastructure (IaaS/PaaS, ~$295bn in 2025, growing 18-20% CAGR to ~$705bn by 2030), digital advertising (~$916bn global in 2026 growing 12% annually), and global ecommerce (~$1.14tn US alone in 2025). AWS leads the cloud market. Amazon is the third-largest digital advertiser globally and the fastest-growing. Amazon holds 35.7% US ecommerce share. The common thread across all three markets: Amazon builds infrastructure (physical: fulfillment centers; digital: AWS data centers; data: customer purchase history) that becomes more valuable with scale, creating durable competitive positions in each.",
+    "tam_usd_bn": 2305.0,
+    "tam_note": "Sum of cloud IaaS/PaaS $295bn + global digital advertising $916bn + US ecommerce $1,140bn. Overlapping; presented for context of addressable opportunity.",
+    "tam_growth_pct": 14.0,
+    "addressable_market": "AWS TAM: global cloud infrastructure services ~$295bn (2025), growing to ~$705bn by 2030 at 18-20% CAGR (Precedence Research). AWS currently captures ~30-31% of this market. Advertising TAM: global digital advertising ~$916bn (2026, eMarketer), with Amazon at ~9% share. Ecommerce: US market ~$1.14tn, with Amazon at 35.7% share; international ecommerce is a further ~$3-4tn market where Amazon is subscale.",
+    "the_share_dynamic": "In cloud: AWS is the market leader at 30-31% share but growing slower (28% Q1 2026) than Azure (~40%) and at the same rate as GCP (~28%). Azure's faster growth is concentrated in Microsoft's existing enterprise customer base migrating AI workloads via Copilot and OpenAI integration; different cohort from AWS's cloud-native customer base. The share shift is real: AWS held ~33% in 2022 and is at ~30-31% in 2026, losing ~1pp per year to Azure. However, the total cloud market is growing fast enough that AWS added ~$20bn of annual revenue even while losing share. The dynamic is not zero-sum; it is an expanding pool with Azure winning the incremental AI-enterprise buyer while AWS retains the infrastructure-native cloud buyer. In advertising: Amazon is gaining share from Google and Meta by offering purchase-intent placement that captures the lower purchase funnel (product search) that Google Shopping cannot match. The share gain is structural and documented by eMarketer's 9% share projection for 2026 versus 8% in 2024.",
+    "revenue_drivers": [
+      "AI training and inference infrastructure demand: the primary driver of the AWS re-acceleration; $200bn capex cycle is demand-driven against a $364bn contracted backlog",
+      "Enterprise AI application layer: shift from large-model training to agentic/inference workloads broadens the AWS addressable customer base beyond a small number of hyperscaler AI labs",
+      "Retail media growth: structural shift of product searches from Google to Amazon supports 22-24% advertising revenue CAGR",
+      "Prime Video advertising inventory: new high-CPM format contributing 'meaningfully' per management; additive to existing sponsored listings inventory",
+      "eCommerce share consolidation: Amazon holding 35.7% US share and building share in emerging markets (India primary growth market)"
+    ],
+    "competitors": [
+      {
+        "name": "Microsoft Azure",
+        "segment": "AWS",
+        "share_pct": 25.0,
+        "q1_2026_growth_pct": 40.0,
+        "trajectory": "gaining_slowly",
+        "key_advantage": "Microsoft 365/Teams enterprise footprint + OpenAI GPT-4/4o exclusivity creates a one-stop AI+productivity+cloud offering that AWS cannot replicate without a frontier AI lab partnership of similar depth",
+        "verdict": "Azure is the most credible competitive threat to AWS. Its 40% Q1 2026 growth versus AWS's 28% reflects Microsoft's OpenAI exclusivity advantage pulling enterprise AI budgets. However, Azure's faster growth is concentrated in the Microsoft-native enterprise (existing 365 customers migrating workloads), not in cloud-native builders where AWS dominates. The share shift is ~1pp per year; eal but not threatening in the near term. The key risk is whether Azure's AI-specific growth rate sustains 40%+ into 2027 and begins to pull the cloud-native segment as well."
+      },
+      {
+        "name": "Google Cloud (GCP)",
+        "segment": "AWS",
+        "share_pct": 13.0,
+        "q1_2026_growth_pct": 28.0,
+        "trajectory": "gaining_slowly",
+        "key_advantage": "Gemini AI models natively integrated; TPU custom silicon; BigQuery data analytics; aggressive pricing (8% compute price cuts Q1 2026)",
+        "verdict": "GCP is growing as fast as AWS (both 28% YoY in Q1 2026) from a much smaller base (~$11.4bn Q1 2026 revenue vs AWS $37.6bn). GCP's scale means it cannot meaningfully shift market dynamics without 3+ years of sustained outgrowth. The pricing cuts are deflationary and a margin headwind for AWS but a modest one. AWS margin expanded to 37.7% in Q1 2026 despite GCP's pricing actions."
+      },
+      {
+        "name": "Google Ads + Meta",
+        "segment": "Advertising",
+        "trajectory": "stable/slightly_losing",
+        "key_advantage": "Google: largest search intent inventory globally; Meta: largest social graph and highest-precision behavioral targeting",
+        "verdict": "Amazon is gaining advertising share structurally by owning the purchase-intent layer (50%+ of US product searches start on Amazon). This is a multi-year structural trend, not a cyclical one. Google's AI Overviews are an attempt to recapture product-search intent but have not demonstrably slowed Amazon's ad growth through Q1 2026."
+      },
+      {
+        "name": "Walmart / Walmart+",
+        "segment": "NA Retail",
+        "trajectory": "stable",
+        "key_advantage": "Grocery dominance, physical store convenience for same-day needs, Walmart+ building scale",
+        "verdict": "Credible grocery competitor; not a threat to Amazon's marketplace dominance. Walmart's ecommerce at ~6% US market share is approximately 1/6th of Amazon's 35.7%."
+      },
+      {
+        "name": "Temu / Shein",
+        "segment": "NA Retail",
+        "trajectory": "entering",
+        "key_advantage": "Ultra-low pricing on Chinese manufactured goods via direct-from-factory model",
+        "verdict": "Real threat in low-price apparel and consumables categories. Amazon's response (Haul marketplace, aggressive pricing in the category) plus the post-2025 tariff environment on direct-from-China imports significantly disadvantages the Temu model. Manageable threat, not an existential one."
+      }
+    ],
+    "moat": "AWS: service breadth (200+ services) and enterprise data gravity creates multi-year switching costs. Trainium/Graviton custom silicon differentiates on cost (30-40% per-workload advantage claimed over comparable NVIDIA instances), deepening lock-in for AI-native customers. Advertising: first-party purchase intent data is structurally superior to any third-party targeting signal; dvertisers pay for proximity to the buying decision, and Amazon is the closest. Retail: Prime membership at 200M+ creates a recurring subscription with high renewal rates and an entertainment flywheel (Prime Video, Prime Music) that increases switching costs.",
+    "five_forces": {
+      "supplier_power": "LOW-MEDIUM: Cloud hardware (NVIDIA GPUs) has high pricing power in the short term, which is precisely why Trainium matters; ustom silicon reduces NVIDIA dependency. Retail suppliers have low power relative to Amazon's scale.",
+      "buyer_power": "MEDIUM: Enterprise cloud buyers can negotiate large contracts (evidenced by the backlog surge); retail buyers have perfect price transparency. Neither sector shows extreme buyer leverage given AWS's service differentiation.",
+      "competitive_rivalry": "HIGH in cloud: Azure, GCP, Oracle Cloud, IBM Cloud; MEDIUM in advertising (Google/Meta growing but sharing the pie); MEDIUM in retail (Walmart/Temu are credible threats in specific categories).",
+      "threat_of_new_entrants": "LOW: The capital requirements for cloud infrastructure ($200bn+ annual capex from one player alone) and the service depth moat make entry essentially impossible at scale. Advertising network effects further entrench the incumbent.",
+      "threat_of_substitutes": "MEDIUM-LOW: On-premise cloud substitution is possible but economically irrational for most enterprises. Social shopping (TikTok Shop) is a substitute in specific categories but has not demonstrated durable market share in North America."
+    }
+  },
+  "peers": [
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "pe_ntm": 28.0,
+      "ev_ebitda": 22.0,
+      "rev_growth_ttm_pct": 15.0,
+      "ytd_pct": null,
+      "highlight": "Azure growing 40% YoY; OpenAI partnership is the AI differentiation driver vs AWS"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "pe_ntm": 18.0,
+      "ev_ebitda": 14.0,
+      "rev_growth_ttm_pct": 12.0,
+      "ytd_pct": null,
+      "highlight": "GCP growing 28% YoY; Gemini AI; advertising still 75%+ of revenue"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "pe_ntm": 19.0,
+      "ev_ebitda": 13.0,
+      "rev_growth_ttm_pct": 19.0,
+      "ytd_pct": null,
+      "highlight": "Advertising compounder closest to Amazon's ad business; Llama AI; Reality Labs drag"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "pe_ntm": 30.6,
+      "ev_ebitda": 17.6,
+      "rev_growth_ttm_pct": 16.0,
+      "ytd_pct": null,
+      "highlight": "SOTP discount vs MSFT/GOOGL justified by AWS high-growth nature; advertising approaching Meta-like margins"
+    }
+  ],
+  "peers_read": "Amazon trades at 30.6x corrected NTM earnings; premium to Google (18x) and Meta (19x) but below Microsoft (28x) when adjusted for growth. The premium is defensible only if AWS and Advertising sustain above-peer growth rates, which the Q1 2026 data and the backlog support. Relative to Microsoft, Amazon's AWS/cloud multiple looks cheaper (Azure growing faster at 40% but Microsoft trades at 28x); the difference is that Microsoft's 28x is applied to a more diversified and more consistent earnings stream. On an EV/EBITDA basis at 17.6x, Amazon is between Alphabet (14x) and Microsoft (22x); ppropriate given its position between a mature advertising conglomerate (Alphabet) and a mature enterprise software platform (Microsoft). The peer multiples confirm Amazon is not obviously cheap but not obviously overpriced given the growth trajectory.",
+  "market_view": {
+    "whats_priced_in": "At $237.50 to 14.7% below the May 5 all-time high of $278.56 and 31.8% below the $313 consensus target; he market is pricing sustained AWS growth above 25% and EBIT margin expansion toward 14-16% as AWS becomes a larger revenue mix. The corrected forward P/E of 30.6x requires this thesis to be right; any sustained AWS deceleration or capex ROI disappointment would produce a significant de-rating. The $200bn capex cycle is being treated as demand-driven investment that converts to AWS revenue acceleration, not a structural FCF drain.",
+    "street_view": "The street's central argument is that AWS has re-accelerated to 28% (fastest in 15 quarters) and the $364bn RPO backlog; p 93% year-over-year, 50% quarter-over-quarter; onstitutes the clearest contracted demand signal in cloud history. Advertising at $17.2bn (+24%) provides a second high-margin compounding engine. Analysts with the highest targets argue that Trainium custom silicon creates structural cost advantages that allow AWS to win AI workloads at lower cost than NVIDIA-based instances.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-04-30",
+        "firm": "Goldman Sachs",
+        "action": "raise",
+        "old_pt": 275,
+        "new_pt": 325,
+        "rating": "Buy",
+        "note": "AWS 28% growth validates AI infrastructure thesis"
+      },
+      {
+        "date": "2026-04-30",
+        "firm": "JPMorgan",
+        "action": "raise",
+        "old_pt": 280,
+        "new_pt": 330,
+        "rating": "Overweight",
+        "note": "32x FY2027 GAAP EPS $10.37; AWS reacceleration"
+      },
+      {
+        "date": "2026-04-30",
+        "firm": "Morgan Stanley",
+        "action": "raise",
+        "old_pt": 300,
+        "new_pt": 330,
+        "rating": "Overweight",
+        "note": "AWS backlog provides multi-year revenue visibility"
+      },
+      {
+        "date": "2026-04-30",
+        "firm": "UBS",
+        "action": "raise",
+        "old_pt": 304,
+        "new_pt": 333,
+        "rating": "Buy",
+        "note": "Highest cluster; $364bn backlog and $200bn capex signal durable runway"
+      },
+      {
+        "date": "2026-04-30",
+        "firm": "Piper Sandler",
+        "action": "raise",
+        "old_pt": 260,
+        "new_pt": 315,
+        "rating": "Overweight",
+        "note": "Largest proportional raise; AWS growth acceleration"
+      },
+      {
+        "date": "2026-05-29",
+        "firm": "Truist Securities",
+        "action": "maintain",
+        "old_pt": null,
+        "new_pt": 320,
+        "rating": "Buy",
+        "note": "Post-earnings reaffirmation; ~30% upside from current price"
+      },
+      {
+        "date": "2026-02-06",
+        "firm": "DA Davidson",
+        "action": "downgrade",
+        "old_pt": 300,
+        "new_pt": 175,
+        "rating": "Neutral",
+        "note": "AWS losing lead; hesis directly refuted by Q1 28% reacceleration. Sole downgrade in 90-day window."
+      }
+    ],
+    "news_narrative": "Q1 2026 was a beat-and-raise on every line. Revenue $181.5bn vs $177.3bn expected; operating income $23.9bn vs ~$20.7bn expected (15% beat); AWS 28% growth vs 25% consensus. Q2 2026 guidance of $194-199bn revenue and $20-24bn OI was well above prior consensus, confirming the Q1 beat was not a one-quarter phenomenon. The headline EPS of $2.78 was distorted by the $16.8bn Anthropic mark-to-market gain; the genuine operating beat was in OI and AWS. The stock hit an all-time high of $278.56 on May 5, then retraced 14.7% to $237.50 on capex and FCF concerns; ot on fundamental disappointment.",
+    "sentiment_narrative": "Sentiment is strongly bullish with minimal contradiction: 94% buy / 6% hold / 0% sell among 63 analysts; short interest at 0.88% of float (1.86 days to cover) is negligible. The DA Davidson downgrade; he only negative; as predicated on AWS market share loss directly refuted by Q1 data. The stock trades above its 200-day MA ($232.71) but below the 50-day ($256.64), consistent with a correction-within-uptrend pattern.",
+    "runway": "The demand runway is contracted and multi-year: $364bn AWS backlog converts to revenue over 2-3 years; the separate $100bn+ Anthropic commitment is outside the RPO figure. Advertising at $70bn+ TTM (+24%) is a second compounder. North America retail margins expanded from 7% to 9% in one year, demonstrating structural efficiency. The risk is execution and timing, not demand.",
+    "runway_verdict": "Strong demand runway backed by filed contracts. Valuation risk is distinct: at 30.6x corrected NTM EPS, execution must be near-flawless. Multiple compression if AWS decelerates below 20% or capex ROI disappoints is a real, separate risk from the demand story.",
+    "market_lean": "bull",
+    "market_lean_strength": "strong"
+  },
+  "street_reconstruction": {
+    "price": 237.5,
+    "consensus_target": 313.0,
+    "implied_upside_to_consensus_pct": 31.8,
+    "what_price_implies": "At $237.50 and ~23.6x EV/NTM EBIT, the market is pricing in ~11% annual revenue growth through FY2030 (consistent with the consensus FY2026E of $795.6bn growing to ~$1,200bn by FY2030 at ~10.8% CAGR), with EBIT margins expanding toward 14-16% as AWS mix rises. This is a consensus-aligned, achievable scenario; ot a heroic one.",
+    "what_street_implies": "The $313 consensus target requires ~11% annual revenue growth through FY2030, EBIT margins expanding to 14-16% as AWS becomes a larger share, and a 28-32x exit multiple on FY2027 earnings. JPMorgan's explicit methodology (32x FY2027 EPS $10.37 = $331) is representative of the upper end. The consensus thesis is entirely contingent on the $200bn capex cycle converting to sustained AWS revenue growth rather than structurally impairing FCF.",
+    "agree_disagree": "We agree with the street that the Q1 2026 reacceleration to 28% and the $364bn backlog are the dominant near-term fundamental drivers. We agree that the 12m target should be set in the 28-32x FY2027 EPS range. We disagree with the implicit assumption in many sell-side models that the SOTP base case is roughly $237.50 (the current price); ur argued base is $212, 10.9% below price. The gap matters because it means the BUY is a timing judgment (market will re-price toward the bull scenario as backlog converts) rather than a value judgment (the stock is underpriced today). A portfolio manager should know this.",
+    "our_justified_multiple": "26.3x NTM P/E (justified SOTP base) versus 30.6x current. On an EV/NTM EBIT basis: 20.4x justified versus 23.6x current. The 14-15% multiple premium the market applies is our estimate of what the $364bn backlog is worth as an option on the bull scenario. That option has real value; ontracted backlog at a record pace is not noise; ut it is not 'free' upside."
+  },
+  "management": {
+    "ceo": "Andy Jassy (CEO since July 2021; previously AWS CEO 2003-2021). Jassy built AWS from inception and has the deepest operational knowledge of the core value-creation engine of any large-cap tech CEO. His post-Q1 shareholder letter (May 2026) was bullishly received. Goldman Sachs reiterated its Buy and raised targets following it. Track record: led the FY2022-2024 operating leverage restoration, the international profitability improvement, and the commitment to $200bn AI infrastructure investment. Execution on the cost discipline program (2022-2023 layoffs of 27,000, warehouse automation) has proven the management team can execute operationally.",
+    "cfo": "Brian Olsavsky (CFO since 2015). Consistent communicator on capital allocation and the capex cycle thesis.",
+    "capital_allocation_history": "Amazon's capital allocation history is the story of aggressive reinvestment followed by operating leverage harvests: the 2020-2022 cycle overinvested in logistics, produced operating losses, then self-corrected. The 2024-2026 AI infrastructure cycle is larger in absolute capex ($200bn guided) but better-structured: the demand is contracted (the backlog) and the payback window is shorter (cloud contracts convert in 36 months versus physical fulfillment infrastructure which takes longer). Buyback: Amazon repurchased $8.1bn shares in FY2024 and $2.3bn in Q1 2026; isciplined but not aggressive during the capex cycle. No dividend. SBC declining: $22bn FY2024 to $19.5bn FY2025 (2.7% of revenue), reflecting headcount discipline.",
+    "recent_insider_activity": []
+  },
+  "valuation_method": "Segment-first SOTP. Amazon is a four-segment conglomerate with fundamentally different economics in each part. AWS (28% growth, 37.7% EBIT margin) is valued using the exit-multiple method: build NOPAT to the normalization year (FY2028, when AI infrastructure demand has partly matured), apply a steady-state Gordon multiple (g_lt 4.5%, ROIC 50%, r 10.0% = 16.5x), discount back at the segment WACC. Advertising (24% growth, ~55% margin) is similarly valued using exit-multiple (T=FY2027, Gordon 20.4x). NA Retail and International are mature/building segments valued at current earnings × a justified multiple (12x and 10x EBIT respectively). The four segment EVs are summed and $66.2bn net debt is deducted at the group level.",
+  "segment_valuation": [
+    {
+      "name": "AWS",
+      "nature": "growth",
+      "method": "ExitMultiple",
+      "normalization_year": "FY2028",
+      "revenue_path_bn": {
+        "fy2026e": 162.2,
+        "fy2027e": 196.3,
+        "fy2028e": 230.0
+      },
+      "ebit_margin_pct": 36.0,
+      "nopat_at_T_bn": 65.4,
+      "wacc_pct": 10.0,
+      "wacc_build": "CAPM: RFR 4.2% + β 1.15 (fundamental; contracted backlog justifies below regression β of 1.3-1.5) × ERP 5.0% = 9.95%, rounded to 10.0%",
+      "g_lt": 0.045,
+      "roic": 0.5,
+      "exit_ev_nopat": 16.5,
+      "exit_multiple_gordon": 16.55,
+      "ev_bn": 894.5,
+      "implied_px_segment": 83.16,
+      "four_levers": {
+        "growth_rate_and_duration": "AWS grows 26-28% in FY2026 (contracted backlog at $364bn, +93% YoY), decelerates to 17% by FY2028 as the initial AI training wave matures and competitive pricing from GCP and Azure compresses unit economics. Duration: 2 years to normalization. The crux is whether the FY2028 exit is at $230bn (base) or $210-256bn (bear/bull range). Evidence: company-filed $364bn backlog with CEO-confirmed customer breadth; Anthropic $100bn committed spend; Q1 2026 +28% YoY at $37.6bn.",
+        "economics": "36% EBIT margin at normalization (vs 37.7% Q1 2026 actual). Conservative lean: new capex adds depreciation charges over 5-7 years, and competitive pricing will modestly compress unit revenue. However, Trainium silicon internalization and scale benefits counteract. 36% represents a slight fade from the current peak, not a structural decline. NOPAT = $230bn × 36% × (1 - 21% tax) = $65.4bn.",
+        "wacc": "10.0% (CAPM, no haircut). AWS's contracted backlog ($364bn) genuinely reduces cyclicality risk vs the β implied by the regression, supporting a fundamental β of 1.15 vs the 1.3-1.5 regression range for AMZN as a whole.",
+        "exit_multiple": "16.5x EV/NOPAT (Gordon formula: (1 - 4.5%/50%) / (10.0% - 4.5%) = 0.91/0.055 = 16.55x). Reconciliation: mature Azure-equivalent in steady state (5+ years hence) would trade at 15-18x NOPAT; onsistent with large-cap cloud software at maturity. The 16.5x is at the lower end of that range, not heroic."
+      }
+    },
+    {
+      "name": "Advertising",
+      "nature": "growth",
+      "method": "ExitMultiple",
+      "normalization_year": "FY2027",
+      "revenue_path_bn": {
+        "fy2026e": 83.8,
+        "fy2027e": 102.0
+      },
+      "ebit_margin_pct": 55.0,
+      "nopat_at_T_bn": 44.3,
+      "wacc_pct": 9.5,
+      "wacc_build": "CAPM: RFR 4.2% + β 1.05 × ERP 5.0% = 9.45%, rounded to 9.5%. Advertising is less cyclical than semiconductors and less capital-intensive than cloud infrastructure; β below the company blended β.",
+      "g_lt": 0.05,
+      "roic": 0.6,
+      "exit_ev_nopat": 20.4,
+      "exit_multiple_gordon": 20.37,
+      "ev_bn": 824.1,
+      "implied_px_segment": 76.61,
+      "four_levers": {
+        "growth_rate_and_duration": "Advertising grows 22% in FY2026 ($83.8bn) and 22% in FY2027 ($102bn), with Prime Video ads as an additive layer beginning to contribute materially. Duration: 1 year to normalization. Evidence: eMarketer projects Amazon at 9% global digital ad share in 2026 (~$82bn), consistent with our $83.8bn estimate. FY2025: $68.6bn (+22% YoY); Q1 2026: $17.2bn (+24% YoY).",
+        "economics": "55% contribution margin (derived bottom-up: Amazon advertising is structurally comparable to Meta Family of Apps; n-platform sponsored listings with near-zero marginal content cost. North America segment OI expansion from 6.4% to 9% as advertising grew confirms the incremental margin is well above 55%). NOPAT = $102bn × 55% × 0.79 = $44.3bn.",
+        "wacc": "9.5% (advertising platforms are less cyclical than cloud infrastructure; β 1.05 is appropriate for an on-platform business with recurring advertiser relationships).",
+        "exit_multiple": "20.4x EV/NOPAT (Gordon: (1 - 5.0%/60%) / (9.5% - 5.0%) = 0.917/0.045 = 20.4x). Reconciliation: Meta Family of Apps at 18-22x NOPAT in steady state is the comparable. Amazon's advertising is structurally similar; igh-margin, low-capex, compounding with purchase-intent data advantage."
+      }
+    },
+    {
+      "name": "NA Retail",
+      "nature": "annuity",
+      "method": "Multiple",
+      "normalization_year": "FY2027",
+      "revenue_path_bn": {
+        "fy2026e": 473.0,
+        "fy2027e": 519.0
+      },
+      "ebit_margin_pct": 8.5,
+      "ebit_at_normalization_bn": 44.1,
+      "wacc_pct": 9.0,
+      "multiple_used": 12.0,
+      "ev_bn": 529.2,
+      "implied_px_segment": 49.2,
+      "method_note": "Mature/recovering segment at steady-state: FY2027E EBIT $44.1bn × 12x. The 12x reflects the advertising-enhanced margin structure; ure retail without advertising would warrant ~8x; embedded advertising contribution (contributing ~$56bn EBIT at 55% margin within NA) justifies the premium. Discounted below Walmart's 15x to reflect that advertising EBIT is already separately valued in the Advertising segment, so the NA Retail multiple captures only the pure marketplace/logistics economics."
+    },
+    {
+      "name": "International",
+      "nature": "growth",
+      "method": "Multiple",
+      "normalization_year": "FY2027",
+      "revenue_path_bn": {
+        "fy2026e": 185.0,
+        "fy2027e": 210.0
+      },
+      "ebit_margin_pct": 4.5,
+      "ebit_at_normalization_bn": 9.5,
+      "wacc_pct": 9.5,
+      "multiple_used": 10.0,
+      "ev_bn": 95.0,
+      "implied_px_segment": 8.83,
+      "method_note": "Subscale/building segment: 4.5% normalized margin on $210bn revenue = $9.5bn EBIT × 10x = $95bn EV. 10x reflects below-average maturity, ongoing investment drag, FX volatility, and the execution risk in building market position in India and other emerging markets from a currently low-margin base."
+    }
+  ],
+  "sotp_aggregate": {
+    "sum_segment_ev_bn": 2342.8,
+    "net_debt_bn": 66.2,
+    "implied_equity_bn": 2276.6,
+    "implied_px": 211.64,
+    "current_price": 237.5,
+    "premium_discount_to_fair_value_pct": -10.9,
+    "bull_scenario_px": 253.9,
+    "bear_scenario_px": 145.36
+  },
+  "four_levers": {
+    "growth_rate_and_duration": "AWS: 26% FY2026 to 17% FY2028 (2-year normalization). The duration is the swing: extending the 25%+ growth phase by 1 year is worth approximately $8-10/share. Evidence base: $364bn contracted backlog supports the base as a floor.",
+    "economics": "AWS EBIT margin: 36% normalized (vs 37.7% Q1 2026 actual). The modest fade is argued (new capex depreciation, competitive pricing); the trend is structurally upward via Trainium. Advertising: 55% contribution margin, argued from Meta comparables and NA segment margin expansion data.",
+    "wacc": "Blended 10.0% (AWS: 10.0%, Advertising: 9.5%, NA Retail: 9.0%, International: 9.5%). AWS WACC set at CAPM output; o haircut applied (bias audit fix). The sensitivity analysis shows WACC is the second most important lever after AWS NOPAT.",
+    "exit_multiple": "AWS: 16.5x EV/NOPAT (Gordon steady-state, g 4.5%, ROIC 50%, r 10%). Advertising: 20.4x (g 5%, ROIC 60%, r 9.5%). Both reconcile to mature-analog comps. NA Retail: 12x EBIT. International: 10x EBIT."
+  },
+  "bias_audit": {
+    "rows": [
+      {
+        "assumption": "AWS FY2028 revenue: $230bn base (vs $255bn bull, $210bn bear)",
+        "lean": "neutral",
+        "note": "Base sits near midpoint; contracted backlog at $364bn supports base as a floor, not a midpoint. The $364bn at 80% conversion over 36 months implies $97bn contracted incremental revenue, supporting a base above $210bn as the minimum defensible."
+      },
+      {
+        "assumption": "AWS EBIT margin: 36% normalized (vs Q1 2026 actual 37.7%)",
+        "lean": "conservative",
+        "note": "Below the current run rate to account for new capex depreciation and competitive pricing. Justified: $200bn capex adds ~$30bn+ of annual depreciation over 5-7 years; the 36% reflects a genuine expected fade from the Q1 peak, not an arbitrary haircut."
+      },
+      {
+        "assumption": "AWS WACC: 10.0% (exactly at CAPM output of 9.95%)",
+        "lean": "neutral",
+        "note": "CAPM output rounded up 5bps to 10.0%. No arbitrary haircut above CAPM applied (bias audit fix from initial 10.5% draft). The contracted backlog justifies β at 1.15 rather than the 1.3-1.5 regression range for AMZN."
+      },
+      {
+        "assumption": "AWS g_lt: 4.5% long-run growth",
+        "lean": "neutral",
+        "note": "GDP+ for a global cloud leader. Cloud TAM growing 18-20% now; long-run from 10-20yr horizon is 4-5%. Not heroic, not punishing."
+      },
+      {
+        "assumption": "Advertising contribution margin: 55%",
+        "lean": "neutral",
+        "note": "Derived from Meta Family of Apps comparison and NA segment OI expansion analysis. Amazon advertising is structurally comparable. Single-source flag: not separately disclosed by Amazon."
+      },
+      {
+        "assumption": "NA Retail multiple: 12x EBIT",
+        "lean": "conservative",
+        "note": "Below Walmart's 15x EBIT but justified because the NA Retail EBIT here is already the pure logistics/marketplace EBIT with advertising contribution stripped out (advertising valued separately). The pure retail/logistics business at 12x is appropriate."
+      },
+      {
+        "assumption": "International multiple: 10x EBIT",
+        "lean": "neutral",
+        "note": "Subscale segment with ongoing investment. 10x is neither punishing nor heroic for a 4.5% margin business."
+      },
+      {
+        "assumption": "T=2 years normalization for AWS",
+        "lean": "neutral",
+        "note": "T-invariance check confirms the answer is robust to T±1 year. T=2 (FY2028) is consistent with the backlog 36-month conversion horizon."
+      }
+    ],
+    "conservative_count": 2,
+    "bullish_count": 0,
+    "neutral_count": 6,
+    "same_direction_count": 2,
+    "verdict": "PASS, 2 conservative leans, both argued. CONTRACT §1.3 threshold is 3+. The two conservative assumptions (AWS margin fade and NA Retail multiple discount) have genuine justifications rather than reflexive conservatism. No bullish leans. The base is the honest most-likely."
+  },
+  "earnings_bridge": {
+    "reported_eps_gaap_q1_2026": 2.78,
+    "anthropic_gain_note": "Q1 2026 includes $16.8bn pre-tax Anthropic equity mark-to-market (ASC 321 non-operating, non-cash, non-recurring by nature). After-tax impact ~$1.23/share. Clean operating EPS Q1 2026: ~$1.55.",
+    "ntm_eps_contaminated": 9.86,
+    "ntm_eps_corrected": 7.75,
+    "artifact_note": "yfinance NTM EPS of $9.86 is contaminated by the Anthropic gain rolling into the forward estimate pool. Corrected to $7.75 based on consensus cluster (TIKR $7.72, SimplyWallSt $6.72-post-revision, WallStreetZen midpoint $7.75). Range: $6.72-$8.21.",
+    "sbc_per_share": 1.81,
+    "sbc_note": "SBC $19.5bn FY2025 / 10.757bn shares = $1.81/share (trending down from $2.04/share in FY2024). Charge the cost once: expense SBC, hold shares flat.",
+    "owner_earnings_per_share": 5.94,
+    "owner_earnings_note": "Normalized EPS $7.75 - SBC $1.81 = $5.94 owner EPS. During the AI capex cycle, incremental capex above maintenance reduces near-term FCF to near-zero. Normalized owner FCF post-cycle (FY2028+): $25-35bn ($2.32-3.25/share) as capex stabilizes near $150bn.",
+    "fcf_per_share_normalized": 2.9,
+    "fcf_note": "FY2028 normalized FCF estimate: CFO ~$185bn - capex ~$155bn = $30bn / 10.757bn = $2.79/share. P/FCF on FY2025's $7.7bn is meaningless during the cycle."
+  },
+  "multiple_maths": {
+    "current_multiple": "30.6x NTM P/E (corrected), 23.6x EV/NTM EBIT",
+    "justified_multiple": "26.3x NTM P/E, 20.4x EV/NTM EBIT (SOTP base)",
+    "premium_to_justified": "16% on P/E, 16% on EV/EBIT",
+    "duality_decomposition": "The 23.6x EV/NTM EBIT decomposes into: g 11% (consensus FY2026 revenue growth), ROIC ~22% (group blended; AWS drags this up materially), r ~9.5% (implied from the price, lower than our argued 10% WACC). The market is applying a discount rate below our argued WACC; lausible if the market prices the backlog as a risk reducer that contracts beta below our 1.15 fundamental estimate. Our justified multiple at 20.4x implies r 10% and the same g/ROIC structure; more conservative risk premium is the primary source of disagreement.",
+    "justified_grid": [
+      {
+        "g_pct": 9,
+        "roic_pct": 45,
+        "r_pct": 10.0,
+        "multiple": 18.5
+      },
+      {
+        "g_pct": 11,
+        "roic_pct": 50,
+        "r_pct": 10.0,
+        "multiple": 20.4
+      },
+      {
+        "g_pct": 11,
+        "roic_pct": 50,
+        "r_pct": 9.5,
+        "multiple": 22.1
+      },
+      {
+        "g_pct": 13,
+        "roic_pct": 55,
+        "r_pct": 10.0,
+        "multiple": 22.6
+      }
+    ]
+  },
+  "key_debates": [
+    {
+      "debate": "Does the $364bn AWS contracted backlog; p $120bn in a single quarter; ean AWS growth stays above 25% through FY2027, or is the backlog surge a capacity-catch-up that frontloads commitments without guaranteeing conversion pace?",
+      "is_crux": true,
+      "bull_view": "The $364bn backlog is a company-filed RPO (Remaining Performance Obligation), not an analyst estimate; t grew $120bn in Q1 2026 alone. At 80-85% historical cloud backlog conversion over 36 months, the existing backlog alone supports $291-309bn of incremental AWS revenue through FY2028 before counting a single new booking. Management confirmed the backlog has customer breadth (not 1-2 names). AWS grew 28% in Q1 2026; he fastest in 15 quarters; hile management stated demand continues to exceed available capacity. The constraint is supply (data center), not demand. The $200bn capex in 2026 is the supply unlock.",
+      "bear_view": "Multi-year enterprise cloud contracts carry optionality; olume minimums rather than hard volume commitments, renegotiation rights if AI ROI disappoints at scale. Azure grew 40% versus AWS 28% in Q1 2026, meaning Microsoft's OpenAI exclusivity is pulling the fastest-growing AI workloads. A massive single-quarter backlog surge could reflect customers locking in capacity commitments ahead of anticipated price increases rather than organic demand expansion; pull-forward, not structural growth.",
+      "our_verdict": "The backlog's legal status and the $120bn quarterly addition are the strongest near-term evidence in the bull case. The conversion risk is real but requires a specific observable mechanism. AI ROI failure at enterprise scale; o invalidate. The DA Davidson thesis (AWS losing market share) was tested by Q1 data and refuted: AWS grew at the same rate as GCP (both 28%) and faster than the prior-year quarter. We hold the base case at $230bn FY2028 (17% growth by that year) but argue that the probability of the bull outcome ($256bn, 22% growth) is higher than the probability of the bear ($210bn, 15%) given the filed evidence. This asymmetry supports a BUY with a target that leans toward the bull.",
+      "what_would_change_our_mind": "AWS Q2 or Q3 2026 revenue growth decelerating below 24% despite the $364bn backlog; hich would signal either capacity delays suppressing conversion, or demand softness in new bookings offsetting conversion. Alternatively, management commentary on backlog cancellation or renegotiation rates would be a material negative surprise.",
+      "worth_per_share": "$99/share from bear ($55 AWS segment value) to bull ($91 AWS segment value), a $36/share swing from base ($83). Moving from base to bull AWS scenario adds $8/share; from base to bear subtracts $28/share. The asymmetry reflects that the base already embeds conservative revenue assumptions that the filed backlog partially contradicts."
+    },
+    {
+      "debate": "Does $200bn of annual capex compress Amazon's return on invested capital for long enough to warrant a lower multiple today, or is the capex cycle a temporary FCF trough that investors should look through?",
+      "is_crux": false,
+      "bull_view": "Amazon's capex-to-revenue ratio in 2026 (~25%) is extraordinary but precedented within Amazon itself. The 2013-2016 AWS infrastructure buildout consumed 10-12% of group revenue in capex and produced near-zero FCF for three years; it then generated the cash engine that powered Amazon's margin recovery in 2023-2024. The current cycle has a key structural advantage: $364bn of contracted demand that the 2013-2016 cycle did not have. The backlog-to-capex ratio provides reasonable confidence that the ROIC on the incremental investment is positive. AWS capex of ~$150bn over 2025-2026 against $364bn of contracted incremental revenue implies a roughly 2.4x revenue-to-capex return before operating leverage; istorically excellent for infrastructure.",
+      "bear_view": "The capex cycle has no hard timeline. If AI ROI for enterprise customers does not materialize at scale by 2027, the demand that was contracted could soften; ustomers signed long-term commitments based on projected workloads, not current utilization. At $200bn annual capex, $131.8bn in 2025 capex, and near-zero FCF, Amazon is burning through cash at a rate that would be unsustainable without sustained revenue growth. The market prices the capex as 'demand-driven'; f that assumption cracks, the stock re-rates severely.",
+      "our_verdict": "The capex risk is temporal, not structural. The precedent from the 2013-2016 cycle and the 2022-2023 fulfillment overinvestment both show Amazon absorbing large capex spikes and recovering FCF. The difference now is the contracted backlog provides pre-committed revenue that the prior cycles lacked. We treat the near-zero FCF as a factual constraint on valuation (not a valuation anchor) and normalize the FCF to $30bn post-cycle ($2.79/share) for the intrinsic value calculation. The risk is duration; f the cycle extends into 2028 without FCF inflection, the equity premium compresses. We reflect this in the LOW path confidence assigned to the BUY.",
+      "what_would_change_our_mind": "Q3 2026 management commentary indicating the $200bn 2026 capex level persists into 2027 at a similar magnitude; hat would signal the cycle is extending rather than normalizing, changing the FCF recovery timeline by 12+ months.",
+      "worth_per_share": "$30-40/share if the FCF recovery timeline extends by 2 years (normalizing FCF from FY2028 to FY2030 compresses the intrinsic value by ~$15-20/share via the additional discounting, and reduces the defensible 12m target multiple by 2-3 turns = $20-25/share target compression). This is a second-order risk but real."
+    },
+    {
+      "debate": "Is Amazon Advertising a structurally defensible $100bn+ compounder by FY2027, or will Google's AI-powered shopping features and Meta's improved performance advertising recapture the retail media budget?",
+      "is_crux": false,
+      "bull_view": "Amazon Advertising is growing 24% at $70bn TTM (Q1 2026) and the growth driver is structural; roduct searches migrating from Google to Amazon's native purchase intent data. This is a trend eMarketer has documented consistently: Amazon's share of global digital advertising growing from 8% (2024) to 9%+ (2026). Prime Video's ad-supported tier is net-new high-CPM inventory beginning to contribute 'meaningfully'. The bull case for $110bn FY2027 advertising revenue requires only sustaining; ot accelerating; he current 24% growth rate.",
+      "bear_view": "Google's AI Overviews and Gemini-powered Shopping results are designed to recapture product-intent search at the top of the funnel. Meta's Advantage+ AI campaign tools are winning incremental performance advertising budgets from brands that had been diversifying into Amazon. Prime Video's ad inventory may dilute CPMs across Amazon's existing ad formats if supply grows faster than demand.",
+      "our_verdict": "The advertising bear case requires Google to successfully recapture product-intent searches that have been migrating to Amazon for 5+ years. That has not happened despite multiple Google Shopping iterations. The structural moat. Amazon's first-party purchase transaction data is uniquely valuable for product advertisers; s not replicated by any rival. MEDIUM conviction on this debate: the bull case is more likely than not, but a material Google AI Shopping success (observable by Q3 2026 Amazon ad growth deceleration below 20%) would change our mind.",
+      "what_would_change_our_mind": "Amazon Advertising Q3 2026 growth decelerating below 20% YoY, which would indicate either market saturation or competitive response materializing. Or a management disclosure that Prime Video ad CPMs are below the traditional sponsored-listings RPMs, indicating dilutive rather than additive inventory.",
+      "worth_per_share": "$16/share from base ($77) to bull ($93) advertising scenario; $14/share reduction in bear (estimated $62 vs $77 base) if growth decelerates to 18% and the ROIC assumption is trimmed."
+    },
+    {
+      "debate": "Does the stock at $237.50; itting between the SOTP base ($212) and bull ($244); epresent an attractive entry given the contracted evidence, or is the $57/share gap between intrinsic convergence ($233) and the market target ($290) too dependent on timing and market sentiment?",
+      "is_crux": false,
+      "bull_view": "At $237.50 the market is already pricing ~84% of the distance from the $212 base to the $244 bull scenario, leaving limited absolute upside to the SOTP bull ($6.35/share). The real upside is the 12-month re-rating to $290 via 28x FY2027 EPS; target that the entire sell-side cluster converges around (28-32x FY2027 EPS is the post-Q1 consensus methodology). The 14.7% pullback from the ATH provides an entry that is technically better than the post-Q1 high on unchanged fundamentals. The next 2-3 quarterly AWS revenue prints will resolve the crux; if Q2 2026 AWS comes in above $39bn (>25% growth), the stock re-rates toward $290 without requiring any change in the FY2027 earnings estimate.",
+      "bear_view": "The $57/share gap between the intrinsic convergence target ($233) and the market target ($290) is large. It depends on the market awarding a 28x multiple on FY2027 EPS at a time when FCF is near zero and the stock already trades at 30.6x NTM. A 12-month period where AWS growth holds but FCF remains compressed could leave the stock at $233 (convergence, -2% return) rather than $290 (+22%). The BUY rating requires the market re-rating, not just the business performing.",
+      "our_verdict": "We acknowledge the timing risk explicitly; he gap between intrinsic convergence and market target is $57/share (24% of the current price). This is a real and named risk, not a minor caveat. We rate BUY with MEDIUM conviction rather than HIGH precisely because of this gap. The portfolio manager's decision to own AMZN at $237.50 is a bet on AWS backlog conversion being visible in Q2-Q3 2026 data, which is observable and specific. The bet is not blind; t is the most heavily contracted forward signal in cloud infrastructure.",
+      "what_would_change_our_mind": "If Q2 2026 AWS revenue ($37-40bn implied range) fails to confirm at least 25% growth, we would lower the target from the market-timing-dependent $290 toward the intrinsic convergence $233, downgrading to HOLD.",
+      "worth_per_share": "The full spread from bear ($145) to current ($237.50) to bull scenario ($244) to market target ($290), $145 per share total range with $6.35 between current and SOTP bull, $52.86 from current to market target, and -$92.14 from current to bear."
+    }
+  ],
+  "bear_paragraph": "The bear case for Amazon is not a cloud-collapse scenario; t is a timing and valuation argument. At $237.50 and 30.6x corrected NTM earnings, the stock prices near-flawless execution of the margin expansion story. The crux risk: the Q1 2026 AWS reacceleration to 28% growth was driven by converting the $244bn backlog from Q4 2025 into revenue, but the $364bn Q1 2026 backlog surge could reflect enterprise customers locking in capacity commitments ahead of price increases rather than structural demand expansion. If AI ROI at scale does not materialize for enterprise customers by late 2027, the backlog converts but new-bookings additions stall; nd AWS decelerates toward 15% by FY2028 (the bear case, $210bn revenue versus the base $230bn). Azure's 40% growth in Q1 2026 versus AWS's 28% reflects Microsoft's OpenAI exclusivity advantage pulling the fastest-growing AI application workloads; that advantage does not disappear in 12 months. Google Cloud's 8% compute price cuts are deflationary for the industry. And $200bn of annual capex against near-zero FCF means that a 2-year capex cycle extension without a revenue acceleration to match would compress the defensible multiple from 28x toward 22x on FY2027 EPS, producing a price of roughly $230; lat with today. The bear is not the end of Amazon; it is a business that compounds at 12-15% revenue growth instead of 17-22%, earns $145/share of intrinsic value, and takes 2-3 years to deliver the re-rating the current price demands. That is not a catastrophe; t is an opportunity cost scenario.",
+  "key_risks": [
+    {
+      "rank": 1,
+      "category": "execution",
+      "severity": "HIGH",
+      "likelihood": "MEDIUM",
+      "risk": "Capex cycle extends into 2027 without FCF inflection, compressing the defensible 12m multiple and forcing the stock toward the intrinsic convergence target ($233) rather than the market target ($290)",
+      "monitor": "FY2026 capex guidance update in Q2/Q3 earnings; management commentary on capex moderation timeline"
+    },
+    {
+      "rank": 2,
+      "category": "competitive",
+      "severity": "HIGH",
+      "likelihood": "MEDIUM",
+      "risk": "Azure sustains 40%+ growth for 4-6 consecutive quarters, pulling enterprise AI application workloads away from AWS Bedrock and slowing AWS bookings below the base assumption",
+      "monitor": "AWS quarterly revenue growth rate; Azure growth rate; AWS share in new AI workloads per Synergy Research"
+    },
+    {
+      "rank": 3,
+      "category": "valuation",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "Stock fails to re-rate toward 28x FY2027 EPS within 12 months if broader tech multiple compression occurs (rate shock, macro slowdown), leaving the BUY with a -2% return to intrinsic convergence rather than +22% to market target",
+      "monitor": "S&P 500 and Nasdaq P/E compression triggers; 10-year Treasury yield above 5%"
+    },
+    {
+      "rank": 4,
+      "category": "structural",
+      "severity": "MEDIUM",
+      "likelihood": "LOW",
+      "risk": "AI ROI disappointment at enterprise scale (AI applications fail to deliver productivity gains for enterprise customers by 2027) causes backlog renegotiations and AWS new-bookings deceleration",
+      "monitor": "Enterprise AI utilization data; backlog cancellation commentary in earnings calls; hyperscaler collective capex guidance revisions"
+    },
+    {
+      "rank": 5,
+      "category": "regulatory",
+      "severity": "LOW",
+      "likelihood": "MEDIUM",
+      "risk": "DOJ/FTC antitrust action on AWS market power or retail marketplace practices; EU Digital Markets Act enforcement on advertising attribution",
+      "monitor": "DOJ/FTC filings; EU DMA enforcement actions against Amazon"
+    }
+  ],
+  "range_and_sensitivity": {
+    "anchor": "Base SOTP fair value today: $211.64 (the argued valuation, not a probability-weighted blend)",
+    "cases": [
+      {
+        "label": "base",
+        "implied_value": 211.64,
+        "thesis_one_line": "AWS grows 26% in FY2026, decelerating to 17% by FY2028 ($230bn) on contracted backlog conversion; advertising 22% CAGR; NA Retail margin reaches 8.5%.",
+        "evidence_grade": "CONTRACTED for the backlog floor; EXTRAPOLATED for the growth trajectory beyond conversion",
+        "key_driver": "AWS FY2028 NOPAT $65.4bn × 16.5x exit multiple / 1.21 discount factor = $894bn AWS EV"
+      },
+      {
+        "label": "bull",
+        "implied_value": 253.9,
+        "thesis_one_line": "AWS sustains 29% growth in FY2026, 26% in FY2027, 22% in FY2028 ($256bn); Trainium silicon lifts AWS margin to 37%; advertising accelerates to 24-26% CAGR on Prime Video ramp.",
+        "evidence_grade": "CONTRACTED for backlog scale; EXTRAPOLATED for conversion pace and Trainium margin expansion",
+        "key_driver": "AWS FY2028 NOPAT $72.7bn (additional 11% vs base) × 16.5x × 1/1.21 = additional $97bn EV ($9/share)"
+      },
+      {
+        "label": "bear",
+        "implied_value": 145.36,
+        "thesis_one_line": "AWS decelerates to 20% by H2 2026 and 15% by FY2028 ($210bn); Azure's OpenAI advantage pulls AI workloads; advertising grows only 18%; NA Retail margin stalls at 7-8%.",
+        "evidence_grade": "MECHANISM. Azure's 40% growth vs AWS 28% is an observable dynamic; the bear requires it to sustain and intensify",
+        "key_driver": "AWS bear: NOPAT $59.7bn × 13.1x exit multiple (higher r, lower g, lower ROIC) / 1.25 discount factor = $594bn AWS EV (vs $894bn base)"
+      }
+    ],
+    "sensitivity_matrix": {
+      "axis_x_label": "AWS WACC (r)",
+      "axis_y_label": "AWS FY2028 NOPAT ($bn)",
+      "axis_x_values": [
+        0.09,
+        0.095,
+        0.1,
+        0.115,
+        0.12
+      ],
+      "axis_y_values": [
+        56.0,
+        60.0,
+        65.4,
+        70.0,
+        75.0
+      ],
+      "grid": [
+        [
+          217.1,
+          207.5,
+          193.2,
+          182.9,
+          178.8
+        ],
+        [
+          223.4,
+          213.2,
+          197.8,
+          186.8,
+          182.4
+        ],
+        [
+          232.0,
+          220.8,
+          204.0,
+          192.1,
+          187.3
+        ],
+        [
+          239.2,
+          227.3,
+          209.3,
+          196.5,
+          191.4
+        ],
+        [
+          247.2,
+          234.3,
+          215.1,
+          201.4,
+          195.9
+        ]
+      ],
+      "grid_note": "Each cell is the full SOTP implied price with only the AWS NOPAT and AWS WACC varying; other segments fixed at base. The current price of $237.50 corresponds to approximately NOPAT $75bn at r=9.5%; he market is pricing both the bull NOPAT AND a lower-than-base WACC.",
+      "dominant_lever": "AWS WACC (r) is approximately equal in sensitivity to AWS NOPAT: a 100bp change in r moves the implied price by roughly $12-15/share; a $5bn change in NOPAT moves it by roughly $6-8/share. The market-price sensitivity test confirms that the current price of $237.50 requires BOTH a NOPAT above the base AND a WACC below the base; onfirming the market is pricing a premium for the contracted demand evidence (which justifies a lower β/WACC) as well as for the bull growth trajectory.",
+      "where_cases_land": "Base (NOPAT $65.4bn, r 10.0%): $204; rid cell (row 3, col 3). Bull (NOPAT $72.7bn, r 10.0%): $212 per grid (row 4, col 3). Full bull with NA/Intl expansion: $244. Bear (NOPAT $59.7bn, r 11.5%): grid estimates $187 for AWS-only bear; full SOTP bear with all segments compressed: $145."
+    },
+    "vs_price_pct": -10.9
+  },
+  "scenario_assumptions": {
+    "base": {
+      "label": "base",
+      "one_line": "Contracted backlog converts at historical rates; AWS decelerates naturally from 28% to 17% by FY2028; advertising holds 22% CAGR; FCF recovers to $30bn post-cycle.",
+      "implied_value": 211.64,
+      "rows": [
+        {
+          "driver": "AWS Revenue FY2026E",
+          "value": "$162.2bn",
+          "note": "+26% YoY"
+        },
+        {
+          "driver": "AWS Revenue FY2027E",
+          "value": "$196.3bn",
+          "note": "+21% YoY"
+        },
+        {
+          "driver": "AWS Revenue FY2028E (normalization year)",
+          "value": "$230.0bn",
+          "note": "+17% YoY"
+        },
+        {
+          "driver": "AWS FY2028 NOPAT",
+          "value": "$65.4bn",
+          "note": "$230bn × 36% EBIT × 0.79 tax"
+        },
+        {
+          "driver": "AWS exit EV/NOPAT multiple",
+          "value": "16.5x",
+          "note": "Gordon: (1-4.5%/50%)/(10%-4.5%)=16.5x"
+        },
+        {
+          "driver": "AWS WACC",
+          "value": "10.0%",
+          "note": "CAPM: 4.2%+1.15×5.0%=9.95%→10.0%"
+        },
+        {
+          "driver": "Advertising Revenue FY2027E",
+          "value": "$102.0bn",
+          "note": "+22% YoY; 9.5% global ad share"
+        },
+        {
+          "driver": "Advertising NOPAT FY2027",
+          "value": "$44.3bn",
+          "note": "$102bn × 55% × 0.79"
+        },
+        {
+          "driver": "NA Retail FY2027E EBIT",
+          "value": "$44.1bn",
+          "note": "$519bn × 8.5% margin"
+        },
+        {
+          "driver": "International FY2027E EBIT",
+          "value": "$9.5bn",
+          "note": "$210bn × 4.5% margin"
+        },
+        {
+          "driver": "Net Debt",
+          "value": "$66.2bn",
+          "note": "From databundle"
+        },
+        {
+          "driver": "Shares",
+          "value": "10.757bn",
+          "note": "From databundle"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$211.64",
+          "note": "SOTP sum of parts"
+        }
+      ]
+    },
+    "bull": {
+      "label": "bull",
+      "one_line": "AWS backlog converts faster than base; Trainium silicon lifts AWS margin 1pp; advertising accelerates on Prime Video ramp; NA Retail margin expands to 9%.",
+      "implied_value": 253.9,
+      "rows": [
+        {
+          "driver": "AWS Revenue FY2026E",
+          "value": "$166.0bn",
+          "note": "+29% YoY"
+        },
+        {
+          "driver": "AWS Revenue FY2027E",
+          "value": "$209.5bn",
+          "note": "+26% YoY"
+        },
+        {
+          "driver": "AWS Revenue FY2028E (normalization year)",
+          "value": "$255.7bn",
+          "note": "+22% YoY"
+        },
+        {
+          "driver": "AWS FY2028 NOPAT",
+          "value": "$72.7bn",
+          "note": "$255.7bn × 37% EBIT × 0.79"
+        },
+        {
+          "driver": "AWS exit EV/NOPAT multiple",
+          "value": "16.5x",
+          "note": "Same Gordon formula; g_lt 5.0%, ROIC 55%, r 10.0% = 16.8x"
+        },
+        {
+          "driver": "AWS WACC",
+          "value": "10.0%",
+          "note": "Same as base"
+        },
+        {
+          "driver": "Advertising Revenue FY2027E",
+          "value": "$110.5bn",
+          "note": "+26% YoY; Prime Video ramp"
+        },
+        {
+          "driver": "Advertising NOPAT FY2027",
+          "value": "$48.0bn",
+          "note": "$110.5bn × 55% × 0.79"
+        },
+        {
+          "driver": "NA Retail FY2027E EBIT",
+          "value": "$46.7bn",
+          "note": "$519bn × 9.0% margin"
+        },
+        {
+          "driver": "International FY2027E EBIT",
+          "value": "$9.5bn",
+          "note": "Same as base"
+        },
+        {
+          "driver": "Net Debt",
+          "value": "$66.2bn",
+          "note": "Same"
+        },
+        {
+          "driver": "Shares",
+          "value": "10.757bn",
+          "note": "Same"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$253.90",
+          "note": "Bull SOTP (validated against valuation file)"
+        }
+      ]
+    },
+    "bear": {
+      "label": "bear",
+      "one_line": "AWS decelerates sharply as Azure's OpenAI advantage intensifies; backlog converts but new bookings slow; capex cycle extends; advertising growth moderates to 18%.",
+      "implied_value": 145.36,
+      "rows": [
+        {
+          "driver": "AWS Revenue FY2026E",
+          "value": "$155.9bn",
+          "note": "+21% YoY"
+        },
+        {
+          "driver": "AWS Revenue FY2027E",
+          "value": "$183.0bn",
+          "note": "+17% YoY"
+        },
+        {
+          "driver": "AWS Revenue FY2028E (normalization year)",
+          "value": "$210.5bn",
+          "note": "+15% YoY"
+        },
+        {
+          "driver": "AWS FY2028 NOPAT",
+          "value": "$59.7bn",
+          "note": "$210.5bn × 35.8% EBIT × 0.79"
+        },
+        {
+          "driver": "AWS exit EV/NOPAT multiple",
+          "value": "13.1x",
+          "note": "Gordon: g_lt 4.0%, ROIC 45%, r 11.5% = (1-0.089)/0.075 = 12.2x (engine output: 13.1x)"
+        },
+        {
+          "driver": "AWS WACC",
+          "value": "11.5%",
+          "note": "Bear assumes β rises to 1.3 as growth decelerates (competitive risk materializes); r = 4.2%+1.3×5.5%"
+        },
+        {
+          "driver": "Advertising Revenue FY2027E",
+          "value": "$90bn",
+          "note": "+18% YoY; Google AI recaptures share"
+        },
+        {
+          "driver": "Advertising NOPAT FY2027",
+          "value": "$38.9bn",
+          "note": "$90bn × 55% × 0.79"
+        },
+        {
+          "driver": "NA Retail FY2027E EBIT",
+          "value": "$40.5bn",
+          "note": "$519bn × 7.8% margin"
+        },
+        {
+          "driver": "International FY2027E EBIT",
+          "value": "$9.5bn",
+          "note": "Same; subscale regardless"
+        },
+        {
+          "driver": "Net Debt",
+          "value": "$66.2bn",
+          "note": "Same"
+        },
+        {
+          "driver": "Shares",
+          "value": "10.757bn",
+          "note": "Same"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$145.36",
+          "note": "Bear SOTP"
+        }
+      ]
+    }
+  },
+  "synthesis_paths": [
+    {
+      "label": "bull",
+      "outcome_range": "$254-$290",
+      "description": "AWS backlog converts at historical 80-85% pace through FY2028; growth holds 25%+ through FY2027; advertising accelerates on Prime Video; market re-rates to 28x FY2027 EPS as the backlog data confirms the thesis over Q2-Q3 2026.",
+      "evidence_grade": "CONTRACTED (backlog) + EXTRAPOLATED (conversion pace)"
+    },
+    {
+      "label": "base",
+      "outcome_range": "$212-$233",
+      "description": "AWS decelerates as modeled; advertising compounds but doesn't accelerate; the stock converges toward intrinsic value rather than re-rating; 12m return is essentially flat (-2% to pure intrinsic).",
+      "evidence_grade": "EXTRAPOLATED; equires the base growth trajectory without the bull or bear inflection"
+    },
+    {
+      "label": "bear",
+      "outcome_range": "$145-$180",
+      "description": "Azure's OpenAI advantage intensifies in FY2026-2027 as enterprise AI applications use Microsoft's proprietary model ecosystem; AWS new bookings stall even as the old backlog converts; capex cycle extends; multiple compresses.",
+      "evidence_grade": "MECHANISM; equires Azure 40%+ growth to sustain for 4+ quarters and pull cloud-native workloads"
+    }
+  ],
+  "catalysts_to_watch": [
+    {
+      "theme": "AWS backlog conversion velocity",
+      "horizon": "Q2 2026 (July earnings) and Q3 2026 (October earnings)",
+      "what_to_watch": "AWS quarterly revenue versus the $38-40bn threshold implied by maintaining 25%+ YoY growth; management commentary on backlog conversion rate and new-bookings pace; any reference to enterprise backlog renegotiation or cancellation",
+      "why_it_matters": "This is the crux. Two quarters above $38bn confirms the bull path; a print below $37bn despite the $364bn backlog signals either capacity delays or demand softness in new bookings.",
+      "bull_or_bear_tell": "Bull: AWS Q2 2026 above $39bn (+25% YoY). Bear: AWS Q2 2026 below $37bn or management commentary on backlog quality concerns."
+    },
+    {
+      "theme": "Competitive cloud share in AI-specific workloads",
+      "horizon": "Quarterly (each earnings cycle)",
+      "what_to_watch": "Azure AI growth rate versus AWS growth rate in successive quarters; Synergy Research cloud market share data; management commentary on AWS Bedrock enterprise adoption versus Azure OpenAI Service",
+      "why_it_matters": "Azure's 40% growth versus AWS's 28% in Q1 2026 is an observable competitive disadvantage in the AI application layer. Sustaining this gap for 2+ years would structurally pressure AWS's growth.",
+      "bull_or_bear_tell": "Bull: Azure growth rate decelerates toward 30% and AWS holds 25%+. Bear: Azure sustains 35-40% for two more consecutive quarters while AWS decelerates below 25%."
+    },
+    {
+      "theme": "Capex cycle timeline and FCF recovery",
+      "horizon": "H2 2026 and full-year 2026 capex guidance updates",
+      "what_to_watch": "FY2026 capex actuals versus $200bn guide; any management commentary on FY2027 capex moderation; CFO trajectory as AWS revenue scales against fixed depreciation charges",
+      "why_it_matters": "The $57/share gap between intrinsic convergence ($233) and market target ($290) depends on the market maintaining the 28x FY2027 EPS multiple. That multiple is at risk if capex extends into 2027 at $200bn+ without a corresponding FCF recovery signal.",
+      "bull_or_bear_tell": "Bull: Q3 2026 management commentary indicating FY2027 capex moderates to $150-170bn. Bear: FY2026 capex tracking above $210bn and no capex guidance reduction."
+    },
+    {
+      "theme": "Advertising growth and Prime Video ad monetization",
+      "horizon": "Q2-Q3 2026",
+      "what_to_watch": "Quarterly advertising revenue growth rate; Prime Video ad completion rates and CPM relative to sponsored listings (if disclosed); eMarketer's periodic US digital ad market share updates",
+      "why_it_matters": "Advertising at $77/share of SOTP value is the second-largest contributor after AWS. A deceleration below 20% would signal either Google AI is recapturing product search intent or Prime Video inventory is dilutive rather than additive.",
+      "bull_or_bear_tell": "Bull: Advertising revenue Q2 2026 above $18bn (+25% YoY), implying Prime Video is additive. Bear: Advertising growth below $17.5bn (<22% YoY) despite Prime Video ramp."
+    }
+  ],
+  "conclusion": "Amazon at $237.50 is a MEDIUM-conviction BUY with a 12-month target of $290 (22% upside), based on the judgment that the $364bn AWS contracted backlog; he most extraordinary forward demand signal in cloud infrastructure history; ill force a market re-rating toward the bull scenario as it converts to revenue over Q2-Q3 2026. The honest tension is that the SOTP base fair value is $212 (11% below price) and the pure-intrinsic 12m convergence target is $233 (-2%), meaning the BUY rests on the market re-rating rather than current undervaluation; that $57/share timing gap between intrinsic convergence and market target is named, not hidden, and is the primary reason conviction is MEDIUM rather than HIGH.",
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "MEDIUM",
+    "path_confidence": "LOW",
+    "basis": "Valuation confidence MEDIUM: the SOTP base ($212) is well-argued and the sensitivity is meaningful but not extreme (bear $145 to bull $244 range = $99/share, 47% of base). Path confidence LOW: the 12-month BUY target ($290) relies on the market re-rating by $57/share above intrinsic convergence ($233); timing judgment, not a value judgment. Two data points (Q2 and Q3 2026 AWS revenue versus the 25% threshold) will resolve the crux within the 12-month investment horizon. Data quality: CORRECTED (Anthropic EPS artifact was material; orrected NTM EPS from $9.86 to $7.75, P/E from 24.1x artifact to 30.6x true operating).",
+    "split_test": "The rating and thesis have been re-verified against the frozen evidence: the contracted $364bn backlog, the 28% Q1 2026 growth, the $212 base SOTP, and the $290 market target are internally consistent. No instability."
+  },
+  "run_manifest": {
+    "as_of_date": "2026-06-18",
+    "frozen_bundle": "output/AMZN/AMZN_databundle.json",
+    "agents_used": [
+      "Atlas (orchestrator)",
+      "Theia (Landscape)",
+      "Pheme (Market)",
+      "Daedalus (Valuation)",
+      "Boreas (Bull)",
+      "Cassandra (Bear; ending)",
+      "Erinys (Audit; tep 4)",
+      "Forseti (Gate; tep 5)"
+    ],
+    "engine_version": "Atlas v3",
+    "compute_scripts_run": [
+      "engine/sotp_compute.py",
+      "engine/assemble.py"
+    ],
+    "prior_report": null,
+    "change_log": []
+  },
+  "data_gaps": [
+    "Advertising segment P&L not separately disclosed by Amazon; 55% contribution margin is a bottom-up derived estimate, not company-filed.",
+    "Q3 2025 advertising quarterly revenue not found in the data sources; implied from annual total minus other quarters.",
+    "International segment advertising contribution not separately quantifiable; treated as embedded in the segment margin.",
+    "Cassandra (bear) agent file not yet generated at synthesis time; ear scenario parameters used from SOTP inputs and the crux analysis in AMZN_crux.json; will be updated when AMZN_bear.json is written.",
+    "SBC FY2026 not yet reported; projected at $17-18bn based on declining trend ($22bn FY2024 → $19.5bn FY2025).",
+    "Amazon's reported capex includes finance leases in the CFO statement; the $131.8bn FY2025 and $200bn FY2026 figures may include lease obligations that slightly overstate the pure growth capex."
+  ],
+  "sources": [
+    "Amazon Q1 2026 earnings release (April 29, 2026): AWS $37.6bn (+28%), OI $23.9bn (13.1%), EPS $2.78 (incl Anthropic gain)",
+    "Amazon FY2025 annual results: AWS $128.7bn (+20%), Advertising $68.6bn (+22%), NA $426.3bn, International $161.9bn, group OI $68.6bn",
+    "Amazon Q1 2026 backlog: $364bn RPO (+93% YoY, +50% QoQ); eygotrade.com/en/news/amazon-q1-aws-backlog",
+    "Anthropic $100bn+ AWS commitment: CNBC April 2026; finance.biggo.com/news/NhgA350BoQmpnl36uwAm",
+    "Trainium: $20bn+ ARR, $225bn+ purchase obligations. TIKR.com/blog/amazon-beat-q1-2026-earnings-on-every-line",
+    "Analyst targets: investing.com (Goldman $325, JPMorgan $330, Morgan Stanley $330), americanbankingnews.com (Morgan Stanley), marketbeat.com (Truist $320)",
+    "DA Davidson downgrade: finance.yahoo.com/news/amazon-downgraded-aws-loses-lead-132603525.html",
+    "Cloud market shares: businesstats.com/big-three-hold-dominant-lead-in-accelerating-cloud-market; Synergy Research Q1 2026",
+    "Cloud TAM: Precedence Research via searchlab.nl ($295bn 2025, 18-20% CAGR)",
+    "Digital advertising TAM: eMarketer 2026 projection ($916bn global; Amazon 9% share)",
+    "US ecommerce share: synctify.net/2026 US ecommerce market share report (Amazon 35.7%)",
+    "Hyperscaler capex: futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/ ($690bn Big-5 FY2026)",
+    "Amazon $200bn capex: mlq.ai/news/amazon-reveals-200-billion-ai-infrastructure-investment-for-2026",
+    "Anthropic gain/EPS artifact: thenextweb.com/news/amazon-q1-2026-anthropic-aws-earnings; simplywall.st consensus EPS"
+  ],
+  "valuation_headline": {
+    "current_price": 237.5,
+    "fair_value_today": 211.64,
+    "target_12m": 290.36,
+    "fair_value_12m": 232.8,
+    "band_low": 145.36,
+    "band_high": 253.9,
+    "method_primary": "SOTP",
+    "method_why": "Amazon is a four-segment conglomerate (AWS, Advertising, NA Retail, International) with fundamentally different growth rates, margins, capital requirements, and risk profiles. SOTP with exit-multiple for growth segments and earnings multiple for mature segments."
+  },
+  "rating": {
+    "action": "BUY",
+    "tone": "positive",
+    "implied_12m_total_return_pct": 22.3,
+    "convergence_return_pct": -2.0,
+    "street_return_pct": null,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  }
+}

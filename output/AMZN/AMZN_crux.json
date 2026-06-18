@@ -1,0 +1,62 @@
+{
+  "ticker": "AMZN",
+  "as_of_date": "2026-06-18",
+  "crux_statement": "Whether AWS can sustain 25%+ revenue growth through 2027-2028 as AI workloads compound on cloud infrastructure determines roughly 60% of the SOTP valuation swing, because AWS at that growth rate on a $150bn run-rate base accretes ~$200-250bn of incremental enterprise value versus a deceleration to 15-18% by 2027.",
+  "crux_driver": {
+    "name": "AWS sustained revenue growth rate 2026-2028",
+    "mechanism": "AWS is ~18% of group revenue but ~57% of group operating income (FY2025: $45.6bn OI on $128.7bn revenue at 35.4% margin). A 10pp swing in the forward AWS growth rate (e.g. 28% vs 18% for 2026-2028) compounds to a ~$60bn revenue differential by FY2028, worth ~$180-220bn of incremental enterprise value at 30-35x forward EBIT. The retail segments contribute stable but low-multiple value; the advertising segment is high-margin but already well-understood by the market. The call on AMZN is therefore overwhelmingly a call on whether the Q1 2026 AWS reacceleration (28% YoY, fastest in 15 quarters) is structural and durable or a capacity-catch-up spike that fades as the hyperscaler AI capex cycle matures.",
+    "base_estimate": "AWS grows at ~26% in FY2026, decelerating to ~21% in FY2027 and ~17% in FY2028 as the initial AI infrastructure buildout matures but enterprise AI application workloads sustain demand. The base rests on three sourced anchors: (1) Q1 2026 AWS revenue of $37.6bn (+28% YoY) was confirmed the fastest growth in 15 quarters; (2) the AWS contract backlog reached $364bn in Q1 2026, up 49% sequentially from $244bn, providing multi-year revenue visibility at a backlog-to-ARR ratio of ~2.4x (comparable to Azure's RPO trajectory before its 2024-2025 re-acceleration); and (3) Amazon's Trainium silicon has $225bn+ in committed customer purchase obligations. These contracted figures represent SIGNED demand, not extrapolated. Management noted demand continues to exceed available capacity, supporting above-trend near-term conversion. The deceleration from 28% to ~17% by FY2028 reflects a logistic maturation as the initial AI infrastructure wave (model training) transitions to inference-dominant workloads with more competitive pricing pressure, consistent with how cloud growth matured post-hyperscaler buildout cycles historically. This base does NOT require the AI ROI story to be proven at scale; it requires only that contracted customers convert their backlog.",
+    "base_value": "~26% FY2026, ~21% FY2027, ~17% FY2028 (implied AWS revenue: ~$162bn, ~$196bn, ~$230bn)",
+    "bull_estimate": "AWS sustains 28-30% growth through mid-2027 before moderating to ~22% by FY2028, implying a $240-250bn revenue base. The bull case is grounded in: (1) the backlog surge from $244bn to $364bn in a single quarter is an extraordinary forward signal; at historical 80-85% backlog conversion over 36 months, this supports a $120-130bn incremental revenue ceiling before new bookings; (2) Trainium custom silicon is now a $20bn+ annual run-rate business growing triple digits, reducing NVIDIA dependency and improving AWS unit economics, which could support margin expansion concurrent with growth; (3) Anthropic has committed to $100bn+ of AWS spend over 10 years, representing a structurally anchored model-provider customer that also attracts downstream enterprise AI builders to the Bedrock platform. The bull case requires only that capacity comes online on Amazon's stated $200bn 2026 capex plan and that enterprise AI application workloads (inference, RAG, agents) layer onto the training-infrastructure demand already contracted.",
+    "bull_value": "~29% FY2026, ~26% FY2027, ~22% FY2028 (implied AWS revenue: ~$166bn, ~$209bn, ~$255bn)",
+    "bear_estimate": "AWS decelerates to 20-22% by late 2026 and 15% by FY2028 as: (1) Azure's faster AI-specific growth (Azure AI grew 40% in Q1 2026 versus AWS at 28%) reflects Microsoft's OpenAI exclusivity advantage pulling enterprise AI budgets away from AWS Bedrock; (2) the $364bn backlog includes multi-year enterprise commitments that may carry cancellation or renegotiation optionality if AI ROI does not materialize at scale; (3) hyperscaler capex deceleration is expected from 2027 onward (Moody's projects Big-5 capex growth slowing from 52% in 2026 to lower absolute increments in 2027), which could soften AWS's fastest-growing workload category; and (4) Google Cloud's 28%+ growth and aggressive pricing (8% compute price cuts in Q1 2026) signal a capacity-driven competitive response. The bear does NOT assume a collapse in cloud demand; it assumes the AI-specific premium that drove the Q1 2026 re-acceleration fades and AWS reverts toward its 2024 growth rate (~19%) earlier than the base expects.",
+    "bear_value": "~21% FY2026, ~17% FY2027, ~15% FY2028 (implied AWS revenue: ~$156bn, ~$183bn, ~$210bn)",
+    "ceiling": "AWS addressable market within the broader cloud IaaS/PaaS TAM: the global cloud infrastructure market was ~$295bn in 2025 (Precedence Research) growing at ~18-20% CAGR through 2030 toward ~$500bn. AWS at 30-31% share today captures ~$89-91bn of that market annually; at 30% share of a $500bn market the revenue ceiling in 2030 would be ~$150bn from that workload category alone, with AI-specific and sovereign cloud additive. AWS's $37.6bn Q1 2026 pace ($150bn annualized run rate) already sits at the top of the traditional cloud market sizing, confirming the AI workload premium is real and incremental.",
+    "floor": "In the bear scenario where AI ROI disappoints at scale and enterprise consolidation pressures emerge, AWS reverts to the 15-17% growth rate it posted in 2023-2024 before the AI re-acceleration. At $210bn in FY2028 on a ~36% operating margin, AWS alone would generate ~$76bn EBIT. This is the floor, not a collapse scenario.",
+    "contracted_vs_extrapolated": "CONTRACTED: $364bn backlog (Q1 2026, company-disclosed); $225bn+ Trainium purchase commitments; $100bn Anthropic cloud commitment. EXTRAPOLATED: the conversion timing of the backlog (Amazon's historical 36-month conversion assumption); the incremental new-bookings additions beyond existing backlog. HOPED-FOR: AI ROI materializing at scale pulling enterprise AI application spend onto AWS at a faster rate than the base; Trainium displacing NVIDIA at >50% of new AI training workloads.",
+    "evidence_sources": [
+      "Amazon Q1 2026 earnings release (April 29, 2026): AWS revenue $37.6bn, +28% YoY, operating income $14.2bn, 37.7% margin. Source: ir.aboutamazon.com",
+      "Amazon Q1 2026 backlog: $364bn contract backlog, up from $244bn in Q4 2025. Source: heygotrade.com/en/news/amazon-q1-aws-backlog-rufus-agentic-commerce",
+      "Amazon FY2025 annual results: AWS $128.7bn revenue (+20% YoY), $45.6bn operating income (35.4% margin). Source: search synthesis from SEC 8-K and multiple analyst recaps",
+      "Trainium revenue run rate: $20bn+ annually, growing triple digits; $225bn+ in Trainium purchase commitments. Source: TIKR.com/blog/amazon-beat-q1-2026-earnings-on-every-line",
+      "Anthropic commitment: $100bn+ AWS cloud spend over 10 years. Source: CNBC, April 2026",
+      "Azure Q1 2026 growth: ~40% YoY; AWS 28% YoY; GCP 28%+ YoY. Source: heygotrade.com/en/blog/reading-cloud-growth-signal-azure-gcp-aws-q1-2026",
+      "Cloud infrastructure TAM 2025: ~$295bn; CAGR ~18-20% to 2030. Source: Precedence Research via searchlab.nl",
+      "Amazon 2026 capex: $200bn committed. Source: mlq.ai/news/amazon-reveals-200-billion-ai-infrastructure-investment-for-2026",
+      "AWS market share: 30-31% of cloud IaaS/PaaS. Source: businesstats.com/big-three-hold-dominant-lead-in-accelerating-cloud-market"
+    ],
+    "what_settles_it": "The AWS backlog conversion rate over the next four quarters is the single most decisive data point. If Q2 and Q3 2026 AWS revenue growth holds above 25% (tracking toward $160bn+ annualized), it confirms the backlog is converting and the base/bull case is intact. If growth decelerates sharply toward 20% despite the $364bn backlog, it signals either capacity delays or demand softness in new bookings offsetting conversion. The second data point is whether enterprise AI application workloads (inference, agentic workflows) appear as a separate, additive demand layer in management commentary by Q3 2026 — or whether AI demand remains concentrated in a small number of large model-training customers."
+  },
+  "second_order_drivers": [
+    {
+      "name": "Advertising segment growth rate",
+      "base": "~22-24% revenue CAGR through FY2027; FY2026 ~$85bn, FY2027 ~$104bn",
+      "swing": "Bull: 26%+ CAGR if Prime Video ad-supported tier scales (Prime Video now contributing 'meaningfully' to Q4 2025 ad revenue); Bear: 18% if Google/Meta capture incremental retail ad budgets as AI-powered search advertising matures",
+      "verdict": "High-quality segment with structural tailwinds but less contested than AWS and smaller absolute dollar swing; stated and moved on"
+    },
+    {
+      "name": "North America retail margin normalization",
+      "base": "Steady expansion from 6.9% (FY2025) toward 8-9% by FY2027 as robotics/automation reduce per-unit fulfillment costs and advertising mix shift continues",
+      "swing": "Bull: 9-10% if Amazon Leo delivery drone network scales, reducing last-mile costs; Bear: 5-6% if Temu/Shein drive structural price pressure in consumable categories or if AI infrastructure capex crowds out efficiency spend",
+      "verdict": "Meaningful but second-order versus AWS; the margin trajectory is already established and the range of outcomes is narrower than AWS growth"
+    },
+    {
+      "name": "International segment profitability",
+      "base": "FY2025 operating margin 2.9% ($4.7bn OI on $161.9bn revenue); path to 4-5% by FY2028 as India and emerging markets achieve fixed cost leverage",
+      "swing": "Bull: 6% margin if India e-commerce scales to $50bn revenue with advertising attach; Bear: 1-2% if FX headwinds and Temu competitive incursion in EU/emerging markets sustain structural losses",
+      "verdict": "Subscale-and-building segment; contributes positive but modest value at current profitability; valuation sensitivity is limited compared to AWS"
+    },
+    {
+      "name": "AI capex return on investment",
+      "base": "Amazon guides to $200bn 2026 capex; TTM FCF compressed to $1.2bn (April 2026). The capex-to-revenue conversion is the medium-term cash flow risk. AWS backlog of $364bn against capex of ~$150-200bn over 2025-2026 supports a positive ROIC case on a 3-5 year horizon, consistent with prior AWS infrastructure investment cycles (2012-2016) where capex-heavy years were followed by strong FCF recoveries",
+      "swing": "The FCF trough in 2025-2026 is a known, contracted phenomenon; the risk is duration — if the AI capex cycle extends into 2028 without a FCF inflection, the equity premium supported by 'optionality' compresses",
+      "verdict": "Acknowledged risk but temporal, not structural; the backlog coverage ratio provides reasonable confidence the capex earns back"
+    }
+  ],
+  "segment_crux_map": {
+    "AWS": "The valuation crux. Growth rate 2026-2028 determines 60%+ of SOTP swing. Current run rate $150bn annualized (+28% Q1 2026). Base ~$162bn FY2026, ~$196bn FY2027, ~$230bn FY2028 at 35-37% operating margin. Method: exit-multiple on normalized FY2028 EBIT.",
+    "Advertising": "High-margin compounder. $68.6bn FY2025 revenue, ~$17.2bn Q1 2026 ($70bn+ TTM, +24% YoY). Operating margin not separately disclosed but estimated 50-55% contribution margin given near-zero marginal cost of on-platform placement. Method: exit-multiple on normalized FY2027 EBIT; growth contested but well-supported by structural retail media trends.",
+    "NA_Retail": "Mature/recovering. $426.3bn FY2025 revenue, 6.9% operating margin. Path to 8-9% margin by FY2027 via automation and mix shift toward 3P marketplace (higher margin). Method: current earnings x multiple; growth ~10-12%, margin the key driver.",
+    "International": "Subscale/building. $161.9bn FY2025 revenue, 2.9% operating margin. India is the critical market. Method: current earnings x multiple or sum of breakeven value plus option value on India scale. Contributes modest SOTP value at current profitability."
+  }
+}
