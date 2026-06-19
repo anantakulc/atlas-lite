@@ -1,0 +1,147 @@
+{
+  "ticker": "BFIN",
+  "company": "PT BFI Finance Indonesia Tbk",
+  "exchange": "IDX",
+  "currency": "IDR",
+  "as_of": "2026-06-18",
+
+  "price_idr": 690,
+  "book_value_per_share_idr": 722,
+  "pb_current": 0.93,
+  "pe_ttm": 6.90,
+  "pe_ntm": 6.19,
+  "dividend_yield_pct": 10.14,
+  "market_cap_idr_b": 10177,
+  "shares_outstanding_b": 14.749,
+  "equity_book_value_idr_b": 10653,
+
+  "52w_high_idr": 965,
+  "52w_low_idr": 575,
+  "decline_from_52w_high_pct": -28.5,
+  "ytd_pct": 2.26,
+  "return_1y_pct": -5.42,
+  "beta": 0.45,
+
+  "eps_ntm_feed_idr": 111.5,
+  "eps_ntm_artifact_check": {
+    "feed_value_idr": 111.5,
+    "feed_source": "yfinance (frozen databundle)",
+    "verified_consensus_idr": 96.21,
+    "verified_source": "SimplyWallSt/MarketScreener consensus, June 2026",
+    "discrepancy": "Feed NTM EPS of 111.5 IDR appears to reflect an earlier, pre-UBS-downgrade consensus (c. prior to August 2025). The current consensus NTM EPS is approximately 96 IDR, after UBS reduced estimates by 8-29% for 2025-27 (August 29, 2025 note) and the consensus shifted from 113 IDR to 96.21 IDR. The 2025 actual net income of IDR 1,581.5 B divided by 14.749 B shares = TTM EPS of ~107 IDR, consistent with P/E TTM 6.90x (690/107 = 6.45x, close to reported 6.90x given rounding and LTM vs calendar year cuts). The NTM figure of 111.5 IDR overstates the current forward consensus. USE 96 IDR as the corrected forward (FY2026) EPS for valuation.",
+    "corrected_ntm_eps_idr": 96,
+    "implied_pe_at_corrected_eps": 7.19,
+    "flag": "CORRECTED — feed NTM EPS is stale; use 96 IDR"
+  },
+
+  "financials_summary": {
+    "fy2024": {
+      "revenue_idr_b": 6335,
+      "net_income_idr_b": 1565,
+      "eps_idr": 106,
+      "roe_pct": 15.7,
+      "roa_pct": 8.0,
+      "npf_gross_pct": 1.25,
+      "npf_net_pct": 0.21,
+      "new_financing_idr_b": 20045,
+      "total_assets_idr_b": 25100,
+      "source": "BFI Finance 2024 Annual Report / press release"
+    },
+    "fy2025": {
+      "revenue_idr_b": 6700,
+      "net_income_idr_b": 1582,
+      "eps_idr": 107,
+      "roe_pct": 14.8,
+      "roa_pct": null,
+      "npf_gross_pct": 1.39,
+      "npf_net_pct": 0.22,
+      "new_financing_idr_b": 21900,
+      "managed_receivables_idr_b": 26300,
+      "total_assets_idr_b": 25500,
+      "source": "BFI Finance FY2025 press release, March 6, 2026 (MarketScreener)"
+    }
+  },
+
+  "quarterly_trend": [
+    {"period": "Q1 2025", "revenue_idr_b": 1626, "net_income_idr_b": 406, "eps_idr": 28},
+    {"period": "Q2 2025", "revenue_idr_b": 1559, "net_income_idr_b": 357, "eps_idr": 24},
+    {"period": "Q3 2025 (9M cum)", "revenue_idr_b": null, "net_income_9m_idr_b": 1170, "note": "9M net income +4.7% YoY per Q3 press release"},
+    {"period": "Q4 2025 (implied)", "revenue_idr_b": 1707, "net_income_idr_b": 415, "eps_idr": 28, "note": "Implied from FY2025 total 1582 minus 9M 1170"},
+    {"period": "Q1 2026", "revenue_idr_b": 1709, "net_income_idr_b": 354, "eps_idr": 24, "note": "Decline of 12.8% vs Q1 2025 (406 B); sourced from databundle"}
+  ],
+
+  "analyst_coverage": {
+    "num_analysts": 4,
+    "mean_target_idr": 860,
+    "median_target_idr": 870,
+    "high_target_idr": 1000,
+    "low_target_idr": 700,
+    "upside_to_mean_pct": 24.6,
+    "rec_breakdown": {"strong_buy": 0, "buy": 2, "hold": 1, "sell": 1},
+    "rec_tone": "cautiously positive — majority buy but divided by a credible sell-side bear",
+    "source": "yfinance databundle; cross-checked Investing.com (2 buy, 1 sell overall tone as of June 2026)"
+  },
+
+  "post_announcement_analyst_actions": [
+    {
+      "date": "2025-08-29",
+      "firm": "UBS",
+      "action": "downgrade",
+      "old_rating": "Buy",
+      "new_rating": "Sell",
+      "old_pt_idr": 1110,
+      "new_pt_idr": 745,
+      "note": "Cut 8-29% EPS for 2025-27; forecast credit costs of 4.6-5.1%; loan CAGR 2.5% for 2025-27; bear thesis is automotive financing credit cycle deterioration not yet in price. UBS forecast 30% below then-consensus."
+    }
+  ],
+
+  "street_thesis": "Bulls argue BFIN's sub-2% NPF (best-in-class vs 2.5% industry average), 9%+ new financing growth, and 10%+ dividend yield are durable because used-car collateral is liquid and the company's conservative leverage (1.3x D/E vs 2.3x sector) provides a cushion. At 0.93x P/B with ROE at 14.8%, the stock offers a justified P/B above 1.0x if ROE holds and credit costs normalise. The bear (UBS) argues a credit cycle turn driven by Indonesia's shrinking middle class, rising cost of credit (Q1 2025 CoC 4.4%, up 160 bps QoQ), and higher funding costs as BI raised 100 bps in May-June 2026 will compress ROE to ~12-13%, justifying the sub-book valuation.",
+
+  "whats_priced_in": "At IDR 690 (P/B = 0.93x), the market is pricing in ROE compression, not the current 14.8% level. Using the justified P/B formula for a financing company — P/B = (ROE - g) / (Ke - g) — and solving for what makes P/B = 0.93x: if Ke = 14% (reflecting the BI-rate at 5.75% plus a 8.25 pp equity risk premium for an IDX mid-cap) and g = 5% (below nominal GDP), then ROE implied = 0.93 * (14% - 5%) + 5% = 8.37% + 5% = 13.37%. If Ke = 15% and g = 5%, ROE implied = 0.93 * 10% + 5% = 14.3% — but the Ke of 15% itself bakes in credit/macro risk. The most likely read: the market assumes either (a) ROE fades from 14.8% toward 13-13.5% as credit costs normalise higher, or (b) Ke has risen to ~14-15% from prior ~12-13% because of BI rate hikes (100 bps in May-June 2026, taking BI rate to 5.75%) and rupiah depreciation risk (USD/IDR at 18,000, near record). Either way, the market is NOT pricing continued ROE at 14.8%. The street consensus at IDR 860 (P/B = 1.19x) implies ROE of ~14.3% at Ke = 13%, which is the pre-hike assumption — the key disagreement is on Ke in the new rate environment.",
+
+  "price_decline_explanation": "BFIN fell from ~965 IDR (52-week high) to 690 IDR, a 28% decline, driven by a combination of factors: (1) Rising credit costs — Q1 2025 cost of credit jumped to 4.4%, up 70 bps YoY and 160 bps QoQ, driven by shorter collection days, segment/regional stress, and higher losses on repossessed assets. (2) UBS downgrade on August 29, 2025 — shifted from Buy (PT 1,110) to Sell (PT 745) with a 30%-below-consensus bear case, citing a credit cycle turn in Indonesian automotive financing. (3) Indonesia's vehicle sales declined — light vehicle sales fell 6% in 2025 (third consecutive year of decline), hitting a 15-year low of 750k units, constraining BFIN's addressable market in new-vehicle financing. (4) Rupiah weakness — USD/IDR rose toward 18,000 in 2026, a record, raising Ke for IDR assets and prompting BI to hike rates 100 bps to 5.75% in May-June 2026, compressing multifinance margins and raising funding costs. (5) Q1 2026 earnings miss — net income declined 12.8% YoY to IDR 354 B vs IDR 406 B in Q1 2025, the sharpest quarterly year-on-year decline in recent history. Despite these headwinds, absolute fundamentals remain sound (NPF 1.39% gross vs 2.51% sector average; Fitch AA-(idn) affirmed February 2026), so the decline reflects repricing of the risk premium, not a fundamental impairment.",
+
+  "dividend_data": {
+    "fy2024_total_idr_per_share": 60,
+    "fy2024_interim_idr": 28,
+    "fy2024_final_idr": 32,
+    "fy2025_interim_idr": 35,
+    "fy2025_interim_payment_date": "2025-12-18",
+    "fy2025_interim_total_idr_b": 520,
+    "payout_ratio_9m_2025_pct": 44.5,
+    "forward_dividend_idr": 70,
+    "forward_yield_pct": 10.14,
+    "note": "70 IDR forward dividend per share is from databundle; 2024 total was 60 IDR; 2025 interim was 35 IDR; likely 2025 final brings total to ~65-72 IDR range"
+  },
+
+  "credit_rating": {
+    "agency": "Fitch Ratings Indonesia",
+    "national_long_term": "AA-(idn)",
+    "national_short_term": "F1+(idn)",
+    "outlook": "Stable",
+    "date_of_action": "2026-02-13",
+    "note": "Affirmed; key sensitivities are NPF above 2% (currently 1.5% at Q3 2025), leverage above prior norms (currently 1.3x), or liquidity erosion"
+  },
+
+  "peer_comparison": {
+    "ADMF.JK": {"name": "Adira Finance", "pe_ttm": 6.13, "pb": 0.64, "roe_pct": 12.31, "return_1y_pct": -7.06},
+    "CFIN.JK": {"name": "Clipan Finance", "pe_ttm": 6.23, "pb": 0.25, "roe_pct": 4.06, "return_1y_pct": 17.53},
+    "BBRI.JK": {"name": "BRI (bank)", "pe_ntm": 6.72, "pb": 1.32, "roe_pct": 18.14, "return_1y_pct": -18.95},
+    "note": "BFIN trades at a premium P/B (0.93x) vs ADMF (0.64x) and CFIN (0.25x), justified by superior ROE (14.8% vs 12.3% and 4.1%). CFIN's +17.5% 1yr return is an outlier driven by company-specific factors, not sector re-rating."
+  },
+
+  "capex_guidance": [],
+
+  "sources": [
+    {"url": "https://digital-bucket.prod.bfi.co.id/assets/pdf/pdf_terbaru/10.%20Siaran%20Pers/English/2025/BFI%20Finance%20-%20Media%20Release%20-%202024%20Financial%20Performance%20-%20Fin%20(Eng).pdf", "note": "BFI Finance 2024 full-year press release"},
+    {"url": "https://www.marketscreener.com/news/pt-bfi-finance-indonesia-tbk-financial-performance-2025-ce7e5fdbd08af425", "note": "BFI Finance FY2025 press release via MarketScreener"},
+    {"url": "https://www.investing.com/news/analyst-ratings/ubs-downgrades-bfi-finance-indonesia-stock-rating-to-sell-on-credit-cycle-concerns-93CH-4215813", "note": "UBS downgrade to Sell, August 29 2025, PT 745"},
+    {"url": "https://simplywall.st/stocks/id/diversified-financials/idx-bfin/bfi-finance-indonesia-shares/future", "note": "SimplyWallSt consensus EPS estimates"},
+    {"url": "https://www.bfi.co.id/en/corporate/Investor-Relations/information-disclosure/Fitch%20Ratings%2013%20Februari%202026_EN", "note": "Fitch affirms AA-(idn) stable, February 13 2026"},
+    {"url": "https://finance.yahoo.com/news/indonesia-2025-light-vehicle-sales-131743032.html", "note": "Indonesia light vehicle sales -6% in 2025, 15-year low"},
+    {"url": "https://www.indonesia-investments.com/news/todays-headlines/bank-indonesia-raises-benchmark-rate-to-5.75-in-continuous-move-to-stabilize-rupiah/item9934", "note": "BI rate to 5.75% June 18 2026"},
+    {"url": "https://en.antaranews.com/news/419629/bi-hikes-rate-by-25-bps-to-stabilize-rupiah-amid-global-tensions", "note": "BI 100 bps hike cycle May-June 2026"},
+    {"url": "https://www.idnfinancials.com/news/54400/bfin-to-distribute-dividend-of-idr-32-per-share-in-june-2025", "note": "FY2024 final dividend IDR 32"},
+    {"url": "https://www.rancakmedia.com/finance/89704/bfin-to-distribute-interim-dividend-of-rp35-per-share-check-the-complete-schedule/", "note": "FY2025 interim dividend IDR 35"}
+  ]
+}

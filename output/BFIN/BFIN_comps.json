@@ -1,0 +1,92 @@
+{
+  "ticker": "BFIN",
+  "company": "PT BFI Finance Indonesia Tbk",
+  "currency": "IDR",
+  "as_of": "2026-06-18",
+  "anchor": "P/B (Price-to-Book)",
+  "book_value_per_share_current": 722.3,
+  "book_value_per_share_forward": 758.1,
+  "ke_base": 0.1055,
+  "g_lt_base": 0.055,
+  "roe_base_normalized": 0.165,
+
+  "current": {
+    "price": 690,
+    "pb_multiple": 0.955,
+    "pe_ttm": 6.90,
+    "pe_ntm_corrected": 7.19,
+    "eps_ntm_corrected": 96,
+    "implied_roe_at_ke_10pct": "10.3%",
+    "implied_roe_at_ke_14pct": "13.6%",
+    "note": "P/B of 0.955x implies either (a) Ke~14% with ROE ~13.6% sustainable, or (b) Ke~10.5% with ROE staying at a distressed ~10% level. Interpretation (a) is the market's actual thesis -- crisis Ke at 14% plus no recovery assumption. Interpretation (b) would be a distress scenario not consistent with Fitch AA-(idn) stable."
+  },
+
+  "street": {
+    "target_mean": {
+      "price": 860,
+      "pb_multiple": 1.191,
+      "implied_roe_at_ke_13pct_g6.5pct": "14.2%",
+      "implied_growth_pct": 24.6,
+      "note": "Street implies Ke ~13% (pre-hike) and ROE stable at 14-15%. The street agrees ROE does not decline materially but does not price a ROE recovery."
+    },
+    "target_high": {
+      "price": 1000,
+      "pb_multiple": 1.384,
+      "implied_roe_at_ke_13pct_g6.5pct": "15.5%",
+      "note": "High target (1 analyst) implies ROE recovering toward 15-16% -- closer to our base thesis."
+    },
+    "target_low": {
+      "price": 700,
+      "pb_multiple": 0.969,
+      "implied_roe_at_ke_13pct_g6.5pct": "12.8%",
+      "note": "Low target (UBS equivalent range) implies continued ROE depression -- UBS's actual PT is 745 IDR."
+    },
+    "n_analysts": 4
+  },
+
+  "justified_grid": {
+    "description": "Justified P/B = (ROE - g) / (Ke - g). Implied IDR value per share = justified P/B x BV (722.3). g = 5.5% fixed.",
+    "ke_axis": [0.095, 0.100, 0.105, 0.110, 0.115],
+    "roe_axis": [0.140, 0.155, 0.170, 0.185, 0.200],
+    "g_fixed": 0.055,
+    "bv_base": 722.3,
+    "grid_pb": [
+      {"ke": 0.095, "values": {"roe_14": 2.125, "roe_15.5": 2.500, "roe_17": 2.875, "roe_18.5": 3.250, "roe_20": 3.625}},
+      {"ke": 0.100, "values": {"roe_14": 1.889, "roe_15.5": 2.222, "roe_17": 2.556, "roe_18.5": 2.889, "roe_20": 3.222}},
+      {"ke": 0.105, "values": {"roe_14": 1.700, "roe_15.5": 2.000, "roe_17": 2.300, "roe_18.5": 2.600, "roe_20": 2.900}},
+      {"ke": 0.110, "values": {"roe_14": 1.545, "roe_15.5": 1.818, "roe_17": 2.091, "roe_18.5": 2.364, "roe_20": 2.636}},
+      {"ke": 0.115, "values": {"roe_14": 1.417, "roe_15.5": 1.667, "roe_17": 1.917, "roe_18.5": 2.167, "roe_20": 2.417}}
+    ],
+    "grid_idr": {
+      "description": "IDR per share = justified P/B x 722.3",
+      "rows": [
+        {"ke": "9.5%", "roe_14pct": 1535, "roe_15.5pct": 1806, "roe_17pct": 2077, "roe_18.5pct": 2347, "roe_20pct": 2618},
+        {"ke": "10.0%", "roe_14pct": 1364, "roe_15.5pct": 1605, "roe_17pct": 1846, "roe_18.5pct": 2087, "roe_20pct": 2327},
+        {"ke": "10.5%", "roe_14pct": 1228, "roe_15.5pct": 1445, "roe_17pct": 1661, "roe_18.5pct": 1878, "roe_20pct": 2095},
+        {"ke": "11.0%", "roe_14pct": 1116, "roe_15.5pct": 1313, "roe_17pct": 1510, "roe_18.5pct": 1707, "roe_20pct": 1904},
+        {"ke": "11.5%", "roe_14pct": 1023, "roe_15.5pct": 1204, "roe_17pct": 1384, "roe_18.5pct": 1565, "roe_20pct": 1746}
+      ],
+      "base_case_cell": "Ke=10.5%, ROE=17% (nearest to our 16.5% base): 1,661 IDR -- consistent with blended DDM/ER output of 1,357 IDR (ER dilutes the DDM and JPB)",
+      "current_price_note": "ALL cells are above the current price of 690 IDR. Even the bear cell (Ke=11.5%, ROE=14%) = 1,023 IDR = 48% above current price. This confirms the valuation is asymmetrically favorable."
+    }
+  },
+
+  "peer_comparison": {
+    "anchor_metric": "P/B vs ROE",
+    "peers": [
+      {"ticker": "ADMF.JK", "name": "Adira Finance", "pb": 0.64, "roe_pct": 12.31, "justified_pb_at_ke10.5_g5.5": "0.96x", "premium_discount_to_justified": "DISCOUNT -- at 0.64x vs 0.96x justified, Adira screens cheap but NI -27% in 2024 justifies the discount. Adira has worse credit trajectory than BFIN."},
+      {"ticker": "CFIN.JK", "name": "Clipan Finance", "pb": 0.25, "roe_pct": 4.06, "justified_pb_at_ke10.5_g5.5": "negative", "premium_discount_to_justified": "ROE below any reasonable Ke -- perpetual value destroyer at current profitability. Not a useful comp."},
+      {"ticker": "BBRI.JK", "name": "BRI (bank)", "pb": 1.32, "roe_pct": 18.14, "justified_pb_at_ke9.5_g5.5": "2.84x", "premium_discount_to_justified": "DISCOUNT -- BRI at 1.32x vs justified ~2.8x at Ke=9.5% (lower Ke because deposit-funded, lower risk). BRI is also undervalued on fundamentals. This suggests the entire Indonesian financial sector is pricing crisis Ke, not fundamental Ke."}
+    ],
+    "sector_observation": "The entire Indonesian financial sector appears to be pricing crisis Ke (14%+) relative to fundamental Ke (10-11%). BRI at 1.32x P/B (ROE 18%) and BFIN at 0.93x P/B (ROE 14.8%) are both at deep discounts to justified P/B on fundamental Ke assumptions. This is a sector-wide repricing of Indonesian financial risk, driven by BI's aggressive rate cycle (100bp in 30 days) and rupiah at record weakness. Our BUY on BFIN is a bet that this crisis Ke is temporary and that normalized Ke eventually reasserts."
+  },
+
+  "reconstruction": {
+    "what_price_implies": "At 690 IDR (P/B 0.955x), the market prices in a persistent crisis: either ROE stays at ~13.5% (with no recovery from the 2022-2025 compression) at a crisis Ke of 14%, OR ROE recovers to ~10% at our fundamental Ke of 10.5%. The former is the market's most plausible implicit assumption. The sub-book valuation is NOT pricing a default or NPF blowout -- Fitch AA-(idn) stable and NPF 1.25% (vs sector 2.70%) make distress remote. It is pricing a 'new normal' of lower ROE and higher Ke in the rate-elevated Indonesian macro environment.",
+    "what_street_implies": "The mean analyst target of 860 IDR (P/B 1.19x) implies Ke of ~13% (the pre-hike baseline from 2024) and ROE stable at 14-15%. The street has not updated its Ke assumption for the 100bp BI rate surprise in May-June 2026. UBS (the sole sell-side bear, PT 745) is more internally consistent: it has updated its credit cost and growth forecasts for the adverse environment. The 2 buy + 1 hold analysts are implicitly using stale Ke assumptions.",
+    "history_anchor": "BFIN historically traded at 1.0x-1.8x P/B (2018-2022 range) when ROE was 18-22%. The 0.93x P/B is the lowest level in recent history, consistent with a significant repricing from peak. The P/B-to-ROE relationship has been consistent: 20% ROE commanded 1.5-1.8x P/B; 15% ROE commanded 1.0-1.2x P/B. The current 14.8% ROE should logically command ~1.0x P/B at pre-crisis Ke -- and the stock is at 0.93x P/B. The crisis Ke is the overhang.",
+    "contested_lever": "Ke is the crux, not ROE. The market and our fundamental Ke disagree by 350bp (14% vs 10.5%). This Ke gap alone moves the justified P/B from 0.93x (where the stock trades) to 2.18x (our fundamental). ROE recovery is the second lever -- the market assumes flat ROE; we assume recovery to 16.5%. But the Ke disagreement is larger in value terms.",
+    "our_disagree": "We disagree with the market on TWO fronts: (1) Ke should normalize from crisis 14% to fundamental 10.5% as BI hike cycle ends and rupiah stabilizes; (2) ROE will recover toward 16.5% as provision normalizes and GP margin recovers. Both disagreements favor the BUY. We partially agree with the street (860 IDR mean target) on the near-term traded level -- our 12m target of 910 IDR is close to the street's 860 IDR, because neither the street nor we expect full intrinsic value realization in 12 months.",
+    "ubs_engage": "UBS's bear thesis (PT 745, Sell) is the most rigorous dissent. UBS argues credit costs of 4.6-5.1% for 2025-27 -- our base uses 2.5% of receivables (lower). Q1 2026 credit cost data will be the first real test: if Q2 2026 cost of credit annualizes above 4%, UBS is right and our normalization thesis is wrong. Our counterargument: the Q1 2025 credit cost spike that triggered UBS's downgrade (4.4%, up 160bp QoQ) was partly seasonal and partly driven by the post-COVID restructuring vintage burning through. The 9M 2024 NPF at 1.25% gross (best in sector) is not consistent with sustained 4.6-5.1% credit costs. UBS's 2.5% loan CAGR is already contradicted by FY2025 new financing +9.3%."
+  }
+}
